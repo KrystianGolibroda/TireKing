@@ -55,12 +55,16 @@ body, html {
   padding-left: 1rem !important; }
 
 .widget {
-  position: fixed;
-  z-index: 9999;
-  right: -435px;
-  width: 435px;
-  height: 575px;
-  top: 20%; }
+  display: none; }
+  @media (min-width: 768px) {
+    .widget {
+      display: flex;
+      position: fixed;
+      z-index: 9999;
+      right: -435px;
+      width: 435px;
+      height: 575px;
+      top: 20%; } }
 
 .widget.active {
   animation: popUp 500ms;
