@@ -492,6 +492,7 @@ nav {
   @media (min-width: 768px) and (min-width: 550px) {
     main .carSearchContainer {
       background-image: url("../images/michelin_background.png");
+      width: 100%;
       background-repeat: no-repeat;
       background-position: 50%;
       background-size: cover;
@@ -555,26 +556,56 @@ nav {
                   max-width: 515px;
                   width: 100%; }
                   main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .firstBox .endContent .smallSelectBox {
+                    max-width: 445px;
                     width: 100%;
                     max-height: 80px;
                     height: 100%;
                     margin-top: 45px;
                     display: flex;
                     flex-direction: row;
-                    justify-content: flex-end; }
+                    justify-content: space-between;
+                    float: right; }
                     main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .firstBox .endContent .smallSelectBox .selectLabelBox {
                       position: relative;
-                      width: 135px;
-                      /*.downLabel {
+                      width: 135px; }
+                      main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .firstBox .endContent .smallSelectBox .selectLabelBox .triangle-bottomleft {
+                        margin-left: 85px;
+                        position: relative;
+                        top: 0;
                         width: 0;
                         height: 0;
-                        border-left: 20px solid transparent;
-                        border-right: 20px solid transparent;
-                        border-top: 40px solid white;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border-style: solid;
+                        border-width: 0 0 45px 50px;
+                        border-color: transparent transparent transparent #ffffff;
+                        transform: skewX(63deg);
+                        -ms-transform: skewX(63deg);
+                        -moz-transform: skewX(63deg);
+                        -webkit-transform: skew(63deg); }
+                      main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .firstBox .endContent .smallSelectBox .selectLabelBox .triangle-bottom {
+                        margin: 0 auto;
                         position: relative;
-                        z-index: 10;
-                        margin-top: 10px;
-                      }*/ }
+                        top: 0;
+                        width: 0;
+                        height: 0;
+                        border-style: solid;
+                        border-width: 22px 17px 0 17px;
+                        border-color: #ffffff transparent transparent transparent; }
+                      main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .firstBox .endContent .smallSelectBox .selectLabelBox .triangle-bottomright {
+                        margin-right: 50px;
+                        position: relative;
+                        top: 0;
+                        width: 0;
+                        height: 0;
+                        border-style: solid;
+                        border-width: 45px 0 0 50px;
+                        border-color: #ffffff transparent transparent transparent;
+                        transform: skewX(-63deg);
+                        -ms-transform: skewX(-63deg);
+                        -moz-transform: skewX(-63deg);
+                        -webkit-transform: skewX(-63deg); }
                       main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .firstBox .endContent .smallSelectBox .selectLabelBox .upLabel {
                         display: block;
                         padding-bottom: 6px;
@@ -603,28 +634,14 @@ nav {
                         border-radius: 5px;
                         position: relative;
                         z-index: 2; }
-                      main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .firstBox .endContent .smallSelectBox .selectLabelBox:before {
-                        content: ' ';
-                        position: absolute;
-                        width: 0;
-                        height: 0;
-                        left: 40px;
-                        top: 60px;
-                        background: url("../images/icon/szerokosc_srednica_strzalka.png"); }
-                      main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .firstBox .endContent .smallSelectBox .selectLabelBox:after {
-                        content: ' ';
-                        position: absolute;
-                        width: 0;
-                        height: 0;
-                        left: 42px;
-                        top: 50px;
-                        background: url("../images/icon/szerokosc_srednica_strzalka.png"); }
-                  main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .firstBox .endContent .tireImage {
-                    max-width: 400px;
-                    width: 100%;
-                    height: auto;
-                    justify-content: flex-end;
-                    float: right; }
+                  main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .firstBox .endContent .tireImageDiv {
+                    float: right;
+                    margin-right: 22px; }
+                    main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .firstBox .endContent .tireImageDiv .tireImage {
+                      margin-top: 30px;
+                      max-width: 400px;
+                      width: 100%;
+                      height: auto; }
               main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .secondBox {
                 max-width: 515px;
                 width: 100%;
