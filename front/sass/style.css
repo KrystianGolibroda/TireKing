@@ -238,16 +238,34 @@ body, html {
   font-size: 11px;
   font-family: "SinkinSans-400Regular", sans-serif;
   animation: slideIn 500ms; }
-  .cookie-bar .message {
-    white-space: nowrap; }
-    @media (max-width: 767px) {
-      .cookie-bar .message {
-        display: none; } }
-  .cookie-bar .mobile {
-    display: none; }
-    @media (max-width: 767px) {
-      .cookie-bar .mobile {
-        display: inline-block; } }
+  .cookie-bar .cookie-barContent {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; }
+    .cookie-bar .cookie-barContent .message {
+      white-space: nowrap; }
+      @media (max-width: 767px) {
+        .cookie-bar .cookie-barContent .message {
+          display: none; } }
+    .cookie-bar .cookie-barContent .mobile {
+      display: none; }
+      @media (max-width: 767px) {
+        .cookie-bar .cookie-barContent .mobile {
+          display: inline-block; } }
+    .cookie-bar .cookie-barContent .cookieAccept {
+      max-width: 260px;
+      max-height: 35px;
+      width: 100%;
+      height: 100%;
+      border: 2px solid #ff6300;
+      color: #000000;
+      border-radius: 25px;
+      font-family: "SinkinSans-700Bold", sans-serif;
+      font-size: 14px;
+      text-decoration: none;
+      text-align: center; }
 
 @keyframes slideIn {
   from {
@@ -259,7 +277,7 @@ body, html {
   color: #000000;
   position: absolute;
   display: inline-block;
-  right: 0;
+  right: 10px;
   top: 10px;
   cursor: pointer;
   line-height: 30px;
@@ -410,35 +428,7 @@ nav {
     }*/
     /* Dropdown */
     /* Sub Dropdown */
-    /* Display none by Default */
-    /*.navList {
-      list-style-type: none;
-      padding: 15px 0 15px 0;
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-      flex-direction: row;
-      height: 60px;
-      margin: 0;
-      position: relative;
-
-      li {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 18px;
-        font-family: $SS-700Bold;
-
-        a {
-          text-decoration: none;
-          color: $fontMenu;
-
-          .imgColor {
-            color: $fontMenu;
-          }
-        }
-      }
-    }*/ }
+    /* Display none by Default */ }
     nav .menuBottom #top-nav {
       min-height: 50px; }
       nav .menuBottom #top-nav ul {
@@ -475,7 +465,8 @@ nav {
       background-color: #ff6300;
       color: white; }
     nav .menuBottom li.dropdown {
-      position: relative; }
+      position: relative;
+      z-index: 9999; }
     nav .menuBottom ul.dropdown-menu {
       position: absolute; }
     nav .menuBottom ul.dropdown-menu li {
@@ -500,7 +491,7 @@ nav {
       background-repeat: no-repeat;
       background-position: 50%;
       background-size: cover;
-      padding-top: 100px !important;
+      padding-top: 50px !important;
       padding-bottom: 375px !important; } }
 @media (min-width: 768px) {
     main .carSearchContainer .carSearchBox {

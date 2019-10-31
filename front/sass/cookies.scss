@@ -81,16 +81,38 @@ $cookies: #9cb6d2;
   font-family: $SS-400Regular;
   animation: slideIn 500ms;
 
-  .message {
-    white-space: nowrap;
-    @media (max-width: 767px){
-      display: none;
+  .cookie-barContent {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+    .message {
+      white-space: nowrap;
+      @media (max-width: 767px){
+        display: none;
+      }
     }
-  }
-  .mobile {
-    display: none;
-    @media (max-width: 767px){
-      display: inline-block;
+    .mobile {
+      display: none;
+      @media (max-width: 767px){
+        display: inline-block;
+      }
+    }
+
+    .cookieAccept {
+      max-width: 260px;
+      max-height: 35px;
+      width: 100%;
+      height: 100%;
+      border: 2px solid $orangeButton;
+      color: $blackLikeHell;
+      border-radius: 25px;
+      font-family: $SS-700Bold;
+      font-size: 14px;
+      text-decoration: none;
+      text-align: center;
     }
   }
 }
@@ -107,7 +129,7 @@ $cookies: #9cb6d2;
   color: $blackLikeHell;
   position: absolute;
   display: inline-block;
-  right: 0;
+  right: 10px;
   top: 10px;
   cursor: pointer;
   line-height: 30px;
