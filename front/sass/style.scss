@@ -332,6 +332,7 @@ main {
     padding-bottom: 10px !important;
     @media(min-width: 550px) {
       background-image: url('../images/michelin_background.png');
+      width: 100%;
       background-repeat: no-repeat;
       background-position: 50%;
       background-size: cover;
@@ -407,17 +408,63 @@ main {
 
 
                   .smallSelectBox {
+                    max-width: 445px;
                     width: 100%;
                     max-height: 80px;
                     height: 100%;
                     margin-top: 45px;
                     display: flex;
                     flex-direction: row;
-                    justify-content: flex-end;
+                    justify-content: space-between;
+                    float: right;
 
                     .selectLabelBox {
                       position: relative;
                       width: 135px;
+
+                      .triangle-bottomleft {
+                        margin-left: 85px;
+                        position: relative;
+                        top: 0;
+                        width: 0;
+                        height: 0;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border-style: solid;
+                        border-width:  0 0 45px 50px;
+                        border-color: transparent transparent transparent $white;
+                        transform: skewX(63deg);
+                        -ms-transform: skewX(63deg);
+                        -moz-transform: skewX(63deg);
+                        -webkit-transform: skew(63deg);
+                      }
+
+                      .triangle-bottom {
+                        margin: 0 auto;
+                        position: relative;
+                        top: 0;
+                        width: 0;
+                        height: 0;
+                        border-style: solid;
+                        border-width: 22px 17px 0 17px;
+                        border-color: $white transparent transparent transparent;
+                      }
+
+                      .triangle-bottomright {
+                        margin-right: 50px;
+                        position: relative;
+                        top: 0;
+                        width: 0;
+                        height: 0;
+                        border-style: solid;
+                        border-width:  45px 0 0 50px;
+                        border-color: $white transparent transparent transparent;
+                        transform: skewX(-63deg);
+                        -ms-transform: skewX(-63deg);
+                        -moz-transform: skewX(-63deg);
+                        -webkit-transform: skewX(-63deg);
+                      }
 
                       .upLabel {
                         display: block;
@@ -431,17 +478,6 @@ main {
                         z-index: 2;
 
                       }
-
-                      /*.downLabel {
-                        width: 0;
-                        height: 0;
-                        border-left: 20px solid transparent;
-                        border-right: 20px solid transparent;
-                        border-top: 40px solid white;
-                        position: relative;
-                        z-index: 10;
-                        margin-top: 10px;
-                      }*/
 
                       .smallSelect {
                         max-height: 50px;
@@ -463,37 +499,20 @@ main {
                         z-index: 2;
 
                       }
-
-                      &:before {
-                        content: ' ';
-                        position: absolute;
-                        width: 0;
-                        height: 0;
-                        left: 40px;
-                        top: 60px;
-                        background: url("../images/icon/szerokosc_srednica_strzalka.png");
-
-                      }
-
-                      &:after {
-                        content: ' ';
-                        position: absolute;
-                        width: 0;
-                        height: 0;
-                        left: 42px;
-                        top: 50px;
-                        background: url("../images/icon/szerokosc_srednica_strzalka.png");
-                      }
                     }
                   }
 
-                  .tireImage {
-                    max-width: 400px;
-                    width: 100%;
-                    height: auto;
-                    justify-content: flex-end;
+                  .tireImageDiv {
                     float: right;
+                    margin-right: 22px;
 
+                    .tireImage {
+                      margin-top: 30px;
+                      max-width: 400px;
+                      width: 100%;
+                      height: auto;
+
+                    }
                   }
                 }
               }
