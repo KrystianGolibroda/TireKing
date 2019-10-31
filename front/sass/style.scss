@@ -270,6 +270,7 @@ nav {
     /* Dropdown */
     li.dropdown {
       position: relative;
+      z-index: 9999;
     }
     ul.dropdown-menu{
       position: absolute;
@@ -291,35 +292,6 @@ nav {
     ul.dropdown-menu{
       display: none;
     }
-
-    /*.navList {
-      list-style-type: none;
-      padding: 15px 0 15px 0;
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-      flex-direction: row;
-      height: 60px;
-      margin: 0;
-      position: relative;
-
-      li {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 18px;
-        font-family: $SS-700Bold;
-
-        a {
-          text-decoration: none;
-          color: $fontMenu;
-
-          .imgColor {
-            color: $fontMenu;
-          }
-        }
-      }
-    }*/
   }
 }
 
@@ -336,7 +308,7 @@ main {
       background-repeat: no-repeat;
       background-position: 50%;
       background-size: cover;
-      padding-top: 100px !important;
+      padding-top: 50px !important;
       padding-bottom: 375px !important;
     }
 
