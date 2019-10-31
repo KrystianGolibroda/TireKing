@@ -1,0 +1,1962 @@
+
+@font-face {
+  font-family: 'SinkinSans-400Regular';
+  src: url("../fonts/SinkinSans-400Regular.ttf");
+}
+
+@font-face {
+  font-family: 'SinkinSans-700Bold';
+  src: url("../fonts/SinkinSans-700Bold.ttf");
+}
+
+@font-face {
+  font-family: 'SinkinSans-700BoldItalic';
+  src: url("../fonts/SinkinSans-700BoldItalic.ttf");
+}
+
+@font-face {
+  font-family: 'SinkinSans-500Medium';
+  src: url("../fonts/SinkinSans-500Medium.ttf");
+}
+
+@font-face {
+  font-family: 'Gotham-BoldItalic';
+  src: url("../fonts/Gotham-BoldItalic.ttf");
+}
+
+@font-face {
+  font-family: 'SinkinSans-600SemiBold';
+  src: url("../fonts/SinkinSans-600SemiBold.ttf");
+}
+
+@font-face {
+  font-family: 'SinkinSans-300Light';
+  src: url("../fonts/SinkinSans-300Light.ttf");
+}
+
+$SS-400Regular: 'SinkinSans-400Regular', sans-serif;
+$SS-700Bold: 'SinkinSans-700Bold', sans-serif;
+$SS-700BoldItalic: 'SinkinSans-700BoldItalic', sans-serif;
+$SS-500Medium: 'SinkinSans-500Medium', sans-serif;
+$Gotham-BoldItalic: 'Gotham-BoldItalic', sans-serif;
+$SS-600SemiBold: 'SinkinSans-600SemiBold', sans-serif;
+$SS-300Light: 'SinkinSans-300Light', sans-serif;
+
+
+$grey: #f0f0f0;
+$white: #ffffff;
+$fontMenu: #221d24;
+$michelinButton: #264f9a;
+$darkerGrey: #808080;
+$greyFooter: #999999;
+$carContainer: #f8f8f8;
+$blackLikeHell: #000000;
+$orangeButton: #ff6300;
+$carInActiveContainer: #e2e2e2;
+$wyszukiwarkaKolorSSzP: #929292;
+$selectBorder: #dbdbdb;
+$opineoCeneo: #666666;
+$shopBackgroundColor: #f1f1f1;
+$podkreslnik: #d9d9d9;
+$hyperlinks: #4b95db;
+
+
+header{
+  position: relative;
+  z-index: 9999;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: $SS-500Medium;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
+#sticker{
+  z-index: 999;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: auto;
+}
+
+.row:before,
+.row:after {
+  content: "";
+  display: flex;
+  clear: both
+}
+
+
+.wrap {
+  box-sizing: border-box;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.container-fluid {
+  padding-right: 1rem !important;
+  padding-left: 1rem !important;
+}
+
+
+.menuTop {
+  margin: 0 auto;
+  font-family: $SS-400Regular;
+  font-size: 11px;
+  color: $fontMenu;
+  height: 32px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-decoration: none;
+  background-color: $grey;
+
+  .topLeft{
+    padding-left: 120px;
+    padding-top: 8px;
+
+    a:link {
+      text-decoration: none;
+      color: $fontMenu;
+    }
+    a:visited {
+      text-decoration: none;
+      color: $fontMenu;
+    }
+    a:hover {
+      text-decoration: underline;
+      color: $fontMenu;
+    }
+    a:active {
+      text-decoration: underline;
+      color: $fontMenu;
+    }
+
+    span {
+      margin-right: 35px;
+    }
+  }
+  .topRight{
+    padding-right: 120px;
+    padding-top: 8px;
+
+    a:link {
+      text-decoration: none;
+      color: $fontMenu;
+    }
+
+    a:visited {
+      text-decoration: none;
+      color: $fontMenu;
+    }
+
+    a:hover {
+      text-decoration: underline;
+      color: $fontMenu;
+    }
+
+    a:active {
+      text-decoration: underline;
+      color: $fontMenu;
+    }
+
+    span{
+      margin-left: 35px;
+    }
+  }
+}
+
+.menu {
+  margin: 0 auto;
+  background-color: $white;
+  height: 88px;
+  font-size: 18px;
+
+  .menuList {
+    position: relative;
+    padding-right: 120px;
+    padding-left: 120px;
+    list-style-type: none;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    li {
+      padding-top: 23px;
+      display: flex;
+      align-items: center;
+      font-family: $SS-700Bold;
+
+    li:hover > ul,
+    ul li ul:hover {
+      visibility: visible;
+      opacity: 1;
+      display: block;
+      z-index: 9999;
+    }
+      ul {
+        visibility: hidden;
+        opacity: 0;
+        position: absolute;
+        transition: all 0.5s ease;
+        margin-top: 1rem;
+        left: 0;
+        display: none;
+        li {
+          clear: both;
+          width: 100%;
+        }
+      }
+
+      a {
+        margin: 0;
+
+      }
+
+      a:link {
+        text-decoration: none;
+        color: $fontMenu;
+      }
+
+      a:visited {
+        text-decoration: none;
+        color: $fontMenu;
+      }
+
+      a:hover {
+        text-decoration: none;
+        color: $fontMenu;
+      }
+
+      a:active {
+        text-decoration: none;
+        color: $fontMenu;
+      }
+
+    }
+    .lowerFont {
+      font-size: 14px;
+    }
+  }
+}
+
+.content .btn .banner1 .banner2 .michelin-banner {
+  display: flex;
+  margin: auto;
+}
+
+.content {
+  position: relative;
+  background-image: url("../images/baner_michelin.png");
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+  width: 100%;
+  max-width: 1440px;
+  height: 850px;
+
+  .btn {
+    position: absolute;
+    cursor: pointer;
+    width: 400px;
+    height: 40px;
+    background-color: $michelinButton;
+    color: $white;
+    border: none;
+    border-radius: 1px;
+    font-family: $Gotham-BoldItalic;
+    font-size: 18px;
+    letter-spacing: 0.1rem;
+    left: 135px;
+    bottom: 155px;
+
+    a:link {
+      text-decoration: none;
+      color: $white;
+    }
+
+    a:visited {
+      text-decoration: none;
+      color: $white;
+    }
+
+    a:hover {
+      text-decoration: none;
+      color: $white;
+    }
+
+    a:active {
+      text-decoration: none;
+      color: $white;
+    }
+  }
+
+  .banner1{
+    position: absolute;
+    top: 50px;
+    left: 80px;
+  }
+
+  .banner2{
+    position: absolute;
+    top: 50px;
+    right: 90px;
+  }
+
+  .michelin-banner{
+    position: absolute;
+    bottom: 245px;
+    left: 135px;
+  }
+
+  .carContainer {
+    position: absolute;
+    width: 1030px;
+    height: 440px;
+    top: 40px;
+    left: 200px;
+    background-color: $carContainer;
+    border-radius: 10px;
+
+    .tablink {
+      font-family: $SS-700Bold;
+      border-radius: 2px 2px 0 0;
+      background-color: $carInActiveContainer;
+      color: $blackLikeHell;
+      float: left;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 15px 15px;
+      font-size: 19px;
+      width: 50%;
+      letter-spacing: 0.01rem;
+    }
+
+    .tabcontent {
+      z-index: 10;
+
+      .carContainerBox1 {
+        font-family: $SS-700Bold;
+
+
+        .szerokoscOpony {
+          position: absolute;
+          left: 85px;
+          top: 90px;
+          color: $wyszukiwarkaKolorSSzP;
+        }
+
+        .label1 {
+          position: absolute;
+          top: 105px;
+          left: 70px;
+          z-index: 100;
+
+          .select1 {
+            font-family: $SS-700Bold;
+            font-size: 14px;
+            border: 1px solid $selectBorder;
+            padding-left: 10px;
+            width: 135px;
+            height: 50px;
+            border-radius: 5px;
+          }
+        }
+
+        .label2 {
+          position: absolute;
+          top: 105px;
+          left: 225px;
+          z-index: 100;
+
+          .select2 {
+            font-family: $SS-700Bold;
+            font-size: 14px;
+            border: 1px solid $selectBorder;
+            padding-left: 10px;
+            width: 135px;
+            height: 50px;
+            border-radius: 5px;
+          }
+        }
+
+        .label3 {
+          position: absolute;
+          top: 50px;
+          left: 380px;
+          z-index: 100;
+
+          .select3 {
+            font-family: $SS-700Bold;
+            font-size: 14px;
+            border: 1px solid $selectBorder;
+            padding-left: 10px;
+            width: 135px;
+            height: 50px;
+            border-radius: 5px;
+          }
+        }
+
+
+        .profilOpony {
+          position: absolute;
+          left: 240px;
+          top: 90px;
+          color: $wyszukiwarkaKolorSSzP;
+        }
+
+
+        .srednicaOpony {
+          position: absolute;
+          left: 390px;
+          top: 90px;
+          color: $wyszukiwarkaKolorSSzP;
+        }
+
+        .label3 {
+          position: relative;
+          top: 75px;
+          left: 70px;
+
+          select {
+            font-family: $SS-700Bold;
+            font-size: 14px;
+          }
+        }
+
+        .carContainerTire {
+          position: absolute;
+          bottom: 0;
+          left: 80px;
+        }
+      }
+
+      .carContainerBox2 {
+
+        .producent {
+          position: absolute;
+          right: 335px;
+          top: 90px;
+          color: $wyszukiwarkaKolorSSzP;
+          font-family: $SS-700Bold;
+        }
+
+        .szukajOpon {
+
+
+          .szukajOponBtn {
+            position: absolute;
+            bottom: 155px;
+            right: 80px;
+            background-color: $orangeButton;
+            color: $white;
+            width: 365px;
+            height: 50px;
+            font-family: $SS-700Bold;
+            font-size: 19px;
+            border: none;
+            cursor: pointer;
+            border-radius: 10px;
+
+            a:link {
+              text-decoration: none;
+              color: $white;
+            }
+
+            a:hover {
+              text-decoration: none;
+              color: $white;
+            }
+
+            a:visited {
+              text-decoration: none;
+              color: $white;
+            }
+
+            a:active {
+              text-decoration: none;
+              color: $white;
+            }
+          }
+        }
+
+        .advancedSearch {
+          position: absolute;
+          bottom: 100px;
+          right: 128px;
+          font-family: $SS-700Bold;
+          font-size: 14px;
+          color: $blackLikeHell;
+
+          a:link {
+            text-decoration: none;
+            color: $blackLikeHell;
+          }
+
+          a:hover {
+            text-decoration: none;
+            color: $blackLikeHell;
+          }
+
+          a:visited {
+            text-decoration: none;
+            color: $blackLikeHell;
+          }
+
+          a:active {
+            text-decoration: none;
+            color: $blackLikeHell;
+          }
+        }
+      }
+
+      .bottomPromoIcons {
+        border-radius: 0 0 5px 5px;
+        background-color: $white;
+        position: absolute;
+        bottom: 0;
+        height: 66px;
+        width: 100%;
+        font-family: $SS-400Regular;
+        font-size: 12px;
+        z-index: 2;
+
+        .bottomPromoIconsContent {
+          padding-top: 12px;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+
+          .centerAlignment {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+      }
+    }
+  }
+}
+
+.reviews {
+  height: 520px;
+  width: 100%;
+
+  .box {
+    position: relative;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+
+    h2 {
+      font-size: 36px;
+      font-family: $SS-700Bold;
+    }
+  }
+
+  .cloud {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    .firstCloud {
+      background-image: url("../images/icon/dymek_przezroczysty.png");
+      width: 388px;
+      height: 175px;
+      margin-right: 18px;
+
+    }
+    .secondCloud {
+      background-image: url("../images/icon/dymek_przezroczysty.png");
+      width: 388px;
+      height: 175px;
+      margin-right: 18px;
+
+    }
+    .thirdCloud {
+      background-image: url("../images/icon/dymek_przezroczysty.png");
+      width: 388px;
+      height: 175px;
+    }
+  }
+
+
+  .ratingComments {
+
+    .footerRatingComments {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+
+      .firstCustomer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        span {
+          position: relative;
+          right: 40px;
+        }
+
+        img {
+          position: relative;
+          left: 55px;
+        }
+      }
+
+      .secondCustomer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        span {
+          position: relative;
+          right: 145px;
+        }
+
+        img {
+          position: relative;
+          right: 35px;
+        }
+
+      }
+
+      .thirdCustomer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        span {
+          position: relative;
+          right: 200px;
+        }
+
+        img {
+          position: relative;
+          right: 100px;
+        }
+
+      }
+
+      span {
+        font-size: 14px;
+        font-family: $SS-400Regular;
+      }
+    }
+  }
+
+
+  .ratingBox {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    .box2{
+      display: flex;
+      flex-direction: row;
+      align-content: center;
+      align-items: center;
+
+      .rating {
+        padding-right: 25px;
+
+        .upperFontRating {
+          font-size: 58px;
+          font-family: $SS-700Bold;
+        }
+        .lowerFontRating {
+          font-size: 58px;
+          font-family: $SS-300Light;
+        }
+      }
+
+      .average {
+        font-size: 21px;
+        font-family: $SS-700Bold;
+        padding-right: 42px;
+        line-height: 10px;
+
+        a:link{
+          text-decoration: none;
+          color: $opineoCeneo;
+        }
+        a:hover{
+          text-decoration: none;
+          color: $opineoCeneo;
+        }
+        a:visited{
+          text-decoration: none;
+          color: $opineoCeneo;
+        }
+        a:active{
+          text-decoration: none;
+          color: $opineoCeneo;
+        }
+      }
+
+      .buttonRating{
+
+        .btnRating{
+          width: 305px;
+          height: 50px;
+          border: none;
+          color: $white;
+          background-color: $blackLikeHell;
+          cursor: pointer;
+          border-radius: 5px;
+          font-size: 14px;
+          font-family: $SS-700Bold;
+
+          a:link {
+            text-decoration: none;
+            color: $white;
+          }
+          a:hover {
+            text-decoration: none;
+            color: $white;
+          }
+          a:visited {
+            text-decoration: none;
+            color: $white;
+          }
+          a:active {
+            text-decoration: none;
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+}
+
+.shop {
+  height: 1330px;
+  width: 100%;
+  background-color: $shopBackgroundColor;
+
+  .shopContent {
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+}
+
+
+.headerFirms {
+  height: 405px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: $white;
+
+  .textFirms {
+    line-height: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    h2 {
+      font-size: 36px;
+      font-family: $SS-700Bold;
+      padding-top: 25px;
+    }
+
+    p {
+      font-size: 14px;
+      font-family: $SS-400Regular;
+      line-height: 1px;
+      a {
+
+        span {
+
+        }
+      }
+
+      a:link {
+        text-decoration: underline;
+        text-decoration-color: $podkreslnik;
+        color: $blackLikeHell;
+        span {
+          color: $orangeButton;
+        }
+      }
+      a:hover{
+        text-decoration: underline;
+        text-decoration-color: $podkreslnik;
+        color: $blackLikeHell;
+        span {
+          color: $orangeButton;
+        }
+      }
+      a:visited{
+        text-decoration: underline;
+        text-decoration-color: $podkreslnik;
+        color: $blackLikeHell;
+        span {
+          color: $orangeButton;
+        }
+      }
+      a:active{
+        text-decoration: underline;
+        text-decoration-color: $podkreslnik;
+        color: $blackLikeHell;
+        span {
+          color: $orangeButton;
+        }
+      }
+
+    }
+  }
+
+  .logoFirms{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
+    }
+
+    .growImage {
+      transition: all .2s ease-in-out;
+      cursor: pointer;
+    }
+
+    .growImage:hover {
+      transform: scale(1.2);
+    }
+  }
+}
+
+.experts {
+  height: 970px;
+  max-width: 1440px;
+  background-color: $grey;
+
+  .expertsContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    .expertsText {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 20px;
+
+      .pHeader {
+        font-size: 36px;
+        font-family: $SS-700Bold;
+        margin: 0;
+        padding-top: 25px;
+      }
+
+      p {
+        font-size: 14px;
+        font-family: $SS-400Regular;
+        margin: 0;
+
+        a:link {
+          text-decoration:underline;
+          color: $blackLikeHell;
+          text-decoration-color: $podkreslnik;
+        }
+        a:hover {
+          text-decoration:underline;
+          color: $blackLikeHell;
+          text-decoration-color: $podkreslnik;
+        }
+        a:visited {
+          text-decoration:underline;
+          color: $blackLikeHell;
+          text-decoration-color: $podkreslnik;
+        }
+        a:active {
+          text-decoration:underline;
+          color: $blackLikeHell;
+          text-decoration-color: $podkreslnik;
+        }
+
+        span {
+          color: $orangeButton;
+        }
+      }
+    }
+
+    /* .parent {
+      display: grid;
+      grid-template-columns: repeat(3, 32%);
+      grid-template-rows: repeat(2, 385px);
+      grid-column-gap: 20px;
+
+      .responsive {
+        width: 100%;
+        height: auto;
+      }
+
+      .div1 {
+        grid-area: 1 / 1 / 3 / 2;
+        grid-row: 1 /span 2;
+        max-height: 780px;
+
+        .imgPlacementText {
+          position: relative;
+          text-align: center;
+          color: $white;
+
+          .topPlacement {
+            position: absolute;
+            top: 0;
+            left: 18px;
+            font-family: $SS-400Regular;
+            font-size: 16px;
+            background-color: $blackLikeHell;
+            padding: 2px 10px 2px 10px;
+          }
+
+          .bottomPlacement {
+            position: absolute;
+            bottom: 0;
+            left: 9px;
+            font-family: $SS-400Regular;
+            font-size: 24px;
+            text-align: left;
+            padding: 2px 10px 2px 10px;
+
+            span {
+              background-color: $blackLikeHell;
+              padding: 2px 10px 2px 10px;
+            }
+          }
+        }
+
+        .textArticle {
+          margin: 0;
+          background-color: $white;
+          padding: 0 20px 20px 20px;
+          max-height: 280px;
+          overflow: hidden;
+          font-family: $SS-400Regular;
+          font-size: 14px;
+          letter-spacing: 0.01rem;
+        }
+
+        .linkArticle {
+          border-top: 1px solid $blackLikeHell;
+          text-align: center;
+          padding: 5px 10px 5px 10px;
+
+          a {
+            text-decoration: none;
+            color: $blackLikeHell;
+            span {
+              color: $orangeButton;
+            }
+          }
+        }
+      }
+
+      .div2 {
+        grid-area: 1 / 2 / 2 / 3;
+
+
+      }
+
+      .div3 {
+        grid-area: 2 / 2 / 3 / 3;
+
+
+      }
+
+      .div4 {
+        grid-area: 1 / 3 / 2 / 4;
+
+
+      }
+
+      .div5 {
+        grid-area: 2 / 3 / 3 / 4;
+
+
+      }
+    } */
+
+
+    .parent {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 1fr;
+      grid-column-gap: 20px;
+      margin-top: 20px;
+    }
+
+    .div1 {
+      grid-area: 1 / 1 / 2 / 2;
+      max-height: 780px;
+
+      .cardBig {
+        background-color: $white;
+        width: 100%;
+        border-radius: 10px;
+
+        .imagePlacement {
+          position: relative;
+          text-align: center;
+          color: $white;
+
+          .responsive {
+            width: 100%;
+            height: auto;
+            border-radius: 10px 10px 0 0 ;
+          }
+
+          .topPlacement {
+            position: absolute;
+            top: 9px;
+            left: 21px;
+            font-size: 14px;
+            font-family: $SS-400Regular;
+            background-color: $blackLikeHell;
+            padding: 0 10px;
+          }
+
+          .bottomPlacement {
+            position: absolute;
+            bottom: 21px;
+            left: 21px;
+            font-size: 24px;
+            font-family: $SS-400Regular;
+            text-align: left;
+
+            p {
+              line-height: 10px;
+              span {
+                padding: 0 10px;
+                background-color: $blackLikeHell;
+              }
+            }
+          }
+
+        }
+
+        .textArticle {
+          font-size: 14px;
+          font-family: $SS-400Regular;
+          letter-spacing: 0.01rem;
+          max-height: 300px;
+          overflow: hidden;
+          padding: 0 25px;
+        }
+
+        .linkArticle {
+          width: 90%;
+          margin: 0 auto;
+          border-top: 1px solid $grey;
+          padding: 15px 0;
+          font-size: 14px;
+          font-family: $SS-400Regular;
+          letter-spacing: 0.01rem;
+          text-align: center;
+
+          a {
+            text-decoration: none;
+            color: $blackLikeHell;
+
+            span {
+              color: $orangeButton;
+            }
+          }
+        }
+      }
+
+    }
+    .div2 {
+      grid-area: 1 / 2 / 2 / 3;
+      max-height: 780px;
+
+      .card {
+        max-height: 370px;
+        width: 100%;
+        border-radius: 10px;
+        background-color: $white;
+        margin-bottom: 25px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        img {
+          width: 100%;
+          height: auto;
+          border-radius: 10px 10px 0 0 ;
+        }
+
+        .upperTextG {
+          font-size: 14px;
+          font-family: $SS-400Regular;
+          padding: 0 20px;
+          line-height: 15px;
+        }
+
+        .bottomTextG {
+          width: 90%;
+          margin: 0 auto;
+          border-top: 1px solid $grey;
+          padding: 15px 0;
+          font-size: 14px;
+          font-family: $SS-400Regular;
+          letter-spacing: 0.01rem;
+          text-align: center;
+
+          a {
+            text-decoration: none;
+            color: $blackLikeHell;
+
+            span {
+              color: $orangeButton;
+            }
+          }
+        }
+      }
+    }
+    .div3 {
+      grid-area: 1 / 3 / 2 / 4;
+      max-height: 780px;
+
+      .card {
+        max-height: 370px;
+        width: 100%;
+        border-radius: 10px;
+        background-color: $white;
+        margin-bottom: 25px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        img {
+          width: 100%;
+          height: auto;
+          border-radius: 10px 10px 0 0 ;
+        }
+
+        .upperTextG {
+          font-size: 14px;
+          font-family: $SS-400Regular;
+          padding: 0 20px;
+          line-height: 15px;
+        }
+
+        .bottomTextG {
+          width: 90%;
+          margin: 0 auto;
+          border-top: 1px solid $grey;
+          padding: 15px 0;
+          font-size: 14px;
+          font-family: $SS-400Regular;
+          letter-spacing: 0.01rem;
+          text-align: center;
+
+          a {
+            text-decoration: none;
+            color: $blackLikeHell;
+
+            span {
+              color: $orangeButton;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.tiresForCarSearch {
+  height: 680px;
+  max-width: 1440px;
+  width: 100%;
+  background-color: $white;
+
+  .searchSection {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .parent {
+      display: grid;
+      grid-template-columns: 160px 1fr 1fr 1fr 140px 1fr 140px 1fr 140px;
+      grid-template-rows: 20px 70px 20px 100px 20px 100px;
+      grid-column-gap: 0;
+      grid-row-gap: 40px;
+      margin-bottom: 30px;
+
+      .div1 {
+        grid-area: 1 / 1 / 2 / 4;
+        p {
+          font-size: 14px;
+          font-family: $SS-700Bold;
+          color: $orangeButton;
+        }
+      }
+      .div2 {
+        grid-area: 2 / 1 / 3 / 2;
+        p {
+          font-size: 12px;
+          font-family: $SS-400Regular;
+          color: $blackLikeHell;
+          margin: 0;
+          padding-bottom: 8px;
+
+          a:link{
+            text-decoration: none;
+            color: $blackLikeHell;
+          }
+          a:hover{
+            text-decoration: underline;
+            text-decoration-color: $orangeButton;
+            color: $blackLikeHell;
+          }
+          a:visited{
+            text-decoration: none;
+            text-decoration-color: $orangeButton;
+            color: $blackLikeHell;
+          }
+          a:active{
+            text-decoration: none;
+            text-decoration-color: $orangeButton;
+            color: $blackLikeHell;
+          }
+          span {
+            color: $orangeButton;
+          }
+        }
+      }
+      .div3 {
+        grid-area: 2 / 3 / 3 / 4;
+        p {
+          font-size: 12px;
+          font-family: $SS-400Regular;
+          color: $blackLikeHell;
+          margin: 0;
+          padding-bottom: 8px;
+
+          a:link{
+            text-decoration: none;
+            color: $blackLikeHell;
+          }
+          a:hover{
+            text-decoration: underline;
+            text-decoration-color: $orangeButton;
+            color: $blackLikeHell;
+          }
+          a:visited{
+            text-decoration: none;
+            text-decoration-color: $orangeButton;
+            color: $blackLikeHell;
+          }
+          a:active{
+            text-decoration: none;
+            color: $blackLikeHell;
+          }
+          span {
+            color: $orangeButton;
+          }
+        }
+      }
+      .div4 {
+        grid-area: 1 / 5 / 2 / 7;
+        p {
+          font-size: 14px;
+          font-family: $SS-700Bold;
+          color: $orangeButton;
+        }
+      }
+      .div5 {
+        grid-area: 2 / 5 / 3 / 6;
+        p {
+          font-size: 12px;
+          font-family: $SS-400Regular;
+          color: $blackLikeHell;
+          margin: 0;
+          padding-bottom: 8px;
+
+          a:link{
+            text-decoration: none;
+            color: $blackLikeHell;
+          }
+          a:hover{
+            text-decoration: underline;
+            text-decoration-color: $orangeButton;
+            color: $blackLikeHell;
+          }
+          a:visited{
+            text-decoration: none;
+            text-decoration-color: $orangeButton;
+            color: $blackLikeHell;
+          }
+          a:active{
+            text-decoration: none;
+            color: $blackLikeHell;
+          }
+          span {
+            color: $orangeButton;
+          }
+        }
+      }
+      .div6 {
+        grid-area: 1 / 7 / 2 / 9;
+        p {
+          font-size: 14px;
+          font-family: $SS-700Bold;
+          color: $orangeButton;
+        }
+      }
+      .div7 {
+        grid-area: 2 / 7 / 3 / 8;
+        p {
+          font-size: 12px;
+          font-family: $SS-400Regular;
+          color: $blackLikeHell;
+          margin: 0;
+          padding-bottom: 8px;
+
+          a:link{
+            text-decoration: none;
+            color: $blackLikeHell;
+          }
+          a:hover{
+            text-decoration: underline;
+            text-decoration-color: $orangeButton;
+            color: $blackLikeHell;
+          }
+          a:visited{
+            text-decoration: none;
+            text-decoration-color: $orangeButton;
+            color: $blackLikeHell;
+          }
+          a:active{
+            text-decoration: none;
+            color: $blackLikeHell;
+          }
+          span {
+            color: $orangeButton;
+          }
+        }
+      }
+      .div8 {
+        grid-area: 2 / 9 / 3 / 10;
+        p {
+          font-size: 12px;
+          font-family: $SS-400Regular;
+          color: $blackLikeHell;
+          margin: 0;
+          padding-bottom: 8px;
+
+          a:link{
+            text-decoration: none;
+            color: $blackLikeHell;
+          }
+          a:hover{
+            text-decoration: underline;
+            text-decoration-color: $orangeButton;
+            color: $blackLikeHell;
+          }
+          a:visited{
+            text-decoration: none;
+            text-decoration-color: $orangeButton;
+            color: $blackLikeHell;
+          }
+          a:active{
+            text-decoration: none;
+            color: $blackLikeHell;
+          }
+          span {
+            color: $orangeButton;
+          }
+        }
+      }
+      .div9 {
+        grid-area: 3 / 1 / 4 / 4;
+        p {
+          font-size: 14px;
+          font-family: $SS-700Bold;
+          color: $orangeButton;
+        }
+      }
+      .div10 {
+        grid-area: 4 / 1 / 5 / 2;
+        p {
+          font-size: 12px;
+          font-family: $SS-400Regular;
+          color: $blackLikeHell;
+          margin: 0;
+          padding-bottom: 8px;
+
+          a:link{
+            text-decoration: none;
+            color: $blackLikeHell;
+          }
+          a:hover{
+            text-decoration: underline;
+            text-decoration-color: $orangeButton;
+            color: $blackLikeHell;
+          }
+          a:visited{
+            text-decoration: none;
+            text-decoration-color: $orangeButton;
+            color: $blackLikeHell;
+          }
+          a:active{
+            text-decoration: none;
+            color: $blackLikeHell;
+          }
+          span {
+            color: $orangeButton;
+          }
+        }
+      }
+      .div11 {
+        grid-area: 4 / 3 / 5 / 4;
+        p {
+          font-size: 12px;
+          font-family: $SS-400Regular;
+          color: $blackLikeHell;
+          margin: 0;
+          padding-bottom: 8px;
+
+          a:link{
+            text-decoration: none;
+            color: $blackLikeHell;
+          }
+          a:hover{
+            text-decoration: underline;
+            text-decoration-color: $orangeButton;
+            color: $blackLikeHell;
+          }
+          a:visited{
+            text-decoration: none;
+            text-decoration-color: $orangeButton;
+            color: $blackLikeHell;
+          }
+          a:active{
+            text-decoration: none;
+            color: $blackLikeHell;
+          }
+          span {
+            color: $orangeButton;
+          }
+        }
+      }
+      .div12 {
+        grid-area: 4 / 5 / 5 / 6;
+        p {
+          font-size: 12px;
+          font-family: $SS-400Regular;
+          color: $blackLikeHell;
+          margin: 0;
+          padding-bottom: 8px;
+
+          a:link{
+            text-decoration: none;
+            color: $blackLikeHell;
+          }
+          a:hover{
+            text-decoration: underline;
+            text-decoration-color: $orangeButton;
+            color: $blackLikeHell;
+          }
+          a:visited{
+            text-decoration: none;
+            text-decoration-color: $orangeButton;
+            color: $blackLikeHell;
+          }
+          a:active{
+            text-decoration: none;
+            color: $blackLikeHell;
+          }
+          span {
+            color: $orangeButton;
+          }
+        }
+      }
+      .div13 {
+        grid-area: 4 / 7 / 5 / 8;
+        p {
+          font-size: 12px;
+          font-family: $SS-400Regular;
+          color: $blackLikeHell;
+          margin: 0;
+          padding-bottom: 8px;
+
+          a:link{
+            text-decoration: none;
+            color: $blackLikeHell;
+          }
+          a:hover{
+            text-decoration: underline;
+            text-decoration-color: $orangeButton;
+            color: $blackLikeHell;
+          }
+          a:visited{
+            text-decoration: none;
+            text-decoration-color: $orangeButton;
+            color: $blackLikeHell;
+          }
+          a:active{
+            text-decoration: none;
+            color: $blackLikeHell;
+          }
+          span {
+            color: $orangeButton;
+          }
+        }
+      }
+      .div14 {
+        grid-area: 4 / 9 / 5 / 10;
+        p {
+          font-size: 12px;
+          font-family: $SS-400Regular;
+          color: $blackLikeHell;
+          margin: 0;
+          padding-bottom: 8px;
+
+          a:link{
+            text-decoration: none;
+            color: $blackLikeHell;
+          }
+          a:hover{
+            text-decoration: underline;
+            text-decoration-color: $orangeButton;
+            color: $blackLikeHell;
+          }
+          a:visited{
+            text-decoration: none;
+            text-decoration-color: $orangeButton;
+            color: $blackLikeHell;
+          }
+          a:active{
+            text-decoration: none;
+            color: $blackLikeHell;
+          }
+          span {
+            color: $orangeButton;
+          }
+        }
+      }
+      .div15 {
+        grid-area: 5 / 1 / 6 / 4;
+        p {
+          font-size: 14px;
+          font-family: $SS-700Bold;
+          color: $orangeButton;
+        }
+      }
+      .div16 {
+        grid-area: 6 / 1 / 7 / 2;
+        p {
+          font-size: 12px;
+          font-family: $SS-400Regular;
+          color: $blackLikeHell;
+          margin: 0;
+          padding-bottom: 8px;
+
+          a:link{
+            text-decoration: none;
+            color: $blackLikeHell;
+          }
+          a:hover{
+            text-decoration: underline;
+            text-decoration-color: $orangeButton;
+            color: $blackLikeHell;
+          }
+          a:visited{
+            text-decoration: none;
+            text-decoration-color: $orangeButton;
+            color: $blackLikeHell;
+          }
+          a:active{
+            text-decoration: none;
+            color: $blackLikeHell;
+          }
+          span {
+            color: $orangeButton;
+          }
+        }
+      }
+      .div17 {
+        grid-area: 6 / 3 / 7 / 4;
+        p{
+          font-size: 12px;
+          font-family: $SS-400Regular;
+          color: $blackLikeHell;
+          margin: 0;
+          padding-bottom: 8px;
+
+          a:link{
+            text-decoration: none;
+            color: $blackLikeHell;
+          }
+          a:hover{
+            text-decoration: underline;
+            text-decoration-color: $orangeButton;
+            color: $blackLikeHell;
+          }
+          a:visited{
+            text-decoration: none;
+            text-decoration-color: $orangeButton;
+            color: $blackLikeHell;
+          }
+          a:active{
+            text-decoration: none;
+            color: $blackLikeHell;
+          }
+          span {
+            color: $orangeButton;
+          }
+        }
+      }
+      .div18 {
+        grid-area: 6 / 5 / 7 / 6;
+        p {
+          font-size: 12px;
+          font-family: $SS-400Regular;
+          color: $blackLikeHell;
+          margin: 0;
+          padding-bottom: 8px;
+
+          a:link{
+            text-decoration: none;
+            color: $blackLikeHell;
+          }
+          a:hover{
+            text-decoration: underline;
+            text-decoration-color: $orangeButton;
+            color: $blackLikeHell;
+          }
+          a:visited{
+            text-decoration: none;
+            text-decoration-color: $orangeButton;
+            color: $blackLikeHell;
+          }
+          a:active{
+            text-decoration: none;
+            color: $blackLikeHell;
+          }
+          span {
+            color: $orangeButton;
+          }
+        }
+      }
+      .div19 {
+        grid-area: 6 / 7 / 7 / 8;
+
+        p {
+          font-size: 12px;
+          font-family: $SS-400Regular;
+          color: $blackLikeHell;
+          margin: 0;
+          padding-bottom: 8px;
+
+          a:link{
+            text-decoration: none;
+            color: $blackLikeHell;
+          }
+          a:hover{
+            text-decoration: underline;
+            text-decoration-color: $orangeButton;
+            color: $blackLikeHell;
+          }
+          a:visited{
+            text-decoration: none;
+            text-decoration-color: $orangeButton;
+            color: $blackLikeHell;
+          }
+          a:active{
+            text-decoration: none;
+            text-decoration-color: $orangeButton;
+            color: $blackLikeHell;
+          }
+          span {
+            color: $orangeButton;
+          }
+        }
+      }
+      .div20 {
+        grid-area: 6 / 9 / 7 / 10;
+        p {
+          font-size: 12px;
+          font-family: $SS-400Regular;
+          color: $blackLikeHell;
+          margin: 0;
+          padding-bottom: 8px;
+
+          a:link{
+            text-decoration: none;
+            text-decoration-color: $orangeButton;
+            color: $blackLikeHell;
+          }
+          a:hover{
+            text-decoration: underline;
+            text-decoration-color: $orangeButton;
+            color: $blackLikeHell;
+          }
+          a:visited{
+            text-decoration: none;
+            text-decoration-color: $orangeButton;
+            color: $blackLikeHell;
+          }
+          a:active{
+            text-decoration: none;
+            text-decoration-color: $orangeButton;
+            color: $blackLikeHell;
+          }
+          span {
+            color: $orangeButton;
+          }
+        }
+      }
+    }
+    .informationText {
+      font-size: 10px;
+      font-family: $SS-400Regular;
+      margin-top: 10px;
+      line-height: 14px;
+      letter-spacing: 0.01rem;
+
+      a:link {
+        text-decoration: none;
+        color: $hyperlinks;
+      }
+
+      a:hover {
+        text-decoration: none;
+        color: $hyperlinks;
+      }
+
+      a:visited {
+        text-decoration: none;
+        color: $hyperlinks;
+      }
+
+      a:active {
+        text-decoration: none;
+        color: $hyperlinks;
+      }
+    }
+  }
+}
+
+.footerContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: $grey;
+  border-radius: 10px;
+
+  .parent {
+    padding: 20px 20px 20px 20px;
+    display: grid;
+    grid-template-columns: 340px 180px 190px 75px 110px 95px 160px;
+    grid-template-rows: 275px;
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+
+    .div1 {
+      grid-area: 1 / 1 / 2 / 2;
+      margin: 10px 0 0 10px;
+      padding: 0;
+
+      .greyContent {
+        color: $greyFooter;
+      }
+      .firstParagraph {
+        font-size: 14px;
+        font-family: $SS-700Bold;
+        color: $orangeButton;
+      }
+
+      p {
+        font-size: 12px;
+        font-family: $SS-400Regular;
+        color: $blackLikeHell;
+        line-height: 4px;
+
+        a:link{
+          text-decoration: none;
+          color: $blackLikeHell;
+        }
+        a:hover{
+          text-decoration: underline;
+          color: $blackLikeHell;
+        }
+        a:visited{
+          text-decoration: none;
+          color: $blackLikeHell;
+        }
+        a:active{
+          text-decoration: none;
+          color: $blackLikeHell;
+        }
+
+        span {
+          color: $orangeButton;
+        }
+
+      }
+
+
+    }
+    .div2 {
+      grid-area: 1 / 3 / 2 / 4;
+
+      .firstParagraph {
+        font-size: 14px;
+        font-family: $SS-700Bold;
+        color: $orangeButton;
+        margin-bottom: 25px;
+      }
+
+      p {
+        font-size: 12px;
+        font-family: $SS-400Regular;
+        color: $blackLikeHell;
+
+        a:link{
+          text-decoration: none;
+          text-decoration-color: $orangeButton;
+          color: $blackLikeHell;
+        }
+        a:hover{
+          text-decoration: underline;
+          text-decoration-color: $orangeButton;
+        }
+        a:visited{
+          text-decoration: none;
+          text-decoration-color: $orangeButton;
+          color: $blackLikeHell;
+        }
+        a:active{
+          text-decoration: none;
+          text-decoration-color: $orangeButton;
+          color: $blackLikeHell;
+        }
+
+        span {
+          color: $orangeButton;
+        }
+      }
+
+
+    }
+    .div3 {
+      grid-area: 1 / 5 / 2 / 6;
+
+      .firstParagraph {
+        font-size: 14px;
+        font-family: $SS-700Bold;
+        color: $orangeButton;
+        margin-bottom: 25px;
+      }
+
+      p {
+        font-size: 12px;
+        font-family: $SS-400Regular;
+        color: $blackLikeHell;
+
+        a:link{
+          text-decoration: none;
+          text-decoration-color: $orangeButton;
+          color: $blackLikeHell;
+        }
+        a:hover{
+          text-decoration: underline;
+          text-decoration-color: $orangeButton;
+          color: $blackLikeHell;
+        }
+        a:visited{
+          text-decoration: none;
+          text-decoration-color: $orangeButton;
+          color: $blackLikeHell;
+        }
+        a:active{
+          text-decoration: none;
+          text-decoration-color: $orangeButton;
+          color: $blackLikeHell;
+        }
+
+        span {
+          color: $orangeButton;
+        }
+      }
+
+    }
+    .div4 {
+      grid-area: 1 / 7 / 2 / 8;
+
+      .firstParagraph {
+        font-size: 14px;
+        font-family: $SS-700Bold;
+        color: $orangeButton;
+        margin-bottom: 25px;
+      }
+
+      p {
+        font-size: 12px;
+        font-family: $SS-400Regular;
+        color: $blackLikeHell;
+
+        a:link{
+          text-decoration: none;
+          text-decoration-color: $orangeButton;
+          color: $blackLikeHell;
+        }
+        a:hover{
+          text-decoration: underline;
+          text-decoration-color: $orangeButton;
+          color: $blackLikeHell;
+        }
+        a:visited{
+          text-decoration: none;
+          text-decoration-color: $orangeButton;
+          color: $blackLikeHell;
+        }
+        a:active{
+          text-decoration: none;
+          text-decoration-color: $orangeButton;
+          color: $blackLikeHell;
+        }
+
+        span {
+          color: $orangeButton;
+        }
+      }
+
+
+      .icons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 60px;
+      }
+    }
+  }
+}

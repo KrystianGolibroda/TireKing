@@ -1,0 +1,130 @@
+@font-face {
+  font-family: 'SinkinSans-400Regular';
+  src: url("../fonts/SinkinSans-400Regular.ttf");
+}
+
+@font-face {
+  font-family: 'SinkinSans-700Bold';
+  src: url("../fonts/SinkinSans-700Bold.ttf");
+}
+
+@font-face {
+  font-family: 'SinkinSans-700BoldItalic';
+  src: url("../fonts/SinkinSans-700BoldItalic.ttf");
+}
+
+@font-face {
+  font-family: 'SinkinSans-500Medium';
+  src: url("../fonts/SinkinSans-500Medium.ttf");
+}
+
+@font-face {
+  font-family: 'Gotham-BoldItalic';
+  src: url("../fonts/Gotham-BoldItalic.ttf");
+}
+
+@font-face {
+  font-family: 'SinkinSans-600SemiBold';
+  src: url("../fonts/SinkinSans-600SemiBold.ttf");
+}
+
+@font-face {
+  font-family: 'SinkinSans-300Light';
+  src: url("../fonts/SinkinSans-300Light.ttf");
+}
+
+$SS-400Regular: 'SinkinSans-400Regular', sans-serif;
+$SS-700Bold: 'SinkinSans-700Bold', sans-serif;
+$SS-700BoldItalic: 'SinkinSans-700BoldItalic', sans-serif;
+$SS-500Medium: 'SinkinSans-500Medium', sans-serif;
+$Gotham-BoldItalic: 'Gotham-BoldItalic', sans-serif;
+$SS-600SemiBold: 'SinkinSans-600SemiBold', sans-serif;
+$SS-300Light: 'SinkinSans-300Light', sans-serif;
+
+
+$grey: #f0f0f0;
+$white: #ffffff;
+$fontMenu: #221d24;
+$michelinButton: #264f9a;
+$darkerGrey: #808080;
+$greyFooter: #999999;
+$carContainer: #f8f8f8;
+$blackLikeHell: #000000;
+$orangeButton: #ff6300;
+$carInActiveContainer: #e2e2e2;
+$wyszukiwarkaKolorSSzP: #929292;
+$selectBorder: #dbdbdb;
+$opineoCeneo: #666666;
+$mobileFooter: #818181;
+$shopBackgroundColor: #f1f1f1;
+$podkreslnik: #d9d9d9;
+$hyperlinks: #4b95db;
+$bestseller: #6398d3;
+$price: #333333;
+$cookies: #9cb6d2;
+
+.cookie-bar {
+  display: flex;
+  position: fixed;
+  align-items: center;
+  z-index: 9999;
+  width: 100%;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 50px;
+  text-align: center;
+  line-height: 30px;
+  background-color: $cookies;
+  color: $blackLikeHell;
+  font-size: 11px;
+  font-family: $SS-400Regular;
+  animation: slideIn 500ms;
+
+  .message {
+    white-space: nowrap;
+    @media (max-width: 767px){
+      display: none;
+    }
+  }
+  .mobile {
+    display: none;
+    @media (max-width: 767px){
+      display: inline-block;
+    }
+  }
+}
+@keyframes slideIn {
+  from {
+    bottom: 0;
+  }
+  to {
+    bottom: -50px;
+  }
+}
+.close-cb {
+  border: none;
+  color: $blackLikeHell;
+  position: absolute;
+  display: inline-block;
+  right: 0;
+  top: 10px;
+  cursor: pointer;
+  line-height: 30px;
+  height: 30px;
+  width: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  &:hover {
+
+  }
+}
+.checkbox-cb {
+  display: none;
+  &:checked + .cookie-bar {
+    transform: translateY(50px);
+  }
+}
+a {
+  color: rgb(92, 242, 255);;
+}

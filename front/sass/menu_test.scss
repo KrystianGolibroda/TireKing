@@ -1,0 +1,384 @@
+@font-face {
+  font-family: 'SinkinSans-400Regular';
+  src: url("../fonts/SinkinSans-400Regular.ttf");
+}
+
+@font-face {
+  font-family: 'SinkinSans-700Bold';
+  src: url("../fonts/SinkinSans-700Bold.ttf");
+}
+
+@font-face {
+  font-family: 'SinkinSans-700BoldItalic';
+  src: url("../fonts/SinkinSans-700BoldItalic.ttf");
+}
+
+@font-face {
+  font-family: 'SinkinSans-500Medium';
+  src: url("../fonts/SinkinSans-500Medium.ttf");
+}
+
+@font-face {
+  font-family: 'Gotham-BoldItalic';
+  src: url("../fonts/Gotham-BoldItalic.ttf");
+}
+
+@font-face {
+  font-family: 'SinkinSans-600SemiBold';
+  src: url("../fonts/SinkinSans-600SemiBold.ttf");
+}
+
+@font-face {
+  font-family: 'SinkinSans-300Light';
+  src: url("../fonts/SinkinSans-300Light.ttf");
+}
+
+$SS-400Regular: 'SinkinSans-400Regular', sans-serif;
+$SS-700Bold: 'SinkinSans-700Bold', sans-serif;
+$SS-700BoldItalic: 'SinkinSans-700BoldItalic', sans-serif;
+$SS-500Medium: 'SinkinSans-500Medium', sans-serif;
+$Gotham-BoldItalic: 'Gotham-BoldItalic', sans-serif;
+$SS-600SemiBold: 'SinkinSans-600SemiBold', sans-serif;
+$SS-300Light: 'SinkinSans-300Light', sans-serif;
+
+
+$grey: #f0f0f0;
+$white: #ffffff;
+$fontMenu: #221d24;
+$michelinButton: #264f9a;
+$darkerGrey: #808080;
+$greyFooter: #999999;
+$carContainer: #f8f8f8;
+$blackLikeHell: #000000;
+$orangeButton: #ff6300;
+$carInActiveContainer: #e2e2e2;
+$wyszukiwarkaKolorSSzP: #929292;
+$selectBorder: #dbdbdb;
+$opineoCeneo: #666666;
+$shopBackgroundColor: #f1f1f1;
+$podkreslnik: #d9d9d9;
+$hyperlinks: #4b95db;
+$bestseller: #6398d3;
+$price: #333333;
+
+header {
+  //border-bottom: 1px solid $opineoCeneo;
+  box-shadow: 0 0 10px 0 $opineoCeneo;
+  margin: 0 auto;
+  background-color: $grey;
+}
+
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.row:before,
+.row:after {
+  content: "";
+  display: table;
+  clear: both
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: $SS-400Regular;
+}
+
+.wrap {
+  box-sizing: border-box;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container-fluid {
+  padding-right: 1rem !important;
+  padding-left: 1rem !important;
+}
+
+
+a,
+a:hover{
+  text-decoration: none;
+}
+
+#top-nav{
+  min-height: 50px;
+}
+
+#top-nav ul{
+  font-size: 18px;
+  font-family: $SS-700Bold;
+  margin: 0 auto;
+  padding: 0;
+  background-color: $white;
+  list-style: none;
+  //box-shadow: 0 0 10px 0 $opineoCeneo;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+#top-nav ul li{
+  color: $fontMenu;
+
+}
+
+#top-nav ul li a{
+  display: block;
+  color: $fontMenu;
+}
+#top-nav ul li a:hover{
+
+}
+#top-nav ul li ul {
+  display: none;
+}
+
+#top-nav ul li ul li {
+  padding: 8px 0 8px 0;
+  background: $white;
+  width: 250px;
+}
+
+#top-nav ul li ul li:hover {
+  background-color: $orangeButton;
+  color: $white;
+}
+
+
+/* Dropdown */
+li.dropdown {
+  position: relative;
+}
+ul.dropdown-menu{
+  position: absolute;
+  //min-width: 120px;
+  width: 300px;
+}
+ul.dropdown-menu li{
+  display: block !important;
+  white-space: nowrap;
+}
+
+/* Sub Dropdown */
+ul.dropdown-menu ul.dropdown-menu{
+  left: 100%;
+  top: 0;
+  background-color: #f00 !important;
+}
+
+/* Display none by Default */
+ul.dropdown-menu{
+  display: none;
+}
+
+
+/*
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  list-style-type: none;
+  background: $white;
+  position: relative;
+  font-size: 18px;
+  font-family: $SS-700Bold;
+}
+
+ul li {
+  display: flex;
+
+}
+
+ul li a {
+  color: $fontMenu;
+  text-decoration: none;
+  padding: 15px;
+  display: block;
+}
+
+ul li:hover {
+
+}
+
+ul ul {
+  position: absolute;
+  top: 70px;
+  height: 200px;
+  max-width: 250px;
+  display: none;
+  background: $grey;
+}
+
+ul ul li {
+  display: block;
+  background: $white;
+  text-align: left;
+  margin: 5px;
+}
+
+ul li ul li:hover {
+  background-color: $orangeButton;
+  color: $fontMenu;
+}
+
+ul li:hover ul {
+  display: block;
+}
+
+ul li i {
+  color: #292929;
+  float: right;
+  padding-left: 20px;
+}
+
+nav div {
+  background: $white;
+  color: $fontMenu;
+  font-size: 24px;
+  padding: 0.6em;
+  cursor: pointer;
+  display: none;
+}
+
+@media(max-width: 768px) {
+  nav div {
+    display: block;
+  }
+
+  ul {
+    display: none;
+    position: static;
+    background: #e3e3e3;
+  }
+
+  ul li {
+    display: block;
+  }
+
+  ul ul {
+    position: static;
+    background: #e3e3e3;
+  }
+}
+*/
+/*
+a {
+  text-decoration: none;
+}
+
+nav {
+  font-family: monospace;
+}
+
+ul {
+  background: darkorange;
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+li {
+  color: #fff;
+  background: darkorange;
+  display: block;
+  float: left;
+  padding: 1rem;
+  position: relative;
+  text-decoration: none;
+  transition-duration: 0.5s;
+}
+
+li a {
+  color: #fff;
+}
+
+li:hover {
+  background: red;
+  cursor: pointer;
+}
+
+ul li ul {
+  background: orange;
+  visibility: hidden;
+  opacity: 0;
+  min-width: 5rem;
+  position: absolute;
+  transition: all 0.5s ease;
+  margin-top: 1rem;
+  left: 0;
+  display: none;
+}
+
+ul li:hover > ul,
+ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+ul li ul li {
+  clear: both;
+  width: 100%;
+}
+
+nav {
+  background-color: $white;
+
+  .menuBottom {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+
+    .navList {
+      list-style-type: none;
+      padding: 15px 0 15px 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      height: 60px;
+      margin: 0;
+      position: relative;
+
+      li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+        font-family: $SS-700Bold;
+
+        a {
+          text-decoration: none;
+          color: $fontMenu;
+
+          .imgColor {
+            color: $fontMenu;
+          }
+        }
+      }
+    }
+  }
+}*/

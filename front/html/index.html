@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="PL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>TireKing</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+    <link rel="icon" href="../images/icon/favicon_tire.png" type="image/png">
+
+    <link rel="stylesheet" href="../sass/style.css" type="text/css">
+    <link rel="stylesheet" href="../slick/slick.css" type="text/css">
+    <link rel="stylesheet" href="../slick/slick-theme.css" type="text/css">
+    <link rel="stylesheet" href="../css/responsive-tabs.css" type="text/css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+    <link rel="stylesheet" href="fontawesome-stars.css">
+    <link rel="stylesheet" href="../js/jquery-bar-rating/dist/themes/css-stars.css">
+    <script src="../js/jQuery.js"></script>
+</head>
+<body>
+<!-- Cookies -->
+<input class="checkbox-cb" id="checkbox-cb" type="checkbox" />
+<div class="cookie-bar">
+    <span class="message">W celu poprawienia jakości usług korzystamy z plików cookies. Pozostając na stronie wyrażasz zgodę na wykorzystanie tej technologii.</span>
+    <span><a href=""><button></button></a></span>
+    <span class="mobile">Ta strona używa pliki cookies<a href="#">Zobacz więcej</a></span>
+    <label for="checkbox-cb" class="close-cb">x</label>
+</div>
+
+<!-- SlidePanel -->
+<div class="widget">
+    <a class="widget-btn" href="#">
+        <img class="widget-bubble" src="../images/icon/bubble_help_contact.png" height="26" width="29"/>
+        <p class="widget-text">Pomoc / Kontakt</p>
+        <img class="widget-mobile" src="../images/icon/mobile_help_contact.png" height="34" width="20"/>
+    </a>
+    <div class="widget-content">
+        <div class="panel">
+            <div class="content">
+                <div class="panelContent">
+                    <div class="textUp">
+                        <p class="upperCase">Witaj, w czym możemy Ci pomóc?</p>
+                        <p class="lowerCase">Nasi konsultanci są do Twojej dyspozycji.</p>
+                    </div>
+                    <div class="phoneNumbers">
+                        <p class="upperParagraphs">Wybór i zakup opon</p>
+                        <a class="aPhoneNr" href="tel:+48 12 376 09 30">tel. +48 12 376 09 30</a>
+                        <p class="upperParagraphs">Sprzedaż felg</p>
+                        <a class="aPhoneNr" href="tel:+48 12 234 12">tel. +48 12 234 12</a>
+                        <p class="informationInfolinia">Infolinia czynna codziennie od 8.00 do 18.00</p>
+                    </div>
+                    <p class="textPanel">Możesz też skorzystać z tematów Pomocy</p>
+                    <div class="iconsPanel">
+                        <div class="iconsPanelBox">
+                            <a class="columnAlign" href="">
+                                <img src="../images/icon/zwrot_panel.png" height="45" width="41"/>
+                                <p class="iconsPanelText">Procedura zwrotu i reklamacji</p>
+                            </a>
+                        </div>
+                        <div class="iconsPanelBox">
+                            <a class="columnAlign" href="">
+                                <img src="../images/icon/czas_dostarczenia_panel.png" height="45" width="24"/>
+                                <p class="iconsPanelText">Czas dostarczenia przesyłki</p>
+                            </a>
+                        </div>
+                        <div class="iconsPanelBox">
+                            <a class="columnAlign" href="">
+                                <img src="../images/icon/metody_platnosci_panel.png" height="45" width="44"/>
+                                <p class="iconsPanelText">Metody płatności</p>
+                            </a>
+                        </div>
+                        <div class="iconsPanelBox">
+                            <a class="columnAlign" href="">
+                                <img src="../images/icon/moje_konto_panel.png" height="45" width="36"/>
+                                <p class="iconsPanelText">Moje konto</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="iconsPanelFooter">
+                        <p class="textPanel" style="width: 100%;">lub po prostu napisz do nas</p>
+                        <p class="iconsPanelFooterLow">Odpowiadamy na pytania od 8.00 do 18.00</p>
+                    </div>
+                    <a class="buttonRef" href="#"><button class="formsButton">skorzystaj z formularza ></button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Menu -->
+<header id="sticker" class="">
+    <div class="container-fluid">
+        <div class="wrap">
+            <div class="menuTop">
+                <div class="mobileMenu" style="display: none;"></div>
+                <div class="topLeft">
+                        <p class="menuParagraphLeft"><a href="tel:12 376 09 30" title="Kliknij, aby uzyskać pomoc przez infolinię.">Infolinia 12 376 09 30</a></p>
+                        <p class="menuParagraphLeft"><a href="#" title="Sprawdź jaki status posiada Twoje zamówienie.">Status zamówienia</a></p>
+                </div>
+                <div class="topRight">
+                        <p class="menuParagraphRight"><a href="#" title="Zapraszamy do udziału w konkursach i do korzystania z promocji!">Konkursy i promocje</a></p>
+                        <p class="menuParagraphRight"><a href="#" title="Chętnie udzielimy Ci pomocy!">Pomoc</a></p>
+                        <p class="menuParagraphRight"><a href="#" title="Kliknij, aby przejść do ustawień swojego konta.">Moje konto</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="container-fluid">
+        <div class="wrap">
+            <div class="menuBottom">
+                <div id="top-nav">
+                    <ul class="">
+
+                        <li><a href="#"><img src="../images/logotireking.png" height="39" width="211"/></a></li>
+
+                        <li class="dropdown"><a href="#">Opony samochodowe <span><img src="../images/icon/angle_down.png" width="10" height="16"/></span> </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Opony zimowe</a></li>
+                                <li><a href="#">Opony letnie</a></li>
+                                <li><a href="#">Opony całoroczne</a></li>
+                                <li><a href="#">Opony ciężarowe</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a href="#">Pozostałe opony <span><img src="../images/icon/angle_down.png" width="10" height="16"/></span> </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Opony motocyklowe</a></li>
+                                <li><a href="#">Opony quadowe</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a href="#">Felgi <span><img src="../images/icon/angle_down.png" width="10" height="16"/></span> </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Felgi aluminiowe</a></li>
+                                <li><a href="#">Felgi stalowe</a></li>
+                            </ul>
+                        </li>
+                        <li style="font-size: 14px;" class="dropdown"><a href="#">Ostatnio oglądane <span><img src="../images/icon/angle_down.png" width="10" height="16"/></span> </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Continental</a></li>
+                                <li><a href="#">Falken</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><img src="../images/koszyk.png" height="39" width="51"/></a></li>
+                    </ul>
+                </div>
+                <!--<ul class="navList">
+                    <li><a href="#"><img src="../images/logotireking.png" height="39" width="211"/></a></li>
+                    <li><a href="#">Opony samochodowe <img class="imgColor" src="../images/icon/angle_down.png" height="16" width="10"/></a></li>
+                    <li><a href="#">Pozostałe opony <img class="imgColor" src="../images/icon/angle_down.png" height="16" width="10"/></a></li>
+                    <li><a href="#">Felgi <img class="imgColor" src="../images/icon/angle_down.png" height="16" width="10"/></a></li>
+                    <li style="font-size: 14px"><a href="#">Ostatnio oglądane <img class="imgColor" src="../images/icon/angle_down.png" height="14" width="8"/></a></li>
+                    <li><a href="#"><img src="../images/koszyk.png" height="39" width="51"/></a></li>
+                </ul>-->
+            </div>
+        </div>
+    </nav>
+</header>
+<main>
+    <!-- Wyszukiwarka -->
+    <div class="carSearchContainer container-fluid">
+        <div class="wrap">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="carSearchBox">
+                        <div class="top">
+                            <button class="tabLink" onclick="openPage('Home', this, '#f8f8f8')" id="defaultOpen" style="border-radius: 10px 0 0 0">szukaj opon wg rozmiaru</button>
+                            <button class="tabLink" onclick="openPage('News', this, '#f8f8f8')" style="border-radius: 0 10px 0 0">szukaj opon wg auta</button>
+                            <div id="Home" class="tabContent">
+                                <div class="selectContainer">
+                                    <div class="firstBox">
+                                        <div class="endContent">
+                                            <div class="smallSelectBox">
+                                                <div class="selectLabelBox">
+                                                    <label class="upLabel" for="width">Szerokość</label>
+                                                    <select id="width" class="smallSelect">
+                                                        <option value="0">115</option>
+                                                        <option value="1">125</option>
+                                                        <option value="2">135</option>
+                                                        <option value="3">140</option>
+                                                        <option value="4">145</option>
+                                                        <option value="5">150</option>
+                                                        <option value="6">155</option>
+                                                        <option value="7">160</option>
+                                                        <option value="8">165</option>
+                                                        <option value="9">170</option>
+                                                        <option value="10">175</option>
+                                                        <option value="11">180</option>
+                                                        <option value="12">185</option>
+                                                        <option value="13">190</option>
+                                                        <option value="14">195</option>
+                                                        <option value="15">200</option>
+                                                        <option value="16">205</option>
+                                                        <option value="17">210</option>
+                                                        <option value="18">215</option>
+                                                        <option value="19">220</option>
+                                                        <option value="20">225</option>
+                                                        <option value="21">230</option>
+                                                        <option value="22">235</option>
+                                                        <option value="23">240</option>
+                                                        <option value="24">245</option>
+                                                        <option value="25">255</option>
+                                                        <option value="26">260</option>
+                                                        <option value="27">265</option>
+                                                        <option value="28">275</option>
+                                                        <option value="29">280</option>
+                                                        <option value="30">285</option>
+                                                        <option value="31">295</option>
+                                                        <option value="32">300</option>
+                                                        <option value="33">305</option>
+                                                        <option value="34">315</option>
+                                                        <option value="35">325</option>
+                                                        <option value="36">335</option>
+                                                        <option value="37">345</option>
+                                                        <option value="38">355</option>
+                                                        <option value="39">5</option>
+                                                        <option value="40">5.5</option>
+                                                        <option value="41">6</option>
+                                                        <option value="42">6.4</option>
+                                                        <option value="43">6.5</option>
+                                                        <option value="44">7</option>
+                                                        <option value="45">7.5</option>
+                                                        <option value="46">8</option>
+                                                        <option value="47">17</option>
+                                                        <option value="48">27</option>
+                                                        <option value="49">30</option>
+                                                        <option value="50">31</option>
+                                                        <option value="51">32</option>
+                                                        <option value="52">33</option>
+                                                        <option value="53">35</option>
+                                                        <option value="54">37</option>
+                                                        <option value="55">38</option>
+                                                        <option value="56">38.5</option>
+                                                        <option value="57">39</option>
+                                                        <option value="58">40</option>
+                                                        <option value="59">42</option>
+                                                    </select>
+                                                </div>
+                                                <div class="selectLabelBox">
+                                                    <label class="upLabel" for="profil">Profil</label>
+                                                    <select id="profil" class="smallSelect">
+                                                        <option value="0">115</option>
+                                                        <option value="1">125</option>
+                                                        <option value="2">135</option>
+                                                        <option value="3">140</option>
+                                                        <option value="4">145</option>
+                                                        <option value="5">150</option>
+                                                        <option value="6">155</option>
+                                                        <option value="7">160</option>
+                                                        <option value="8">165</option>
+                                                        <option value="9">170</option>
+                                                        <option value="10">175</option>
+                                                        <option value="11">180</option>
+                                                        <option value="12">185</option>
+                                                        <option value="13">190</option>
+                                                        <option value="14">195</option>
+                                                        <option value="15">200</option>
+                                                        <option value="16">205</option>
+                                                        <option value="17">210</option>
+                                                        <option value="18">215</option>
+                                                        <option value="19">220</option>
+                                                        <option value="20">225</option>
+                                                        <option value="21">230</option>
+                                                        <option value="22">235</option>
+                                                        <option value="23">240</option>
+                                                        <option value="24">245</option>
+                                                        <option value="25">255</option>
+                                                        <option value="26">260</option>
+                                                        <option value="27">265</option>
+                                                        <option value="28">275</option>
+                                                        <option value="29">280</option>
+                                                        <option value="30">285</option>
+                                                        <option value="31">295</option>
+                                                        <option value="32">300</option>
+                                                        <option value="33">305</option>
+                                                        <option value="34">315</option>
+                                                        <option value="35">325</option>
+                                                        <option value="36">335</option>
+                                                        <option value="37">345</option>
+                                                        <option value="38">355</option>
+                                                        <option value="39">5</option>
+                                                        <option value="40">5.5</option>
+                                                        <option value="41">6</option>
+                                                        <option value="42">6.4</option>
+                                                        <option value="43">6.5</option>
+                                                        <option value="44">7</option>
+                                                        <option value="45">7.5</option>
+                                                        <option value="46">8</option>
+                                                        <option value="47">17</option>
+                                                        <option value="48">27</option>
+                                                        <option value="49">30</option>
+                                                        <option value="50">31</option>
+                                                        <option value="51">32</option>
+                                                        <option value="52">33</option>
+                                                        <option value="53">35</option>
+                                                        <option value="54">37</option>
+                                                        <option value="55">38</option>
+                                                        <option value="56">38.5</option>
+                                                        <option value="57">39</option>
+                                                        <option value="58">40</option>
+                                                        <option value="59">42</option>
+                                                    </select>
+                                                </div>
+                                                <div class="selectLabelBox">
+                                                    <label class="upLabel" for="srednica">Średnica</label>
+                                                    <select id="srednica" class="smallSelect">
+                                                        <option value="0">115</option>
+                                                        <option value="1">125</option>
+                                                        <option value="2">135</option>
+                                                        <option value="3">140</option>
+                                                        <option value="4">145</option>
+                                                        <option value="5">150</option>
+                                                        <option value="6">155</option>
+                                                        <option value="7">160</option>
+                                                        <option value="8">165</option>
+                                                        <option value="9">170</option>
+                                                        <option value="10">175</option>
+                                                        <option value="11">180</option>
+                                                        <option value="12">185</option>
+                                                        <option value="13">190</option>
+                                                        <option value="14">195</option>
+                                                        <option value="15">200</option>
+                                                        <option value="16">205</option>
+                                                        <option value="17">210</option>
+                                                        <option value="18">215</option>
+                                                        <option value="19">220</option>
+                                                        <option value="20">225</option>
+                                                        <option value="21">230</option>
+                                                        <option value="22">235</option>
+                                                        <option value="23">240</option>
+                                                        <option value="24">245</option>
+                                                        <option value="25">255</option>
+                                                        <option value="26">260</option>
+                                                        <option value="27">265</option>
+                                                        <option value="28">275</option>
+                                                        <option value="29">280</option>
+                                                        <option value="30">285</option>
+                                                        <option value="31">295</option>
+                                                        <option value="32">300</option>
+                                                        <option value="33">305</option>
+                                                        <option value="34">315</option>
+                                                        <option value="35">325</option>
+                                                        <option value="36">335</option>
+                                                        <option value="37">345</option>
+                                                        <option value="38">355</option>
+                                                        <option value="39">5</option>
+                                                        <option value="40">5.5</option>
+                                                        <option value="41">6</option>
+                                                        <option value="42">6.4</option>
+                                                        <option value="43">6.5</option>
+                                                        <option value="44">7</option>
+                                                        <option value="45">7.5</option>
+                                                        <option value="46">8</option>
+                                                        <option value="47">17</option>
+                                                        <option value="48">27</option>
+                                                        <option value="49">30</option>
+                                                        <option value="50">31</option>
+                                                        <option value="51">32</option>
+                                                        <option value="52">33</option>
+                                                        <option value="53">35</option>
+                                                        <option value="54">37</option>
+                                                        <option value="55">38</option>
+                                                        <option value="56">38.5</option>
+                                                        <option value="57">39</option>
+                                                        <option value="58">40</option>
+                                                        <option value="59">42</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <img class="tireImage" src="../images/tire_searchbar_przezroczysta.png"/>
+                                        </div>
+                                    </div>
+                                    <div class="secondBox">
+                                        <div class="smallSelectBox">
+                                            <div class="selectLabelBox">
+                                                <label for="producent">Producent</label>
+                                                <select id="producent" class="smallSelectT">
+                                                    <option value="1">Accelera</option>
+                                                    <option value="2">Achilles</option>
+                                                    <option value="3">Aeolus</option>
+                                                    <option value="4">Alliance</option>
+                                                    <option value="5">Altenzo</option>
+                                                    <option value="6">Antares</option>
+                                                    <option value="7">Aoteli</option>
+                                                    <option value="8">Aplus</option>
+                                                    <option value="9">Apollo</option>
+                                                    <option value="10">Aptany</option>
+                                                    <option value="11">Arivo</option>
+                                                    <option value="12">Atlas</option>
+                                                    <option value="13">Atturo</option>
+                                                    <option value="14">Aufine</option>
+                                                    <option value="15">Aurora</option>
+                                                    <option value="16">Austone</option>
+                                                    <option value="17">Autogreen</option>
+                                                    <option value="18">Autogrip</option>
+                                                    <option value="19">Autoguard</option>
+                                                    <option value="20">Avon</option>
+                                                    <option value="21">Barkley</option>
+                                                    <option value="22">Barum</option>
+                                                    <option value="23">Belshina</option>
+                                                    <option value="24">Berlin Tires</option>
+                                                    <option value="25">Bfgoodrich</option>
+                                                    <option value="26">Blacklion</option>
+                                                    <option value="27">Bridgestone</option>
+                                                    <option value="28">Camac</option>
+                                                    <option value="29">Ceat</option>
+                                                    <option value="30">Cheng Shin</option>
+                                                    <option value="31">Chengshan</option>
+                                                    <option value="32">Collins</option>
+                                                    <option value="33">Comforser</option>
+                                                    <option value="34">Continental</option>
+                                                    <option value="35">Cooper</option>
+                                                    <option value="36">Courier</option>
+                                                    <option value="37">CST</option>
+                                                    <option value="38">Dayton</option>
+                                                    <option value="39">Dean</option>
+                                                    <option value="40">Delinte</option>
+                                                    <option value="41">Dębica</option>
+                                                    <option value="42">Diplomat</option>
+                                                    <option value="43">Doublestar</option>
+                                                    <option value="44">Dunlop</option>
+                                                    <option value="45">Duraturn</option>
+                                                    <option value="46">Duro</option>
+                                                    <option value="47">Ep-tyres</option>
+                                                    <option value="48">Esa Tecar</option>
+                                                    <option value="49">Event tyres</option>
+                                                    <option value="50">Evergreen</option>
+                                                    <option value="51">Falken</option>
+                                                    <option value="52">Federal</option>
+                                                    <option value="53">Firemax</option>
+                                                    <option value="54">Firenza</option>
+                                                    <option value="55">Firestone</option>
+                                                    <option value="56">Firststop</option>
+                                                    <option value="57">Formula</option>
+                                                    <option value="58">Fortuna</option>
+                                                    <option value="59">Fortune</option>
+                                                    <option value="60">Fulda</option>
+                                                    <option value="61">Fullrun</option>
+                                                    <option value="62">Fullway</option>
+                                                    <option value="63">General</option>
+                                                    <option value="64">Gislaved</option>
+                                                    <option value="65">Giti</option>
+                                                    <option value="66">Goform</option>
+                                                    <option value="67">Goldline</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="buttonBox">
+                                            <a class="buttonSearchBox" href="#">
+                                                <button>szukaj opon</button>
+                                            </a>
+                                        </div>
+                                        <div class="advancedSearch">
+                                            <a href="#">
+                                                Wyszukiwanie zaawansowane
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="News" class="tabContent">
+
+                            </div>
+                        </div>
+                        <div class="bottomPromoIcons">
+                            <div class="promoContainer">
+                                <div class="boxPromo">
+                                    <img src="../images/icon/fachowe_doradztwo_ikona.png" height="40" width="42"/>
+                                    <p>Fachowe doradztwo</p>
+                                </div>
+                            </div>
+                            <div class="promoContainer">
+                                <div class="boxPromo">
+                                    <img src="../images/icon/14_dni_zwrot_ikona.png" height="40" width="35"/>
+                                    <p>14 dni na zwrot</p>
+                                </div>
+                            </div>
+                            <div class="promoContainer">
+                                <div class="boxPromo">
+                                    <img src="../images/icon/serwis_ikona.png" height="40" width="45"/>
+                                    <p>100 serwisów montażu</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Opinie -->
+    <div class="container-fluid">
+        <div class="wrap">
+            <div class="row">
+                <div class="opinions">
+                    <div class="opinionsText">
+                        <h2>Opinie naszych klientów</h2>
+                        <div class="opinionsContainer">
+                            <div class="opinionsContainerColumns">
+                                <div id="labelOpinion" class="firstOpinion">
+                                    <p class="textOpinion" style="padding: 20px 40px;">Wszystko szybko i sprawnie, czyli tak jak tego oczekiwałem. Polecam!</p>
+                                </div>
+                                <label class="usersOpinions" for="labelOpinion">TurboGrosik <img src="../images/icon/opineo_opinia.png" height="48" width="145"/></label>
+                            </div>
+                            <div class="opinionsContainerColumns">
+                                <div id="labelOpinion" class="secondOpinion">
+                                    <p class="textOpinion" style="padding: 20px 40px;">Idealne zakupy przez internet. Szybko, bezpiecznie i w dobrej cenie. Warto!</p>
+                                </div>
+                                <label class="usersOpinions" for="labelOpinion">Ted <img src="../images/icon/Ceneo_opinia.png" height="42" width="93"/></label>
+                            </div>
+                            <div class="opinionsContainerColumns">
+                                <div id="labelOpinion" class="thirdOpinion">
+                                    <p class="textOpinion" style="padding: 20px 40px;">Towar dotarł do mnie w doskonałej jakości na drugi dzień od momentu zamówienia. Szok!</p>
+                                </div>
+                                <label class="usersOpinions" for="labelOpinion">Tymoteusz <img src="../images/icon/Ceneo_opinia.png" height="42" width="93"/></label>
+                            </div>
+                        </div>
+                        <div class="rating">
+                            <p class="numberRating">4.9 <span>/ 5</span></p>
+                            <p class="descriptionRating">To średnia ocen naszego sklepu wystawionych
+                            przez klientów na serwisach <a href="https://www.opineo.pl/opinie/sklepopon-com">Opineo.pl</a> i <a href="https://www.ceneo.pl/Opony?se=J_FWIG5UKNYn4BanIFG-EssuYNmaiX-8&gclid=EAIaIQobChMIsNKgueOi5QIVC4uyCh0u9gOPEAAYAyAAEgJ2PPD_BwE">Ceneo.pl</a></p>
+                            <a class="buttonOpinions" href="https://www.gowork.pl/opinie_czytaj,1036359"><button>zobacz wszystkie opinie ></button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Sklep!!!! -->
+    <div class="shopContainer container-fluid">
+        <div class="wrap">
+            <div class="row">
+                <div class="textCards">
+                    <p class="textCardsParagraphs">Oferta specjalna</p>
+                    <p class="textCardsParagraphs">Polecane</p>
+                </div>
+                <div class="upperCards">
+                    <div class="specialOfferCard">
+                        <div class="bigCard" id="the-final-countdown">
+                            <div class="clock">
+                                <p>Koniec za </p>
+                                <div class="TickTock">
+                                    <span class="TickHours TickTockBackground"></span>
+                                    <span>:</span>
+                                    <span class="TickMinutes TickTockBackground"></span>
+                                    <span>:</span>
+                                    <span class="TickSeconds TickTockBackground"></span>
+                                </div>
+                            </div>
+                            <div class="columnAlignment">
+                                <div class="firstColumn">
+                                    <div class="content">
+                                        <a href=""></a><img class="tireImage" src="../images/opony/Uniroyal_rainsport_tire.png"/>
+                                        <p class="discount">
+                                            <span class="discountBackground">-30%</span>
+                                        </p>
+                                        <p class="tirePrice">164.<span class="lowerSpan">10 zł</span><span class="strikeSpan">/szt.</span> <span class="strikeSpanAO">  214.00 zł/szt.</span></p>
+                                        <p class="tireDescription">Uniroyal <br />RAINSPORT 3 205/55 R16 91 H<br />.</p>
+                                    </div>
+                                    <div class="footer">
+                                        <a href="#">zobacz więcej <span> > </span></a>
+                                    </div>
+                                </div>
+                                <div class="secondColumn">
+                                    <div class="content">
+                                        <img class="tireImage" src="../images/opony/goodyear_efficientgrip_performance_oferta_specjalna.png"/>
+                                        <p class="discount"><span>-30%</span></p>
+                                        <p class="tirePrice">172.<span class="lowerSpan">00 zł</span><span class="strikeSpan">/szt.</span> <span class="strikeSpanAO">  248.00 zł/szt.</span></p>
+                                        <p class="tireDescription">Goodyear <br />EFFICIENTGRIP PERFORMANCE <br />195/65 R15 91 H</p>
+                                    </div>
+                                    <div class="footer">
+                                        <a href="#">zobacz więcej <span> > </span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="normalCard">
+                        <div class="smallCard">
+                            <div class="content">
+                                <img class="tireImage" src="../images/opony/Opona_2.png"/>
+                                <p class="tirePrice">175.<span class="lowerSpan">00 zł</span><span class="strikeSpan">/szt.</span></p>
+                                <p class="tireDescription">Goodyear <br />EFFICIENTGRIP PERFORMANCE <br />195/65 R15 91 H</p>
+                            </div>
+                            <div class="footer">
+                                <a href="#">zobacz więcej <span> > </span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="normalCard">
+                        <div class="smallCard">
+                            <div class="content">
+                                <img class="tireImage" src="../images/opony/Opona_2.png"/>
+                                <p class="tirePrice">175.<span class="lowerSpan">00 zł</span><span class="strikeSpan">/szt.</span></p>
+                                <p class="tireDescription">Goodyear <br />EFFICIENTGRIP PERFORMANCE <br />195/65 R15 91 H</p>
+                            </div>
+                            <div class="footer">
+                                <a href="#">zobacz więcej <span> > </span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="textLower">
+                    <p class="textLowerContent">Najczęściej kupowane</p>
+                </div>
+                <div class="lowerCards">
+                    <div class="containerS">
+                        <div class="header">
+                            <p class="bestSeller"><span>Bestseller</span></p>
+                        </div>
+                        <div class="content">
+                            <img class="tireImage" src="../images/opony/Opona_2.png"/>
+                            <p class="tirePrice">175.<span class="lowerSpan">00 zł</span><span class="strikeSpan">/szt.</span></p>
+                            <p class="tireDescription">Goodyear <br />EFFICIENTGRIP PERFORMANCE <br />195/65 R15 91 H</p>
+                        </div>
+                        <div class="footer">
+                            <a href="#">zobacz więcej <span> > </span></a>
+                        </div>
+                    </div>
+                    <div class="containerP">
+                        <div class="header">
+                            <p class="bestSeller"><span>Bestseller</span></p>
+                        </div>
+                        <div class="content">
+                            <img class="tireImage" src="../images/opony/Opona_1.png"/>
+                            <p class="tirePrice">191.<span class="lowerSpan">00 zł</span><span class="strikeSpan">/szt.</span> <span class="strikeSpanAO">  248.00 zł/szt.</span></p>
+                            <p class="tireDescription">Firestone <br />ROADHAWK 195/65 R15 91 T <br />.</p>
+                        </div>
+                        <div class="footer">
+                            <a href="#">zobacz więcej <span> > </span></a>
+                        </div>
+                    </div>
+                    <div class="containerS">
+                        <div class="header">
+                            <p class="bestSeller"><span>Bestseller</span></p>
+                        </div>
+                        <div class="content">
+                            <img class="tireImage" src="../images/opony/Opona_2.png"/>
+                            <p class="tirePrice">175.<span class="lowerSpan">00 zł</span><span class="strikeSpan">/szt.</span></p>
+                            <p class="tireDescription">Goodyear <br />EFFICIENTGRIP PERFORMANCE <br />195/65 R15 91 H</p>
+                        </div>
+                        <div class="footer">
+                            <a href="#">zobacz więcej <span> > </span></a>
+                        </div>
+                    </div>
+                    <div class="containerP">
+                        <div class="header">
+                            <p class="bestSeller"><span>Bestseller</span></p>
+                        </div>
+                        <div class="content">
+                            <img class="tireImage" src="../images/opony/Opona_1.png"/>
+                            <p class="tirePrice">191.<span class="lowerSpan">00 zł</span><span class="strikeSpan">/szt.</span> <span class="strikeSpanAO">  248.00 zł/szt.</span></p>
+                            <p class="tireDescription">Firestone <br />ROADHAWK 195/65 R15 91 T <br />.</p>
+                        </div>
+                        <div class="footer">
+                            <a href="#">zobacz więcej <span> > </span></a>
+                        </div>
+                    </div>
+                    <div class="containerS">
+                        <div class="header">
+                            <p class="bestSeller"><span>Bestseller</span></p>
+                        </div>
+                        <div class="content">
+                            <img class="tireImage" src="../images/opony/Opona_2.png"/>
+                            <p class="tirePrice">175.<span class="lowerSpan">00 zł</span><span class="strikeSpan">/szt.</span></p>
+                            <p class="tireDescription">Goodyear <br />EFFICIENTGRIP PERFORMANCE <br />195/65 R15 91 H</p>
+                        </div>
+                        <div class="footer">
+                            <a href="#">zobacz więcej <span> > </span></a>
+                        </div>
+                    </div>
+                    <div class="containerP">
+                        <div class="header">
+                            <p class="bestSeller"><span>Bestseller</span></p>
+                        </div>
+                        <div class="content">
+                            <img class="tireImage" src="../images/opony/Opona_1.png"/>
+                            <p class="tirePrice">191.<span class="lowerSpan">00 zł</span><span class="strikeSpan">/szt.</span> <span class="strikeSpanAO">  248.00 zł/szt.</span></p>
+                            <p class="tireDescription">Firestone <br />ROADHAWK 195/65 R15 91 T <br />.</p>
+                        </div>
+                        <div class="footer">
+                            <a href="#">zobacz więcej <span> > </span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="firestoneBaner">
+                    <a href=""><img src="../images/baner_firestone.png"/></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Producenci opon -->
+    <div class="container-fluid">
+        <div class="wrap">
+            <div class="row">
+                <div class="headerFirms">
+                    <div class="textFirms">
+                        <h2>Polecają nas czołowi producenci opon</h2>
+                        <p><a href="#">zobacz nasze certyfikaty <span> > </span> </a></p>
+
+                        <div class="logoFirms">
+                            <img class="growImage" src="../images/producents/goodyear_logo.png" height="37" width="150"/>
+                            <img class="growImage" src="../images/producents/dunlop_ikona.png" height="24" width="150"/>
+                            <img class="growImage" src="../images/producents/continental_logo.png" height="27" width="151"/>
+                            <img class="growImage" src="../images/producents/bridgestone_logo.png" height="19" width="158"/>
+                            <img class="growImage" src="../images/producents/pirelli_logo.png" height="37" width="116"/>
+                            <img class="growImage" src="../images/producents/michelin_logo.png" height="30" width="156"/>
+                            <img class="growImage" src="../images/producents/hankook_logo.png" height="27" width="143"/>
+                            <img class="growImage" src="../images/producents/nokiantyres_logo.png" height="40" width="100"/>
+                            <img class="growImage" src="../images/producents/yokohama_logo.png" height="24" width="162"/>
+                            <img class="growImage" src="../images/producents/theraintyreuniroyal_logo.png" height="34" width="142"/>
+                            <img class="growImage" src="../images/producents/falkentire_logo.png" height="22" width="131"/>
+                            <img class="growImage" src="../images/producents/fulda_ikona.png" height="34" width="103"/>
+                            <img class="growImage" src="../images/producents/firestone_logo.png" height="19" width="125"/>
+                            <img class="growImage" src="../images/producents/nexentire_logo.png" height="14" width="157"/>
+                            <img class="growImage" src="../images/producents/debica_logo.png" height="33" width="138"/>
+                            <img class="growImage" src="../images/producents/dayton_logo.png" height="19" width="138"/>
+                            <img class="growImage" src="../images/producents/barum_logo.png" height="20" width="146"/>
+                            <img class="growImage" src="../images/producents/zeetex_ikona.png" height="39" width="128"/>
+                            <img class="growImage" src="../images/producents/tyresimperial_logo.png" height="25" width="157"/>
+                            <img class="growImage" src="../images/producents/laufenn_logo.png" height="25" width="140"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Porady ekspertów -->
+    <div class="adviceContainer container-fluid">
+        <div class="wrap">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="expertsContainer">
+                        <div class="expertsText">
+                            <p class="pHeader">Porady ekspertów</p>
+                            <p class="">Zapoznaj się z naszą bazą wiedzy. Tworzymy ją dla was. <a href="#">zobacz wszystkie <span> > </span></a><p>
+                        </div>
+                        <div class="parent">
+                            <div class="div1">
+                                <div class="cardBig">
+                                    <div class="imagePlacement">
+                                        <img class="responsive" src="../images/articles/zdjecie_artykul_1.png"/>
+                                        <p class="topPlacement">Polecamy szczególnie</p>
+                                        <div class="bottomPlacement">
+                                            <p><span>Wymiana opon</span></p>
+                                            <p><span>- jak wybrać warsztat?</span></p>
+                                        </div>
+                                    </div>
+                                    <p class="textArticle">
+                                        Na trasie z pewnością mijasz wiele
+                                        przydrożnych punktów i wątpliwej renomy warsztatów, oferujących usługi po kosztach. Wizyta w nich jest na pewno dużo tańsza, ale czy opłacalna? Na pewno nie, jeśli zależy Ci na bezpieczeństwie oraz osiągach Twojego auta.
+                                        Przed wyborem warsztatu samochodowego warto zasięgnąć języka u znajomych lub sprawdzić opinie w Internecie. Sprawdź, czy punkt oferuje profesjonalne usługi z użyciem specjalistycznego sprzętu.
+                                        Jaki sprzęt powinien znajdować się w... warsztacie?
+
+                                        Tylko takie warsztaty regularnie serwisują urządzenia i przeprowadzają kalibrację wyważarek. Małe, półamatorskie punkty często z powodu braku funduszy nie robią tego wcale albo - zbyt rzadko.
+
+                                        Z nieufnością należy podchodzić do punktów sezonowych, takich jak namioty przy stacjach benzynowych i szczególnie uczęszczanych drogach. Oprócz wątpliwej jakości sprzętu, w miejscach tych rzadko kiedy można mieć pewność, że naszym autem zajmie się prawdziwy, doświadczony fachowiec.
+                                    </p>
+                                    <p class="linkArticle"><a href="#">czytaj <span> > </span></a></p>
+                                </div>
+                            </div>
+                            <div class="div2">
+                                <div class="card">
+                                    <img src="../images/articles/zdjecie_artykul_2.png"/>
+                                    <p class="upperTextG">Dlaczego warto zaplanować dostawę opon dużo wcześniej?</p>
+                                    <p class="bottomTextG"><a href="#">czytaj <span> > </span></a></p>
+                                </div>
+                                <div class="card">
+                                    <img src="../images/articles/zdjecie_artykul_4.png"/>
+                                    <p class="upperTextG">Jak dbać o swoje felgi aluminiowe - wskazówki od ekspertów ALCAR</p>
+                                    <p class="bottomTextG"><a href="#">czytaj <span> > </span></a></p>
+                                </div>
+                            </div>
+                            <div class="div3">
+                                <div class="card">
+                                    <img src="../images/articles/zdjecie_artykul_3.png"/>
+                                    <p class="upperTextG">Przechowywanie opon - kluczowy czynnik dający osiągi</p>
+                                    <p class="bottomTextG"><a href="#">czytaj <span> > </span></a></p>
+                                </div>
+                                <div class="card">
+                                    <img src="../images/articles/zdjecie_artykul_5.png"/>
+                                    <p class="upperTextG">Jak dbać o swoje felgi aluminiowe - wskazówki od ekspertów ALCAR</p>
+                                    <p class="bottomTextG"><a href="#">czytaj <span> > </span></a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Wyszukiwarka w postaci tabeli -->
+    <div class="searchFormsTab container-fluid">
+        <div class="wrap">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="searchSection">
+                        <div class="parent">
+                            <div class="div1">
+                                <p>Popularne rozmiary opon</p>
+                            </div>
+                            <div class="div2">
+                                <p><a href="#">175/65 R14 <span> > </span></a></p>
+                                <p><a href="#">185/60 R14 <span> > </span></a></p>
+                                <p><a href="#">185/65 R14 <span> > </span></a></p>
+                            </div>
+                            <div class="div3">
+                                <p><a href="#">185/65 R14 <span> > </span></a></p>
+                                <p><a href="#">195/65 R15 <span> > </span></a></p>
+                                <p><a href="#">205/55 R16 <span> > </span></a></p>
+                            </div>
+                            <div class="div4">
+                                <p>Opony wg sezonu</p>
+                            </div>
+                            <div class="div5">
+                                <p><a href="#">zimowe <span> > </span></a></p>
+                                <p><a href="#">letnie <span> > </span></a></p>
+                                <p><a href="#">uniwersalne <span> > </span></a></p>
+                            </div>
+                            <div class="div6">
+                                <p>Opony wg pojazdu:</p>
+                            </div>
+                            <div class="div7">
+                                <p><a href="#">osobowe <span> > </span></a></p>
+                                <p><a href="#">ciężarowe <span> > </span></a></p>
+                                <p><a href="#">4x4 <span> > </span></a></p>
+                            </div>
+                            <div class="div8">
+                                <p><a href="#">dostawcze <span> > </span></a></p>
+                                <p><a href="#">motocykle <span> > </span></a></p>
+                                <p><a href="#">quady <span> > </span></a></p>
+                            </div>
+                            <div class="div9">
+                                <p>Najczęściej wyszukiwane wg producentów</p>
+                            </div>
+                            <div class="div10">
+                                <p><a href="#">Opony Bfgoodrich <span> > </span></a></p>
+                                <p><a href="#">Opony Bridgestone <span> > </span></a></p>
+                                <p><a href="#">Opony Continental <span> > </span></a></p>
+                                <p><a href="#">Opony Cooper <span> > </span></a></p>
+                            </div>
+                            <div class="div11">
+                                <p><a href="#">Opony Dębica <span> > </span></a></p>
+                                <p><a href="#">Opony Dunlop <span> > </span></a></p>
+                                <p><a href="#">Opony Falken <span> > </span></a></p>
+                                <p><a href="#">Opony Fulda <span> > </span></a></p>
+                            </div>
+                            <div class="div12">
+                                <p><a href="#">Opony Goodride <span> > </span></a></p>
+                                <p><a href="#">Opony Goodyear <span> > </span></a></p>
+                                <p><a href="#">Opony Hankook <span> > </span></a></p>
+                                <p><a href="#">Opony Kleber <span> > </span></a></p>
+                            </div>
+                            <div class="div13">
+                                <p><a href="#">Opony Kormoran <span> > </span></a></p>
+                                <p><a href="#">Opony Michelin <span> > </span></a></p>
+                                <p><a href="#">Opony Nexen <span> > </span></a></p>
+                                <p><a href="#">Opony Nokian <span> > </span></a></p>
+                            </div>
+                            <div class="div14">
+                                <p><a href="#">Opony Pirelli <span> > </span></a></p>
+                                <p><a href="#">Opony Sava <span> > </span></a></p>
+                                <p><a href="#">Opony Vredestein <span> > </span></a></p>
+                                <p><a href="#">Opony Yokohama <span> > </span></a></p>
+                            </div>
+                            <div class="div15">
+                                <p>Najczęściej wyszukiwane wg samochodów</p>
+                            </div>
+                            <div class="div16">
+                                <p><a href="#">Skoda <span> > </span></a></p>
+                                <p><a href="#">Fiat <span> > </span></a></p>
+                                <p><a href="#">Volkswagen <span> > </span></a></p>
+                                <p><a href="#">Toyota <span> > </span></a></p>
+                            </div>
+                            <div class="div17">
+                                <p><a href="#">Mazda <span> > </span></a></p>
+                                <p><a href="#">Hyundai <span> > </span></a></p>
+                                <p><a href="#">Audi <span> > </span></a></p>
+                                <p><a href="#">BMW <span> > </span></a></p>
+                            </div>
+                            <div class="div18">
+                                <p><a href="#">Mercedes <span> > </span></a></p>
+                                <p><a href="#">Kia <span> > </span></a></p>
+                                <p><a href="#">Peugeot <span> > </span></a></p>
+                                <p><a href="#">Renault <span> > </span></a></p>
+                            </div>
+                            <div class="div19">
+                                <p><a href="#">Seat <span> > </span></a></p>
+                                <p><a href="#">Rover <span> > </span></a></p>
+                                <p><a href="#">Volvo <span> > </span></a></p>
+                                <p><a href="#">Mini <span> > </span></a></p>
+                            </div>
+                            <div class="div20">
+                                <p><a href="#">Dacia <span> > </span></a></p>
+                                <p><a href="#">Hyundai <span> > </span></a></p>
+                                <p><a href="#">Yeep <span> > </span></a></p>
+                                <p><a href="#">Alfa Romeo <span> > </span></a></p>
+                            </div>
+                        </div>
+                        <div class="informationText">
+                            <p>Z pewnością dbasz o bezpieczeństwo swoje i swojej rodziny. Chcesz, aby codzienna jazda była przyjemna, bezpieczna i komfortowa. Opony są jednym z najważniejszych elementów samochodu. To głównie one decydują o długości
+                                drogi hamowania czy powodzenia nagłego manewru. Pamiętaj, że jest to jedyny <a href="#">element pojazdu</a> stykający się z drogą. <br />
+                                <a href="#">Oferujemy bogaty</a> wybór opon <a href="#">letnich</a>, <a href="#">zimowych</a> i <a
+                                        href="#">całorocznych</a>. W naszym sklepie znajdziesz modele na każdy sezon do niemal każdego typu pojazdu. Niezależnie od tego czy jeździsz
+                                samochodem osobowym, SUV-em, terenówką czy autem dostawczym. <a href="#">Obok standardowego</a> wyposażenia najpopularniejszych
+                                <a href="#">pojazdów</a> posiadamy również opony do luksusowych i ekskluzywnych aut. <br />
+                                Pomożemy Ci również w przypadku bardziej specjalistycznych produktów, takich jak opony motocyklowe, run-flat, cieżarowe czy ogumienia do aut zabytkowych. W ofercie znajdziesz modele różnego
+                                przeznaczenia, wszystkich marek i klas. Jeśli nasz zespół nie będzie w stanie znaleźć opony której szukasz, prawdopodobnie nie zrobi tego nikt.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Stopka -->
+    <div class="footer container-fluid">
+        <div class="wrap">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="footerContainer">
+                        <div class="parent">
+                            <div class="div1">
+                                <a href="#"><img src="../images/icon/tireking_small_icon.png" height="32" width="173"/></a>
+                                <p class="firstParagraph">Infolinia</p>
+                                <p style="font-size: 18px">tel.<a href="tel:+48 12 376 09 30">+48 12 376 09 30</a></p>
+                                <p style="font-size: 12px">czynna codziennie od 8.00 do 18.00</p>
+                                <br />
+                                <p style="font-size: 12px">Napisz do nas:</p>
+                                <p style="font-size: 12px"><a href="mailto:pomoc@tireking.pl?Subject=Hello%20again">pomoc@tireking.pl</a></p>
+                                <br />
+                                <br />
+                                <p class="greyContent" style="font-size: 10px">Korzystanie z serwisu oznacza akceptację <a href="#regulamin">regulaminu</a>.</p>
+                                <p class="greyContent" style="font-size: 10px">Copyright &copy; 2010-2019 by tireking.pl All Rights Reserved.</p>
+                            </div>
+                            <div class="div2">
+                                <p class="firstParagraph">Przed zakupem</p>
+                                <p><a href="#">Jak kupować?<span> > </span></a></p>
+                                <p><a href="#">Koszty i sposoby dostawy <span> > </span></a></p>
+                                <p><a href="#">Formy płatności <span> > </span></a></p>
+                                <p><a href="#">Jak kupować na raty? <span> > </span></a></p>
+                                <p><a href="#">Dostawa z montażem <span> > </span></a></p>
+                            </div>
+                            <div class="div3">
+                                <p class="firstParagraph">O nas</p>
+                                <p><a href="#">O firmie <span> > </span></a></p>
+                                <p><a href="#">Kontakt <span> > </span></a></p>
+                                <p><a href="#">Aktualności <span> > </span></a></p>
+                                <p><a href="#">Współpraca <span> ></span></a></p>
+                            </div>
+                            <div class="div4">
+                                <p class="firstParagraph">Informacje</p>
+                                <p><a href="#">Regulamin <span> > </span></a></p>
+                                <p><a href="#">Polityka prywatności <span> > </span></a></p>
+                                <p><a href="#">Pomoc <span> > </span></a></p>
+                                <p><a href="#">Zgłoś reklamację <span> > </span></a></p>
+                                <div class="icons">
+                                    <a href="https://www.facebook.com/sklepoponpl/" target="_blank"><img src="../images/icon/facebook_ikona.png" height="40" width="40"/></a>
+                                    <a href="https://www.youtube.com/" target="_blank"><img src="../images/icon/youtube_ikona.png" height="40" width="40"/></a>
+                                    <a href="https://www.ceneo.pl/sklepy/sklepopon.com-s6855" target="_blank"><img src="../images/icon/instagram_ikona.png" height="40" width="40"/></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<script src="../js/jQuery.js"></script>
+<script type="text/javascript" src="../slick/slick.min.js"></script>
+<script src="../js/starrr-gh-pages/dist/starrr.js"></script>
+<script src="../js/jquery-bar-rating/dist/jquery.barrating.min.js"></script>
+<script src="../js/jQuery.tab.js"></script>
+<script src="../js/jquery.responsiveTabs.js"></script>
+<script src="../js/sticky/jquery.sticky.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>
+

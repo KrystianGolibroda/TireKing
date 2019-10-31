@@ -1,0 +1,175 @@
+@font-face {
+  font-family: 'SinkinSans-400Regular';
+  src: url("../fonts/SinkinSans-400Regular.ttf"); }
+@font-face {
+  font-family: 'SinkinSans-700Bold';
+  src: url("../fonts/SinkinSans-700Bold.ttf"); }
+@font-face {
+  font-family: 'SinkinSans-700BoldItalic';
+  src: url("../fonts/SinkinSans-700BoldItalic.ttf"); }
+@font-face {
+  font-family: 'SinkinSans-500Medium';
+  src: url("../fonts/SinkinSans-500Medium.ttf"); }
+@font-face {
+  font-family: 'Gotham-BoldItalic';
+  src: url("../fonts/Gotham-BoldItalic.ttf"); }
+@font-face {
+  font-family: 'SinkinSans-600SemiBold';
+  src: url("../fonts/SinkinSans-600SemiBold.ttf"); }
+@font-face {
+  font-family: 'SinkinSans-300Light';
+  src: url("../fonts/SinkinSans-300Light.ttf"); }
+header {
+  box-shadow: 0 0 10px 0 #666666;
+  margin: 0 auto;
+  background-color: #f0f0f0; }
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none; }
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto; }
+
+.row:before,
+.row:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: "SinkinSans-400Regular", sans-serif; }
+
+.wrap {
+  box-sizing: border-box;
+  max-width: 1200px;
+  margin: 0 auto; }
+
+.container-fluid {
+  padding-right: 1rem !important;
+  padding-left: 1rem !important; }
+
+.widget {
+  position: fixed;
+  right: -435px;
+  width: 435px;
+  height: 575px;
+  top: 25%; }
+
+.widget.active {
+  animation: siljish 500ms;
+  animation-fill-mode: forwards; }
+
+.widget-content {
+  position: relative; }
+
+.widget-btn {
+  border-radius: 5px 0 0 5px;
+  position: absolute;
+  right: 100%;
+  top: 0;
+  background-color: #ff6300;
+  height: 305px;
+  width: 55px; }
+
+@keyframes siljish {
+  from {
+    right: -435px; }
+  to {
+    right: 0; } }
+.panel {
+  height: 575px;
+  width: 435px;
+  border: 2px solid #ff6300;
+  border-radius: 0 0 0 5px;
+  background-color: #ffffff; }
+  .panel .content {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 15px; }
+    .panel .content .panelContent .textUp {
+      text-align: center;
+      line-height: 5px; }
+      .panel .content .panelContent .textUp .upperCase {
+        font-size: 19px;
+        font-family: "SinkinSans-700Bold", sans-serif; }
+      .panel .content .panelContent .textUp .lowerCase {
+        font-size: 14px;
+        font-family: "SinkinSans-400Regular", sans-serif; }
+    .panel .content .panelContent .phoneNumbers {
+      margin: 20px 0 30px 0;
+      width: 100%;
+      border: 1px solid #dbdbdb;
+      border-radius: 5px;
+      text-align: center;
+      line-height: 8px; }
+      .panel .content .panelContent .phoneNumbers .upperParagraphs {
+        font-size: 16px;
+        font-family: "SinkinSans-700Bold", sans-serif; }
+      .panel .content .panelContent .phoneNumbers .aPhoneNr {
+        font-size: 20px;
+        font-family: "SinkinSans-700Bold", sans-serif;
+        text-decoration: none;
+        color: #ff6300; }
+      .panel .content .panelContent .phoneNumbers .informationInfolinia {
+        font-size: 12px;
+        font-family: "SinkinSans-400Regular", sans-serif; }
+    .panel .content .panelContent .textPanel {
+      width: 70%;
+      margin: 0 auto;
+      text-align: center;
+      font-size: 19px;
+      font-family: "SinkinSans-700Bold", sans-serif; }
+    .panel .content .panelContent .iconsPanel {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 20px 0 15px 0; }
+      .panel .content .panelContent .iconsPanel .iconsPanelBox {
+        width: 25%; }
+        .panel .content .panelContent .iconsPanel .iconsPanelBox .columnAlign {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          text-decoration: none;
+          color: #000000; }
+          .panel .content .panelContent .iconsPanel .iconsPanelBox .columnAlign .iconsPanelText {
+            text-decoration: none;
+            font-size: 12px;
+            line-height: 15px;
+            font-family: "SinkinSans-400Regular", sans-serif; }
+    .panel .content .panelContent .iconsPanelFooter {
+      margin: 0 auto;
+      line-height: 15px; }
+      .panel .content .panelContent .iconsPanelFooter .iconsPanelFooterLow {
+        font-size: 12px;
+        font-family: "SinkinSans-400Regular", sans-serif;
+        text-align: center; }
+    .panel .content .panelContent .buttonRef {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none; }
+      .panel .content .panelContent .buttonRef .formsButton {
+        margin: 0 auto;
+        text-align: center;
+        background-color: #000000;
+        color: #ffffff;
+        width: 270px;
+        height: 40px;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        font-size: 14px;
+        font-family: "SinkinSans-700Bold", sans-serif;
+        letter-spacing: 0.01rem; }
+
+/*# sourceMappingURL=pomoc_kontakt.css.map */

@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="PL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="TireKing to lider wśród sprzedawców opon. Niezawodne produkty i niska cena - to charakteryzuje nasz sklep!">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TireKing</title>
+    <link rel="icon" href="../images/icon/favicon_tire.png" type="image/png">
+    <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">-->
+    <link rel="stylesheet" href="../sass/style2.css" type="text/css">
+    <script src="../js/jQuery.js"></script>
+</head>
+<body>
+
+<!--MENU-->
+
+<header>
+    <div class="container-fluid">
+        <div class="wrap">
+            <div class="menuTop">
+                <div class="topLeft">
+                    <span>
+                        Infolinia <a href="tel:12 376 09 30" class="telefondoinfolinii">12 376 09 30</a>
+                    </span>
+                    <span>
+                        <a href="#" title="Kliknij, aby sprawdzić status swojego zamówienia.">Status zamówienia</a>
+                    </span>
+                </div>
+                <div class="topRight">
+                    <span>
+                        <a href="#" title="Kliknij, aby przejść do najnowszych konkursów i promocji.">Konkursy i promocje</a>
+                    </span>
+                    <span>
+                        <a href="#" title="Kliknij, aby uzyskać pomoc.">Pomoc</a>
+                    </span>
+                    <span>
+                        <a href="#" title="Kliknij, aby przejść do ustawień swojego konta.">Moje konto</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="container-fluid">
+        <div class="wrap">
+            <div class="menu row" id="sticker">
+                <ul class="menuList">
+                    <li>
+                        <a href="#">
+                            <img src="../images/logotireking.png" height="39" width="211"/>
+                        </a>
+                    </li>
+                    <li class="animateAngle">
+                        <p>Opony samochodowe <img src="../images/icon/angle-down.png" height="17" width="11"/></p>
+                        <ul>
+                            <li><a href="">Opony samochodowe</a></li>
+                            <li><a href="">Opony motocyklowe</a></li>
+                            <li><a href="">Felgi aluminiowe</a></li>
+                            <li><a href="">Felgi stalowe</a></li>
+                            <li><a href="">Opony ciężarowe</a></li>
+                            <li><a href="">Lancuchy śniegowe</a></li>
+                        </ul>
+                    </li>
+                    <li class="animateAngle">
+                        <a href="#">Pozostałe opony <img src="../images/icon/angle-down.png" height="17" width="11"/></a>
+                    </li>
+                    <li class="animateAngle">
+                        <a href="#">Felgi <img src="../images/icon/angle-down.png" height="17" width="11"/></a>
+                    </li>
+                    <li class = "lowerFont animateAngle">
+                        <a href="#">Ostatnio oglądane <img src="../images/icon/angle-down.png" height="13" width="11"/></a>
+                    </li>
+                    <li>
+                        <a href="#" title="Kliknij, aby przejść do koszyka."><img src="../images/koszyk.png" height="39" width="51"/></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<div class="container-fluid">
+    <div class="wrap">
+        <div class="content">
+            <div class="carContainer">
+            <button class="tablink" onclick="openPage('Home', this, '#f8f8f8')" id="defaultOpen" style="border-radius: 10px 0 0 0">szukaj opon wg rozmiaru</button>
+            <button class="tablink" onclick="openPage('News', this, '#f8f8f8')" style="border-radius: 0 10px 0 0">szukaj opon wg auta</button>
+            <div id="Home" class="tabcontent">
+                <div class="carContainerBox1">
+                    <div class="szerokoscOpony">
+                        <p style="font-size: 14px">Szerokość</p>
+                    </div>
+                    <div class="searchBox">
+                        <!--<select name="" id="">
+                            <option value="0"></option>
+                            <option value="1"></option>
+                            <option value="2"></option>
+                            <option value="3"></option>
+                            <option value="4"></option>
+                            <option value="5"></option>
+                            <option value="6"></option>
+                            <option value="7"></option>
+                            <option value="8"></option>
+                            <option value="9"></option>
+                            <option value="10"></option>
+                            <option value="11"></option>
+                            <option value="12"></option>
+                            <option value="13"></option>
+                            <option value="14"></option>
+                            <option value="15"></option>
+                            <option value="16"></option>
+                        </select>-->
+                    </div>
+                    <div class="profilOpony">
+                        <p style="font-size: 14px">Profil</p>
+                    </div>
+                    <div class="searchBox1">
+                        <!--<select name="" id="">
+                            <option value="0"></option>
+                            <option value="1"></option>
+                            <option value="2"></option>
+                            <option value="3"></option>
+                            <option value="4"></option>
+                            <option value="5"></option>
+                            <option value="6"></option>
+                            <option value="7"></option>
+                            <option value="8"></option>
+                            <option value="9"></option>
+                            <option value="10"></option>
+                            <option value="11"></option>
+                            <option value="12"></option>
+                        </select>-->
+                    </div>
+                    <div class="srednicaOpony">
+                        <p style="font-size: 14px">Średnica</p>
+                    </div>
+                    <div class="searchBox2">
+                        <!--<select name="" id="">
+                            <option value="0"></option>
+                            <option value="1"></option>
+                            <option value="2"></option>
+                            <option value="3"></option>
+                            <option value="4"></option>
+                            <option value="5"></option>
+                            <option value="6"></option>
+                            <option value="7"></option>
+                            <option value="8"></option>
+                            <option value="9"></option>
+                            <option value="10"></option>
+                            <option value="11"></option>
+                        </select>-->
+                    </div>
+                    <div class="carContainerTire">
+                        <img src="../images/opona_searchbar_with_text.png" height="223" width="419"/>
+                    </div>
+                </div>
+                <div class="carContainerBox2">
+                    <div class="producent">
+                        <p style="font-size: 14px">Producent</p>
+                    </div>
+                    <div class="dropdown-select-producent">
+
+                    </div>
+                    <div class="szukajOpon">
+                        <button class="szukajOponBtn"><a href="#" class="a-center-Alignment">szukaj opon</a></button>
+                    </div>
+                    <div class="advancedSearch">
+                        <a href="#">Wyszukiwanie zaawansowane</a>
+                    </div>
+                </div>
+
+                <div class="bottomPromoIcons">
+                    <div class="bottomPromoIconsContent">
+                        <img src="../images/icon/fachowe_doradztwo_ikona.png" height="39" width="42"/>
+                        <span class="centerAlignment">Fachowe doradztwo</span>
+                        <img src="../images/icon/14_dni_zwrot_ikona.png" alt="">
+                        <span class="centerAlignment">14 dni na zwrot</span>
+                        <img src="../images/icon/serwis_ikona.png" alt="">
+                        <span class="centerAlignment">Ponad 100 partnerskich serwisów montażu</span>
+                    </div>
+                </div>
+            </div>
+            <div id="News" class="tabcontent">
+
+
+                <div class="bottomPromoIcons">
+                    <div class="bottomPromoIconsContent">
+                        <img src="../images/icon/fachowe_doradztwo_ikona.png" height="39" width="42"/>
+                        <span class="centerAlignment">Fachowe doradztwo</span>
+                        <img src="../images/icon/14_dni_zwrot_ikona.png" alt="">
+                        <span class="centerAlignment">14 dni na zwrot</span>
+                        <img src="../images/icon/serwis_ikona.png" alt="">
+                        <span class="centerAlignment">Ponad 100 partnerskich serwisów montażu</span>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <button class="btn"><a href="#">wybierz swój model ></a></button>
+            <div class="banner1">
+                <img src="../images/baner_napis_michelin.png" alt="">
+            </div>
+            <div class="banner2">
+                <img src="../images/baner_napis_michelin.png" alt="">
+            </div>
+            <div class="michelin-banner">
+                <img src="../images/michelin_baner_logo.png" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="wrap">
+        <div class="reviews">
+            <div class="box">
+                <h2>Opinie naszych klientów</h2>
+            </div>
+
+            <div class="cloud">
+                <div class="firstCloud">
+
+                </div>
+                <div class="secondCloud">
+
+                </div>
+                <div class="thirdCloud">
+
+                </div>
+            </div>
+
+            <div class="ratingComments">
+                <div class="footerRatingComments">
+                    <div class="firstCustomer">
+                        <span class="Ted">Ted </span> <img src="../images/icon/opineo_opinia.png" height="54" width="163"/>
+                    </div>
+                    <div class="secondCustomer">
+                        <span class="Pawel">Paweł </span> <img src="../images/icon/Ceneo_opinia.png" height="42" width="93"/>
+                    </div>
+                    <div class="thirdCustomer">
+                        <span class="Madzia">Madzia</span> <img src="../images/icon/Ceneo_opinia.png" height="42" width="93"/>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ratingBox">
+                <div class="box2">
+                    <div class="rating">
+                        <h1 class="upperFontRating">4.9 <span class="lowerFontRating">/ 5</span></h1>
+                    </div>
+                    <div class="average">
+                        <p>To średnia ocen naszego sklepu wystawionych</p>
+                        <p>przez klientów na serwisach <a href="Opineo.pl">Opineo.pl</a> i <a href="#">Ceneo.pl</a></p>
+                    </div>
+                    <div class="buttonRating">
+                        <button class="btnRating"><a href="#">zobacz wszystkie opinie ></a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="wrap">
+        <div class="shop">
+            <div class="shopContent">
+                <p>czesc</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="wrap">
+        <div class="headerFirms">
+            <div class="textFirms">
+                <h2>Polecają nas czołowi producenci opon</h2>
+                <p><a href="#">zobacz nasze certyfikaty <span> > </span> </a></p>
+
+                <div class="logoFirms">
+                    <img class="growImage" src="../images/producents/goodyear_logo.png" height="37" width="150"/>
+                    <img class="growImage" src="../images/producents/dunlop_ikona.png" height="24" width="150"/>
+                    <img class="growImage" src="../images/producents/continental_logo.png" height="27" width="151"/>
+                    <img class="growImage" src="../images/producents/bridgestone_logo.png" height="19" width="158"/>
+                    <img class="growImage" src="../images/producents/pirelli_logo.png" height="37" width="116"/>
+                    <img class="growImage" src="../images/producents/michelin_logo.png" height="30" width="156"/>
+                    <img class="growImage" src="../images/producents/hankook_logo.png" height="27" width="143"/>
+                    <img class="growImage" src="../images/producents/nokiantyres_logo.png" height="40" width="100"/>
+                    <img class="growImage" src="../images/producents/yokohama_logo.png" height="24" width="162"/>
+                    <img class="growImage" src="../images/producents/theraintyreuniroyal_logo.png" height="34" width="142"/>
+                    <img class="growImage" src="../images/producents/falkentire_logo.png" height="22" width="131"/>
+                    <img class="growImage" src="../images/producents/fulda_ikona.png" height="34" width="103"/>
+                    <img class="growImage" src="../images/producents/firestone_logo.png" height="19" width="125"/>
+                    <img class="growImage" src="../images/producents/nexentire_logo.png" height="14" width="157"/>
+                    <img class="growImage" src="../images/producents/debica_logo.png" height="33" width="138"/>
+                    <img class="growImage" src="../images/producents/dayton_logo.png" height="19" width="138"/>
+                    <img class="growImage" src="../images/producents/barum_logo.png" height="20" width="146"/>
+                    <img class="growImage" src="../images/producents/zeetex_ikona.png" height="39" width="128"/>
+                    <img class="growImage" src="../images/producents/tyresimperial_logo.png" height="25" width="157"/>
+                    <img class="growImage" src="../images/producents/laufenn_logo.png" height="25" width="140"/>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="wrap">
+        <div class="experts">
+            <div class="expertsContainer">
+                <div class="expertsText">
+                    <p class="pHeader">Porady ekspertów</p>
+                    <p class="">Zapoznaj się z naszą bazą wiedzy. Tworzymy ją dla was. <a href="#">zobacz wszystkie <span> > </span></a><p>
+                </div>
+                <div class="parent">
+                    <div class="div1">
+                        <div class="cardBig">
+                            <div class="imagePlacement">
+                                <img class="responsive" src="../images/articles/zdjecie_artykul_1.png"/>
+                                <p class="topPlacement">Polecamy szczególnie</p>
+                                <div class="bottomPlacement">
+                                    <p><span>Wymiana opon</span></p>
+                                    <p><span>- jak wybrać warsztat?</span></p>
+                                </div>
+                            </div>
+                            <p class="textArticle">
+                                    Na trasie z pewnością mijasz wiele
+                                    przydrożnych punktów i wątpliwej renomy warsztatów, oferujących usługi po kosztach. Wizyta w nich jest na pewno dużo tańsza, ale czy opłacalna? Na pewno nie, jeśli zależy Ci na bezpieczeństwie oraz osiągach Twojego auta.
+                                    Przed wyborem warsztatu samochodowego warto zasięgnąć języka u znajomych lub sprawdzić opinie w Internecie. Sprawdź, czy punkt oferuje profesjonalne usługi z użyciem specjalistycznego sprzętu.
+                                    Jaki sprzęt powinien znajdować się w... warsztacie?
+
+                                    Tylko takie warsztaty regularnie serwisują urządzenia i przeprowadzają kalibrację wyważarek. Małe, półamatorskie punkty często z powodu braku funduszy nie robią tego wcale albo - zbyt rzadko.
+
+                                    Z nieufnością należy podchodzić do punktów sezonowych, takich jak namioty przy stacjach benzynowych i szczególnie uczęszczanych drogach. Oprócz wątpliwej jakości sprzętu, w miejscach tych rzadko kiedy można mieć pewność, że naszym autem zajmie się prawdziwy, doświadczony fachowiec.
+                            </p>
+                            <p class="linkArticle"><a href="#">czytaj <span> > </span></a></p>
+                        </div>
+                    </div>
+                    <div class="div2">
+                        <div class="card">
+                            <img src="../images/articles/zdjecie_artykul_2.png"/>
+                            <p class="upperTextG">Dlaczego warto zaplanować dostawę opon dużo wcześniej?</p>
+                            <p class="bottomTextG"><a href="#">czytaj <span> > </span></a></p>
+                        </div>
+                        <div class="card">
+                            <img src="../images/articles/zdjecie_artykul_4.png"/>
+                            <p class="upperTextG">Jak dbać o swoje felgi aluminiowe - wskazówki od ekspertów ALCAR</p>
+                            <p class="bottomTextG"><a href="#">czytaj <span> > </span></a></p>
+                        </div>
+                    </div>
+                    <div class="div3">
+                        <div class="card">
+                            <img src="../images/articles/zdjecie_artykul_3.png"/>
+                            <p class="upperTextG">Przechowywanie opon - kluczowy czynnik dający osiągi</p>
+                            <p class="bottomTextG"><a href="#">czytaj <span> > </span></a></p>
+                        </div>
+                        <div class="card">
+                            <img src="../images/articles/zdjecie_artykul_5.png"/>
+                            <p class="upperTextG">Jak dbać o swoje felgi aluminiowe - wskazówki od ekspertów ALCAR</p>
+                            <p class="bottomTextG"><a href="#">czytaj <span> > </span></a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="wrap">
+        <div class="tiresForCarSearch">
+            <div class="searchSection">
+                <div class="parent">
+                    <div class="div1">
+                        <p>Popularne rozmiary opon</p>
+                    </div>
+                    <div class="div2">
+                        <p><a href="#">175/65 R14 <span> > </span></a></p>
+                        <p><a href="#">185/60 R14 <span> > </span></a></p>
+                        <p><a href="#">185/65 R14 <span> > </span></a></p>
+                    </div>
+                    <div class="div3">
+                        <p><a href="#">185/65 R14 <span> > </span></a></p>
+                        <p><a href="#">195/65 R15 <span> > </span></a></p>
+                        <p><a href="#">205/55 R16 <span> > </span></a></p>
+                    </div>
+                    <div class="div4">
+                        <p>Opony wg sezonu</p>
+                    </div>
+                    <div class="div5">
+                        <p><a href="#">zimowe <span> > </span></a></p>
+                        <p><a href="#">letnie <span> > </span></a></p>
+                        <p><a href="#">uniwersalne <span> > </span></a></p>
+                    </div>
+                    <div class="div6">
+                        <p>Opony wg pojazdu:</p>
+                    </div>
+                    <div class="div7">
+                        <p><a href="#">osobowe <span> > </span></a></p>
+                        <p><a href="#">ciężarowe <span> > </span></a></p>
+                        <p><a href="#">4x4 <span> > </span></a></p>
+                    </div>
+                    <div class="div8">
+                        <p><a href="#">dostawcze <span> > </span></a></p>
+                        <p><a href="#">motocykle <span> > </span></a></p>
+                        <p><a href="#">quady <span> > </span></a></p>
+                    </div>
+                    <div class="div9">
+                        <p>Najczęściej wyszukiwane wg producentów</p>
+                    </div>
+                    <div class="div10">
+                        <p><a href="#">Opony Bfgoodrich <span> > </span></a></p>
+                        <p><a href="#">Opony Bridgestone <span> > </span></a></p>
+                        <p><a href="#">Opony Continental <span> > </span></a></p>
+                        <p><a href="#">Opony Cooper <span> > </span></a></p>
+                    </div>
+                    <div class="div11">
+                        <p><a href="#">Opony Dębica <span> > </span></a></p>
+                        <p><a href="#">Opony Dunlop <span> > </span></a></p>
+                        <p><a href="#">Opony Falken <span> > </span></a></p>
+                        <p><a href="#">Opony Fulda <span> > </span></a></p>
+                    </div>
+                    <div class="div12">
+                        <p><a href="#">Opony Goodride <span> > </span></a></p>
+                        <p><a href="#">Opony Goodyear <span> > </span></a></p>
+                        <p><a href="#">Opony Hankook <span> > </span></a></p>
+                        <p><a href="#">Opony Kleber <span> > </span></a></p>
+                    </div>
+                    <div class="div13">
+                        <p><a href="#">Opony Kormoran <span> > </span></a></p>
+                        <p><a href="#">Opony Michelin <span> > </span></a></p>
+                        <p><a href="#">Opony Nexen <span> > </span></a></p>
+                        <p><a href="#">Opony Nokian <span> > </span></a></p>
+                    </div>
+                    <div class="div14">
+                        <p><a href="#">Opony Pirelli <span> > </span></a></p>
+                        <p><a href="#">Opony Sava <span> > </span></a></p>
+                        <p><a href="#">Opony Vredestein <span> > </span></a></p>
+                        <p><a href="#">Opony Yokohama <span> > </span></a></p>
+                    </div>
+                    <div class="div15">
+                        <p>Najczęściej wyszukiwane wg samochodów</p>
+                    </div>
+                    <div class="div16">
+                        <p><a href="#">Skoda <span> > </span></a></p>
+                        <p><a href="#">Fiat <span> > </span></a></p>
+                        <p><a href="#">Volkswagen <span> > </span></a></p>
+                        <p><a href="#">Toyota <span> > </span></a></p>
+                    </div>
+                    <div class="div17">
+                        <p><a href="#">Mazda <span> > </span></a></p>
+                        <p><a href="#">Hyundai <span> > </span></a></p>
+                        <p><a href="#">Audi <span> > </span></a></p>
+                        <p><a href="#">BMW <span> > </span></a></p>
+                    </div>
+                    <div class="div18">
+                        <p><a href="#">Mercedes <span> > </span></a></p>
+                        <p><a href="#">Kia <span> > </span></a></p>
+                        <p><a href="#">Peugeot <span> > </span></a></p>
+                        <p><a href="#">Renault <span> > </span></a></p>
+                    </div>
+                    <div class="div19">
+                        <p><a href="#">Seat <span> > </span></a></p>
+                        <p><a href="#">Rover <span> > </span></a></p>
+                        <p><a href="#">Volvo <span> > </span></a></p>
+                        <p><a href="#">Mini <span> > </span></a></p>
+                    </div>
+                    <div class="div20">
+                        <p><a href="#">Dacia <span> > </span></a></p>
+                        <p><a href="#">Hyundai <span> > </span></a></p>
+                        <p><a href="#">Yeep <span> > </span></a></p>
+                        <p><a href="#">Alfa Romeo <span> > </span></a></p>
+                    </div>
+                </div>
+                <div class="informationText">
+                    <p>Z pewnością dbasz o bezpieczeństwo swoje i swojej rodziny. Chcesz, aby codzienna jazda była przyjemna, bezpieczna i komfortowa. Opony są jednym z najważniejszych elementów samochodu. To głównie one decydują o długości
+                    drogi hamowania czy powodzenia nagłego manewru. Pamiętaj, że jest to jedyny <a href="#">element pojazdu</a> stykający się z drogą. <br />
+                    <a href="#">Oferujemy bogaty</a> wybór opon <a href="#">letnich</a>, <a href="#">zimowych</a> i <a
+                    href="#">całorocznych</a>. W naszym sklepie znajdziesz modele na każdy sezon do niemal każdego typu pojazdu. Niezależnie od tego czy jeździsz
+                    samochodem osobowym, SUV-em, terenówką czy autem dostawczym. <a href="#">Obok standardowego</a> wyposażenia najpopularniejszych
+                    <a href="#">pojazdów</a> posiadamy również opony do luksusowych i ekskluzywnych aut. <br />
+                    Pomożemy Ci również w przypadku bardziej specjalistycznych produktów, takich jak opony motocyklowe, run-flat, cieżarowe czy ogumienia do aut zabytkowych. W ofercie znajdziesz modele różnego
+                    przeznaczenia, wszystkich marek i klas. Jeśli nasz zespół nie będzie w stanie znaleźć opony której szukasz, prawdopodobnie nie zrobi tego nikt.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Stopka-->
+<footer>
+    <div class="container-fluid" style="margin-bottom: 190px">
+        <div class="wrap">
+            <div class="footerContainer">
+                <div class="parent">
+                    <div class="div1">
+                        <a href="#"><img src="../images/icon/tireking_small_icon.png" height="32" width="173"/></a>
+                        <p class="firstParagraph">Infolinia</p>
+                        <p style="font-size: 18px">tel.<a href="tel:+48 12 376 09 30">+48 12 376 09 30</a></p>
+                        <p style="font-size: 12px">czynna codziennie od 8.00 do 18.00</p>
+                        <br />
+                        <p style="font-size: 12px">Napisz do nas:</p>
+                        <p style="font-size: 12px"><a href="mailto:pomoc@tireking.pl?Subject=Hello%20again">pomoc@tireking.pl</a></p>
+                        <br />
+                        <br />
+                        <p class="greyContent" style="font-size: 10px">Korzystanie z serwisu oznacza akceptację <a href="#regulamin">regulaminu</a>.</p>
+                        <p class="greyContent" style="font-size: 10px">Copyright &copy; 2010-2019 by tireking.pl All Rights Reserved.</p>
+                    </div>
+                    <div class="div2">
+                        <p class="firstParagraph">Przed zakupem</p>
+                        <p><a href="#">Jak kupować?<span> > </span></a></p>
+                        <p><a href="#">Koszty i sposoby dostawy <span> > </span></a></p>
+                        <p><a href="#">Formy płatności <span> > </span></a></p>
+                        <p><a href="#">Jak kupować na raty? <span> > </span></a></p>
+                        <p><a href="#">Dostawa z montażem <span> > </span></a></p>
+                    </div>
+                    <div class="div3">
+                        <p class="firstParagraph">O nas</p>
+                        <p><a href="#">O firmie <span> > </span></a></p>
+                        <p><a href="#">Kontakt <span> > </span></a></p>
+                        <p><a href="#">Aktualności <span> > </span></a></p>
+                        <p><a href="#">Współpraca <span> ></span></a></p>
+                    </div>
+                    <div class="div4">
+                        <p class="firstParagraph">Informacje</p>
+                        <p><a href="#">Regulamin <span> > </span></a></p>
+                        <p><a href="#">Polityka prywatności <span> > </span></a></p>
+                        <p><a href="#">Pomoc <span> > </span></a></p>
+                        <p><a href="#">Zgłoś reklamację <span> > </span></a></p>
+                        <div class="icons">
+                            <a href="https://www.facebook.com/sklepoponpl/" target="_blank"><img src="../images/icon/facebook_ikona.png" height="40" width="40"/></a>
+                            <a href="https://www.youtube.com/" target="_blank"><img src="../images/icon/youtube_ikona.png" height="40" width="40"/></a>
+                            <a href="https://www.ceneo.pl/sklepy/sklepopon.com-s6855" target="_blank"><img src="../images/icon/instagram_ikona.png" height="40" width="40"/></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+<!--
+<footer>
+    <div class="container-fluid">
+        <div class="wrap">
+            <div class="row">
+                <div class="box">
+                    <img src="../images/icon/tireking_small_icon.png" height="32" width="173"/>
+                    <p>Infolinia</p>
+                    <p>tel.   <a href="tel:+48 12 376 09 30">+48 12 376 09 30</a></p>
+                    <p>czynna codziennie od 8.00 do 18.00</p>
+                    <br>
+                    <br>
+                    <p>Napisz do nas:</p>
+                    <p><a href="mailto:pomoc@tireking.pl?Subject=Hello%20again">pomoc@tireking.pl</a></p>
+                    <p>Korzystanie z serwisu oznacza akceptację <a href="#regulamin">regulaminu</a>.</p>
+                    <p>Copyright &copy; 2010-2019 by tireking.pl All Rights Reserved.</p>
+                </div>
+                <div class="box przed-zakupem">
+                    <h3>Przed zakupem</h3>
+                    <p><a href="#">Jak kupować?</a> ></p>
+                    <p><a href="#">Koszty i sposoby dostawy</a> ></p>
+                    <p><a href="#">Formy płatności</a> ></p>
+                    <p><a href="#">Jak kupować na raty?</a> ></p>
+                    <p><a href="#">Dostawa z montażem</a> ></p>
+                </div>
+                <div class="box o-nas">
+                    <h3>O nas</h3>
+                    <p><a href="#">O firmie</a> ></p>
+                    <p><a href="#">Kontakt</a> ></p>
+                    <p><a href="#">Aktualności</a> ></p>
+                    <p><a href="#">Współpraca</a> ></p>
+                </div>
+                <div class="box informacje">
+                    <h3>Informacje</h3>
+                    <p><a href="#">Regulamin</a> ></p>
+                    <p><a href="#">Polityka prywatności</a> ></p>
+                    <p><a href="#">Pomoc</a> ></p>
+                    <p><a href="#">Zgłoś reklamację</a> ></p>
+                    <div class="icons">
+                        <img src="../images/icon/facebook_ikona.png" height="40" width="40"/>
+                        <img src="../images/icon/youtube_ikona.png" height="40" width="40"/>
+                        <img src="../images/icon/instagram_ikona.png" height="40" width="40"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+-->
+<!-- Skrypty -->
+
+<script src="../js/sticky/jquery.sticky.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>
+
+
+<!-- Kontent! -->
+<!--<main>
+    <div class="carSearchContainer">
+        <div class="wrap">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="carSearchBox carSearching">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>-->
+
+<!-- <div class="tabcontent" id="Home">
+                    <div class="carContainerBox1">
+                        <div class="carContainerTire">
+                            <img src="../images/opona_searchbar_with_text.png" height="223" width="419"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="carContainerBox2">
+                    <div class="producent">
+
+                    </div>
+                    <div class="szukajOpon">
+                        <button class="szukajOponBtn"><a href="#" class="a-center-Alignment">szukaj opon</a></button>
+                    </div>
+                    <div class="advancedSearch">
+                        <a href="#">Wyszukiwanie zaawansowane</a>
+                    </div>
+                </div>
+
+-->
+
+<!--
+ <div class="carContainer">
+                <div class="tablink">
+
+                </div>
+
+                <div class="bottomPromoIcons">
+                    <div class="bottomPromoIconsContent">
+                        <img src="../images/icon/fachowe_doradztwo_ikona.png" height="39" width="42"/>
+                        <span class="centerAlignment">Fachowe doradztwo</span>
+                        <img src="../images/icon/14_dni_zwrot_ikona.png" alt="">
+                        <span class="centerAlignment">14 dni na zwrot</span>
+                        <img src="../images/icon/serwis_ikona.png" alt="">
+                        <span class="centerAlignment">Ponad 100 partnerskich serwisów montażu</span>
+                    </div>
+                </div>
+            </div>
+-->

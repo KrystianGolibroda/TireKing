@@ -1,0 +1,306 @@
+
+@font-face {
+  font-family: 'SinkinSans-400Regular';
+  src: url("../fonts/SinkinSans-400Regular.ttf");
+}
+
+@font-face {
+  font-family: 'SinkinSans-700Bold';
+  src: url("../fonts/SinkinSans-700Bold.ttf");
+}
+
+@font-face {
+  font-family: 'SinkinSans-700BoldItalic';
+  src: url("../fonts/SinkinSans-700BoldItalic.ttf");
+}
+
+@font-face {
+  font-family: 'SinkinSans-500Medium';
+  src: url("../fonts/SinkinSans-500Medium.ttf");
+}
+
+@font-face {
+  font-family: 'Gotham-BoldItalic';
+  src: url("../fonts/Gotham-BoldItalic.ttf");
+}
+
+@font-face {
+  font-family: 'SinkinSans-600SemiBold';
+  src: url("../fonts/SinkinSans-600SemiBold.ttf");
+}
+
+@font-face {
+  font-family: 'SinkinSans-300Light';
+  src: url("../fonts/SinkinSans-300Light.ttf");
+}
+
+$SS-400Regular: 'SinkinSans-400Regular', sans-serif;
+$SS-700Bold: 'SinkinSans-700Bold', sans-serif;
+$SS-700BoldItalic: 'SinkinSans-700BoldItalic', sans-serif;
+$SS-500Medium: 'SinkinSans-500Medium', sans-serif;
+$Gotham-BoldItalic: 'Gotham-BoldItalic', sans-serif;
+$SS-600SemiBold: 'SinkinSans-600SemiBold', sans-serif;
+$SS-300Light: 'SinkinSans-300Light', sans-serif;
+
+
+$grey: #f0f0f0;
+$white: #ffffff;
+$fontMenu: #221d24;
+$michelinButton: #264f9a;
+$darkerGrey: #808080;
+$greyFooter: #999999;
+$carContainer: #f8f8f8;
+$blackLikeHell: #000000;
+$orangeButton: #ff6300;
+$carInActiveContainer: #e2e2e2;
+$wyszukiwarkaKolorSSzP: #929292;
+$selectBorder: #dbdbdb;
+$opineoCeneo: #666666;
+$shopBackgroundColor: #f1f1f1;
+$podkreslnik: #d9d9d9;
+$hyperlinks: #4b95db;
+$bestseller: #6398d3;
+
+header {
+  //border-bottom: 1px solid $opineoCeneo;
+  box-shadow: 0 0 10px 0 $opineoCeneo;
+  margin: 0 auto;
+  background-color: $grey;
+}
+
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.row:before,
+.row:after {
+  content: "";
+  display: table;
+  clear: both
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+.wrap {
+  box-sizing: border-box;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container-fluid {
+  padding-right: 1rem !important;
+  padding-left: 1rem !important;
+}
+
+.widget {
+  position:fixed;
+  z-index: 9999;
+  right: -435px;
+  width:435px;
+  height: 575px;
+  top:20%;
+
+}
+
+.widget.active {
+  animation: popUp 500ms;
+  animation-fill-mode: forwards;
+  //animation-timing-function: linear;
+}
+
+.widget-content {
+  position: relative;
+}
+
+.widget-btn {
+  border-radius: 10px 0 0 10px;
+  position: absolute;
+  right: 100%;
+  top: 0;
+  background-color: $orangeButton;
+  height: 305px;
+  width: 55px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+
+  .widget-bubble {
+    margin-top: 20px;
+  }
+  .widget-text{
+    transform: rotate(-90deg);
+    /* Safari */
+    -webkit-transform: rotate(-90deg);
+    /* Firefox */
+    -moz-transform: rotate(-90deg);
+    /* IE */
+    -ms-transform: rotate(-90deg);
+    /* Opera */
+    -o-transform: rotate(-90deg);
+    /* Internet Explorer */
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+    color: $white;
+    font-size: 16px;
+    font-family: $SS-600SemiBold;
+    white-space: nowrap;
+  }
+
+  .widget-mobile {
+    margin-bottom: 20px;
+  }
+}
+
+@keyframes popUp{
+  from {
+    right:-435px;
+  }
+  to {
+    right: 4px;
+  }
+}
+
+
+.panel {
+  height: 575px;
+  width: 435px;
+  border: 2px solid $orangeButton;
+  border-radius: 0 0 0 10px;
+  background-color: $white;
+
+  .content{
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 15px;
+
+    .panelContent{
+
+
+      .textUp{
+        text-align: center;
+        line-height: 5px;
+
+        .upperCase{
+          font-size: 19px;
+          font-family: $SS-700Bold;
+        }
+        .lowerCase{
+          font-size: 14px;
+          font-family: $SS-400Regular;
+        }
+      }
+
+      .phoneNumbers {
+        margin: 20px 0 30px 0;
+        width: 100%;
+        border: 1px solid $selectBorder;
+        border-radius: 5px;
+        text-align: center;
+        line-height: 8px;
+
+        .upperParagraphs {
+          font-size: 16px;
+          font-family: $SS-700Bold;
+        }
+
+        .aPhoneNr {
+          font-size: 20px;
+          font-family: $SS-700Bold;
+          text-decoration: none;
+          color: $orangeButton;
+        }
+
+        .informationInfolinia {
+          font-size: 12px;
+          font-family: $SS-400Regular;
+        }
+      }
+
+      .textPanel{
+        width: 70%;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 19px;
+        font-family: $SS-700Bold;
+      }
+
+      .iconsPanel{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 20px 0 15px 0;
+
+        .iconsPanelBox{
+          width: 25%;
+
+          .columnAlign{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            text-decoration: none;
+            color: $blackLikeHell;
+
+            .iconsPanelText {
+              text-decoration: none;
+              font-size: 12px;
+              line-height: 15px;
+              font-family: $SS-400Regular;
+            }
+          }
+        }
+      }
+
+      .iconsPanelFooter{
+        margin: 0 auto;
+        line-height: 15px;
+
+        .iconsPanelFooterLow{
+          font-size: 12px;
+          font-family: $SS-400Regular;
+          text-align: center;
+        }
+      }
+
+      .buttonRef {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+
+        .formsButton {
+          margin: 0 auto;
+          text-align: center;
+          background-color: $blackLikeHell;
+          color: $white;
+          width: 270px;
+          height: 40px;
+          border-radius: 5px;
+          border: none;
+          cursor: pointer;
+          font-size: 14px;
+          font-family: $SS-700Bold;
+          letter-spacing: 0.01rem;
+        }
+      }
+    }
+  }
+}
+
+
+
+

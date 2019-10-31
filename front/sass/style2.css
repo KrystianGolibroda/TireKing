@@ -1,0 +1,1396 @@
+@font-face {
+  font-family: 'SinkinSans-400Regular';
+  src: url("../fonts/SinkinSans-400Regular.ttf"); }
+@font-face {
+  font-family: 'SinkinSans-700Bold';
+  src: url("../fonts/SinkinSans-700Bold.ttf"); }
+@font-face {
+  font-family: 'SinkinSans-700BoldItalic';
+  src: url("../fonts/SinkinSans-700BoldItalic.ttf"); }
+@font-face {
+  font-family: 'SinkinSans-500Medium';
+  src: url("../fonts/SinkinSans-500Medium.ttf"); }
+@font-face {
+  font-family: 'Gotham-BoldItalic';
+  src: url("../fonts/Gotham-BoldItalic.ttf"); }
+@font-face {
+  font-family: 'SinkinSans-600SemiBold';
+  src: url("../fonts/SinkinSans-600SemiBold.ttf"); }
+@font-face {
+  font-family: 'SinkinSans-300Light';
+  src: url("../fonts/SinkinSans-300Light.ttf"); }
+header {
+  position: relative;
+  z-index: 9999; }
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: "SinkinSans-500Medium", sans-serif; }
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none; }
+
+#sticker {
+  z-index: 999; }
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: auto; }
+
+.row:before,
+.row:after {
+  content: "";
+  display: flex;
+  clear: both; }
+
+.wrap {
+  box-sizing: border-box;
+  max-width: 1440px;
+  margin: 0 auto; }
+
+.container-fluid {
+  padding-right: 1rem !important;
+  padding-left: 1rem !important; }
+
+.menuTop {
+  margin: 0 auto;
+  font-family: "SinkinSans-400Regular", sans-serif;
+  font-size: 11px;
+  color: #221d24;
+  height: 32px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-decoration: none;
+  background-color: #f0f0f0; }
+  .menuTop .topLeft {
+    padding-left: 120px;
+    padding-top: 8px; }
+    .menuTop .topLeft a:link {
+      text-decoration: none;
+      color: #221d24; }
+    .menuTop .topLeft a:visited {
+      text-decoration: none;
+      color: #221d24; }
+    .menuTop .topLeft a:hover {
+      text-decoration: underline;
+      color: #221d24; }
+    .menuTop .topLeft a:active {
+      text-decoration: underline;
+      color: #221d24; }
+    .menuTop .topLeft span {
+      margin-right: 35px; }
+  .menuTop .topRight {
+    padding-right: 120px;
+    padding-top: 8px; }
+    .menuTop .topRight a:link {
+      text-decoration: none;
+      color: #221d24; }
+    .menuTop .topRight a:visited {
+      text-decoration: none;
+      color: #221d24; }
+    .menuTop .topRight a:hover {
+      text-decoration: underline;
+      color: #221d24; }
+    .menuTop .topRight a:active {
+      text-decoration: underline;
+      color: #221d24; }
+    .menuTop .topRight span {
+      margin-left: 35px; }
+
+.menu {
+  margin: 0 auto;
+  background-color: #ffffff;
+  height: 88px;
+  font-size: 18px; }
+  .menu .menuList {
+    position: relative;
+    padding-right: 120px;
+    padding-left: 120px;
+    list-style-type: none;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+    .menu .menuList li {
+      padding-top: 23px;
+      display: flex;
+      align-items: center;
+      font-family: "SinkinSans-700Bold", sans-serif; }
+      .menu .menuList li li:hover > ul,
+      .menu .menuList li ul li ul:hover {
+        visibility: visible;
+        opacity: 1;
+        display: block;
+        z-index: 9999; }
+      .menu .menuList li ul {
+        visibility: hidden;
+        opacity: 0;
+        position: absolute;
+        transition: all 0.5s ease;
+        margin-top: 1rem;
+        left: 0;
+        display: none; }
+        .menu .menuList li ul li {
+          clear: both;
+          width: 100%; }
+      .menu .menuList li a {
+        margin: 0; }
+      .menu .menuList li a:link {
+        text-decoration: none;
+        color: #221d24; }
+      .menu .menuList li a:visited {
+        text-decoration: none;
+        color: #221d24; }
+      .menu .menuList li a:hover {
+        text-decoration: none;
+        color: #221d24; }
+      .menu .menuList li a:active {
+        text-decoration: none;
+        color: #221d24; }
+    .menu .menuList .lowerFont {
+      font-size: 14px; }
+
+.content .btn .banner1 .banner2 .michelin-banner {
+  display: flex;
+  margin: auto; }
+
+.content {
+  position: relative;
+  background-image: url("../images/baner_michelin.png");
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+  width: 100%;
+  max-width: 1440px;
+  height: 850px; }
+  .content .btn {
+    position: absolute;
+    cursor: pointer;
+    width: 400px;
+    height: 40px;
+    background-color: #264f9a;
+    color: #ffffff;
+    border: none;
+    border-radius: 1px;
+    font-family: "Gotham-BoldItalic", sans-serif;
+    font-size: 18px;
+    letter-spacing: 0.1rem;
+    left: 135px;
+    bottom: 155px; }
+    .content .btn a:link {
+      text-decoration: none;
+      color: #ffffff; }
+    .content .btn a:visited {
+      text-decoration: none;
+      color: #ffffff; }
+    .content .btn a:hover {
+      text-decoration: none;
+      color: #ffffff; }
+    .content .btn a:active {
+      text-decoration: none;
+      color: #ffffff; }
+  .content .banner1 {
+    position: absolute;
+    top: 50px;
+    left: 80px; }
+  .content .banner2 {
+    position: absolute;
+    top: 50px;
+    right: 90px; }
+  .content .michelin-banner {
+    position: absolute;
+    bottom: 245px;
+    left: 135px; }
+  .content .carContainer {
+    position: absolute;
+    width: 1030px;
+    height: 440px;
+    top: 40px;
+    left: 200px;
+    background-color: #f8f8f8;
+    border-radius: 10px; }
+    .content .carContainer .tablink {
+      font-family: "SinkinSans-700Bold", sans-serif;
+      border-radius: 2px 2px 0 0;
+      background-color: #e2e2e2;
+      color: #000000;
+      float: left;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 15px 15px;
+      font-size: 19px;
+      width: 50%;
+      letter-spacing: 0.01rem; }
+    .content .carContainer .tabcontent {
+      z-index: 10; }
+      .content .carContainer .tabcontent .carContainerBox1 {
+        font-family: "SinkinSans-700Bold", sans-serif; }
+        .content .carContainer .tabcontent .carContainerBox1 .szerokoscOpony {
+          position: absolute;
+          left: 85px;
+          top: 90px;
+          color: #929292; }
+        .content .carContainer .tabcontent .carContainerBox1 .label1 {
+          position: absolute;
+          top: 105px;
+          left: 70px;
+          z-index: 100; }
+          .content .carContainer .tabcontent .carContainerBox1 .label1 .select1 {
+            font-family: "SinkinSans-700Bold", sans-serif;
+            font-size: 14px;
+            border: 1px solid #dbdbdb;
+            padding-left: 10px;
+            width: 135px;
+            height: 50px;
+            border-radius: 5px; }
+        .content .carContainer .tabcontent .carContainerBox1 .label2 {
+          position: absolute;
+          top: 105px;
+          left: 225px;
+          z-index: 100; }
+          .content .carContainer .tabcontent .carContainerBox1 .label2 .select2 {
+            font-family: "SinkinSans-700Bold", sans-serif;
+            font-size: 14px;
+            border: 1px solid #dbdbdb;
+            padding-left: 10px;
+            width: 135px;
+            height: 50px;
+            border-radius: 5px; }
+        .content .carContainer .tabcontent .carContainerBox1 .label3 {
+          position: absolute;
+          top: 50px;
+          left: 380px;
+          z-index: 100; }
+          .content .carContainer .tabcontent .carContainerBox1 .label3 .select3 {
+            font-family: "SinkinSans-700Bold", sans-serif;
+            font-size: 14px;
+            border: 1px solid #dbdbdb;
+            padding-left: 10px;
+            width: 135px;
+            height: 50px;
+            border-radius: 5px; }
+        .content .carContainer .tabcontent .carContainerBox1 .profilOpony {
+          position: absolute;
+          left: 240px;
+          top: 90px;
+          color: #929292; }
+        .content .carContainer .tabcontent .carContainerBox1 .srednicaOpony {
+          position: absolute;
+          left: 390px;
+          top: 90px;
+          color: #929292; }
+        .content .carContainer .tabcontent .carContainerBox1 .label3 {
+          position: relative;
+          top: 75px;
+          left: 70px; }
+          .content .carContainer .tabcontent .carContainerBox1 .label3 select {
+            font-family: "SinkinSans-700Bold", sans-serif;
+            font-size: 14px; }
+        .content .carContainer .tabcontent .carContainerBox1 .carContainerTire {
+          position: absolute;
+          bottom: 0;
+          left: 80px; }
+      .content .carContainer .tabcontent .carContainerBox2 .producent {
+        position: absolute;
+        right: 335px;
+        top: 90px;
+        color: #929292;
+        font-family: "SinkinSans-700Bold", sans-serif; }
+      .content .carContainer .tabcontent .carContainerBox2 .szukajOpon .szukajOponBtn {
+        position: absolute;
+        bottom: 155px;
+        right: 80px;
+        background-color: #ff6300;
+        color: #ffffff;
+        width: 365px;
+        height: 50px;
+        font-family: "SinkinSans-700Bold", sans-serif;
+        font-size: 19px;
+        border: none;
+        cursor: pointer;
+        border-radius: 10px; }
+        .content .carContainer .tabcontent .carContainerBox2 .szukajOpon .szukajOponBtn a:link {
+          text-decoration: none;
+          color: #ffffff; }
+        .content .carContainer .tabcontent .carContainerBox2 .szukajOpon .szukajOponBtn a:hover {
+          text-decoration: none;
+          color: #ffffff; }
+        .content .carContainer .tabcontent .carContainerBox2 .szukajOpon .szukajOponBtn a:visited {
+          text-decoration: none;
+          color: #ffffff; }
+        .content .carContainer .tabcontent .carContainerBox2 .szukajOpon .szukajOponBtn a:active {
+          text-decoration: none;
+          color: #ffffff; }
+      .content .carContainer .tabcontent .carContainerBox2 .advancedSearch {
+        position: absolute;
+        bottom: 100px;
+        right: 128px;
+        font-family: "SinkinSans-700Bold", sans-serif;
+        font-size: 14px;
+        color: #000000; }
+        .content .carContainer .tabcontent .carContainerBox2 .advancedSearch a:link {
+          text-decoration: none;
+          color: #000000; }
+        .content .carContainer .tabcontent .carContainerBox2 .advancedSearch a:hover {
+          text-decoration: none;
+          color: #000000; }
+        .content .carContainer .tabcontent .carContainerBox2 .advancedSearch a:visited {
+          text-decoration: none;
+          color: #000000; }
+        .content .carContainer .tabcontent .carContainerBox2 .advancedSearch a:active {
+          text-decoration: none;
+          color: #000000; }
+      .content .carContainer .tabcontent .bottomPromoIcons {
+        border-radius: 0 0 5px 5px;
+        background-color: #ffffff;
+        position: absolute;
+        bottom: 0;
+        height: 66px;
+        width: 100%;
+        font-family: "SinkinSans-400Regular", sans-serif;
+        font-size: 12px;
+        z-index: 2; }
+        .content .carContainer .tabcontent .bottomPromoIcons .bottomPromoIconsContent {
+          padding-top: 12px;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around; }
+          .content .carContainer .tabcontent .bottomPromoIcons .bottomPromoIconsContent .centerAlignment {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center; }
+
+.reviews {
+  height: 520px;
+  width: 100%; }
+  .reviews .box {
+    position: relative;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center; }
+    .reviews .box h2 {
+      font-size: 36px;
+      font-family: "SinkinSans-700Bold", sans-serif; }
+  .reviews .cloud {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+    .reviews .cloud .firstCloud {
+      background-image: url("../images/icon/dymek_przezroczysty.png");
+      width: 388px;
+      height: 175px;
+      margin-right: 18px; }
+    .reviews .cloud .secondCloud {
+      background-image: url("../images/icon/dymek_przezroczysty.png");
+      width: 388px;
+      height: 175px;
+      margin-right: 18px; }
+    .reviews .cloud .thirdCloud {
+      background-image: url("../images/icon/dymek_przezroczysty.png");
+      width: 388px;
+      height: 175px; }
+  .reviews .ratingComments .footerRatingComments {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; }
+    .reviews .ratingComments .footerRatingComments .firstCustomer {
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .reviews .ratingComments .footerRatingComments .firstCustomer span {
+        position: relative;
+        right: 40px; }
+      .reviews .ratingComments .footerRatingComments .firstCustomer img {
+        position: relative;
+        left: 55px; }
+    .reviews .ratingComments .footerRatingComments .secondCustomer {
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .reviews .ratingComments .footerRatingComments .secondCustomer span {
+        position: relative;
+        right: 145px; }
+      .reviews .ratingComments .footerRatingComments .secondCustomer img {
+        position: relative;
+        right: 35px; }
+    .reviews .ratingComments .footerRatingComments .thirdCustomer {
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .reviews .ratingComments .footerRatingComments .thirdCustomer span {
+        position: relative;
+        right: 200px; }
+      .reviews .ratingComments .footerRatingComments .thirdCustomer img {
+        position: relative;
+        right: 100px; }
+    .reviews .ratingComments .footerRatingComments span {
+      font-size: 14px;
+      font-family: "SinkinSans-400Regular", sans-serif; }
+  .reviews .ratingBox {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; }
+    .reviews .ratingBox .box2 {
+      display: flex;
+      flex-direction: row;
+      align-content: center;
+      align-items: center; }
+      .reviews .ratingBox .box2 .rating {
+        padding-right: 25px; }
+        .reviews .ratingBox .box2 .rating .upperFontRating {
+          font-size: 58px;
+          font-family: "SinkinSans-700Bold", sans-serif; }
+        .reviews .ratingBox .box2 .rating .lowerFontRating {
+          font-size: 58px;
+          font-family: "SinkinSans-300Light", sans-serif; }
+      .reviews .ratingBox .box2 .average {
+        font-size: 21px;
+        font-family: "SinkinSans-700Bold", sans-serif;
+        padding-right: 42px;
+        line-height: 10px; }
+        .reviews .ratingBox .box2 .average a:link {
+          text-decoration: none;
+          color: #666666; }
+        .reviews .ratingBox .box2 .average a:hover {
+          text-decoration: none;
+          color: #666666; }
+        .reviews .ratingBox .box2 .average a:visited {
+          text-decoration: none;
+          color: #666666; }
+        .reviews .ratingBox .box2 .average a:active {
+          text-decoration: none;
+          color: #666666; }
+      .reviews .ratingBox .box2 .buttonRating .btnRating {
+        width: 305px;
+        height: 50px;
+        border: none;
+        color: #ffffff;
+        background-color: #000000;
+        cursor: pointer;
+        border-radius: 5px;
+        font-size: 14px;
+        font-family: "SinkinSans-700Bold", sans-serif; }
+        .reviews .ratingBox .box2 .buttonRating .btnRating a:link {
+          text-decoration: none;
+          color: #ffffff; }
+        .reviews .ratingBox .box2 .buttonRating .btnRating a:hover {
+          text-decoration: none;
+          color: #ffffff; }
+        .reviews .ratingBox .box2 .buttonRating .btnRating a:visited {
+          text-decoration: none;
+          color: #ffffff; }
+        .reviews .ratingBox .box2 .buttonRating .btnRating a:active {
+          text-decoration: none;
+          color: #ffffff; }
+
+.shop {
+  height: 1330px;
+  width: 100%;
+  background-color: #f1f1f1; }
+  .shop .shopContent {
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box; }
+
+.headerFirms {
+  height: 405px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #ffffff; }
+  .headerFirms .textFirms {
+    line-height: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+    .headerFirms .textFirms h2 {
+      font-size: 36px;
+      font-family: "SinkinSans-700Bold", sans-serif;
+      padding-top: 25px; }
+    .headerFirms .textFirms p {
+      font-size: 14px;
+      font-family: "SinkinSans-400Regular", sans-serif;
+      line-height: 1px; }
+      .headerFirms .textFirms p a:link {
+        text-decoration: underline;
+        text-decoration-color: #d9d9d9;
+        color: #000000; }
+        .headerFirms .textFirms p a:link span {
+          color: #ff6300; }
+      .headerFirms .textFirms p a:hover {
+        text-decoration: underline;
+        text-decoration-color: #d9d9d9;
+        color: #000000; }
+        .headerFirms .textFirms p a:hover span {
+          color: #ff6300; }
+      .headerFirms .textFirms p a:visited {
+        text-decoration: underline;
+        text-decoration-color: #d9d9d9;
+        color: #000000; }
+        .headerFirms .textFirms p a:visited span {
+          color: #ff6300; }
+      .headerFirms .textFirms p a:active {
+        text-decoration: underline;
+        text-decoration-color: #d9d9d9;
+        color: #000000; }
+        .headerFirms .textFirms p a:active span {
+          color: #ff6300; }
+  .headerFirms .logoFirms {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center; }
+    .headerFirms .logoFirms img {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px; }
+    .headerFirms .logoFirms .growImage {
+      transition: all .2s ease-in-out;
+      cursor: pointer; }
+    .headerFirms .logoFirms .growImage:hover {
+      transform: scale(1.2); }
+
+.experts {
+  height: 970px;
+  max-width: 1440px;
+  background-color: #f0f0f0; }
+  .experts .expertsContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    /* .parent {
+      display: grid;
+      grid-template-columns: repeat(3, 32%);
+      grid-template-rows: repeat(2, 385px);
+      grid-column-gap: 20px;
+
+      .responsive {
+        width: 100%;
+        height: auto;
+      }
+
+      .div1 {
+        grid-area: 1 / 1 / 3 / 2;
+        grid-row: 1 /span 2;
+        max-height: 780px;
+
+        .imgPlacementText {
+          position: relative;
+          text-align: center;
+          color: $white;
+
+          .topPlacement {
+            position: absolute;
+            top: 0;
+            left: 18px;
+            font-family: $SS-400Regular;
+            font-size: 16px;
+            background-color: $blackLikeHell;
+            padding: 2px 10px 2px 10px;
+          }
+
+          .bottomPlacement {
+            position: absolute;
+            bottom: 0;
+            left: 9px;
+            font-family: $SS-400Regular;
+            font-size: 24px;
+            text-align: left;
+            padding: 2px 10px 2px 10px;
+
+            span {
+              background-color: $blackLikeHell;
+              padding: 2px 10px 2px 10px;
+            }
+          }
+        }
+
+        .textArticle {
+          margin: 0;
+          background-color: $white;
+          padding: 0 20px 20px 20px;
+          max-height: 280px;
+          overflow: hidden;
+          font-family: $SS-400Regular;
+          font-size: 14px;
+          letter-spacing: 0.01rem;
+        }
+
+        .linkArticle {
+          border-top: 1px solid $blackLikeHell;
+          text-align: center;
+          padding: 5px 10px 5px 10px;
+
+          a {
+            text-decoration: none;
+            color: $blackLikeHell;
+            span {
+              color: $orangeButton;
+            }
+          }
+        }
+      }
+
+      .div2 {
+        grid-area: 1 / 2 / 2 / 3;
+
+
+      }
+
+      .div3 {
+        grid-area: 2 / 2 / 3 / 3;
+
+
+      }
+
+      .div4 {
+        grid-area: 1 / 3 / 2 / 4;
+
+
+      }
+
+      .div5 {
+        grid-area: 2 / 3 / 3 / 4;
+
+
+      }
+    } */ }
+    .experts .expertsContainer .expertsText {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 20px; }
+      .experts .expertsContainer .expertsText .pHeader {
+        font-size: 36px;
+        font-family: "SinkinSans-700Bold", sans-serif;
+        margin: 0;
+        padding-top: 25px; }
+      .experts .expertsContainer .expertsText p {
+        font-size: 14px;
+        font-family: "SinkinSans-400Regular", sans-serif;
+        margin: 0; }
+        .experts .expertsContainer .expertsText p a:link {
+          text-decoration: underline;
+          color: #000000;
+          text-decoration-color: #d9d9d9; }
+        .experts .expertsContainer .expertsText p a:hover {
+          text-decoration: underline;
+          color: #000000;
+          text-decoration-color: #d9d9d9; }
+        .experts .expertsContainer .expertsText p a:visited {
+          text-decoration: underline;
+          color: #000000;
+          text-decoration-color: #d9d9d9; }
+        .experts .expertsContainer .expertsText p a:active {
+          text-decoration: underline;
+          color: #000000;
+          text-decoration-color: #d9d9d9; }
+        .experts .expertsContainer .expertsText p span {
+          color: #ff6300; }
+    .experts .expertsContainer .parent {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 1fr;
+      grid-column-gap: 20px;
+      margin-top: 20px; }
+    .experts .expertsContainer .div1 {
+      grid-area: 1 / 1 / 2 / 2;
+      max-height: 780px; }
+      .experts .expertsContainer .div1 .cardBig {
+        background-color: #ffffff;
+        width: 100%;
+        border-radius: 10px; }
+        .experts .expertsContainer .div1 .cardBig .imagePlacement {
+          position: relative;
+          text-align: center;
+          color: #ffffff; }
+          .experts .expertsContainer .div1 .cardBig .imagePlacement .responsive {
+            width: 100%;
+            height: auto;
+            border-radius: 10px 10px 0 0; }
+          .experts .expertsContainer .div1 .cardBig .imagePlacement .topPlacement {
+            position: absolute;
+            top: 9px;
+            left: 21px;
+            font-size: 14px;
+            font-family: "SinkinSans-400Regular", sans-serif;
+            background-color: #000000;
+            padding: 0 10px; }
+          .experts .expertsContainer .div1 .cardBig .imagePlacement .bottomPlacement {
+            position: absolute;
+            bottom: 21px;
+            left: 21px;
+            font-size: 24px;
+            font-family: "SinkinSans-400Regular", sans-serif;
+            text-align: left; }
+            .experts .expertsContainer .div1 .cardBig .imagePlacement .bottomPlacement p {
+              line-height: 10px; }
+              .experts .expertsContainer .div1 .cardBig .imagePlacement .bottomPlacement p span {
+                padding: 0 10px;
+                background-color: #000000; }
+        .experts .expertsContainer .div1 .cardBig .textArticle {
+          font-size: 14px;
+          font-family: "SinkinSans-400Regular", sans-serif;
+          letter-spacing: 0.01rem;
+          max-height: 300px;
+          overflow: hidden;
+          padding: 0 25px; }
+        .experts .expertsContainer .div1 .cardBig .linkArticle {
+          width: 90%;
+          margin: 0 auto;
+          border-top: 1px solid #f0f0f0;
+          padding: 15px 0;
+          font-size: 14px;
+          font-family: "SinkinSans-400Regular", sans-serif;
+          letter-spacing: 0.01rem;
+          text-align: center; }
+          .experts .expertsContainer .div1 .cardBig .linkArticle a {
+            text-decoration: none;
+            color: #000000; }
+            .experts .expertsContainer .div1 .cardBig .linkArticle a span {
+              color: #ff6300; }
+    .experts .expertsContainer .div2 {
+      grid-area: 1 / 2 / 2 / 3;
+      max-height: 780px; }
+      .experts .expertsContainer .div2 .card {
+        max-height: 370px;
+        width: 100%;
+        border-radius: 10px;
+        background-color: #ffffff;
+        margin-bottom: 25px; }
+        .experts .expertsContainer .div2 .card:last-child {
+          margin-bottom: 0; }
+        .experts .expertsContainer .div2 .card img {
+          width: 100%;
+          height: auto;
+          border-radius: 10px 10px 0 0; }
+        .experts .expertsContainer .div2 .card .upperTextG {
+          font-size: 14px;
+          font-family: "SinkinSans-400Regular", sans-serif;
+          padding: 0 20px;
+          line-height: 15px; }
+        .experts .expertsContainer .div2 .card .bottomTextG {
+          width: 90%;
+          margin: 0 auto;
+          border-top: 1px solid #f0f0f0;
+          padding: 15px 0;
+          font-size: 14px;
+          font-family: "SinkinSans-400Regular", sans-serif;
+          letter-spacing: 0.01rem;
+          text-align: center; }
+          .experts .expertsContainer .div2 .card .bottomTextG a {
+            text-decoration: none;
+            color: #000000; }
+            .experts .expertsContainer .div2 .card .bottomTextG a span {
+              color: #ff6300; }
+    .experts .expertsContainer .div3 {
+      grid-area: 1 / 3 / 2 / 4;
+      max-height: 780px; }
+      .experts .expertsContainer .div3 .card {
+        max-height: 370px;
+        width: 100%;
+        border-radius: 10px;
+        background-color: #ffffff;
+        margin-bottom: 25px; }
+        .experts .expertsContainer .div3 .card:last-child {
+          margin-bottom: 0; }
+        .experts .expertsContainer .div3 .card img {
+          width: 100%;
+          height: auto;
+          border-radius: 10px 10px 0 0; }
+        .experts .expertsContainer .div3 .card .upperTextG {
+          font-size: 14px;
+          font-family: "SinkinSans-400Regular", sans-serif;
+          padding: 0 20px;
+          line-height: 15px; }
+        .experts .expertsContainer .div3 .card .bottomTextG {
+          width: 90%;
+          margin: 0 auto;
+          border-top: 1px solid #f0f0f0;
+          padding: 15px 0;
+          font-size: 14px;
+          font-family: "SinkinSans-400Regular", sans-serif;
+          letter-spacing: 0.01rem;
+          text-align: center; }
+          .experts .expertsContainer .div3 .card .bottomTextG a {
+            text-decoration: none;
+            color: #000000; }
+            .experts .expertsContainer .div3 .card .bottomTextG a span {
+              color: #ff6300; }
+
+.tiresForCarSearch {
+  height: 680px;
+  max-width: 1440px;
+  width: 100%;
+  background-color: #ffffff; }
+  .tiresForCarSearch .searchSection {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; }
+    .tiresForCarSearch .searchSection .parent {
+      display: grid;
+      grid-template-columns: 160px 1fr 1fr 1fr 140px 1fr 140px 1fr 140px;
+      grid-template-rows: 20px 70px 20px 100px 20px 100px;
+      grid-column-gap: 0;
+      grid-row-gap: 40px;
+      margin-bottom: 30px; }
+      .tiresForCarSearch .searchSection .parent .div1 {
+        grid-area: 1 / 1 / 2 / 4; }
+        .tiresForCarSearch .searchSection .parent .div1 p {
+          font-size: 14px;
+          font-family: "SinkinSans-700Bold", sans-serif;
+          color: #ff6300; }
+      .tiresForCarSearch .searchSection .parent .div2 {
+        grid-area: 2 / 1 / 3 / 2; }
+        .tiresForCarSearch .searchSection .parent .div2 p {
+          font-size: 12px;
+          font-family: "SinkinSans-400Regular", sans-serif;
+          color: #000000;
+          margin: 0;
+          padding-bottom: 8px; }
+          .tiresForCarSearch .searchSection .parent .div2 p a:link {
+            text-decoration: none;
+            color: #000000; }
+          .tiresForCarSearch .searchSection .parent .div2 p a:hover {
+            text-decoration: underline;
+            text-decoration-color: #ff6300;
+            color: #000000; }
+          .tiresForCarSearch .searchSection .parent .div2 p a:visited {
+            text-decoration: none;
+            text-decoration-color: #ff6300;
+            color: #000000; }
+          .tiresForCarSearch .searchSection .parent .div2 p a:active {
+            text-decoration: none;
+            text-decoration-color: #ff6300;
+            color: #000000; }
+          .tiresForCarSearch .searchSection .parent .div2 p span {
+            color: #ff6300; }
+      .tiresForCarSearch .searchSection .parent .div3 {
+        grid-area: 2 / 3 / 3 / 4; }
+        .tiresForCarSearch .searchSection .parent .div3 p {
+          font-size: 12px;
+          font-family: "SinkinSans-400Regular", sans-serif;
+          color: #000000;
+          margin: 0;
+          padding-bottom: 8px; }
+          .tiresForCarSearch .searchSection .parent .div3 p a:link {
+            text-decoration: none;
+            color: #000000; }
+          .tiresForCarSearch .searchSection .parent .div3 p a:hover {
+            text-decoration: underline;
+            text-decoration-color: #ff6300;
+            color: #000000; }
+          .tiresForCarSearch .searchSection .parent .div3 p a:visited {
+            text-decoration: none;
+            text-decoration-color: #ff6300;
+            color: #000000; }
+          .tiresForCarSearch .searchSection .parent .div3 p a:active {
+            text-decoration: none;
+            color: #000000; }
+          .tiresForCarSearch .searchSection .parent .div3 p span {
+            color: #ff6300; }
+      .tiresForCarSearch .searchSection .parent .div4 {
+        grid-area: 1 / 5 / 2 / 7; }
+        .tiresForCarSearch .searchSection .parent .div4 p {
+          font-size: 14px;
+          font-family: "SinkinSans-700Bold", sans-serif;
+          color: #ff6300; }
+      .tiresForCarSearch .searchSection .parent .div5 {
+        grid-area: 2 / 5 / 3 / 6; }
+        .tiresForCarSearch .searchSection .parent .div5 p {
+          font-size: 12px;
+          font-family: "SinkinSans-400Regular", sans-serif;
+          color: #000000;
+          margin: 0;
+          padding-bottom: 8px; }
+          .tiresForCarSearch .searchSection .parent .div5 p a:link {
+            text-decoration: none;
+            color: #000000; }
+          .tiresForCarSearch .searchSection .parent .div5 p a:hover {
+            text-decoration: underline;
+            text-decoration-color: #ff6300;
+            color: #000000; }
+          .tiresForCarSearch .searchSection .parent .div5 p a:visited {
+            text-decoration: none;
+            text-decoration-color: #ff6300;
+            color: #000000; }
+          .tiresForCarSearch .searchSection .parent .div5 p a:active {
+            text-decoration: none;
+            color: #000000; }
+          .tiresForCarSearch .searchSection .parent .div5 p span {
+            color: #ff6300; }
+      .tiresForCarSearch .searchSection .parent .div6 {
+        grid-area: 1 / 7 / 2 / 9; }
+        .tiresForCarSearch .searchSection .parent .div6 p {
+          font-size: 14px;
+          font-family: "SinkinSans-700Bold", sans-serif;
+          color: #ff6300; }
+      .tiresForCarSearch .searchSection .parent .div7 {
+        grid-area: 2 / 7 / 3 / 8; }
+        .tiresForCarSearch .searchSection .parent .div7 p {
+          font-size: 12px;
+          font-family: "SinkinSans-400Regular", sans-serif;
+          color: #000000;
+          margin: 0;
+          padding-bottom: 8px; }
+          .tiresForCarSearch .searchSection .parent .div7 p a:link {
+            text-decoration: none;
+            color: #000000; }
+          .tiresForCarSearch .searchSection .parent .div7 p a:hover {
+            text-decoration: underline;
+            text-decoration-color: #ff6300;
+            color: #000000; }
+          .tiresForCarSearch .searchSection .parent .div7 p a:visited {
+            text-decoration: none;
+            text-decoration-color: #ff6300;
+            color: #000000; }
+          .tiresForCarSearch .searchSection .parent .div7 p a:active {
+            text-decoration: none;
+            color: #000000; }
+          .tiresForCarSearch .searchSection .parent .div7 p span {
+            color: #ff6300; }
+      .tiresForCarSearch .searchSection .parent .div8 {
+        grid-area: 2 / 9 / 3 / 10; }
+        .tiresForCarSearch .searchSection .parent .div8 p {
+          font-size: 12px;
+          font-family: "SinkinSans-400Regular", sans-serif;
+          color: #000000;
+          margin: 0;
+          padding-bottom: 8px; }
+          .tiresForCarSearch .searchSection .parent .div8 p a:link {
+            text-decoration: none;
+            color: #000000; }
+          .tiresForCarSearch .searchSection .parent .div8 p a:hover {
+            text-decoration: underline;
+            text-decoration-color: #ff6300;
+            color: #000000; }
+          .tiresForCarSearch .searchSection .parent .div8 p a:visited {
+            text-decoration: none;
+            text-decoration-color: #ff6300;
+            color: #000000; }
+          .tiresForCarSearch .searchSection .parent .div8 p a:active {
+            text-decoration: none;
+            color: #000000; }
+          .tiresForCarSearch .searchSection .parent .div8 p span {
+            color: #ff6300; }
+      .tiresForCarSearch .searchSection .parent .div9 {
+        grid-area: 3 / 1 / 4 / 4; }
+        .tiresForCarSearch .searchSection .parent .div9 p {
+          font-size: 14px;
+          font-family: "SinkinSans-700Bold", sans-serif;
+          color: #ff6300; }
+      .tiresForCarSearch .searchSection .parent .div10 {
+        grid-area: 4 / 1 / 5 / 2; }
+        .tiresForCarSearch .searchSection .parent .div10 p {
+          font-size: 12px;
+          font-family: "SinkinSans-400Regular", sans-serif;
+          color: #000000;
+          margin: 0;
+          padding-bottom: 8px; }
+          .tiresForCarSearch .searchSection .parent .div10 p a:link {
+            text-decoration: none;
+            color: #000000; }
+          .tiresForCarSearch .searchSection .parent .div10 p a:hover {
+            text-decoration: underline;
+            text-decoration-color: #ff6300;
+            color: #000000; }
+          .tiresForCarSearch .searchSection .parent .div10 p a:visited {
+            text-decoration: none;
+            text-decoration-color: #ff6300;
+            color: #000000; }
+          .tiresForCarSearch .searchSection .parent .div10 p a:active {
+            text-decoration: none;
+            color: #000000; }
+          .tiresForCarSearch .searchSection .parent .div10 p span {
+            color: #ff6300; }
+      .tiresForCarSearch .searchSection .parent .div11 {
+        grid-area: 4 / 3 / 5 / 4; }
+        .tiresForCarSearch .searchSection .parent .div11 p {
+          font-size: 12px;
+          font-family: "SinkinSans-400Regular", sans-serif;
+          color: #000000;
+          margin: 0;
+          padding-bottom: 8px; }
+          .tiresForCarSearch .searchSection .parent .div11 p a:link {
+            text-decoration: none;
+            color: #000000; }
+          .tiresForCarSearch .searchSection .parent .div11 p a:hover {
+            text-decoration: underline;
+            text-decoration-color: #ff6300;
+            color: #000000; }
+          .tiresForCarSearch .searchSection .parent .div11 p a:visited {
+            text-decoration: none;
+            text-decoration-color: #ff6300;
+            color: #000000; }
+          .tiresForCarSearch .searchSection .parent .div11 p a:active {
+            text-decoration: none;
+            color: #000000; }
+          .tiresForCarSearch .searchSection .parent .div11 p span {
+            color: #ff6300; }
+      .tiresForCarSearch .searchSection .parent .div12 {
+        grid-area: 4 / 5 / 5 / 6; }
+        .tiresForCarSearch .searchSection .parent .div12 p {
+          font-size: 12px;
+          font-family: "SinkinSans-400Regular", sans-serif;
+          color: #000000;
+          margin: 0;
+          padding-bottom: 8px; }
+          .tiresForCarSearch .searchSection .parent .div12 p a:link {
+            text-decoration: none;
+            color: #000000; }
+          .tiresForCarSearch .searchSection .parent .div12 p a:hover {
+            text-decoration: underline;
+            text-decoration-color: #ff6300;
+            color: #000000; }
+          .tiresForCarSearch .searchSection .parent .div12 p a:visited {
+            text-decoration: none;
+            text-decoration-color: #ff6300;
+            color: #000000; }
+          .tiresForCarSearch .searchSection .parent .div12 p a:active {
+            text-decoration: none;
+            color: #000000; }
+          .tiresForCarSearch .searchSection .parent .div12 p span {
+            color: #ff6300; }
+      .tiresForCarSearch .searchSection .parent .div13 {
+        grid-area: 4 / 7 / 5 / 8; }
+        .tiresForCarSearch .searchSection .parent .div13 p {
+          font-size: 12px;
+          font-family: "SinkinSans-400Regular", sans-serif;
+          color: #000000;
+          margin: 0;
+          padding-bottom: 8px; }
+          .tiresForCarSearch .searchSection .parent .div13 p a:link {
+            text-decoration: none;
+            color: #000000; }
+          .tiresForCarSearch .searchSection .parent .div13 p a:hover {
+            text-decoration: underline;
+            text-decoration-color: #ff6300;
+            color: #000000; }
+          .tiresForCarSearch .searchSection .parent .div13 p a:visited {
+            text-decoration: none;
+            text-decoration-color: #ff6300;
+            color: #000000; }
+          .tiresForCarSearch .searchSection .parent .div13 p a:active {
+            text-decoration: none;
+            color: #000000; }
+          .tiresForCarSearch .searchSection .parent .div13 p span {
+            color: #ff6300; }
+      .tiresForCarSearch .searchSection .parent .div14 {
+        grid-area: 4 / 9 / 5 / 10; }
+        .tiresForCarSearch .searchSection .parent .div14 p {
+          font-size: 12px;
+          font-family: "SinkinSans-400Regular", sans-serif;
+          color: #000000;
+          margin: 0;
+          padding-bottom: 8px; }
+          .tiresForCarSearch .searchSection .parent .div14 p a:link {
+            text-decoration: none;
+            color: #000000; }
+          .tiresForCarSearch .searchSection .parent .div14 p a:hover {
+            text-decoration: underline;
+            text-decoration-color: #ff6300;
+            color: #000000; }
+          .tiresForCarSearch .searchSection .parent .div14 p a:visited {
+            text-decoration: none;
+            text-decoration-color: #ff6300;
+            color: #000000; }
+          .tiresForCarSearch .searchSection .parent .div14 p a:active {
+            text-decoration: none;
+            color: #000000; }
+          .tiresForCarSearch .searchSection .parent .div14 p span {
+            color: #ff6300; }
+      .tiresForCarSearch .searchSection .parent .div15 {
+        grid-area: 5 / 1 / 6 / 4; }
+        .tiresForCarSearch .searchSection .parent .div15 p {
+          font-size: 14px;
+          font-family: "SinkinSans-700Bold", sans-serif;
+          color: #ff6300; }
+      .tiresForCarSearch .searchSection .parent .div16 {
+        grid-area: 6 / 1 / 7 / 2; }
+        .tiresForCarSearch .searchSection .parent .div16 p {
+          font-size: 12px;
+          font-family: "SinkinSans-400Regular", sans-serif;
+          color: #000000;
+          margin: 0;
+          padding-bottom: 8px; }
+          .tiresForCarSearch .searchSection .parent .div16 p a:link {
+            text-decoration: none;
+            color: #000000; }
+          .tiresForCarSearch .searchSection .parent .div16 p a:hover {
+            text-decoration: underline;
+            text-decoration-color: #ff6300;
+            color: #000000; }
+          .tiresForCarSearch .searchSection .parent .div16 p a:visited {
+            text-decoration: none;
+            text-decoration-color: #ff6300;
+            color: #000000; }
+          .tiresForCarSearch .searchSection .parent .div16 p a:active {
+            text-decoration: none;
+            color: #000000; }
+          .tiresForCarSearch .searchSection .parent .div16 p span {
+            color: #ff6300; }
+      .tiresForCarSearch .searchSection .parent .div17 {
+        grid-area: 6 / 3 / 7 / 4; }
+        .tiresForCarSearch .searchSection .parent .div17 p {
+          font-size: 12px;
+          font-family: "SinkinSans-400Regular", sans-serif;
+          color: #000000;
+          margin: 0;
+          padding-bottom: 8px; }
+          .tiresForCarSearch .searchSection .parent .div17 p a:link {
+            text-decoration: none;
+            color: #000000; }
+          .tiresForCarSearch .searchSection .parent .div17 p a:hover {
+            text-decoration: underline;
+            text-decoration-color: #ff6300;
+            color: #000000; }
+          .tiresForCarSearch .searchSection .parent .div17 p a:visited {
+            text-decoration: none;
+            text-decoration-color: #ff6300;
+            color: #000000; }
+          .tiresForCarSearch .searchSection .parent .div17 p a:active {
+            text-decoration: none;
+            color: #000000; }
+          .tiresForCarSearch .searchSection .parent .div17 p span {
+            color: #ff6300; }
+      .tiresForCarSearch .searchSection .parent .div18 {
+        grid-area: 6 / 5 / 7 / 6; }
+        .tiresForCarSearch .searchSection .parent .div18 p {
+          font-size: 12px;
+          font-family: "SinkinSans-400Regular", sans-serif;
+          color: #000000;
+          margin: 0;
+          padding-bottom: 8px; }
+          .tiresForCarSearch .searchSection .parent .div18 p a:link {
+            text-decoration: none;
+            color: #000000; }
+          .tiresForCarSearch .searchSection .parent .div18 p a:hover {
+            text-decoration: underline;
+            text-decoration-color: #ff6300;
+            color: #000000; }
+          .tiresForCarSearch .searchSection .parent .div18 p a:visited {
+            text-decoration: none;
+            text-decoration-color: #ff6300;
+            color: #000000; }
+          .tiresForCarSearch .searchSection .parent .div18 p a:active {
+            text-decoration: none;
+            color: #000000; }
+          .tiresForCarSearch .searchSection .parent .div18 p span {
+            color: #ff6300; }
+      .tiresForCarSearch .searchSection .parent .div19 {
+        grid-area: 6 / 7 / 7 / 8; }
+        .tiresForCarSearch .searchSection .parent .div19 p {
+          font-size: 12px;
+          font-family: "SinkinSans-400Regular", sans-serif;
+          color: #000000;
+          margin: 0;
+          padding-bottom: 8px; }
+          .tiresForCarSearch .searchSection .parent .div19 p a:link {
+            text-decoration: none;
+            color: #000000; }
+          .tiresForCarSearch .searchSection .parent .div19 p a:hover {
+            text-decoration: underline;
+            text-decoration-color: #ff6300;
+            color: #000000; }
+          .tiresForCarSearch .searchSection .parent .div19 p a:visited {
+            text-decoration: none;
+            text-decoration-color: #ff6300;
+            color: #000000; }
+          .tiresForCarSearch .searchSection .parent .div19 p a:active {
+            text-decoration: none;
+            text-decoration-color: #ff6300;
+            color: #000000; }
+          .tiresForCarSearch .searchSection .parent .div19 p span {
+            color: #ff6300; }
+      .tiresForCarSearch .searchSection .parent .div20 {
+        grid-area: 6 / 9 / 7 / 10; }
+        .tiresForCarSearch .searchSection .parent .div20 p {
+          font-size: 12px;
+          font-family: "SinkinSans-400Regular", sans-serif;
+          color: #000000;
+          margin: 0;
+          padding-bottom: 8px; }
+          .tiresForCarSearch .searchSection .parent .div20 p a:link {
+            text-decoration: none;
+            text-decoration-color: #ff6300;
+            color: #000000; }
+          .tiresForCarSearch .searchSection .parent .div20 p a:hover {
+            text-decoration: underline;
+            text-decoration-color: #ff6300;
+            color: #000000; }
+          .tiresForCarSearch .searchSection .parent .div20 p a:visited {
+            text-decoration: none;
+            text-decoration-color: #ff6300;
+            color: #000000; }
+          .tiresForCarSearch .searchSection .parent .div20 p a:active {
+            text-decoration: none;
+            text-decoration-color: #ff6300;
+            color: #000000; }
+          .tiresForCarSearch .searchSection .parent .div20 p span {
+            color: #ff6300; }
+    .tiresForCarSearch .searchSection .informationText {
+      font-size: 10px;
+      font-family: "SinkinSans-400Regular", sans-serif;
+      margin-top: 10px;
+      line-height: 14px;
+      letter-spacing: 0.01rem; }
+      .tiresForCarSearch .searchSection .informationText a:link {
+        text-decoration: none;
+        color: #4b95db; }
+      .tiresForCarSearch .searchSection .informationText a:hover {
+        text-decoration: none;
+        color: #4b95db; }
+      .tiresForCarSearch .searchSection .informationText a:visited {
+        text-decoration: none;
+        color: #4b95db; }
+      .tiresForCarSearch .searchSection .informationText a:active {
+        text-decoration: none;
+        color: #4b95db; }
+
+.footerContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #f0f0f0;
+  border-radius: 10px; }
+  .footerContainer .parent {
+    padding: 20px 20px 20px 20px;
+    display: grid;
+    grid-template-columns: 340px 180px 190px 75px 110px 95px 160px;
+    grid-template-rows: 275px;
+    grid-column-gap: 0;
+    grid-row-gap: 0; }
+    .footerContainer .parent .div1 {
+      grid-area: 1 / 1 / 2 / 2;
+      margin: 10px 0 0 10px;
+      padding: 0; }
+      .footerContainer .parent .div1 .greyContent {
+        color: #999999; }
+      .footerContainer .parent .div1 .firstParagraph {
+        font-size: 14px;
+        font-family: "SinkinSans-700Bold", sans-serif;
+        color: #ff6300; }
+      .footerContainer .parent .div1 p {
+        font-size: 12px;
+        font-family: "SinkinSans-400Regular", sans-serif;
+        color: #000000;
+        line-height: 4px; }
+        .footerContainer .parent .div1 p a:link {
+          text-decoration: none;
+          color: #000000; }
+        .footerContainer .parent .div1 p a:hover {
+          text-decoration: underline;
+          color: #000000; }
+        .footerContainer .parent .div1 p a:visited {
+          text-decoration: none;
+          color: #000000; }
+        .footerContainer .parent .div1 p a:active {
+          text-decoration: none;
+          color: #000000; }
+        .footerContainer .parent .div1 p span {
+          color: #ff6300; }
+    .footerContainer .parent .div2 {
+      grid-area: 1 / 3 / 2 / 4; }
+      .footerContainer .parent .div2 .firstParagraph {
+        font-size: 14px;
+        font-family: "SinkinSans-700Bold", sans-serif;
+        color: #ff6300;
+        margin-bottom: 25px; }
+      .footerContainer .parent .div2 p {
+        font-size: 12px;
+        font-family: "SinkinSans-400Regular", sans-serif;
+        color: #000000; }
+        .footerContainer .parent .div2 p a:link {
+          text-decoration: none;
+          text-decoration-color: #ff6300;
+          color: #000000; }
+        .footerContainer .parent .div2 p a:hover {
+          text-decoration: underline;
+          text-decoration-color: #ff6300; }
+        .footerContainer .parent .div2 p a:visited {
+          text-decoration: none;
+          text-decoration-color: #ff6300;
+          color: #000000; }
+        .footerContainer .parent .div2 p a:active {
+          text-decoration: none;
+          text-decoration-color: #ff6300;
+          color: #000000; }
+        .footerContainer .parent .div2 p span {
+          color: #ff6300; }
+    .footerContainer .parent .div3 {
+      grid-area: 1 / 5 / 2 / 6; }
+      .footerContainer .parent .div3 .firstParagraph {
+        font-size: 14px;
+        font-family: "SinkinSans-700Bold", sans-serif;
+        color: #ff6300;
+        margin-bottom: 25px; }
+      .footerContainer .parent .div3 p {
+        font-size: 12px;
+        font-family: "SinkinSans-400Regular", sans-serif;
+        color: #000000; }
+        .footerContainer .parent .div3 p a:link {
+          text-decoration: none;
+          text-decoration-color: #ff6300;
+          color: #000000; }
+        .footerContainer .parent .div3 p a:hover {
+          text-decoration: underline;
+          text-decoration-color: #ff6300;
+          color: #000000; }
+        .footerContainer .parent .div3 p a:visited {
+          text-decoration: none;
+          text-decoration-color: #ff6300;
+          color: #000000; }
+        .footerContainer .parent .div3 p a:active {
+          text-decoration: none;
+          text-decoration-color: #ff6300;
+          color: #000000; }
+        .footerContainer .parent .div3 p span {
+          color: #ff6300; }
+    .footerContainer .parent .div4 {
+      grid-area: 1 / 7 / 2 / 8; }
+      .footerContainer .parent .div4 .firstParagraph {
+        font-size: 14px;
+        font-family: "SinkinSans-700Bold", sans-serif;
+        color: #ff6300;
+        margin-bottom: 25px; }
+      .footerContainer .parent .div4 p {
+        font-size: 12px;
+        font-family: "SinkinSans-400Regular", sans-serif;
+        color: #000000; }
+        .footerContainer .parent .div4 p a:link {
+          text-decoration: none;
+          text-decoration-color: #ff6300;
+          color: #000000; }
+        .footerContainer .parent .div4 p a:hover {
+          text-decoration: underline;
+          text-decoration-color: #ff6300;
+          color: #000000; }
+        .footerContainer .parent .div4 p a:visited {
+          text-decoration: none;
+          text-decoration-color: #ff6300;
+          color: #000000; }
+        .footerContainer .parent .div4 p a:active {
+          text-decoration: none;
+          text-decoration-color: #ff6300;
+          color: #000000; }
+        .footerContainer .parent .div4 p span {
+          color: #ff6300; }
+      .footerContainer .parent .div4 .icons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 60px; }
+
+/*# sourceMappingURL=style2.css.map */

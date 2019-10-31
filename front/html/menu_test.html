@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Responsive Drop-down Navigation</title>
+    <link rel="stylesheet" href="../sass/menu_test.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600" rel="stylesheet">
+</head>
+<body>
+<!--<nav role="navigation">
+    <ul>
+        <li><a href="#">Item 1</a></li>
+        <li><a href="#">Item 2</a>
+            <ul class="dropdown">
+                <li><a href="#">Sub-1</a></li>
+                <li><a href="#">Sub-2</a></li>
+                <li><a href="#">Sub-3</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Item 3</a></li>
+    </ul>
+</nav>-->
+<!--<nav class="container-fluid">
+    <div class="wrap">
+        <div class="menuBottom">
+            <ul class="navList">
+                <li><a href="#"><img src="../images/logotireking.png" height="39" width="211"/></a></li>
+                <li>
+                    <a href="#">Opony samochodowe <img class="imgColor" src="../images/icon/angle_down.png" height="16" width="10"/></a>
+                    <ul>
+                        <li><a href="#">Opony samochodowe</a></li>
+                        <li><a href="#">Opony motocyklowe</a></li>
+                        <li><a href="#">Felgi aluminiowe</a></li>
+                        <li><a href="#">Felgi stalowe</a></li>
+                        <li><a href="#">Opony ciężarowe</a></li>
+                        <li><a href="#">Łańcuchy śniegowe</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Pozostałe opony <img class="imgColor" src="../images/icon/angle_down.png" height="16" width="10"/></a></li>
+                <li><a href="#">Felgi <img class="imgColor" src="../images/icon/angle_down.png" height="16" width="10"/></a></li>
+                <li style="font-size: 14px"><a href="#">Ostatnio oglądane <img class="imgColor" src="../images/icon/angle_down.png" height="14" width="8"/></a></li>
+                <li><a href="#"><img src="../images/koszyk.png" height="39" width="51"/></a></li>
+            </ul>
+        </div>
+    </div>
+</nav>-->
+<!--<header>
+<nav>
+    <div>
+        <i class="fa fa-bars"></i>
+    </div>
+
+    <ul>
+        <li><a href="#"><img src="../images/logotireking.png" height="39" width="211"/></a></li>
+        <li><a href="#">Opony samochodowe <img src="../images/icon/angle_down_black.png" height="8" width="12"/></a>
+            <ul>
+                <li><a href="#">Opony samochodowe</a></li>
+                <li><a href="#">Opony motocyklowe</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Pozostałe opony <img src="../images/icon/angle_down_black.png" height="8" width="12"/></a>
+            <ul>
+                <li><a href="#">Opony ciężarowe</a></li>
+                <li><a href="#">Łańcuchy śniegowe</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Felgi <img src="../images/icon/angle_down_black.png" height="8" width="12"/></a>
+            <ul>
+                <li><a href="#">Felgi aluminiowe</a></li>
+                <li><a href="#">Felgi stalowe</a></li>
+            </ul>
+        </li>
+        <li><a style="font-size: 14px;" href="#">Ostatnio oglądane</a></li>
+        <li><a href="#"><img src="../images/koszyk.png" height="39" width="51"/></a></li>
+    </ul>
+</nav>
+</header>
+<p>content</p>
+<p>content</p>
+<p>content</p>
+<p>content</p>
+<p>content</p>
+<p>content</p>
+<p>content</p>
+<p>content</p>
+<p>content</p>
+<p>content</p>
+<p>content</p>
+<p>content</p>
+<p>content</p>
+<p>content</p>
+<p>content</p>
+<p>content</p>
+<p>content</p>
+<p>content</p>
+<p>content</p>
+<p>content</p>
+<p>content</p>
+<p>content</p>
+<p>content</p>
+<p>content</p>
+<p>content</p>
+<p>content</p>
+<p>content</p>
+<p>content</p>
+<p>content</p>
+<p>content</p> -->
+<!--<script type="text/javascript">
+
+    $("nav div").click(function() {
+        $("ul").slideToggle();
+        $("ul ul").css("display", "none");
+    });
+
+
+    $('ul li').click(function () {
+        $(this).siblings().find('ul').slideUp();
+        $(this).find('ul').slideToggle();
+    });
+    /*$("ul li").click(function() {
+          $("ul ul").slideUp();
+          $(this).find('ul').slideToggle();
+    });*/
+
+    $(window).resize(function() {
+        if($(window).width() > 768) {
+            $("ul").removeAttr('style');
+        }
+    });
+
+</script>-->
+<header>
+<div id="top-nav">
+    <ul class="">
+
+        <li><a href="#"><img src="../images/logotireking.png" height="39" width="211"/></a></li>
+
+        <li class="dropdown"><a href="#">Opony samochodowe <span><img src="../images/icon/angle_down.png" width="10" height="16"/></span> </a>
+            <ul class="dropdown-menu">
+                <li><a href="#">Opony zimowe</a></li>
+                <li><a href="#">Opony letnie</a></li>
+                <li><a href="#">Opony całoroczne</a></li>
+                <li><a href="#">Opony ciężarowe</a></li>
+            </ul>
+        </li>
+        <li class="dropdown"><a href="#">Pozostałe opony <span><img src="../images/icon/angle_down.png" width="10" height="16"/></span> </a>
+            <ul class="dropdown-menu">
+                <li><a href="#">Opony motocyklowe</a></li>
+                <li><a href="#">Opony quadowe</a></li>
+            </ul>
+        </li>
+        <li class="dropdown"><a href="#">Felgi <span><img src="../images/icon/angle_down.png" width="10" height="16"/></span> </a>
+            <ul class="dropdown-menu">
+                <li><a href="#">Felgi aluminiowe</a></li>
+                <li><a href="#">Felgi stalowe</a></li>
+            </ul>
+        </li>
+        <li style="font-size: 14px;" class="dropdown"><a href="#">Ostatnio oglądane <span><img src="../images/icon/angle_down.png" width="10" height="16"/></span> </a>
+            <ul class="dropdown-menu">
+                <li><a href="#">Continental</a></li>
+                <li><a href="#">Falken</a></li>
+            </ul>
+        </li>
+        <li><a href="#"><img src="../images/koszyk.png" height="39" width="51"/></a></li>
+    </ul>
+</div>
+</header>
+<script type="text/javascript">
+    $(function(){
+
+        $('li.dropdown > a').on('click',function(event){
+
+            event.preventDefault()
+
+            $(this).parent().find('ul').first().toggle(300);
+
+            $(this).parent().siblings().find('ul').hide(200);
+
+            //Hide menu when clicked outside
+            $(this).parent().find('ul').mouseleave(function(){
+                var thisUI = $(this);
+                $('html').click(function(){
+                    thisUI.hide();
+                    $('html').unbind('click');
+                });
+            });
+
+
+        });
+
+
+
+
+    });
+
+</script>
+</body>
+</html>

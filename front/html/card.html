@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CardShop</title>
+    <link rel="stylesheet" href="../sass/cards.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+    <link rel="icon" href="../images/icon/favicon_tire.png" type="image/png">
+
+    <link rel="stylesheet" href="../sass/style.css" type="text/css">
+    <link rel="stylesheet" href="../slick/slick.css" type="text/css">
+    <link rel="stylesheet" href="../slick/slick-theme.css" type="text/css">
+    <link rel="stylesheet" href="../css/responsive-tabs.css" type="text/css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+    <link rel="stylesheet" href="fontawesome-stars.css">
+    <link rel="stylesheet" href="../js/jquery-bar-rating/dist/themes/css-stars.css">
+    <script src="../js/jQuery.js"></script>
+</head>
+<body style="background-color: green">
+<ul class="nav">
+    <li>
+        <a href="#">About</a>
+        <ul>
+            <li><a href="#">Mission</a></li>
+            <li><a href="#">History</a></li>
+            <li><a href="#">Organization</a></li>
+            <li><a href="#">Board</a></li>
+        </ul>
+    </li>
+    <li>
+        <a href="#">Visit</a>
+        <ul>
+            <li><a href="#">Things to See & Do</a></li>
+            <li><a href="#">Hours, Directions, Prices</a></li>
+            <li><a href="#">Daily Schedule</a></li>
+            <li><a href="#">Services</a></li>
+        </ul>
+    </li>
+    <li>
+        <a href="#">Animals</a>
+        <ul>
+            <li><a href="#">About the Animals</a></li>
+            <li><a href="#">Veterinary Services</a></li>
+            <li><a href="#">Food & Nutrition</a></li>
+            <li><a href="#">Science & Research</a></li>
+        </ul>
+    </li>
+    <li>
+        <a href="#">Events</a>
+        <ul>
+            <li><a href="#">Calendar</a></li>
+            <li><a href="#">Rent the Zoo</a></li>
+            <li><a href="#">Birthday Parties</a></li>
+        </ul>
+    </li>
+    <li>
+        <a href="#">Membership</a>
+        <ul>
+            <li><a href="#">Benefits & Membership Levels</a></li>
+            <li><a href="#">Gift Memberships</a></li>
+            <li><a href="#">Join or Renew</a></li>
+            <li><a href="#">FAQ</a></li>
+        </ul>
+    </li>
+</ul>
+
+<script>
+    $(document).ready(function () {
+        $('.nav li').hover(
+            function () {
+                //show submenu
+                $('ul', this).show();
+            }, function () {
+                //hide submenu
+                $('ul', this).hide();
+            });
+    });
+</script>
+
+<script src="../js/jQuery.js"></script>
+<script type="text/javascript" src="../slick/slick.min.js"></script>
+<script src="../js/starrr-gh-pages/dist/starrr.js"></script>
+<script src="../js/jquery-bar-rating/dist/jquery.barrating.min.js"></script>
+<script src="../js/jQuery.tab.js"></script>
+<script src="../js/jquery.responsiveTabs.js"></script>
+<script src="../js/sticky/jquery.sticky.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body { background-color:#3498DB;}
+
+.tab {
+  width: 600px;
+  height: 300px;
+  border: 1px solid #ccc;
+  margin: 20px auto;
+  background: #fff;
+}
+
+.tabContent > div { display: none; }
+
+.tabHeader {
+  height: 50px;
+  line-height: 50px;
+  border-bottom: 1px solid #ccc;
+}
+
+.tabHeader li {
+  float: left;
+  width: 200px;
+  text-align: center;
+  cursor: pointer;
+  background: url(mesh.png) repeat;
+  color: #EFEFEF;
+}
+
+.tabHeader li.active { background: #4D4F4C; }
+
+.tabContent .active { display: block; }
+
+.tabContent .tabItem { padding: 10px; }

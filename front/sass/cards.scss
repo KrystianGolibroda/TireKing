@@ -1,0 +1,160 @@
+@font-face {
+  font-family: 'SinkinSans-400Regular';
+  src: url("../fonts/SinkinSans-400Regular.ttf");
+}
+
+@font-face {
+  font-family: 'SinkinSans-700Bold';
+  src: url("../fonts/SinkinSans-700Bold.ttf");
+}
+
+@font-face {
+  font-family: 'SinkinSans-700BoldItalic';
+  src: url("../fonts/SinkinSans-700BoldItalic.ttf");
+}
+
+@font-face {
+  font-family: 'SinkinSans-500Medium';
+  src: url("../fonts/SinkinSans-500Medium.ttf");
+}
+
+@font-face {
+  font-family: 'Gotham-BoldItalic';
+  src: url("../fonts/Gotham-BoldItalic.ttf");
+}
+
+@font-face {
+  font-family: 'SinkinSans-600SemiBold';
+  src: url("../fonts/SinkinSans-600SemiBold.ttf");
+}
+
+@font-face {
+  font-family: 'SinkinSans-300Light';
+  src: url("../fonts/SinkinSans-300Light.ttf");
+}
+
+$SS-400Regular: 'SinkinSans-400Regular', sans-serif;
+$SS-700Bold: 'SinkinSans-700Bold', sans-serif;
+$SS-700BoldItalic: 'SinkinSans-700BoldItalic', sans-serif;
+$SS-500Medium: 'SinkinSans-500Medium', sans-serif;
+$Gotham-BoldItalic: 'Gotham-BoldItalic', sans-serif;
+$SS-600SemiBold: 'SinkinSans-600SemiBold', sans-serif;
+$SS-300Light: 'SinkinSans-300Light', sans-serif;
+
+
+$grey: #f0f0f0;
+$white: #ffffff;
+$fontMenu: #221d24;
+$michelinButton: #264f9a;
+$darkerGrey: #808080;
+$greyFooter: #999999;
+$carContainer: #f8f8f8;
+$blackLikeHell: #000000;
+$orangeButton: #ff6300;
+$carInActiveContainer: #e2e2e2;
+$wyszukiwarkaKolorSSzP: #929292;
+$selectBorder: #dbdbdb;
+$opineoCeneo: #666666;
+$shopBackgroundColor: #f1f1f1;
+$podkreslnik: #d9d9d9;
+$hyperlinks: #4b95db;
+$bestseller: #6398d3;
+
+header {
+  //border-bottom: 1px solid $opineoCeneo;
+  box-shadow: 0 0 10px 0 $opineoCeneo;
+  margin: 0 auto;
+  background-color: $grey;
+}
+
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.row:before,
+.row:after {
+  content: "";
+  display: table;
+  clear: both
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: $SS-400Regular;
+}
+
+.wrap {
+  box-sizing: border-box;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container-fluid {
+  padding-right: 1rem !important;
+  padding-left: 1rem !important;
+}
+
+
+.nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    float: left;
+    display: block;
+    background: $white;
+    position: relative;
+    z-index: 500;
+    margin: 5px 6px;
+
+    a {
+      display: block;
+      padding: 6px 5px 5px 5px;
+      font-weight: 700;
+      height: 20px;
+      text-decoration: none;
+      color: $fontMenu;
+      text-align: center;
+    }
+  }
+  ul {
+    position: absolute;
+    left: 0;
+    display: none;
+    margin: 0 0 4px -1px;
+    padding: 0;
+    list-style: none;
+
+    li {
+      float:left;
+      border-top: 10px solid $orangeButton;
+      width: 100%;
+      white-space: nowrap;
+    }
+    a {
+      display: block;
+      height: 15px;
+      padding: 6px 5px;
+      color: $fontMenu;
+      text-align: left;
+    }
+  }
+
+  a:hover {
+    text-decoration: none;
+    background-color: grey;
+  }
+}
