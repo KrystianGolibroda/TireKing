@@ -382,3 +382,101 @@ nav {
     }
   }
 }*/
+
+.headerFirms {
+  width: 100%;
+  background-color: $white;
+  margin-bottom: 30px;
+
+  .textFirms {
+    line-height: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    h2 {
+      font-size: 36px;
+      font-family: $SS-700Bold;
+      padding-top: 25px;
+    }
+
+    p {
+      font-size: 14px;
+      font-family: $SS-400Regular;
+      line-height: 1px;
+
+      a {
+
+        span {
+
+        }
+      }
+
+      a:link {
+        text-decoration: underline;
+        text-decoration-color: $podkreslnik;
+        color: $blackLikeHell;
+
+        span {
+          color: $orangeButton;
+        }
+      }
+
+      a:hover {
+        text-decoration: underline;
+        text-decoration-color: $podkreslnik;
+        color: $blackLikeHell;
+
+        span {
+          color: $orangeButton;
+        }
+      }
+
+      a:visited {
+        text-decoration: underline;
+        text-decoration-color: $podkreslnik;
+        color: $blackLikeHell;
+
+        span {
+          color: $orangeButton;
+        }
+      }
+
+      a:active {
+        text-decoration: underline;
+        text-decoration-color: $podkreslnik;
+        color: $blackLikeHell;
+
+        span {
+          color: $orangeButton;
+        }
+      }
+
+    }
+  }
+
+  .logoFirms {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
+    }
+
+    .growImage {
+      transition: all .2s ease-in-out;
+      cursor: pointer;
+    }
+
+    .growImage:hover {
+      transform: scale(1.2);
+    }
+  }
+}
