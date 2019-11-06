@@ -1330,13 +1330,21 @@ main .headerFirms {
     align-items: center;
     flex-direction: column; }
     main .headerFirms .textFirms h2 {
-      font-size: 36px;
+      font-size: 25px;
       font-family: "SinkinSans-700Bold", sans-serif;
-      padding-top: 25px; }
+      padding-top: 30px; }
+      @media (min-width: 750px) {
+        main .headerFirms .textFirms h2 {
+          font-size: 36px;
+          font-family: "SinkinSans-700Bold", sans-serif;
+          padding-top: 25px; } }
     main .headerFirms .textFirms p {
-      font-size: 14px;
-      font-family: "SinkinSans-400Regular", sans-serif;
-      line-height: 1px; }
+      display: none; }
+      @media (min-width: 750px) {
+        main .headerFirms .textFirms p {
+          display: flex;
+          font-size: 14px;
+          font-family: "SinkinSans-400Regular", sans-serif; } }
       main .headerFirms .textFirms p a:link {
         text-decoration: underline;
         text-decoration-color: #d9d9d9;
@@ -1362,12 +1370,17 @@ main .headerFirms {
         main .headerFirms .textFirms p a:active span {
           color: #ff6300; }
   main .headerFirms .logoFirms {
-    margin-top: 60px;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center; }
+    margin-top: 15px; }
+    @media (min-width: 750px) {
+      main .headerFirms .logoFirms {
+        margin-top: 60px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center; } }
     main .headerFirms .logoFirms img {
       display: flex;
       justify-content: space-between;
@@ -1439,25 +1452,33 @@ main .adviceContainer {
             height: auto;
             border-radius: 10px 10px 0 0; }
           main .adviceContainer .expertsContainer .div1 .cardBig .imagePlacement .topPlacement {
-            position: absolute;
-            top: 9px;
-            left: 21px;
-            font-size: 14px;
-            font-family: "SinkinSans-400Regular", sans-serif;
-            background-color: #000000;
-            padding: 0 10px; }
+            display: none; }
+            @media (min-width: 750px) {
+              main .adviceContainer .expertsContainer .div1 .cardBig .imagePlacement .topPlacement {
+                display: block;
+                position: absolute;
+                top: 9px;
+                left: 21px;
+                font-size: 14px;
+                font-family: "SinkinSans-400Regular", sans-serif;
+                background-color: #000000;
+                padding: 0 10px; } }
           main .adviceContainer .expertsContainer .div1 .cardBig .imagePlacement .bottomPlacement {
-            position: absolute;
-            bottom: 21px;
-            left: 21px;
-            font-size: 24px;
-            font-family: "SinkinSans-400Regular", sans-serif;
-            text-align: left; }
-            main .adviceContainer .expertsContainer .div1 .cardBig .imagePlacement .bottomPlacement p {
-              line-height: 10px; }
-              main .adviceContainer .expertsContainer .div1 .cardBig .imagePlacement .bottomPlacement p span {
-                padding: 0 10px;
-                background-color: #000000; }
+            display: none; }
+            @media (min-width: 750px) {
+              main .adviceContainer .expertsContainer .div1 .cardBig .imagePlacement .bottomPlacement {
+                display: block;
+                position: absolute;
+                bottom: 21px;
+                left: 21px;
+                font-size: 24px;
+                font-family: "SinkinSans-400Regular", sans-serif;
+                text-align: left; }
+                main .adviceContainer .expertsContainer .div1 .cardBig .imagePlacement .bottomPlacement p {
+                  line-height: 10px; }
+                  main .adviceContainer .expertsContainer .div1 .cardBig .imagePlacement .bottomPlacement p span {
+                    padding: 0 10px;
+                    background-color: #000000; } }
         main .adviceContainer .expertsContainer .div1 .cardBig .textArticle {
           font-size: 14px;
           font-family: "SinkinSans-400Regular", sans-serif;

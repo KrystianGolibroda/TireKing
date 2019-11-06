@@ -125,6 +125,7 @@ $(document).ready(function () {
    });
 });
 
+//Zegar
 setInterval(function time(){
    var d = new Date();
    var hours = 24 - d.getHours();
@@ -221,4 +222,13 @@ $(function(){
          });
       });
    });
+});
+
+//Karuzela producentów w mobilnym menu
+
+$('.logosFirms').slick({
+   slidesToShow: 3,
+   slidesToScroll: 1,
+   autoplay: true,
+   autoplaySpeed: 1500,
 });

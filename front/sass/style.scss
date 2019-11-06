@@ -1467,15 +1467,26 @@ main {
       flex-direction: column;
 
       h2 {
-        font-size: 36px;
+        font-size: 25px;
         font-family: $SS-700Bold;
-        padding-top: 25px;
+        padding-top: 30px;
+        @media(min-width: 750px) {
+          font-size: 36px;
+          font-family: $SS-700Bold;
+          padding-top: 25px;
+        }
       }
 
       p {
-        font-size: 14px;
-        font-family: $SS-400Regular;
-        line-height: 1px;
+        display: none;
+        //font-size: 14px;
+        //font-family: $SS-400Regular;
+        //line-height: 1px;
+        @media(min-width: 750px) {
+          display: flex;
+          font-size: 14px;
+          font-family: $SS-400Regular;
+        }
 
         a {
 
@@ -1528,13 +1539,18 @@ main {
     }
 
     .logoFirms {
-      margin-top: 60px;
       display: flex;
       flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: center;
+      margin-top: 15px;
 
+      @media(min-width: 750px) {
+        margin-top: 60px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+      }
       img {
         display: flex;
         justify-content: space-between;
@@ -1551,6 +1567,7 @@ main {
       }
     }
   }
+
 
 
   .adviceContainer {
@@ -1640,29 +1657,37 @@ main {
             }
 
             .topPlacement {
-              position: absolute;
-              top: 9px;
-              left: 21px;
-              font-size: 14px;
-              font-family: $SS-400Regular;
-              background-color: $blackLikeHell;
-              padding: 0 10px;
+              display: none;
+              @media(min-width: 750px){
+                display: block;
+                position: absolute;
+                top: 9px;
+                left: 21px;
+                font-size: 14px;
+                font-family: $SS-400Regular;
+                background-color: $blackLikeHell;
+                padding: 0 10px;
+              }
             }
 
             .bottomPlacement {
-              position: absolute;
-              bottom: 21px;
-              left: 21px;
-              font-size: 24px;
-              font-family: $SS-400Regular;
-              text-align: left;
+              display: none;
+              @media(min-width: 750px){
+                display: block;
+                position: absolute;
+                bottom: 21px;
+                left: 21px;
+                font-size: 24px;
+                font-family: $SS-400Regular;
+                text-align: left;
 
-              p {
-                line-height: 10px;
+                p {
+                  line-height: 10px;
 
-                span {
-                  padding: 0 10px;
-                  background-color: $blackLikeHell;
+                  span {
+                    padding: 0 10px;
+                    background-color: $blackLikeHell;
+                  }
                 }
               }
             }
