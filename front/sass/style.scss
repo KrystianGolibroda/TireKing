@@ -1612,7 +1612,25 @@ main {
           font-family: $SS-400Regular;
           margin: 0;
 
-          a{
+          a:link {
+            text-decoration: underline;
+            color: $blackLikeHell;
+            text-decoration-color: $podkreslnik;
+          }
+
+          a:hover {
+            text-decoration: underline;
+            color: $blackLikeHell;
+            text-decoration-color: $podkreslnik;
+          }
+
+          a:visited {
+            text-decoration: underline;
+            color: $blackLikeHell;
+            text-decoration-color: $podkreslnik;
+          }
+
+          a:active {
             text-decoration: underline;
             color: $blackLikeHell;
             text-decoration-color: $podkreslnik;
@@ -1714,11 +1732,6 @@ main {
               text-decoration: none;
               color: $blackLikeHell;
 
-              &:hover {
-                text-decoration: underline;
-                text-decoration-color: $orangeButton;
-              }
-
               span {
                 color: $orangeButton;
               }
@@ -1772,11 +1785,6 @@ main {
               text-decoration: none;
               color: $blackLikeHell;
 
-              &:hover {
-                text-decoration: underline;
-                text-decoration-color: $orangeButton;
-              }
-
               span {
                 color: $orangeButton;
               }
@@ -1828,11 +1836,6 @@ main {
             a {
               text-decoration: none;
               color: $blackLikeHell;
-
-              &:hover {
-                text-decoration: underline;
-                text-decoration-color: $orangeButton;
-              }
 
               span {
                 color: $orangeButton;
@@ -2400,7 +2403,6 @@ main {
 
                 &:hover {
                   text-decoration: underline;
-                  text-decoration-color: $orangeButton;
                   color: $blackLikeHell;
                 }
               }
@@ -2434,7 +2436,6 @@ main {
 
                 &:hover {
                   text-decoration: underline;
-                  text-decoration-color: $orangeButton;
                   color: $blackLikeHell;
                 }
               }
@@ -2467,7 +2468,6 @@ main {
 
                 &:hover {
                   text-decoration: underline;
-                  text-decoration-color: $orangeButton;
                   color: $blackLikeHell;
                 }
               }
