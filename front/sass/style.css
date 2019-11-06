@@ -1442,19 +1442,7 @@ main {
           font-size: 14px;
           font-family: "SinkinSans-400Regular", sans-serif;
           margin: 0; }
-          main .adviceContainer .expertsContainer .expertsText p a:link {
-            text-decoration: underline;
-            color: #000000;
-            text-decoration-color: #d9d9d9; }
-          main .adviceContainer .expertsContainer .expertsText p a:hover {
-            text-decoration: underline;
-            color: #000000;
-            text-decoration-color: #d9d9d9; }
-          main .adviceContainer .expertsContainer .expertsText p a:visited {
-            text-decoration: underline;
-            color: #000000;
-            text-decoration-color: #d9d9d9; }
-          main .adviceContainer .expertsContainer .expertsText p a:active {
+          main .adviceContainer .expertsContainer .expertsText p a {
             text-decoration: underline;
             color: #000000;
             text-decoration-color: #d9d9d9; }
@@ -1530,6 +1518,9 @@ main {
             main .adviceContainer .expertsContainer .div1 .cardBig .linkArticle a {
               text-decoration: none;
               color: #000000; }
+              main .adviceContainer .expertsContainer .div1 .cardBig .linkArticle a:hover {
+                text-decoration: underline;
+                text-decoration-color: #ff6300; }
               main .adviceContainer .expertsContainer .div1 .cardBig .linkArticle a span {
                 color: #ff6300; }
       main .adviceContainer .expertsContainer .div2 {
@@ -1566,6 +1557,9 @@ main {
             main .adviceContainer .expertsContainer .div2 .card .bottomTextG a {
               text-decoration: none;
               color: #000000; }
+              main .adviceContainer .expertsContainer .div2 .card .bottomTextG a:hover {
+                text-decoration: underline;
+                text-decoration-color: #ff6300; }
               main .adviceContainer .expertsContainer .div2 .card .bottomTextG a span {
                 color: #ff6300; }
       main .adviceContainer .expertsContainer .div3 {
@@ -1602,6 +1596,9 @@ main {
             main .adviceContainer .expertsContainer .div3 .card .bottomTextG a {
               text-decoration: none;
               color: #000000; }
+              main .adviceContainer .expertsContainer .div3 .card .bottomTextG a:hover {
+                text-decoration: underline;
+                text-decoration-color: #ff6300; }
               main .adviceContainer .expertsContainer .div3 .card .bottomTextG a span {
                 color: #ff6300; }
   main .searchFormsTab {
@@ -1635,21 +1632,13 @@ main {
             color: #000000;
             margin: 0;
             padding-bottom: 8px; }
-            main .searchFormsTab .searchSection .parent .div2 p a:link {
+            main .searchFormsTab .searchSection .parent .div2 p a {
               text-decoration: none;
               color: #000000; }
-            main .searchFormsTab .searchSection .parent .div2 p a:hover {
-              text-decoration: underline;
-              text-decoration-color: #ff6300;
-              color: #000000; }
-            main .searchFormsTab .searchSection .parent .div2 p a:visited {
-              text-decoration: none;
-              text-decoration-color: #ff6300;
-              color: #000000; }
-            main .searchFormsTab .searchSection .parent .div2 p a:active {
-              text-decoration: none;
-              text-decoration-color: #ff6300;
-              color: #000000; }
+              main .searchFormsTab .searchSection .parent .div2 p a:hover {
+                text-decoration: underline;
+                text-decoration-color: #ff6300;
+                color: #000000; }
             main .searchFormsTab .searchSection .parent .div2 p span {
               color: #ff6300; }
         main .searchFormsTab .searchSection .parent .div3 {
@@ -1660,20 +1649,13 @@ main {
             color: #000000;
             margin: 0;
             padding-bottom: 8px; }
-            main .searchFormsTab .searchSection .parent .div3 p a:link {
+            main .searchFormsTab .searchSection .parent .div3 p a {
               text-decoration: none;
               color: #000000; }
-            main .searchFormsTab .searchSection .parent .div3 p a:hover {
-              text-decoration: underline;
-              text-decoration-color: #ff6300;
-              color: #000000; }
-            main .searchFormsTab .searchSection .parent .div3 p a:visited {
-              text-decoration: none;
-              text-decoration-color: #ff6300;
-              color: #000000; }
-            main .searchFormsTab .searchSection .parent .div3 p a:active {
-              text-decoration: none;
-              color: #000000; }
+              main .searchFormsTab .searchSection .parent .div3 p a:hover {
+                text-decoration: underline;
+                text-decoration-color: #ff6300;
+                color: #000000; }
             main .searchFormsTab .searchSection .parent .div3 p span {
               color: #ff6300; }
         main .searchFormsTab .searchSection .parent .div4 {
@@ -1690,20 +1672,13 @@ main {
             color: #000000;
             margin: 0;
             padding-bottom: 8px; }
-            main .searchFormsTab .searchSection .parent .div5 p a:link {
+            main .searchFormsTab .searchSection .parent .div5 p a {
               text-decoration: none;
               color: #000000; }
-            main .searchFormsTab .searchSection .parent .div5 p a:hover {
-              text-decoration: underline;
-              text-decoration-color: #ff6300;
-              color: #000000; }
-            main .searchFormsTab .searchSection .parent .div5 p a:visited {
-              text-decoration: none;
-              text-decoration-color: #ff6300;
-              color: #000000; }
-            main .searchFormsTab .searchSection .parent .div5 p a:active {
-              text-decoration: none;
-              color: #000000; }
+              main .searchFormsTab .searchSection .parent .div5 p a:hover {
+                text-decoration: underline;
+                text-decoration-color: #ff6300;
+                color: #000000; }
             main .searchFormsTab .searchSection .parent .div5 p span {
               color: #ff6300; }
         main .searchFormsTab .searchSection .parent .div6 {
@@ -1720,20 +1695,13 @@ main {
             color: #000000;
             margin: 0;
             padding-bottom: 8px; }
-            main .searchFormsTab .searchSection .parent .div7 p a:link {
+            main .searchFormsTab .searchSection .parent .div7 p a {
               text-decoration: none;
               color: #000000; }
-            main .searchFormsTab .searchSection .parent .div7 p a:hover {
-              text-decoration: underline;
-              text-decoration-color: #ff6300;
-              color: #000000; }
-            main .searchFormsTab .searchSection .parent .div7 p a:visited {
-              text-decoration: none;
-              text-decoration-color: #ff6300;
-              color: #000000; }
-            main .searchFormsTab .searchSection .parent .div7 p a:active {
-              text-decoration: none;
-              color: #000000; }
+              main .searchFormsTab .searchSection .parent .div7 p a:hover {
+                text-decoration: underline;
+                text-decoration-color: #ff6300;
+                color: #000000; }
             main .searchFormsTab .searchSection .parent .div7 p span {
               color: #ff6300; }
         main .searchFormsTab .searchSection .parent .div8 {
@@ -1744,20 +1712,13 @@ main {
             color: #000000;
             margin: 0;
             padding-bottom: 8px; }
-            main .searchFormsTab .searchSection .parent .div8 p a:link {
+            main .searchFormsTab .searchSection .parent .div8 p a {
               text-decoration: none;
               color: #000000; }
-            main .searchFormsTab .searchSection .parent .div8 p a:hover {
-              text-decoration: underline;
-              text-decoration-color: #ff6300;
-              color: #000000; }
-            main .searchFormsTab .searchSection .parent .div8 p a:visited {
-              text-decoration: none;
-              text-decoration-color: #ff6300;
-              color: #000000; }
-            main .searchFormsTab .searchSection .parent .div8 p a:active {
-              text-decoration: none;
-              color: #000000; }
+              main .searchFormsTab .searchSection .parent .div8 p a:hover {
+                text-decoration: underline;
+                text-decoration-color: #ff6300;
+                color: #000000; }
             main .searchFormsTab .searchSection .parent .div8 p span {
               color: #ff6300; }
         main .searchFormsTab .searchSection .parent .div9 {
@@ -1774,20 +1735,13 @@ main {
             color: #000000;
             margin: 0;
             padding-bottom: 8px; }
-            main .searchFormsTab .searchSection .parent .div10 p a:link {
+            main .searchFormsTab .searchSection .parent .div10 p a {
               text-decoration: none;
               color: #000000; }
-            main .searchFormsTab .searchSection .parent .div10 p a:hover {
-              text-decoration: underline;
-              text-decoration-color: #ff6300;
-              color: #000000; }
-            main .searchFormsTab .searchSection .parent .div10 p a:visited {
-              text-decoration: none;
-              text-decoration-color: #ff6300;
-              color: #000000; }
-            main .searchFormsTab .searchSection .parent .div10 p a:active {
-              text-decoration: none;
-              color: #000000; }
+              main .searchFormsTab .searchSection .parent .div10 p a:hover {
+                text-decoration: underline;
+                text-decoration-color: #ff6300;
+                color: #000000; }
             main .searchFormsTab .searchSection .parent .div10 p span {
               color: #ff6300; }
         main .searchFormsTab .searchSection .parent .div11 {
@@ -1798,20 +1752,13 @@ main {
             color: #000000;
             margin: 0;
             padding-bottom: 8px; }
-            main .searchFormsTab .searchSection .parent .div11 p a:link {
+            main .searchFormsTab .searchSection .parent .div11 p a {
               text-decoration: none;
               color: #000000; }
-            main .searchFormsTab .searchSection .parent .div11 p a:hover {
-              text-decoration: underline;
-              text-decoration-color: #ff6300;
-              color: #000000; }
-            main .searchFormsTab .searchSection .parent .div11 p a:visited {
-              text-decoration: none;
-              text-decoration-color: #ff6300;
-              color: #000000; }
-            main .searchFormsTab .searchSection .parent .div11 p a:active {
-              text-decoration: none;
-              color: #000000; }
+              main .searchFormsTab .searchSection .parent .div11 p a:hover {
+                text-decoration: underline;
+                text-decoration-color: #ff6300;
+                color: #000000; }
             main .searchFormsTab .searchSection .parent .div11 p span {
               color: #ff6300; }
         main .searchFormsTab .searchSection .parent .div12 {
@@ -1822,20 +1769,13 @@ main {
             color: #000000;
             margin: 0;
             padding-bottom: 8px; }
-            main .searchFormsTab .searchSection .parent .div12 p a:link {
+            main .searchFormsTab .searchSection .parent .div12 p a {
               text-decoration: none;
               color: #000000; }
-            main .searchFormsTab .searchSection .parent .div12 p a:hover {
-              text-decoration: underline;
-              text-decoration-color: #ff6300;
-              color: #000000; }
-            main .searchFormsTab .searchSection .parent .div12 p a:visited {
-              text-decoration: none;
-              text-decoration-color: #ff6300;
-              color: #000000; }
-            main .searchFormsTab .searchSection .parent .div12 p a:active {
-              text-decoration: none;
-              color: #000000; }
+              main .searchFormsTab .searchSection .parent .div12 p a:hover {
+                text-decoration: underline;
+                text-decoration-color: #ff6300;
+                color: #000000; }
             main .searchFormsTab .searchSection .parent .div12 p span {
               color: #ff6300; }
         main .searchFormsTab .searchSection .parent .div13 {
@@ -1846,20 +1786,13 @@ main {
             color: #000000;
             margin: 0;
             padding-bottom: 8px; }
-            main .searchFormsTab .searchSection .parent .div13 p a:link {
+            main .searchFormsTab .searchSection .parent .div13 p a {
               text-decoration: none;
               color: #000000; }
-            main .searchFormsTab .searchSection .parent .div13 p a:hover {
-              text-decoration: underline;
-              text-decoration-color: #ff6300;
-              color: #000000; }
-            main .searchFormsTab .searchSection .parent .div13 p a:visited {
-              text-decoration: none;
-              text-decoration-color: #ff6300;
-              color: #000000; }
-            main .searchFormsTab .searchSection .parent .div13 p a:active {
-              text-decoration: none;
-              color: #000000; }
+              main .searchFormsTab .searchSection .parent .div13 p a:hover {
+                text-decoration: underline;
+                text-decoration-color: #ff6300;
+                color: #000000; }
             main .searchFormsTab .searchSection .parent .div13 p span {
               color: #ff6300; }
         main .searchFormsTab .searchSection .parent .div14 {
@@ -1870,20 +1803,13 @@ main {
             color: #000000;
             margin: 0;
             padding-bottom: 8px; }
-            main .searchFormsTab .searchSection .parent .div14 p a:link {
+            main .searchFormsTab .searchSection .parent .div14 p a {
               text-decoration: none;
               color: #000000; }
-            main .searchFormsTab .searchSection .parent .div14 p a:hover {
-              text-decoration: underline;
-              text-decoration-color: #ff6300;
-              color: #000000; }
-            main .searchFormsTab .searchSection .parent .div14 p a:visited {
-              text-decoration: none;
-              text-decoration-color: #ff6300;
-              color: #000000; }
-            main .searchFormsTab .searchSection .parent .div14 p a:active {
-              text-decoration: none;
-              color: #000000; }
+              main .searchFormsTab .searchSection .parent .div14 p a:hover {
+                text-decoration: underline;
+                text-decoration-color: #ff6300;
+                color: #000000; }
             main .searchFormsTab .searchSection .parent .div14 p span {
               color: #ff6300; }
         main .searchFormsTab .searchSection .parent .div15 {
@@ -1900,20 +1826,13 @@ main {
             color: #000000;
             margin: 0;
             padding-bottom: 8px; }
-            main .searchFormsTab .searchSection .parent .div16 p a:link {
+            main .searchFormsTab .searchSection .parent .div16 p a {
               text-decoration: none;
               color: #000000; }
-            main .searchFormsTab .searchSection .parent .div16 p a:hover {
-              text-decoration: underline;
-              text-decoration-color: #ff6300;
-              color: #000000; }
-            main .searchFormsTab .searchSection .parent .div16 p a:visited {
-              text-decoration: none;
-              text-decoration-color: #ff6300;
-              color: #000000; }
-            main .searchFormsTab .searchSection .parent .div16 p a:active {
-              text-decoration: none;
-              color: #000000; }
+              main .searchFormsTab .searchSection .parent .div16 p a:hover {
+                text-decoration: underline;
+                text-decoration-color: #ff6300;
+                color: #000000; }
             main .searchFormsTab .searchSection .parent .div16 p span {
               color: #ff6300; }
         main .searchFormsTab .searchSection .parent .div17 {
@@ -1924,20 +1843,13 @@ main {
             color: #000000;
             margin: 0;
             padding-bottom: 8px; }
-            main .searchFormsTab .searchSection .parent .div17 p a:link {
+            main .searchFormsTab .searchSection .parent .div17 p a {
               text-decoration: none;
               color: #000000; }
-            main .searchFormsTab .searchSection .parent .div17 p a:hover {
-              text-decoration: underline;
-              text-decoration-color: #ff6300;
-              color: #000000; }
-            main .searchFormsTab .searchSection .parent .div17 p a:visited {
-              text-decoration: none;
-              text-decoration-color: #ff6300;
-              color: #000000; }
-            main .searchFormsTab .searchSection .parent .div17 p a:active {
-              text-decoration: none;
-              color: #000000; }
+              main .searchFormsTab .searchSection .parent .div17 p a:hover {
+                text-decoration: underline;
+                text-decoration-color: #ff6300;
+                color: #000000; }
             main .searchFormsTab .searchSection .parent .div17 p span {
               color: #ff6300; }
         main .searchFormsTab .searchSection .parent .div18 {
@@ -1948,20 +1860,13 @@ main {
             color: #000000;
             margin: 0;
             padding-bottom: 8px; }
-            main .searchFormsTab .searchSection .parent .div18 p a:link {
+            main .searchFormsTab .searchSection .parent .div18 p a {
               text-decoration: none;
               color: #000000; }
-            main .searchFormsTab .searchSection .parent .div18 p a:hover {
-              text-decoration: underline;
-              text-decoration-color: #ff6300;
-              color: #000000; }
-            main .searchFormsTab .searchSection .parent .div18 p a:visited {
-              text-decoration: none;
-              text-decoration-color: #ff6300;
-              color: #000000; }
-            main .searchFormsTab .searchSection .parent .div18 p a:active {
-              text-decoration: none;
-              color: #000000; }
+              main .searchFormsTab .searchSection .parent .div18 p a:hover {
+                text-decoration: underline;
+                text-decoration-color: #ff6300;
+                color: #000000; }
             main .searchFormsTab .searchSection .parent .div18 p span {
               color: #ff6300; }
         main .searchFormsTab .searchSection .parent .div19 {
@@ -1972,21 +1877,13 @@ main {
             color: #000000;
             margin: 0;
             padding-bottom: 8px; }
-            main .searchFormsTab .searchSection .parent .div19 p a:link {
+            main .searchFormsTab .searchSection .parent .div19 p a {
               text-decoration: none;
               color: #000000; }
-            main .searchFormsTab .searchSection .parent .div19 p a:hover {
-              text-decoration: underline;
-              text-decoration-color: #ff6300;
-              color: #000000; }
-            main .searchFormsTab .searchSection .parent .div19 p a:visited {
-              text-decoration: none;
-              text-decoration-color: #ff6300;
-              color: #000000; }
-            main .searchFormsTab .searchSection .parent .div19 p a:active {
-              text-decoration: none;
-              text-decoration-color: #ff6300;
-              color: #000000; }
+              main .searchFormsTab .searchSection .parent .div19 p a:hover {
+                text-decoration: underline;
+                text-decoration-color: #ff6300;
+                color: #000000; }
             main .searchFormsTab .searchSection .parent .div19 p span {
               color: #ff6300; }
         main .searchFormsTab .searchSection .parent .div20 {
@@ -1997,22 +1894,13 @@ main {
             color: #000000;
             margin: 0;
             padding-bottom: 8px; }
-            main .searchFormsTab .searchSection .parent .div20 p a:link {
+            main .searchFormsTab .searchSection .parent .div20 p a {
               text-decoration: none;
-              text-decoration-color: #ff6300;
               color: #000000; }
-            main .searchFormsTab .searchSection .parent .div20 p a:hover {
-              text-decoration: underline;
-              text-decoration-color: #ff6300;
-              color: #000000; }
-            main .searchFormsTab .searchSection .parent .div20 p a:visited {
-              text-decoration: none;
-              text-decoration-color: #ff6300;
-              color: #000000; }
-            main .searchFormsTab .searchSection .parent .div20 p a:active {
-              text-decoration: none;
-              text-decoration-color: #ff6300;
-              color: #000000; }
+              main .searchFormsTab .searchSection .parent .div20 p a:hover {
+                text-decoration: underline;
+                text-decoration-color: #ff6300;
+                color: #000000; }
             main .searchFormsTab .searchSection .parent .div20 p span {
               color: #ff6300; }
       main .searchFormsTab .searchSection .informationText {
@@ -2021,16 +1909,7 @@ main {
         margin-top: 10px;
         line-height: 14px;
         letter-spacing: 0.01rem; }
-        main .searchFormsTab .searchSection .informationText a:link {
-          text-decoration: none;
-          color: #4b95db; }
-        main .searchFormsTab .searchSection .informationText a:hover {
-          text-decoration: none;
-          color: #4b95db; }
-        main .searchFormsTab .searchSection .informationText a:visited {
-          text-decoration: none;
-          color: #4b95db; }
-        main .searchFormsTab .searchSection .informationText a:active {
+        main .searchFormsTab .searchSection .informationText a {
           text-decoration: none;
           color: #4b95db; }
   @media (min-width: 768px) {
@@ -2066,15 +1945,9 @@ main {
             main .footerContainer .parent .div1 p a:link {
               text-decoration: none;
               color: #000000; }
-            main .footerContainer .parent .div1 p a:hover {
-              text-decoration: underline;
-              color: #000000; }
-            main .footerContainer .parent .div1 p a:visited {
-              text-decoration: none;
-              color: #000000; }
-            main .footerContainer .parent .div1 p a:active {
-              text-decoration: none;
-              color: #000000; }
+              main .footerContainer .parent .div1 p a:link:hover {
+                text-decoration: underline;
+                color: #000000; }
             main .footerContainer .parent .div1 p span {
               color: #ff6300; }
         main .footerContainer .parent .div2 {
@@ -2090,19 +1963,11 @@ main {
             color: #000000; }
             main .footerContainer .parent .div2 p a:link {
               text-decoration: none;
-              text-decoration-color: #ff6300;
               color: #000000; }
-            main .footerContainer .parent .div2 p a:hover {
-              text-decoration: underline;
-              text-decoration-color: #ff6300; }
-            main .footerContainer .parent .div2 p a:visited {
-              text-decoration: none;
-              text-decoration-color: #ff6300;
-              color: #000000; }
-            main .footerContainer .parent .div2 p a:active {
-              text-decoration: none;
-              text-decoration-color: #ff6300;
-              color: #000000; }
+              main .footerContainer .parent .div2 p a:link:hover {
+                text-decoration: underline;
+                text-decoration-color: #ff6300;
+                color: #000000; }
             main .footerContainer .parent .div2 p span {
               color: #ff6300; }
         main .footerContainer .parent .div3 {
@@ -2118,20 +1983,11 @@ main {
             color: #000000; }
             main .footerContainer .parent .div3 p a:link {
               text-decoration: none;
-              text-decoration-color: #ff6300;
               color: #000000; }
-            main .footerContainer .parent .div3 p a:hover {
-              text-decoration: underline;
-              text-decoration-color: #ff6300;
-              color: #000000; }
-            main .footerContainer .parent .div3 p a:visited {
-              text-decoration: none;
-              text-decoration-color: #ff6300;
-              color: #000000; }
-            main .footerContainer .parent .div3 p a:active {
-              text-decoration: none;
-              text-decoration-color: #ff6300;
-              color: #000000; }
+              main .footerContainer .parent .div3 p a:link:hover {
+                text-decoration: underline;
+                text-decoration-color: #ff6300;
+                color: #000000; }
             main .footerContainer .parent .div3 p span {
               color: #ff6300; }
         main .footerContainer .parent .div4 {
@@ -2147,20 +2003,11 @@ main {
             color: #000000; }
             main .footerContainer .parent .div4 p a:link {
               text-decoration: none;
-              text-decoration-color: #ff6300;
               color: #000000; }
-            main .footerContainer .parent .div4 p a:hover {
-              text-decoration: underline;
-              text-decoration-color: #ff6300;
-              color: #000000; }
-            main .footerContainer .parent .div4 p a:visited {
-              text-decoration: none;
-              text-decoration-color: #ff6300;
-              color: #000000; }
-            main .footerContainer .parent .div4 p a:active {
-              text-decoration: none;
-              text-decoration-color: #ff6300;
-              color: #000000; }
+              main .footerContainer .parent .div4 p a:link:hover {
+                text-decoration: underline;
+                text-decoration-color: #ff6300;
+                color: #000000; }
             main .footerContainer .parent .div4 p span {
               color: #ff6300; }
           main .footerContainer .parent .div4 .icons {

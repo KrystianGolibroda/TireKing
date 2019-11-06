@@ -1612,25 +1612,7 @@ main {
           font-family: $SS-400Regular;
           margin: 0;
 
-          a:link {
-            text-decoration: underline;
-            color: $blackLikeHell;
-            text-decoration-color: $podkreslnik;
-          }
-
-          a:hover {
-            text-decoration: underline;
-            color: $blackLikeHell;
-            text-decoration-color: $podkreslnik;
-          }
-
-          a:visited {
-            text-decoration: underline;
-            color: $blackLikeHell;
-            text-decoration-color: $podkreslnik;
-          }
-
-          a:active {
+          a{
             text-decoration: underline;
             color: $blackLikeHell;
             text-decoration-color: $podkreslnik;
@@ -1732,6 +1714,11 @@ main {
               text-decoration: none;
               color: $blackLikeHell;
 
+              &:hover {
+                text-decoration: underline;
+                text-decoration-color: $orangeButton;
+              }
+
               span {
                 color: $orangeButton;
               }
@@ -1785,6 +1772,11 @@ main {
               text-decoration: none;
               color: $blackLikeHell;
 
+              &:hover {
+                text-decoration: underline;
+                text-decoration-color: $orangeButton;
+              }
+
               span {
                 color: $orangeButton;
               }
@@ -1837,6 +1829,11 @@ main {
               text-decoration: none;
               color: $blackLikeHell;
 
+              &:hover {
+                text-decoration: underline;
+                text-decoration-color: $orangeButton;
+              }
+
               span {
                 color: $orangeButton;
               }
@@ -1887,27 +1884,14 @@ main {
             margin: 0;
             padding-bottom: 8px;
 
-            a:link {
+            a{
               text-decoration: none;
               color: $blackLikeHell;
-            }
-
-            a:hover {
-              text-decoration: underline;
-              text-decoration-color: $orangeButton;
-              color: $blackLikeHell;
-            }
-
-            a:visited {
-              text-decoration: none;
-              text-decoration-color: $orangeButton;
-              color: $blackLikeHell;
-            }
-
-            a:active {
-              text-decoration: none;
-              text-decoration-color: $orangeButton;
-              color: $blackLikeHell;
+              &:hover {
+                text-decoration: underline;
+                text-decoration-color: $orangeButton;
+                color: $blackLikeHell;
+              }
             }
 
             span {
@@ -1926,26 +1910,14 @@ main {
             margin: 0;
             padding-bottom: 8px;
 
-            a:link {
+            a{
               text-decoration: none;
               color: $blackLikeHell;
-            }
-
-            a:hover {
-              text-decoration: underline;
-              text-decoration-color: $orangeButton;
-              color: $blackLikeHell;
-            }
-
-            a:visited {
-              text-decoration: none;
-              text-decoration-color: $orangeButton;
-              color: $blackLikeHell;
-            }
-
-            a:active {
-              text-decoration: none;
-              color: $blackLikeHell;
+              &:hover {
+                text-decoration: underline;
+                text-decoration-color: $orangeButton;
+                color: $blackLikeHell;
+              }
             }
 
             span {
@@ -1974,26 +1946,14 @@ main {
             margin: 0;
             padding-bottom: 8px;
 
-            a:link {
+            a{
               text-decoration: none;
               color: $blackLikeHell;
-            }
-
-            a:hover {
-              text-decoration: underline;
-              text-decoration-color: $orangeButton;
-              color: $blackLikeHell;
-            }
-
-            a:visited {
-              text-decoration: none;
-              text-decoration-color: $orangeButton;
-              color: $blackLikeHell;
-            }
-
-            a:active {
-              text-decoration: none;
-              color: $blackLikeHell;
+              &:hover {
+                text-decoration: underline;
+                text-decoration-color: $orangeButton;
+                color: $blackLikeHell;
+              }
             }
 
             span {
@@ -2022,26 +1982,14 @@ main {
             margin: 0;
             padding-bottom: 8px;
 
-            a:link {
+            a{
               text-decoration: none;
               color: $blackLikeHell;
-            }
-
-            a:hover {
-              text-decoration: underline;
-              text-decoration-color: $orangeButton;
-              color: $blackLikeHell;
-            }
-
-            a:visited {
-              text-decoration: none;
-              text-decoration-color: $orangeButton;
-              color: $blackLikeHell;
-            }
-
-            a:active {
-              text-decoration: none;
-              color: $blackLikeHell;
+              &:hover {
+                text-decoration: underline;
+                text-decoration-color: $orangeButton;
+                color: $blackLikeHell;
+              }
             }
 
             span {
@@ -2060,26 +2008,14 @@ main {
             margin: 0;
             padding-bottom: 8px;
 
-            a:link {
+            a{
               text-decoration: none;
               color: $blackLikeHell;
-            }
-
-            a:hover {
-              text-decoration: underline;
-              text-decoration-color: $orangeButton;
-              color: $blackLikeHell;
-            }
-
-            a:visited {
-              text-decoration: none;
-              text-decoration-color: $orangeButton;
-              color: $blackLikeHell;
-            }
-
-            a:active {
-              text-decoration: none;
-              color: $blackLikeHell;
+              &:hover {
+                text-decoration: underline;
+                text-decoration-color: $orangeButton;
+                color: $blackLikeHell;
+              }
             }
 
             span {
@@ -2108,26 +2044,14 @@ main {
             margin: 0;
             padding-bottom: 8px;
 
-            a:link {
+            a{
               text-decoration: none;
               color: $blackLikeHell;
-            }
-
-            a:hover {
-              text-decoration: underline;
-              text-decoration-color: $orangeButton;
-              color: $blackLikeHell;
-            }
-
-            a:visited {
-              text-decoration: none;
-              text-decoration-color: $orangeButton;
-              color: $blackLikeHell;
-            }
-
-            a:active {
-              text-decoration: none;
-              color: $blackLikeHell;
+              &:hover {
+                text-decoration: underline;
+                text-decoration-color: $orangeButton;
+                color: $blackLikeHell;
+              }
             }
 
             span {
@@ -2146,26 +2070,14 @@ main {
             margin: 0;
             padding-bottom: 8px;
 
-            a:link {
+            a{
               text-decoration: none;
               color: $blackLikeHell;
-            }
-
-            a:hover {
-              text-decoration: underline;
-              text-decoration-color: $orangeButton;
-              color: $blackLikeHell;
-            }
-
-            a:visited {
-              text-decoration: none;
-              text-decoration-color: $orangeButton;
-              color: $blackLikeHell;
-            }
-
-            a:active {
-              text-decoration: none;
-              color: $blackLikeHell;
+              &:hover {
+                text-decoration: underline;
+                text-decoration-color: $orangeButton;
+                color: $blackLikeHell;
+              }
             }
 
             span {
@@ -2184,26 +2096,14 @@ main {
             margin: 0;
             padding-bottom: 8px;
 
-            a:link {
+            a{
               text-decoration: none;
               color: $blackLikeHell;
-            }
-
-            a:hover {
-              text-decoration: underline;
-              text-decoration-color: $orangeButton;
-              color: $blackLikeHell;
-            }
-
-            a:visited {
-              text-decoration: none;
-              text-decoration-color: $orangeButton;
-              color: $blackLikeHell;
-            }
-
-            a:active {
-              text-decoration: none;
-              color: $blackLikeHell;
+              &:hover {
+                text-decoration: underline;
+                text-decoration-color: $orangeButton;
+                color: $blackLikeHell;
+              }
             }
 
             span {
@@ -2222,26 +2122,14 @@ main {
             margin: 0;
             padding-bottom: 8px;
 
-            a:link {
+            a{
               text-decoration: none;
               color: $blackLikeHell;
-            }
-
-            a:hover {
-              text-decoration: underline;
-              text-decoration-color: $orangeButton;
-              color: $blackLikeHell;
-            }
-
-            a:visited {
-              text-decoration: none;
-              text-decoration-color: $orangeButton;
-              color: $blackLikeHell;
-            }
-
-            a:active {
-              text-decoration: none;
-              color: $blackLikeHell;
+              &:hover {
+                text-decoration: underline;
+                text-decoration-color: $orangeButton;
+                color: $blackLikeHell;
+              }
             }
 
             span {
@@ -2260,26 +2148,14 @@ main {
             margin: 0;
             padding-bottom: 8px;
 
-            a:link {
+            a{
               text-decoration: none;
               color: $blackLikeHell;
-            }
-
-            a:hover {
-              text-decoration: underline;
-              text-decoration-color: $orangeButton;
-              color: $blackLikeHell;
-            }
-
-            a:visited {
-              text-decoration: none;
-              text-decoration-color: $orangeButton;
-              color: $blackLikeHell;
-            }
-
-            a:active {
-              text-decoration: none;
-              color: $blackLikeHell;
+              &:hover {
+                text-decoration: underline;
+                text-decoration-color: $orangeButton;
+                color: $blackLikeHell;
+              }
             }
 
             span {
@@ -2308,26 +2184,14 @@ main {
             margin: 0;
             padding-bottom: 8px;
 
-            a:link {
+            a{
               text-decoration: none;
               color: $blackLikeHell;
-            }
-
-            a:hover {
-              text-decoration: underline;
-              text-decoration-color: $orangeButton;
-              color: $blackLikeHell;
-            }
-
-            a:visited {
-              text-decoration: none;
-              text-decoration-color: $orangeButton;
-              color: $blackLikeHell;
-            }
-
-            a:active {
-              text-decoration: none;
-              color: $blackLikeHell;
+              &:hover {
+                text-decoration: underline;
+                text-decoration-color: $orangeButton;
+                color: $blackLikeHell;
+              }
             }
 
             span {
@@ -2346,26 +2210,14 @@ main {
             margin: 0;
             padding-bottom: 8px;
 
-            a:link {
+            a{
               text-decoration: none;
               color: $blackLikeHell;
-            }
-
-            a:hover {
-              text-decoration: underline;
-              text-decoration-color: $orangeButton;
-              color: $blackLikeHell;
-            }
-
-            a:visited {
-              text-decoration: none;
-              text-decoration-color: $orangeButton;
-              color: $blackLikeHell;
-            }
-
-            a:active {
-              text-decoration: none;
-              color: $blackLikeHell;
+              &:hover {
+                text-decoration: underline;
+                text-decoration-color: $orangeButton;
+                color: $blackLikeHell;
+              }
             }
 
             span {
@@ -2384,26 +2236,14 @@ main {
             margin: 0;
             padding-bottom: 8px;
 
-            a:link {
+            a{
               text-decoration: none;
               color: $blackLikeHell;
-            }
-
-            a:hover {
-              text-decoration: underline;
-              text-decoration-color: $orangeButton;
-              color: $blackLikeHell;
-            }
-
-            a:visited {
-              text-decoration: none;
-              text-decoration-color: $orangeButton;
-              color: $blackLikeHell;
-            }
-
-            a:active {
-              text-decoration: none;
-              color: $blackLikeHell;
+              &:hover {
+                text-decoration: underline;
+                text-decoration-color: $orangeButton;
+                color: $blackLikeHell;
+              }
             }
 
             span {
@@ -2422,27 +2262,14 @@ main {
             margin: 0;
             padding-bottom: 8px;
 
-            a:link {
+            a{
               text-decoration: none;
               color: $blackLikeHell;
-            }
-
-            a:hover {
-              text-decoration: underline;
-              text-decoration-color: $orangeButton;
-              color: $blackLikeHell;
-            }
-
-            a:visited {
-              text-decoration: none;
-              text-decoration-color: $orangeButton;
-              color: $blackLikeHell;
-            }
-
-            a:active {
-              text-decoration: none;
-              text-decoration-color: $orangeButton;
-              color: $blackLikeHell;
+              &:hover {
+                text-decoration: underline;
+                text-decoration-color: $orangeButton;
+                color: $blackLikeHell;
+              }
             }
 
             span {
@@ -2461,28 +2288,14 @@ main {
             margin: 0;
             padding-bottom: 8px;
 
-            a:link {
+            a{
               text-decoration: none;
-              text-decoration-color: $orangeButton;
               color: $blackLikeHell;
-            }
-
-            a:hover {
-              text-decoration: underline;
-              text-decoration-color: $orangeButton;
-              color: $blackLikeHell;
-            }
-
-            a:visited {
-              text-decoration: none;
-              text-decoration-color: $orangeButton;
-              color: $blackLikeHell;
-            }
-
-            a:active {
-              text-decoration: none;
-              text-decoration-color: $orangeButton;
-              color: $blackLikeHell;
+              &:hover {
+                text-decoration: underline;
+                text-decoration-color: $orangeButton;
+                color: $blackLikeHell;
+              }
             }
 
             span {
@@ -2499,22 +2312,7 @@ main {
         line-height: 14px;
         letter-spacing: 0.01rem;
 
-        a:link {
-          text-decoration: none;
-          color: $hyperlinks;
-        }
-
-        a:hover {
-          text-decoration: none;
-          color: $hyperlinks;
-        }
-
-        a:visited {
-          text-decoration: none;
-          color: $hyperlinks;
-        }
-
-        a:active {
+        a {
           text-decoration: none;
           color: $hyperlinks;
         }
@@ -2565,21 +2363,11 @@ main {
               a:link {
                 text-decoration: none;
                 color: $blackLikeHell;
-              }
 
-              a:hover {
-                text-decoration: underline;
-                color: $blackLikeHell;
-              }
-
-              a:visited {
-                text-decoration: none;
-                color: $blackLikeHell;
-              }
-
-              a:active {
-                text-decoration: none;
-                color: $blackLikeHell;
+                &:hover {
+                  text-decoration: underline;
+                  color: $blackLikeHell;
+                }
               }
 
               span {
@@ -2608,25 +2396,13 @@ main {
 
               a:link {
                 text-decoration: none;
-                text-decoration-color: $orangeButton;
                 color: $blackLikeHell;
-              }
 
-              a:hover {
-                text-decoration: underline;
-                text-decoration-color: $orangeButton;
-              }
-
-              a:visited {
-                text-decoration: none;
-                text-decoration-color: $orangeButton;
-                color: $blackLikeHell;
-              }
-
-              a:active {
-                text-decoration: none;
-                text-decoration-color: $orangeButton;
-                color: $blackLikeHell;
+                &:hover {
+                  text-decoration: underline;
+                  text-decoration-color: $orangeButton;
+                  color: $blackLikeHell;
+                }
               }
 
               span {
@@ -2654,26 +2430,13 @@ main {
 
               a:link {
                 text-decoration: none;
-                text-decoration-color: $orangeButton;
                 color: $blackLikeHell;
-              }
 
-              a:hover {
-                text-decoration: underline;
-                text-decoration-color: $orangeButton;
-                color: $blackLikeHell;
-              }
-
-              a:visited {
-                text-decoration: none;
-                text-decoration-color: $orangeButton;
-                color: $blackLikeHell;
-              }
-
-              a:active {
-                text-decoration: none;
-                text-decoration-color: $orangeButton;
-                color: $blackLikeHell;
+                &:hover {
+                  text-decoration: underline;
+                  text-decoration-color: $orangeButton;
+                  color: $blackLikeHell;
+                }
               }
 
               span {
@@ -2700,26 +2463,13 @@ main {
 
               a:link {
                 text-decoration: none;
-                text-decoration-color: $orangeButton;
                 color: $blackLikeHell;
-              }
 
-              a:hover {
-                text-decoration: underline;
-                text-decoration-color: $orangeButton;
-                color: $blackLikeHell;
-              }
-
-              a:visited {
-                text-decoration: none;
-                text-decoration-color: $orangeButton;
-                color: $blackLikeHell;
-              }
-
-              a:active {
-                text-decoration: none;
-                text-decoration-color: $orangeButton;
-                color: $blackLikeHell;
+                &:hover {
+                  text-decoration: underline;
+                  text-decoration-color: $orangeButton;
+                  color: $blackLikeHell;
+                }
               }
 
               span {
