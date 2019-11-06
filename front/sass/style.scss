@@ -211,23 +211,6 @@ nav {
       }
     }
 
-    /*#top-nav ul{
-      font-size: 18px;
-      font-family: $SS-700Bold;
-      margin: 0 auto;
-      padding: 0;
-      background-color: $white;
-      list-style: none;
-      //box-shadow: 0 0 10px 0 $opineoCeneo;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      height: 90px;
-      max-width: 1200px;
-      width: 100%;
-    }*/
-
     #top-nav ul li{
       color: $fontMenu;
 
@@ -296,6 +279,8 @@ nav {
 
 
 main {
+  width: 98%;
+  align-items: center;
   @media (min-width: 768px) {
   .carSearchContainer {
     background-color: $carContainer;
@@ -305,10 +290,10 @@ main {
       background-image: url('../images/michelin_background.png');
       width: 100%;
       background-repeat: no-repeat;
-      background-position: 50%;
+      //background-position: 50%;
       background-size: cover;
       padding-top: 50px !important;
-      padding-bottom: 375px !important;
+      padding-bottom: 475px !important;
     }
 
     .carSearchBox {
@@ -682,15 +667,15 @@ main {
               top: 150px;
               border: 12px solid;
               border-color: $orangeButton transparent transparent $orangeButton;
-              //transform: rotate(20deg);
+              transform: skew(-20deg);
               /* Safari */
-              //-webkit-transform: rotate(20deg);
+              -webkit-transform: skew(-20deg);
               /* Firefox */
-              //-moz-transform: rotate(20deg);
+              -moz-transform: skew(-20deg);
               /* IE */
-              //-ms-transform: rotate(20deg);
+              -ms-transform: skew(-20deg);
               /* Opera */
-              //-o-transform: rotate(20deg);
+              -o-transform: skew(-20deg);
               z-index: 1;
             }
 
@@ -700,18 +685,18 @@ main {
               width: 0;
               height: 0;
               left: 42px;
-              top: 150px;
-              border: 10px solid;
+              top: 149px;
+              border: 11px solid;
               border-color: $white transparent transparent $white;
-              //transform: rotate(20deg);
+              transform: skew(-20deg);
               /* Safari */
-              //-webkit-transform: rotate(20deg);
+              -webkit-transform: skew(-20deg);
               /* Firefox */
-              //-moz-transform: rotate(20deg);
+              -moz-transform: skew(-20deg);
               /* IE */
-              //-ms-transform: rotate(20deg);
+              -ms-transform: skew(-20deg);
               /* Opera */
-              //-o-transform: rotate(20deg);
+              -o-transform: skew(-20deg);
               z-index: 1;
             }
           }
@@ -742,6 +727,16 @@ main {
               top: 150px;
               border: 12px solid;
               border-color: $orangeButton transparent transparent $orangeButton;
+              transform: skew(-20deg);
+              /* Safari */
+              -webkit-transform: skew(-20deg);
+              /* Firefox */
+              -moz-transform: skew(-20deg);
+              /* IE */
+              -ms-transform: skew(-20deg);
+              /* Opera */
+              -o-transform: skew(-20deg);
+              z-index: 3;
             }
 
             &:after {
@@ -750,9 +745,19 @@ main {
               width: 0;
               height: 0;
               left: 42px;
-              top: 150px;
-              border: 10px solid;
+              top: 149px;
+              border: 11px solid;
               border-color: $white transparent transparent $white;
+              transform: skew(-20deg);
+              /* Safari */
+              -webkit-transform: skew(-20deg);
+              /* Firefox */
+              -moz-transform: skew(-20deg);
+              /* IE */
+              -ms-transform: skew(-20deg);
+              /* Opera */
+              -o-transform: skew(-20deg);
+              z-index: 4;
             }
 
           }
@@ -787,6 +792,15 @@ main {
               top: 150px;
               border: 12px solid;
               border-color: $orangeButton transparent transparent $orangeButton;
+              transform: skew(-20deg);
+              /* Safari */
+              -webkit-transform: skew(-20deg);
+              /* Firefox */
+              -moz-transform: skew(-20deg);
+              /* IE */
+              -ms-transform: skew(-20deg);
+              /* Opera */
+              -o-transform: skew(-20deg);
             }
 
             &:after {
@@ -795,14 +809,32 @@ main {
               width: 0;
               height: 0;
               left: 42px;
-              top: 150px;
-              border: 10px solid;
+              top: 149px;
+              border: 11px solid;
               border-color: $white transparent transparent $white;
+              transform: skew(-20deg);
+              /* Safari */
+              -webkit-transform: skew(-20deg);
+              /* Firefox */
+              -moz-transform: skew(-20deg);
+              /* IE */
+              -ms-transform: skew(-20deg);
+              /* Opera */
+              -o-transform: skew(-20deg);
             }
           }
 
           .usersOpinions {
-            padding: 20px 20px 0 20px;
+            padding-top: 20px;
+            display: flex;
+            flex-direction: row;
+
+            .usersOpinionsImg {
+              margin: 0 auto;
+              align-items: center;
+              display: flex;
+              justify-content: center;
+            }
           }
         }
       }
@@ -955,6 +987,7 @@ main {
                 width: 100%;
                 display: flex;
                 flex-direction: column;
+
 
                 .tireImage {
                   margin: 20px auto 9px;
@@ -1638,29 +1671,37 @@ main {
             }
 
             .topPlacement {
-              position: absolute;
-              top: 9px;
-              left: 21px;
-              font-size: 14px;
-              font-family: $SS-400Regular;
-              background-color: $blackLikeHell;
-              padding: 0 10px;
+              display: none;
+              @media(min-width: 750px) {
+                display: block;
+                position: absolute;
+                top: 9px;
+                left: 21px;
+                font-size: 14px;
+                font-family: $SS-400Regular;
+                background-color: $blackLikeHell;
+                padding: 0 10px;
+              }
             }
 
             .bottomPlacement {
-              position: absolute;
-              bottom: 21px;
-              left: 21px;
-              font-size: 24px;
-              font-family: $SS-400Regular;
-              text-align: left;
+              display: none;
+              @media(min-width: 750px) {
+                display: block;
+                position: absolute;
+                bottom: 21px;
+                left: 21px;
+                font-size: 24px;
+                font-family: $SS-400Regular;
+                text-align: left;
 
-              p {
-                line-height: 10px;
+                p {
+                  line-height: 10px;
 
-                span {
-                  padding: 0 10px;
-                  background-color: $blackLikeHell;
+                  span {
+                    padding: 0 10px;
+                    background-color: $blackLikeHell;
+                  }
                 }
               }
             }
@@ -2484,10 +2525,7 @@ main {
 
 
     .footerContainer {
-      @media only screen and (min-width: 0px){
-
-      }
-      @media only screen and (min-width: 768px){
+      @media(min-width: 768px){
         display: grid;
         width: 100%;
         margin: 0 auto 200px;

@@ -410,22 +410,6 @@ nav {
     display: block;
     width: 100%;
     margin: 0 auto;
-    /*#top-nav ul{
-      font-size: 18px;
-      font-family: $SS-700Bold;
-      margin: 0 auto;
-      padding: 0;
-      background-color: $white;
-      list-style: none;
-      //box-shadow: 0 0 10px 0 $opineoCeneo;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      height: 90px;
-      max-width: 1200px;
-      width: 100%;
-    }*/
     /* Dropdown */
     /* Sub Dropdown */
     /* Display none by Default */ }
@@ -479,29 +463,31 @@ nav {
     nav .menuBottom ul.dropdown-menu {
       display: none; }
 
-@media (min-width: 768px) {
-  main .carSearchContainer {
-    background-color: #f8f8f8;
-    padding-top: 10px !important;
-    padding-bottom: 10px !important; } }
+main {
+  width: 98%;
+  align-items: center; }
+  @media (min-width: 768px) {
+    main .carSearchContainer {
+      background-color: #f8f8f8;
+      padding-top: 10px !important;
+      padding-bottom: 10px !important; } }
   @media (min-width: 768px) and (min-width: 550px) {
     main .carSearchContainer {
       background-image: url("../images/michelin_background.png");
       width: 100%;
       background-repeat: no-repeat;
-      background-position: 50%;
       background-size: cover;
       padding-top: 50px !important;
-      padding-bottom: 375px !important; } }
-@media (min-width: 768px) {
-    main .carSearchContainer .carSearchBox {
-      background-color: #f8f8f8;
-      display: flex;
-      flex-direction: column;
-      border: 1px solid black;
-      border-radius: 10px;
-      max-width: 1030px;
-      margin: 0 auto; } }
+      padding-bottom: 475px !important; } }
+  @media (min-width: 768px) {
+      main .carSearchContainer .carSearchBox {
+        background-color: #f8f8f8;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid black;
+        border-radius: 10px;
+        max-width: 1030px;
+        margin: 0 auto; } }
     @media (min-width: 768px) and (min-width: 550px) {
       main .carSearchContainer .carSearchBox {
         -webkit-box-shadow: 0 0 10px 0 #8d8d8d;
@@ -713,9 +699,9 @@ nav {
                     main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .secondBox .advancedSearch a:hover {
                       text-decoration: underline;
                       text-decoration-color: #ff6300; } }
-@media (min-width: 768px) {
-  main .bottomPromoIcons {
-    display: none; } }
+  @media (min-width: 768px) {
+    main .bottomPromoIcons {
+      display: none; } }
   @media (min-width: 768px) and (min-width: 800px) {
     main .bottomPromoIcons {
       height: 65px;
@@ -737,1387 +723,1450 @@ nav {
           justify-content: center; }
           main .bottomPromoIcons .promoContainer .boxPromo p {
             margin-left: 10px; } }
-@media (min-width: 768px) {
-  main .opinions {
-    width: 100%; }
-    main .opinions .opinionsText {
+  @media (min-width: 768px) {
+    main .opinions {
+      width: 100%; }
+      main .opinions .opinionsText {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+        main .opinions .opinionsText h2 {
+          font-size: 36px;
+          font-family: "SinkinSans-700Bold", sans-serif;
+          padding: 0 0 20px 0; }
+        main .opinions .opinionsText .opinionsContainer {
+          position: relative;
+          max-width: 1200px;
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          margin-bottom: 30px; }
+          main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns {
+            display: flex;
+            flex-direction: column; }
+            main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .firstOpinion {
+              position: relative;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              max-width: 380px;
+              height: 150px;
+              width: 100%;
+              text-align: center;
+              line-height: 20px;
+              background-color: transparent;
+              border: 2px solid #ff6300;
+              -webkit-border-radius: 5px;
+              -moz-border-radius: 5px;
+              border-radius: 5px;
+              z-index: 99; }
+              main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .firstOpinion:before {
+                content: ' ';
+                position: absolute;
+                width: 0;
+                height: 0;
+                left: 40px;
+                top: 150px;
+                border: 12px solid;
+                border-color: #ff6300 transparent transparent #ff6300;
+                transform: skew(-20deg);
+                /* Safari */
+                -webkit-transform: skew(-20deg);
+                /* Firefox */
+                -moz-transform: skew(-20deg);
+                /* IE */
+                -ms-transform: skew(-20deg);
+                /* Opera */
+                -o-transform: skew(-20deg);
+                z-index: 1; }
+              main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .firstOpinion:after {
+                content: ' ';
+                position: absolute;
+                width: 0;
+                height: 0;
+                left: 42px;
+                top: 149px;
+                border: 11px solid;
+                border-color: #ffffff transparent transparent #ffffff;
+                transform: skew(-20deg);
+                /* Safari */
+                -webkit-transform: skew(-20deg);
+                /* Firefox */
+                -moz-transform: skew(-20deg);
+                /* IE */
+                -ms-transform: skew(-20deg);
+                /* Opera */
+                -o-transform: skew(-20deg);
+                z-index: 1; }
+            main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .secondOpinion {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              position: relative;
+              max-width: 380px;
+              max-height: 150px;
+              width: 100%;
+              height: 100%;
+              text-align: center;
+              line-height: 20px;
+              background-color: transparent;
+              border: 2px solid #ff6300;
+              -webkit-border-radius: 5px;
+              -moz-border-radius: 5px;
+              border-radius: 5px; }
+              main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .secondOpinion:before {
+                content: ' ';
+                position: absolute;
+                width: 0;
+                height: 0;
+                left: 40px;
+                top: 150px;
+                border: 12px solid;
+                border-color: #ff6300 transparent transparent #ff6300;
+                transform: skew(-20deg);
+                /* Safari */
+                -webkit-transform: skew(-20deg);
+                /* Firefox */
+                -moz-transform: skew(-20deg);
+                /* IE */
+                -ms-transform: skew(-20deg);
+                /* Opera */
+                -o-transform: skew(-20deg);
+                z-index: 3; }
+              main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .secondOpinion:after {
+                content: ' ';
+                position: absolute;
+                width: 0;
+                height: 0;
+                left: 42px;
+                top: 149px;
+                border: 11px solid;
+                border-color: #ffffff transparent transparent #ffffff;
+                transform: skew(-20deg);
+                /* Safari */
+                -webkit-transform: skew(-20deg);
+                /* Firefox */
+                -moz-transform: skew(-20deg);
+                /* IE */
+                -ms-transform: skew(-20deg);
+                /* Opera */
+                -o-transform: skew(-20deg);
+                z-index: 4; }
+            main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .thirdOpinion {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              position: relative;
+              max-width: 380px;
+              max-height: 150px;
+              width: 100%;
+              height: 100%;
+              text-align: center;
+              line-height: 20px;
+              background-color: transparent;
+              border: 2px solid #ff6300;
+              -webkit-border-radius: 5px;
+              -moz-border-radius: 5px;
+              border-radius: 5px; }
+              main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .thirdOpinion .textOpinion {
+                padding: 20px; }
+              main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .thirdOpinion:before {
+                content: ' ';
+                position: absolute;
+                width: 0;
+                height: 0;
+                left: 40px;
+                top: 150px;
+                border: 12px solid;
+                border-color: #ff6300 transparent transparent #ff6300;
+                transform: skew(-20deg);
+                /* Safari */
+                -webkit-transform: skew(-20deg);
+                /* Firefox */
+                -moz-transform: skew(-20deg);
+                /* IE */
+                -ms-transform: skew(-20deg);
+                /* Opera */
+                -o-transform: skew(-20deg); }
+              main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .thirdOpinion:after {
+                content: ' ';
+                position: absolute;
+                width: 0;
+                height: 0;
+                left: 42px;
+                top: 149px;
+                border: 11px solid;
+                border-color: #ffffff transparent transparent #ffffff;
+                transform: skew(-20deg);
+                /* Safari */
+                -webkit-transform: skew(-20deg);
+                /* Firefox */
+                -moz-transform: skew(-20deg);
+                /* IE */
+                -ms-transform: skew(-20deg);
+                /* Opera */
+                -o-transform: skew(-20deg); }
+            main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .usersOpinions {
+              padding-top: 20px;
+              display: flex;
+              flex-direction: row; }
+              main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .usersOpinions .usersOpinionsImg {
+                margin: 0 auto;
+                align-items: center;
+                display: flex;
+                justify-content: center; }
+    main label {
+      position: relative;
       display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center; }
-      main .opinions .opinionsText h2 {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between; }
+      main label img {
+        display: flex;
+        align-items: center;
+        align-self: center;
+        justify-self: center; } }
+  main .rating {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; }
+    main .rating .numberRating {
+      max-width: 220px;
+      width: 100%;
+      font-size: 59px;
+      font-family: "SinkinSans-700Bold", sans-serif; }
+      main .rating .numberRating span {
+        font-family: "SinkinSans-300Light", sans-serif; }
+    main .rating .descriptionRating {
+      max-width: 635px;
+      width: 100%;
+      font-size: 21px;
+      font-family: "SinkinSans-700Bold", sans-serif; }
+      main .rating .descriptionRating a {
+        color: #808080;
+        text-decoration: none; }
+    main .rating .buttonOpinions {
+      max-width: 305px;
+      width: 100%;
+      max-height: 50px;
+      height: 100%; }
+      main .rating .buttonOpinions button {
+        height: 50px;
+        width: 100%;
+        color: #ffffff;
+        background-color: #000000;
+        border: none;
+        border-radius: 5px;
+        font-family: "SinkinSans-700Bold", sans-serif;
+        font-size: 14px;
+        letter-spacing: 0.05rem;
+        cursor: pointer; }
+  main .shopContainer {
+    background-color: #f1f1f1;
+    width: 100%; }
+    main .shopContainer .textCards {
+      display: flex;
+      flex-direction: row; }
+      main .shopContainer .textCards .textCardsParagraphs {
+        width: 50%;
+        font-size: 36px;
+        font-family: "SinkinSans-700Bold", sans-serif; }
+    main .shopContainer .upperCards {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between; }
+      main .shopContainer .upperCards .specialOfferCard {
+        width: 50%;
+        display: flex;
+        flex-direction: column; }
+        main .shopContainer .upperCards .specialOfferCard .bigCard {
+          max-height: 445px;
+          height: 100%;
+          background-color: #ffffff;
+          border-radius: 5px;
+          max-width: 590px;
+          width: 100%; }
+          main .shopContainer .upperCards .specialOfferCard .bigCard .clock {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+            background-color: #ff6300;
+            color: #ffffff;
+            max-width: 590px;
+            width: 100%;
+            height: 60px;
+            margin-top: 0;
+            border-radius: 5px 5px 0 0;
+            font-size: 22px;
+            font-family: "SinkinSans-500Medium", sans-serif;
+            margin-bottom: 20px; }
+            main .shopContainer .upperCards .specialOfferCard .bigCard .clock .TickTock {
+              margin: 0 5px 0 5px;
+              display: flex;
+              flex-direction: row; }
+              main .shopContainer .upperCards .specialOfferCard .bigCard .clock .TickTock .TickTockBackground {
+                padding: 2px 5px;
+                background-color: #000000;
+                margin: 0 5px 0 5px; }
+          main .shopContainer .upperCards .specialOfferCard .bigCard .columnAlignment {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly; }
+            main .shopContainer .upperCards .specialOfferCard .bigCard .columnAlignment .firstColumn {
+              display: flex;
+              flex-direction: column;
+              max-width: 280px;
+              width: 100%;
+              height: 100%; }
+              main .shopContainer .upperCards .specialOfferCard .bigCard .columnAlignment .firstColumn .content {
+                width: 100%;
+                display: flex;
+                flex-direction: column; }
+                main .shopContainer .upperCards .specialOfferCard .bigCard .columnAlignment .firstColumn .content .tireImage {
+                  margin: 20px auto 9px;
+                  width: 50%;
+                  height: auto; }
+                main .shopContainer .upperCards .specialOfferCard .bigCard .columnAlignment .firstColumn .content .discount {
+                  width: 90%;
+                  margin: 0 auto;
+                  font-family: "SinkinSans-400Regular", sans-serif;
+                  font-size: 14px;
+                  color: #ffffff; }
+                  main .shopContainer .upperCards .specialOfferCard .bigCard .columnAlignment .firstColumn .content .discount span {
+                    background-color: #ff6300;
+                    padding: 2px 12px; }
+                main .shopContainer .upperCards .specialOfferCard .bigCard .columnAlignment .firstColumn .content .tirePrice {
+                  width: 90%;
+                  margin: 0 auto;
+                  font-size: 22px;
+                  font-family: "SinkinSans-700Bold", sans-serif;
+                  color: #ff6300; }
+                  main .shopContainer .upperCards .specialOfferCard .bigCard .columnAlignment .firstColumn .content .tirePrice .lowerSpan {
+                    font-size: 18px; }
+                  main .shopContainer .upperCards .specialOfferCard .bigCard .columnAlignment .firstColumn .content .tirePrice .strikeSpan {
+                    text-decoration: line-through;
+                    font-size: 14px;
+                    font-family: "SinkinSans-400Regular", sans-serif; }
+                  main .shopContainer .upperCards .specialOfferCard .bigCard .columnAlignment .firstColumn .content .tirePrice .strikeSpanAO {
+                    font-size: 14px;
+                    font-family: "SinkinSans-400Regular", sans-serif;
+                    text-decoration: line-through;
+                    color: #333333; }
+                main .shopContainer .upperCards .specialOfferCard .bigCard .columnAlignment .firstColumn .content .tireDescription {
+                  font-size: 14px;
+                  font-family: "SinkinSans-400Regular", sans-serif;
+                  margin: 0 auto 15px;
+                  width: 90%;
+                  line-height: 20px; }
+              main .shopContainer .upperCards .specialOfferCard .bigCard .columnAlignment .firstColumn .footer {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 90%;
+                border-top: 1px solid #d9d9d9;
+                margin: 15px auto 0; }
+                main .shopContainer .upperCards .specialOfferCard .bigCard .columnAlignment .firstColumn .footer a {
+                  font-size: 14px;
+                  font-family: "SinkinSans-400Regular", sans-serif;
+                  padding: 10px 0;
+                  text-decoration: none;
+                  color: #000000; }
+                  main .shopContainer .upperCards .specialOfferCard .bigCard .columnAlignment .firstColumn .footer a:hover {
+                    text-decoration: underline;
+                    text-decoration-color: #ff6300; }
+                  main .shopContainer .upperCards .specialOfferCard .bigCard .columnAlignment .firstColumn .footer a span {
+                    color: #ff6300; }
+            main .shopContainer .upperCards .specialOfferCard .bigCard .columnAlignment .secondColumn {
+              display: flex;
+              flex-direction: column;
+              max-width: 280px;
+              width: 100%;
+              height: 100%; }
+              main .shopContainer .upperCards .specialOfferCard .bigCard .columnAlignment .secondColumn .content {
+                width: 100%;
+                display: flex;
+                flex-direction: column; }
+                main .shopContainer .upperCards .specialOfferCard .bigCard .columnAlignment .secondColumn .content .tireImage {
+                  margin: 0 auto 5px;
+                  width: 50%;
+                  height: auto; }
+                main .shopContainer .upperCards .specialOfferCard .bigCard .columnAlignment .secondColumn .content .discount {
+                  width: 90%;
+                  margin: 0 auto;
+                  font-family: "SinkinSans-400Regular", sans-serif;
+                  font-size: 14px;
+                  color: #ffffff; }
+                  main .shopContainer .upperCards .specialOfferCard .bigCard .columnAlignment .secondColumn .content .discount span {
+                    background-color: #ff6300;
+                    padding: 2px 12px; }
+                main .shopContainer .upperCards .specialOfferCard .bigCard .columnAlignment .secondColumn .content .tirePrice {
+                  width: 90%;
+                  margin: 0 auto;
+                  font-size: 22px;
+                  font-family: "SinkinSans-700Bold", sans-serif;
+                  color: #ff6300; }
+                  main .shopContainer .upperCards .specialOfferCard .bigCard .columnAlignment .secondColumn .content .tirePrice .lowerSpan {
+                    font-size: 18px; }
+                  main .shopContainer .upperCards .specialOfferCard .bigCard .columnAlignment .secondColumn .content .tirePrice .strikeSpan {
+                    text-decoration: line-through;
+                    font-size: 14px;
+                    font-family: "SinkinSans-400Regular", sans-serif; }
+                  main .shopContainer .upperCards .specialOfferCard .bigCard .columnAlignment .secondColumn .content .tirePrice .strikeSpanAO {
+                    font-size: 14px;
+                    font-family: "SinkinSans-400Regular", sans-serif;
+                    text-decoration: line-through;
+                    color: #333333; }
+                main .shopContainer .upperCards .specialOfferCard .bigCard .columnAlignment .secondColumn .content .tireDescription {
+                  font-size: 14px;
+                  font-family: "SinkinSans-400Regular", sans-serif;
+                  margin: 0 auto 15px;
+                  width: 90%;
+                  line-height: 20px; }
+              main .shopContainer .upperCards .specialOfferCard .bigCard .columnAlignment .secondColumn .footer {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 90%;
+                border-top: 1px solid #d9d9d9;
+                margin: 15px auto 0; }
+                main .shopContainer .upperCards .specialOfferCard .bigCard .columnAlignment .secondColumn .footer a {
+                  font-size: 14px;
+                  font-family: "SinkinSans-400Regular", sans-serif;
+                  padding: 10px 0;
+                  text-decoration: none;
+                  color: #000000; }
+                  main .shopContainer .upperCards .specialOfferCard .bigCard .columnAlignment .secondColumn .footer a:hover {
+                    text-decoration: underline;
+                    text-decoration-color: #ff6300; }
+                  main .shopContainer .upperCards .specialOfferCard .bigCard .columnAlignment .secondColumn .footer a span {
+                    color: #ff6300; }
+      main .shopContainer .upperCards .normalCard {
+        width: 25%;
+        display: flex;
+        flex-direction: column; }
+        main .shopContainer .upperCards .normalCard .smallCard {
+          max-width: 280px;
+          width: 100%;
+          height: 445px;
+          background-color: #ffffff;
+          border-radius: 5px;
+          margin: 0 10px; }
+          main .shopContainer .upperCards .normalCard .smallCard .content {
+            width: 100%;
+            display: flex;
+            flex-direction: column; }
+            main .shopContainer .upperCards .normalCard .smallCard .content .tireImage {
+              margin: 35px auto;
+              width: 60%;
+              height: auto; }
+            main .shopContainer .upperCards .normalCard .smallCard .content .tirePrice {
+              width: 90%;
+              margin: 5px auto;
+              font-size: 22px;
+              font-family: "SinkinSans-700Bold", sans-serif;
+              color: #333333; }
+              main .shopContainer .upperCards .normalCard .smallCard .content .tirePrice .lowerSpan {
+                font-size: 18px; }
+              main .shopContainer .upperCards .normalCard .smallCard .content .tirePrice .strikeSpan {
+                text-decoration: line-through;
+                font-size: 14px;
+                font-family: "SinkinSans-400Regular", sans-serif; }
+              main .shopContainer .upperCards .normalCard .smallCard .content .tirePrice .strikeSpanAO {
+                font-size: 14px;
+                font-family: "SinkinSans-400Regular", sans-serif;
+                text-decoration: line-through;
+                color: #333333; }
+            main .shopContainer .upperCards .normalCard .smallCard .content .tireDescription {
+              font-size: 14px;
+              font-family: "SinkinSans-400Regular", sans-serif;
+              margin: 0 auto 15px;
+              padding-bottom: 40px;
+              width: 90%;
+              line-height: 20px; }
+          main .shopContainer .upperCards .normalCard .smallCard .footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 90%;
+            border-top: 1px solid #d9d9d9;
+            margin: 0 auto; }
+            main .shopContainer .upperCards .normalCard .smallCard .footer a {
+              font-size: 14px;
+              font-family: "SinkinSans-400Regular", sans-serif;
+              padding: 10px 0;
+              text-decoration: none;
+              color: #000000; }
+              main .shopContainer .upperCards .normalCard .smallCard .footer a:hover {
+                text-decoration: underline;
+                text-decoration-color: #ff6300; }
+              main .shopContainer .upperCards .normalCard .smallCard .footer a span {
+                color: #ff6300; }
+    main .shopContainer .textLower {
+      display: flex;
+      flex-direction: row; }
+      main .shopContainer .textLower .textLowerContent {
         font-size: 36px;
         font-family: "SinkinSans-700Bold", sans-serif;
-        padding: 0 0 20px 0; }
-      main .opinions .opinionsText .opinionsContainer {
-        position: relative;
-        max-width: 1200px;
+        color: #000000; }
+    main .shopContainer .lowerCards {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%; }
+      main .shopContainer .lowerCards .containerS {
+        max-width: 280px;
         width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        margin-bottom: 30px; }
-        main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns {
-          display: flex;
-          flex-direction: column; }
-          main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .firstOpinion {
-            position: relative;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            max-width: 380px;
-            height: 150px;
-            width: 100%;
-            text-align: center;
-            line-height: 20px;
-            background-color: transparent;
-            border: 2px solid #ff6300;
-            -webkit-border-radius: 5px;
-            -moz-border-radius: 5px;
-            border-radius: 5px;
-            z-index: 99; }
-            main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .firstOpinion:before {
-              content: ' ';
-              position: absolute;
-              width: 0;
-              height: 0;
-              left: 40px;
-              top: 150px;
-              border: 12px solid;
-              border-color: #ff6300 transparent transparent #ff6300;
-              /* Safari */
-              /* Firefox */
-              /* IE */
-              /* Opera */
-              z-index: 1; }
-            main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .firstOpinion:after {
-              content: ' ';
-              position: absolute;
-              width: 0;
-              height: 0;
-              left: 42px;
-              top: 150px;
-              border: 10px solid;
-              border-color: #ffffff transparent transparent #ffffff;
-              /* Safari */
-              /* Firefox */
-              /* IE */
-              /* Opera */
-              z-index: 1; }
-          main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .secondOpinion {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: relative;
-            max-width: 380px;
-            max-height: 150px;
-            width: 100%;
-            height: 100%;
-            text-align: center;
-            line-height: 20px;
-            background-color: transparent;
-            border: 2px solid #ff6300;
-            -webkit-border-radius: 5px;
-            -moz-border-radius: 5px;
-            border-radius: 5px; }
-            main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .secondOpinion:before {
-              content: ' ';
-              position: absolute;
-              width: 0;
-              height: 0;
-              left: 40px;
-              top: 150px;
-              border: 12px solid;
-              border-color: #ff6300 transparent transparent #ff6300; }
-            main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .secondOpinion:after {
-              content: ' ';
-              position: absolute;
-              width: 0;
-              height: 0;
-              left: 42px;
-              top: 150px;
-              border: 10px solid;
-              border-color: #ffffff transparent transparent #ffffff; }
-          main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .thirdOpinion {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: relative;
-            max-width: 380px;
-            max-height: 150px;
-            width: 100%;
-            height: 100%;
-            text-align: center;
-            line-height: 20px;
-            background-color: transparent;
-            border: 2px solid #ff6300;
-            -webkit-border-radius: 5px;
-            -moz-border-radius: 5px;
-            border-radius: 5px; }
-            main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .thirdOpinion .textOpinion {
-              padding: 20px; }
-            main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .thirdOpinion:before {
-              content: ' ';
-              position: absolute;
-              width: 0;
-              height: 0;
-              left: 40px;
-              top: 150px;
-              border: 12px solid;
-              border-color: #ff6300 transparent transparent #ff6300; }
-            main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .thirdOpinion:after {
-              content: ' ';
-              position: absolute;
-              width: 0;
-              height: 0;
-              left: 42px;
-              top: 150px;
-              border: 10px solid;
-              border-color: #ffffff transparent transparent #ffffff; }
-          main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .usersOpinions {
-            padding: 20px 20px 0 20px; }
-  main label {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between; }
-    main label img {
-      display: flex;
-      align-items: center;
-      align-self: center;
-      justify-self: center; } }
-main .rating {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center; }
-  main .rating .numberRating {
-    max-width: 220px;
-    width: 100%;
-    font-size: 59px;
-    font-family: "SinkinSans-700Bold", sans-serif; }
-    main .rating .numberRating span {
-      font-family: "SinkinSans-300Light", sans-serif; }
-  main .rating .descriptionRating {
-    max-width: 635px;
-    width: 100%;
-    font-size: 21px;
-    font-family: "SinkinSans-700Bold", sans-serif; }
-    main .rating .descriptionRating a {
-      color: #808080;
-      text-decoration: none; }
-  main .rating .buttonOpinions {
-    max-width: 305px;
-    width: 100%;
-    max-height: 50px;
-    height: 100%; }
-    main .rating .buttonOpinions button {
-      height: 50px;
-      width: 100%;
-      color: #ffffff;
-      background-color: #000000;
-      border: none;
-      border-radius: 5px;
-      font-family: "SinkinSans-700Bold", sans-serif;
-      font-size: 14px;
-      letter-spacing: 0.05rem;
-      cursor: pointer; }
-main .shopContainer {
-  background-color: #f1f1f1;
-  width: 100%; }
-  main .shopContainer .textCards {
-    display: flex;
-    flex-direction: row; }
-    main .shopContainer .textCards .textCardsParagraphs {
-      width: 50%;
-      font-size: 36px;
-      font-family: "SinkinSans-700Bold", sans-serif; }
-  main .shopContainer .upperCards {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between; }
-    main .shopContainer .upperCards .specialOfferCard {
-      width: 50%;
-      display: flex;
-      flex-direction: column; }
-      main .shopContainer .upperCards .specialOfferCard .bigCard {
-        max-height: 445px;
         height: 100%;
         background-color: #ffffff;
         border-radius: 5px;
-        max-width: 590px;
-        width: 100%; }
-        main .shopContainer .upperCards .specialOfferCard .bigCard .clock {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          flex-direction: row;
-          background-color: #ff6300;
-          color: #ffffff;
-          max-width: 590px;
-          width: 100%;
-          height: 60px;
-          margin-top: 0;
-          border-radius: 5px 5px 0 0;
-          font-size: 22px;
-          font-family: "SinkinSans-500Medium", sans-serif;
-          margin-bottom: 20px; }
-          main .shopContainer .upperCards .specialOfferCard .bigCard .clock .TickTock {
-            margin: 0 5px 0 5px;
-            display: flex;
-            flex-direction: row; }
-            main .shopContainer .upperCards .specialOfferCard .bigCard .clock .TickTock .TickTockBackground {
-              padding: 2px 5px;
-              background-color: #000000;
-              margin: 0 5px 0 5px; }
-        main .shopContainer .upperCards .specialOfferCard .bigCard .columnAlignment {
-          display: flex;
-          flex-direction: row;
-          justify-content: space-evenly; }
-          main .shopContainer .upperCards .specialOfferCard .bigCard .columnAlignment .firstColumn {
-            display: flex;
-            flex-direction: column;
-            max-width: 280px;
-            width: 100%;
-            height: 100%; }
-            main .shopContainer .upperCards .specialOfferCard .bigCard .columnAlignment .firstColumn .content {
-              width: 100%;
-              display: flex;
-              flex-direction: column; }
-              main .shopContainer .upperCards .specialOfferCard .bigCard .columnAlignment .firstColumn .content .tireImage {
-                margin: 20px auto 9px;
-                width: 50%;
-                height: auto; }
-              main .shopContainer .upperCards .specialOfferCard .bigCard .columnAlignment .firstColumn .content .discount {
-                width: 90%;
-                margin: 0 auto;
-                font-family: "SinkinSans-400Regular", sans-serif;
-                font-size: 14px;
-                color: #ffffff; }
-                main .shopContainer .upperCards .specialOfferCard .bigCard .columnAlignment .firstColumn .content .discount span {
-                  background-color: #ff6300;
-                  padding: 2px 12px; }
-              main .shopContainer .upperCards .specialOfferCard .bigCard .columnAlignment .firstColumn .content .tirePrice {
-                width: 90%;
-                margin: 0 auto;
-                font-size: 22px;
-                font-family: "SinkinSans-700Bold", sans-serif;
-                color: #ff6300; }
-                main .shopContainer .upperCards .specialOfferCard .bigCard .columnAlignment .firstColumn .content .tirePrice .lowerSpan {
-                  font-size: 18px; }
-                main .shopContainer .upperCards .specialOfferCard .bigCard .columnAlignment .firstColumn .content .tirePrice .strikeSpan {
-                  text-decoration: line-through;
-                  font-size: 14px;
-                  font-family: "SinkinSans-400Regular", sans-serif; }
-                main .shopContainer .upperCards .specialOfferCard .bigCard .columnAlignment .firstColumn .content .tirePrice .strikeSpanAO {
-                  font-size: 14px;
-                  font-family: "SinkinSans-400Regular", sans-serif;
-                  text-decoration: line-through;
-                  color: #333333; }
-              main .shopContainer .upperCards .specialOfferCard .bigCard .columnAlignment .firstColumn .content .tireDescription {
-                font-size: 14px;
-                font-family: "SinkinSans-400Regular", sans-serif;
-                margin: 0 auto 15px;
-                width: 90%;
-                line-height: 20px; }
-            main .shopContainer .upperCards .specialOfferCard .bigCard .columnAlignment .firstColumn .footer {
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              width: 90%;
-              border-top: 1px solid #d9d9d9;
-              margin: 15px auto 0; }
-              main .shopContainer .upperCards .specialOfferCard .bigCard .columnAlignment .firstColumn .footer a {
-                font-size: 14px;
-                font-family: "SinkinSans-400Regular", sans-serif;
-                padding: 10px 0;
-                text-decoration: none;
-                color: #000000; }
-                main .shopContainer .upperCards .specialOfferCard .bigCard .columnAlignment .firstColumn .footer a:hover {
-                  text-decoration: underline;
-                  text-decoration-color: #ff6300; }
-                main .shopContainer .upperCards .specialOfferCard .bigCard .columnAlignment .firstColumn .footer a span {
-                  color: #ff6300; }
-          main .shopContainer .upperCards .specialOfferCard .bigCard .columnAlignment .secondColumn {
-            display: flex;
-            flex-direction: column;
-            max-width: 280px;
-            width: 100%;
-            height: 100%; }
-            main .shopContainer .upperCards .specialOfferCard .bigCard .columnAlignment .secondColumn .content {
-              width: 100%;
-              display: flex;
-              flex-direction: column; }
-              main .shopContainer .upperCards .specialOfferCard .bigCard .columnAlignment .secondColumn .content .tireImage {
-                margin: 0 auto 5px;
-                width: 50%;
-                height: auto; }
-              main .shopContainer .upperCards .specialOfferCard .bigCard .columnAlignment .secondColumn .content .discount {
-                width: 90%;
-                margin: 0 auto;
-                font-family: "SinkinSans-400Regular", sans-serif;
-                font-size: 14px;
-                color: #ffffff; }
-                main .shopContainer .upperCards .specialOfferCard .bigCard .columnAlignment .secondColumn .content .discount span {
-                  background-color: #ff6300;
-                  padding: 2px 12px; }
-              main .shopContainer .upperCards .specialOfferCard .bigCard .columnAlignment .secondColumn .content .tirePrice {
-                width: 90%;
-                margin: 0 auto;
-                font-size: 22px;
-                font-family: "SinkinSans-700Bold", sans-serif;
-                color: #ff6300; }
-                main .shopContainer .upperCards .specialOfferCard .bigCard .columnAlignment .secondColumn .content .tirePrice .lowerSpan {
-                  font-size: 18px; }
-                main .shopContainer .upperCards .specialOfferCard .bigCard .columnAlignment .secondColumn .content .tirePrice .strikeSpan {
-                  text-decoration: line-through;
-                  font-size: 14px;
-                  font-family: "SinkinSans-400Regular", sans-serif; }
-                main .shopContainer .upperCards .specialOfferCard .bigCard .columnAlignment .secondColumn .content .tirePrice .strikeSpanAO {
-                  font-size: 14px;
-                  font-family: "SinkinSans-400Regular", sans-serif;
-                  text-decoration: line-through;
-                  color: #333333; }
-              main .shopContainer .upperCards .specialOfferCard .bigCard .columnAlignment .secondColumn .content .tireDescription {
-                font-size: 14px;
-                font-family: "SinkinSans-400Regular", sans-serif;
-                margin: 0 auto 15px;
-                width: 90%;
-                line-height: 20px; }
-            main .shopContainer .upperCards .specialOfferCard .bigCard .columnAlignment .secondColumn .footer {
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              width: 90%;
-              border-top: 1px solid #d9d9d9;
-              margin: 15px auto 0; }
-              main .shopContainer .upperCards .specialOfferCard .bigCard .columnAlignment .secondColumn .footer a {
-                font-size: 14px;
-                font-family: "SinkinSans-400Regular", sans-serif;
-                padding: 10px 0;
-                text-decoration: none;
-                color: #000000; }
-                main .shopContainer .upperCards .specialOfferCard .bigCard .columnAlignment .secondColumn .footer a:hover {
-                  text-decoration: underline;
-                  text-decoration-color: #ff6300; }
-                main .shopContainer .upperCards .specialOfferCard .bigCard .columnAlignment .secondColumn .footer a span {
-                  color: #ff6300; }
-    main .shopContainer .upperCards .normalCard {
-      width: 25%;
-      display: flex;
-      flex-direction: column; }
-      main .shopContainer .upperCards .normalCard .smallCard {
-        max-width: 280px;
-        width: 100%;
-        height: 445px;
-        background-color: #ffffff;
-        border-radius: 5px;
         margin: 0 10px; }
-        main .shopContainer .upperCards .normalCard .smallCard .content {
+        main .shopContainer .lowerCards .containerS .header {
+          border-radius: 5px 0 0 0; }
+          main .shopContainer .lowerCards .containerS .header .bestSeller {
+            margin-top: 4px;
+            color: #ffffff;
+            font-size: 12px;
+            font-family: "SinkinSans-400Regular", sans-serif;
+            border-radius: 5px 0 0 0; }
+            main .shopContainer .lowerCards .containerS .header .bestSeller span {
+              padding: 4px 10px;
+              border-radius: 5px 0 0 0;
+              background-color: #6398d3; }
+        main .shopContainer .lowerCards .containerS .content {
           width: 100%;
           display: flex;
           flex-direction: column; }
-          main .shopContainer .upperCards .normalCard .smallCard .content .tireImage {
+          main .shopContainer .lowerCards .containerS .content .tireImage {
             margin: 35px auto;
             width: 60%;
             height: auto; }
-          main .shopContainer .upperCards .normalCard .smallCard .content .tirePrice {
+          main .shopContainer .lowerCards .containerS .content .tirePrice {
             width: 90%;
-            margin: 5px auto;
+            margin: 0 auto;
             font-size: 22px;
             font-family: "SinkinSans-700Bold", sans-serif;
             color: #333333; }
-            main .shopContainer .upperCards .normalCard .smallCard .content .tirePrice .lowerSpan {
+            main .shopContainer .lowerCards .containerS .content .tirePrice .lowerSpan {
               font-size: 18px; }
-            main .shopContainer .upperCards .normalCard .smallCard .content .tirePrice .strikeSpan {
+            main .shopContainer .lowerCards .containerS .content .tirePrice .strikeSpan {
               text-decoration: line-through;
               font-size: 14px;
               font-family: "SinkinSans-400Regular", sans-serif; }
-            main .shopContainer .upperCards .normalCard .smallCard .content .tirePrice .strikeSpanAO {
+            main .shopContainer .lowerCards .containerS .content .tirePrice .strikeSpanAO {
               font-size: 14px;
               font-family: "SinkinSans-400Regular", sans-serif;
               text-decoration: line-through;
               color: #333333; }
-          main .shopContainer .upperCards .normalCard .smallCard .content .tireDescription {
+          main .shopContainer .lowerCards .containerS .content .tireDescription {
             font-size: 14px;
             font-family: "SinkinSans-400Regular", sans-serif;
             margin: 0 auto 15px;
-            padding-bottom: 40px;
+            padding-bottom: 15px;
             width: 90%;
             line-height: 20px; }
-        main .shopContainer .upperCards .normalCard .smallCard .footer {
+        main .shopContainer .lowerCards .containerS .footer {
           display: flex;
           justify-content: center;
           align-items: center;
           width: 90%;
           border-top: 1px solid #d9d9d9;
           margin: 0 auto; }
-          main .shopContainer .upperCards .normalCard .smallCard .footer a {
+          main .shopContainer .lowerCards .containerS .footer a {
             font-size: 14px;
             font-family: "SinkinSans-400Regular", sans-serif;
             padding: 10px 0;
             text-decoration: none;
             color: #000000; }
-            main .shopContainer .upperCards .normalCard .smallCard .footer a:hover {
+            main .shopContainer .lowerCards .containerS .footer a:hover {
               text-decoration: underline;
               text-decoration-color: #ff6300; }
-            main .shopContainer .upperCards .normalCard .smallCard .footer a span {
+            main .shopContainer .lowerCards .containerS .footer a span {
               color: #ff6300; }
-  main .shopContainer .textLower {
-    display: flex;
-    flex-direction: row; }
-    main .shopContainer .textLower .textLowerContent {
-      font-size: 36px;
-      font-family: "SinkinSans-700Bold", sans-serif;
-      color: #000000; }
-  main .shopContainer .lowerCards {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%; }
-    main .shopContainer .lowerCards .containerS {
-      max-width: 280px;
-      width: 100%;
-      height: 100%;
-      background-color: #ffffff;
-      border-radius: 5px;
-      margin: 0 10px; }
-      main .shopContainer .lowerCards .containerS .header {
-        border-radius: 5px 0 0 0; }
-        main .shopContainer .lowerCards .containerS .header .bestSeller {
-          margin-top: 4px;
-          color: #ffffff;
-          font-size: 12px;
-          font-family: "SinkinSans-400Regular", sans-serif;
-          border-radius: 5px 0 0 0; }
-          main .shopContainer .lowerCards .containerS .header .bestSeller span {
-            padding: 4px 10px;
-            border-radius: 5px 0 0 0;
-            background-color: #6398d3; }
-      main .shopContainer .lowerCards .containerS .content {
+      main .shopContainer .lowerCards .containerP {
+        max-width: 280px;
         width: 100%;
-        display: flex;
-        flex-direction: column; }
-        main .shopContainer .lowerCards .containerS .content .tireImage {
-          margin: 35px auto;
-          width: 60%;
-          height: auto; }
-        main .shopContainer .lowerCards .containerS .content .tirePrice {
-          width: 90%;
-          margin: 0 auto;
-          font-size: 22px;
-          font-family: "SinkinSans-700Bold", sans-serif;
-          color: #333333; }
-          main .shopContainer .lowerCards .containerS .content .tirePrice .lowerSpan {
-            font-size: 18px; }
-          main .shopContainer .lowerCards .containerS .content .tirePrice .strikeSpan {
-            text-decoration: line-through;
-            font-size: 14px;
-            font-family: "SinkinSans-400Regular", sans-serif; }
-          main .shopContainer .lowerCards .containerS .content .tirePrice .strikeSpanAO {
+        height: 100%;
+        background-color: #ffffff;
+        border-radius: 5px;
+        margin: 0 10px; }
+        main .shopContainer .lowerCards .containerP .header {
+          border-radius: 5px 0 0 0; }
+          main .shopContainer .lowerCards .containerP .header .bestSeller {
+            margin-top: 4px;
+            color: #ffffff;
+            font-size: 12px;
+            font-family: "SinkinSans-400Regular", sans-serif;
+            border-radius: 5px 0 0 0; }
+            main .shopContainer .lowerCards .containerP .header .bestSeller span {
+              padding: 4px 10px;
+              border-radius: 5px 0 0 0;
+              background-color: #6398d3; }
+        main .shopContainer .lowerCards .containerP .content {
+          width: 100%;
+          display: flex;
+          flex-direction: column; }
+          main .shopContainer .lowerCards .containerP .content .tireImage {
+            margin: 35px auto;
+            width: 60%;
+            height: auto; }
+          main .shopContainer .lowerCards .containerP .content .tirePrice {
+            width: 90%;
+            margin: 0 auto;
+            font-size: 22px;
+            font-family: "SinkinSans-700Bold", sans-serif;
+            color: #ff6300; }
+            main .shopContainer .lowerCards .containerP .content .tirePrice .lowerSpan {
+              font-size: 18px; }
+            main .shopContainer .lowerCards .containerP .content .tirePrice .strikeSpan {
+              text-decoration: line-through;
+              font-size: 14px;
+              font-family: "SinkinSans-400Regular", sans-serif; }
+            main .shopContainer .lowerCards .containerP .content .tirePrice .strikeSpanAO {
+              font-size: 14px;
+              font-family: "SinkinSans-400Regular", sans-serif;
+              text-decoration: line-through;
+              color: #333333; }
+          main .shopContainer .lowerCards .containerP .content .tireDescription {
             font-size: 14px;
             font-family: "SinkinSans-400Regular", sans-serif;
-            text-decoration: line-through;
-            color: #333333; }
-        main .shopContainer .lowerCards .containerS .content .tireDescription {
-          font-size: 14px;
-          font-family: "SinkinSans-400Regular", sans-serif;
-          margin: 0 auto 15px;
-          padding-bottom: 15px;
+            margin: 0 auto 15px;
+            padding-bottom: 15px;
+            width: 90%;
+            line-height: 20px; }
+        main .shopContainer .lowerCards .containerP .footer {
+          display: flex;
+          justify-content: center;
+          align-items: center;
           width: 90%;
-          line-height: 20px; }
-      main .shopContainer .lowerCards .containerS .footer {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 90%;
-        border-top: 1px solid #d9d9d9;
-        margin: 0 auto; }
-        main .shopContainer .lowerCards .containerS .footer a {
-          font-size: 14px;
-          font-family: "SinkinSans-400Regular", sans-serif;
-          padding: 10px 0;
-          text-decoration: none;
-          color: #000000; }
-          main .shopContainer .lowerCards .containerS .footer a:hover {
-            text-decoration: underline;
-            text-decoration-color: #ff6300; }
-          main .shopContainer .lowerCards .containerS .footer a span {
-            color: #ff6300; }
-    main .shopContainer .lowerCards .containerP {
-      max-width: 280px;
-      width: 100%;
-      height: 100%;
-      background-color: #ffffff;
-      border-radius: 5px;
-      margin: 0 10px; }
-      main .shopContainer .lowerCards .containerP .header {
-        border-radius: 5px 0 0 0; }
-        main .shopContainer .lowerCards .containerP .header .bestSeller {
-          margin-top: 4px;
-          color: #ffffff;
-          font-size: 12px;
-          font-family: "SinkinSans-400Regular", sans-serif;
-          border-radius: 5px 0 0 0; }
-          main .shopContainer .lowerCards .containerP .header .bestSeller span {
-            padding: 4px 10px;
-            border-radius: 5px 0 0 0;
-            background-color: #6398d3; }
-      main .shopContainer .lowerCards .containerP .content {
-        width: 100%;
-        display: flex;
-        flex-direction: column; }
-        main .shopContainer .lowerCards .containerP .content .tireImage {
-          margin: 35px auto;
-          width: 60%;
-          height: auto; }
-        main .shopContainer .lowerCards .containerP .content .tirePrice {
-          width: 90%;
-          margin: 0 auto;
-          font-size: 22px;
-          font-family: "SinkinSans-700Bold", sans-serif;
-          color: #ff6300; }
-          main .shopContainer .lowerCards .containerP .content .tirePrice .lowerSpan {
-            font-size: 18px; }
-          main .shopContainer .lowerCards .containerP .content .tirePrice .strikeSpan {
-            text-decoration: line-through;
-            font-size: 14px;
-            font-family: "SinkinSans-400Regular", sans-serif; }
-          main .shopContainer .lowerCards .containerP .content .tirePrice .strikeSpanAO {
+          border-top: 1px solid #d9d9d9;
+          margin: 0 auto; }
+          main .shopContainer .lowerCards .containerP .footer a {
             font-size: 14px;
             font-family: "SinkinSans-400Regular", sans-serif;
-            text-decoration: line-through;
-            color: #333333; }
-        main .shopContainer .lowerCards .containerP .content .tireDescription {
-          font-size: 14px;
-          font-family: "SinkinSans-400Regular", sans-serif;
-          margin: 0 auto 15px;
-          padding-bottom: 15px;
-          width: 90%;
-          line-height: 20px; }
-      main .shopContainer .lowerCards .containerP .footer {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 90%;
-        border-top: 1px solid #d9d9d9;
-        margin: 0 auto; }
-        main .shopContainer .lowerCards .containerP .footer a {
-          font-size: 14px;
-          font-family: "SinkinSans-400Regular", sans-serif;
-          padding: 10px 0;
-          text-decoration: none;
-          color: #000000; }
-          main .shopContainer .lowerCards .containerP .footer a:hover {
-            text-decoration: underline;
-            text-decoration-color: #ff6300; }
-          main .shopContainer .lowerCards .containerP .footer a span {
-            color: #ff6300; }
-  main .shopContainer .firestoneBaner {
-    max-width: 1200px;
+            padding: 10px 0;
+            text-decoration: none;
+            color: #000000; }
+            main .shopContainer .lowerCards .containerP .footer a:hover {
+              text-decoration: underline;
+              text-decoration-color: #ff6300; }
+            main .shopContainer .lowerCards .containerP .footer a span {
+              color: #ff6300; }
+    main .shopContainer .firestoneBaner {
+      max-width: 1200px;
+      width: 100%;
+      max-height: 150px;
+      height: 100%;
+      margin: 45px 0; }
+  main .headerFirms {
     width: 100%;
-    max-height: 150px;
-    height: 100%;
-    margin: 45px 0; }
-main .headerFirms {
-  width: 100%;
-  background-color: #ffffff;
-  margin-bottom: 30px; }
-  main .headerFirms .textFirms {
-    line-height: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column; }
-    main .headerFirms .textFirms h2 {
-      font-size: 36px;
-      font-family: "SinkinSans-700Bold", sans-serif;
-      padding-top: 25px; }
-    main .headerFirms .textFirms p {
-      font-size: 14px;
-      font-family: "SinkinSans-400Regular", sans-serif;
-      line-height: 1px; }
-      main .headerFirms .textFirms p a:link {
-        text-decoration: underline;
-        text-decoration-color: #d9d9d9;
-        color: #000000; }
-        main .headerFirms .textFirms p a:link span {
-          color: #ff6300; }
-      main .headerFirms .textFirms p a:hover {
-        text-decoration: underline;
-        text-decoration-color: #d9d9d9;
-        color: #000000; }
-        main .headerFirms .textFirms p a:hover span {
-          color: #ff6300; }
-      main .headerFirms .textFirms p a:visited {
-        text-decoration: underline;
-        text-decoration-color: #d9d9d9;
-        color: #000000; }
-        main .headerFirms .textFirms p a:visited span {
-          color: #ff6300; }
-      main .headerFirms .textFirms p a:active {
-        text-decoration: underline;
-        text-decoration-color: #d9d9d9;
-        color: #000000; }
-        main .headerFirms .textFirms p a:active span {
-          color: #ff6300; }
-  main .headerFirms .logoFirms {
-    margin-top: 60px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center; }
-    main .headerFirms .logoFirms img {
+    background-color: #ffffff;
+    margin-bottom: 30px; }
+    main .headerFirms .textFirms {
+      line-height: 10px;
       display: flex;
-      justify-content: space-between;
-      padding: 10px; }
-    main .headerFirms .logoFirms .growImage {
-      transition: all .2s ease-in-out;
-      cursor: pointer; }
-    main .headerFirms .logoFirms .growImage:hover {
-      transform: scale(1.2); }
-main .adviceContainer {
-  background-color: #f1f1f1;
-  width: 100%;
-  padding-bottom: 50px; }
-  main .adviceContainer .expertsContainer {
-    max-width: 1200px;
-    margin: 0 auto; }
-    main .adviceContainer .expertsContainer .expertsText {
-      display: flex;
-      flex-direction: column;
       justify-content: center;
       align-items: center;
-      padding-bottom: 20px; }
-      main .adviceContainer .expertsContainer .expertsText .pHeader {
+      flex-direction: column; }
+      main .headerFirms .textFirms h2 {
         font-size: 36px;
         font-family: "SinkinSans-700Bold", sans-serif;
-        margin: 0;
         padding-top: 25px; }
-      main .adviceContainer .expertsContainer .expertsText p {
+      main .headerFirms .textFirms p {
         font-size: 14px;
         font-family: "SinkinSans-400Regular", sans-serif;
-        margin: 0; }
-        main .adviceContainer .expertsContainer .expertsText p a:link {
+        line-height: 1px; }
+        main .headerFirms .textFirms p a:link {
           text-decoration: underline;
-          color: #000000;
-          text-decoration-color: #d9d9d9; }
-        main .adviceContainer .expertsContainer .expertsText p a:hover {
+          text-decoration-color: #d9d9d9;
+          color: #000000; }
+          main .headerFirms .textFirms p a:link span {
+            color: #ff6300; }
+        main .headerFirms .textFirms p a:hover {
           text-decoration: underline;
-          color: #000000;
-          text-decoration-color: #d9d9d9; }
-        main .adviceContainer .expertsContainer .expertsText p a:visited {
+          text-decoration-color: #d9d9d9;
+          color: #000000; }
+          main .headerFirms .textFirms p a:hover span {
+            color: #ff6300; }
+        main .headerFirms .textFirms p a:visited {
           text-decoration: underline;
-          color: #000000;
-          text-decoration-color: #d9d9d9; }
-        main .adviceContainer .expertsContainer .expertsText p a:active {
+          text-decoration-color: #d9d9d9;
+          color: #000000; }
+          main .headerFirms .textFirms p a:visited span {
+            color: #ff6300; }
+        main .headerFirms .textFirms p a:active {
           text-decoration: underline;
-          color: #000000;
-          text-decoration-color: #d9d9d9; }
-        main .adviceContainer .expertsContainer .expertsText p span {
-          color: #ff6300; }
-    main .adviceContainer .expertsContainer .parent {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: 1fr;
-      grid-column-gap: 20px;
-      margin-top: 20px; }
-    main .adviceContainer .expertsContainer .div1 {
-      grid-area: 1 / 1 / 2 / 2;
-      max-height: 780px; }
-      main .adviceContainer .expertsContainer .div1 .cardBig {
-        background-color: #ffffff;
-        width: 100%;
-        border-radius: 10px; }
-        main .adviceContainer .expertsContainer .div1 .cardBig .imagePlacement {
-          position: relative;
-          text-align: center;
-          color: #ffffff; }
-          main .adviceContainer .expertsContainer .div1 .cardBig .imagePlacement img {
+          text-decoration-color: #d9d9d9;
+          color: #000000; }
+          main .headerFirms .textFirms p a:active span {
+            color: #ff6300; }
+    main .headerFirms .logoFirms {
+      margin-top: 60px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center; }
+      main .headerFirms .logoFirms img {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px; }
+      main .headerFirms .logoFirms .growImage {
+        transition: all .2s ease-in-out;
+        cursor: pointer; }
+      main .headerFirms .logoFirms .growImage:hover {
+        transform: scale(1.2); }
+  main .adviceContainer {
+    background-color: #f1f1f1;
+    width: 100%;
+    padding-bottom: 50px; }
+    main .adviceContainer .expertsContainer {
+      max-width: 1200px;
+      margin: 0 auto; }
+      main .adviceContainer .expertsContainer .expertsText {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 20px; }
+        main .adviceContainer .expertsContainer .expertsText .pHeader {
+          font-size: 36px;
+          font-family: "SinkinSans-700Bold", sans-serif;
+          margin: 0;
+          padding-top: 25px; }
+        main .adviceContainer .expertsContainer .expertsText p {
+          font-size: 14px;
+          font-family: "SinkinSans-400Regular", sans-serif;
+          margin: 0; }
+          main .adviceContainer .expertsContainer .expertsText p a:link {
+            text-decoration: underline;
+            color: #000000;
+            text-decoration-color: #d9d9d9; }
+          main .adviceContainer .expertsContainer .expertsText p a:hover {
+            text-decoration: underline;
+            color: #000000;
+            text-decoration-color: #d9d9d9; }
+          main .adviceContainer .expertsContainer .expertsText p a:visited {
+            text-decoration: underline;
+            color: #000000;
+            text-decoration-color: #d9d9d9; }
+          main .adviceContainer .expertsContainer .expertsText p a:active {
+            text-decoration: underline;
+            color: #000000;
+            text-decoration-color: #d9d9d9; }
+          main .adviceContainer .expertsContainer .expertsText p span {
+            color: #ff6300; }
+      main .adviceContainer .expertsContainer .parent {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 20px;
+        margin-top: 20px; }
+      main .adviceContainer .expertsContainer .div1 {
+        grid-area: 1 / 1 / 2 / 2;
+        max-height: 780px; }
+        main .adviceContainer .expertsContainer .div1 .cardBig {
+          background-color: #ffffff;
+          width: 100%;
+          border-radius: 10px; }
+          main .adviceContainer .expertsContainer .div1 .cardBig .imagePlacement {
+            position: relative;
+            text-align: center;
+            color: #ffffff; }
+            main .adviceContainer .expertsContainer .div1 .cardBig .imagePlacement img {
+              width: 100%;
+              height: auto;
+              border-radius: 10px 10px 0 0; }
+            main .adviceContainer .expertsContainer .div1 .cardBig .imagePlacement .topPlacement {
+              display: none; }
+              @media (min-width: 750px) {
+                main .adviceContainer .expertsContainer .div1 .cardBig .imagePlacement .topPlacement {
+                  display: block;
+                  position: absolute;
+                  top: 9px;
+                  left: 21px;
+                  font-size: 14px;
+                  font-family: "SinkinSans-400Regular", sans-serif;
+                  background-color: #000000;
+                  padding: 0 10px; } }
+            main .adviceContainer .expertsContainer .div1 .cardBig .imagePlacement .bottomPlacement {
+              display: none; }
+              @media (min-width: 750px) {
+                main .adviceContainer .expertsContainer .div1 .cardBig .imagePlacement .bottomPlacement {
+                  display: block;
+                  position: absolute;
+                  bottom: 21px;
+                  left: 21px;
+                  font-size: 24px;
+                  font-family: "SinkinSans-400Regular", sans-serif;
+                  text-align: left; }
+                  main .adviceContainer .expertsContainer .div1 .cardBig .imagePlacement .bottomPlacement p {
+                    line-height: 10px; }
+                    main .adviceContainer .expertsContainer .div1 .cardBig .imagePlacement .bottomPlacement p span {
+                      padding: 0 10px;
+                      background-color: #000000; } }
+          main .adviceContainer .expertsContainer .div1 .cardBig .textArticle {
+            font-size: 14px;
+            font-family: "SinkinSans-400Regular", sans-serif;
+            letter-spacing: 0.01rem;
+            max-height: 300px;
+            overflow: hidden;
+            padding: 0 25px;
+            text-decoration: none;
+            color: #000000; }
+          main .adviceContainer .expertsContainer .div1 .cardBig .linkArticle {
+            width: 90%;
+            margin: 0 auto;
+            border-top: 1px solid #f0f0f0;
+            padding: 15px 0;
+            font-size: 14px;
+            font-family: "SinkinSans-400Regular", sans-serif;
+            letter-spacing: 0.01rem;
+            text-align: center; }
+            main .adviceContainer .expertsContainer .div1 .cardBig .linkArticle a {
+              text-decoration: none;
+              color: #000000; }
+              main .adviceContainer .expertsContainer .div1 .cardBig .linkArticle a span {
+                color: #ff6300; }
+      main .adviceContainer .expertsContainer .div2 {
+        grid-area: 1 / 2 / 2 / 3;
+        max-height: 780px; }
+        main .adviceContainer .expertsContainer .div2 .card {
+          max-height: 370px;
+          width: 100%;
+          border-radius: 10px;
+          background-color: #ffffff;
+          margin-bottom: 25px; }
+          main .adviceContainer .expertsContainer .div2 .card:last-child {
+            margin-bottom: 0; }
+          main .adviceContainer .expertsContainer .div2 .card img {
             width: 100%;
             height: auto;
             border-radius: 10px 10px 0 0; }
-          main .adviceContainer .expertsContainer .div1 .cardBig .imagePlacement .topPlacement {
-            position: absolute;
-            top: 9px;
-            left: 21px;
+          main .adviceContainer .expertsContainer .div2 .card .upperTextG {
             font-size: 14px;
             font-family: "SinkinSans-400Regular", sans-serif;
-            background-color: #000000;
-            padding: 0 10px; }
-          main .adviceContainer .expertsContainer .div1 .cardBig .imagePlacement .bottomPlacement {
-            position: absolute;
-            bottom: 21px;
-            left: 21px;
-            font-size: 24px;
+            padding: 0 20px;
+            line-height: 15px;
+            text-decoration: none;
+            color: #000000; }
+          main .adviceContainer .expertsContainer .div2 .card .bottomTextG {
+            width: 90%;
+            margin: 0 auto;
+            border-top: 1px solid #f0f0f0;
+            padding: 15px 0;
+            font-size: 14px;
             font-family: "SinkinSans-400Regular", sans-serif;
-            text-align: left; }
-            main .adviceContainer .expertsContainer .div1 .cardBig .imagePlacement .bottomPlacement p {
-              line-height: 10px; }
-              main .adviceContainer .expertsContainer .div1 .cardBig .imagePlacement .bottomPlacement p span {
-                padding: 0 10px;
-                background-color: #000000; }
-        main .adviceContainer .expertsContainer .div1 .cardBig .textArticle {
-          font-size: 14px;
-          font-family: "SinkinSans-400Regular", sans-serif;
-          letter-spacing: 0.01rem;
-          max-height: 300px;
-          overflow: hidden;
-          padding: 0 25px;
-          text-decoration: none;
-          color: #000000; }
-        main .adviceContainer .expertsContainer .div1 .cardBig .linkArticle {
-          width: 90%;
-          margin: 0 auto;
-          border-top: 1px solid #f0f0f0;
-          padding: 15px 0;
-          font-size: 14px;
-          font-family: "SinkinSans-400Regular", sans-serif;
-          letter-spacing: 0.01rem;
-          text-align: center; }
-          main .adviceContainer .expertsContainer .div1 .cardBig .linkArticle a {
-            text-decoration: none;
-            color: #000000; }
-            main .adviceContainer .expertsContainer .div1 .cardBig .linkArticle a span {
-              color: #ff6300; }
-    main .adviceContainer .expertsContainer .div2 {
-      grid-area: 1 / 2 / 2 / 3;
-      max-height: 780px; }
-      main .adviceContainer .expertsContainer .div2 .card {
-        max-height: 370px;
-        width: 100%;
-        border-radius: 10px;
-        background-color: #ffffff;
-        margin-bottom: 25px; }
-        main .adviceContainer .expertsContainer .div2 .card:last-child {
-          margin-bottom: 0; }
-        main .adviceContainer .expertsContainer .div2 .card img {
+            letter-spacing: 0.01rem;
+            text-align: center; }
+            main .adviceContainer .expertsContainer .div2 .card .bottomTextG a {
+              text-decoration: none;
+              color: #000000; }
+              main .adviceContainer .expertsContainer .div2 .card .bottomTextG a span {
+                color: #ff6300; }
+      main .adviceContainer .expertsContainer .div3 {
+        grid-area: 1 / 3 / 2 / 4;
+        max-height: 780px; }
+        main .adviceContainer .expertsContainer .div3 .card {
+          max-height: 370px;
           width: 100%;
-          height: auto;
-          border-radius: 10px 10px 0 0; }
-        main .adviceContainer .expertsContainer .div2 .card .upperTextG {
-          font-size: 14px;
-          font-family: "SinkinSans-400Regular", sans-serif;
-          padding: 0 20px;
-          line-height: 15px;
-          text-decoration: none;
-          color: #000000; }
-        main .adviceContainer .expertsContainer .div2 .card .bottomTextG {
-          width: 90%;
-          margin: 0 auto;
-          border-top: 1px solid #f0f0f0;
-          padding: 15px 0;
-          font-size: 14px;
-          font-family: "SinkinSans-400Regular", sans-serif;
-          letter-spacing: 0.01rem;
-          text-align: center; }
-          main .adviceContainer .expertsContainer .div2 .card .bottomTextG a {
+          border-radius: 10px;
+          background-color: #ffffff;
+          margin-bottom: 25px; }
+          main .adviceContainer .expertsContainer .div3 .card:last-child {
+            margin-bottom: 0; }
+          main .adviceContainer .expertsContainer .div3 .card img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px 10px 0 0; }
+          main .adviceContainer .expertsContainer .div3 .card .upperTextG {
+            font-size: 14px;
+            font-family: "SinkinSans-400Regular", sans-serif;
+            padding: 0 20px;
+            line-height: 15px;
             text-decoration: none;
             color: #000000; }
-            main .adviceContainer .expertsContainer .div2 .card .bottomTextG a span {
-              color: #ff6300; }
-    main .adviceContainer .expertsContainer .div3 {
-      grid-area: 1 / 3 / 2 / 4;
-      max-height: 780px; }
-      main .adviceContainer .expertsContainer .div3 .card {
-        max-height: 370px;
-        width: 100%;
-        border-radius: 10px;
-        background-color: #ffffff;
-        margin-bottom: 25px; }
-        main .adviceContainer .expertsContainer .div3 .card:last-child {
-          margin-bottom: 0; }
-        main .adviceContainer .expertsContainer .div3 .card img {
-          width: 100%;
-          height: auto;
-          border-radius: 10px 10px 0 0; }
-        main .adviceContainer .expertsContainer .div3 .card .upperTextG {
-          font-size: 14px;
-          font-family: "SinkinSans-400Regular", sans-serif;
-          padding: 0 20px;
-          line-height: 15px;
-          text-decoration: none;
-          color: #000000; }
-        main .adviceContainer .expertsContainer .div3 .card .bottomTextG {
-          width: 90%;
-          margin: 0 auto;
-          border-top: 1px solid #f0f0f0;
-          padding: 15px 0;
-          font-size: 14px;
-          font-family: "SinkinSans-400Regular", sans-serif;
-          letter-spacing: 0.01rem;
-          text-align: center; }
-          main .adviceContainer .expertsContainer .div3 .card .bottomTextG a {
-            text-decoration: none;
-            color: #000000; }
-            main .adviceContainer .expertsContainer .div3 .card .bottomTextG a span {
-              color: #ff6300; }
-main .searchFormsTab {
-  background-color: #ffffff;
-  width: 100%;
-  margin: 30px 0 15px 0; }
-  main .searchFormsTab .searchSection {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap; }
-    main .searchFormsTab .searchSection .parent {
-      display: grid;
-      grid-template-columns: 160px 1fr 1fr 1fr 140px 1fr 140px 1fr 140px;
-      grid-template-rows: 20px 70px 20px 100px 20px 100px;
-      grid-column-gap: 0;
-      grid-row-gap: 40px;
-      margin-bottom: 30px; }
-      main .searchFormsTab .searchSection .parent .div1 {
-        grid-area: 1 / 1 / 2 / 4; }
-        main .searchFormsTab .searchSection .parent .div1 p {
-          font-size: 14px;
-          font-family: "SinkinSans-700Bold", sans-serif;
-          color: #ff6300; }
-      main .searchFormsTab .searchSection .parent .div2 {
-        grid-area: 2 / 1 / 3 / 2; }
-        main .searchFormsTab .searchSection .parent .div2 p {
-          font-size: 12px;
-          font-family: "SinkinSans-400Regular", sans-serif;
-          color: #000000;
-          margin: 0;
-          padding-bottom: 8px; }
-          main .searchFormsTab .searchSection .parent .div2 p a:link {
-            text-decoration: none;
-            color: #000000; }
-          main .searchFormsTab .searchSection .parent .div2 p a:hover {
-            text-decoration: underline;
-            text-decoration-color: #ff6300;
-            color: #000000; }
-          main .searchFormsTab .searchSection .parent .div2 p a:visited {
-            text-decoration: none;
-            text-decoration-color: #ff6300;
-            color: #000000; }
-          main .searchFormsTab .searchSection .parent .div2 p a:active {
-            text-decoration: none;
-            text-decoration-color: #ff6300;
-            color: #000000; }
-          main .searchFormsTab .searchSection .parent .div2 p span {
-            color: #ff6300; }
-      main .searchFormsTab .searchSection .parent .div3 {
-        grid-area: 2 / 3 / 3 / 4; }
-        main .searchFormsTab .searchSection .parent .div3 p {
-          font-size: 12px;
-          font-family: "SinkinSans-400Regular", sans-serif;
-          color: #000000;
-          margin: 0;
-          padding-bottom: 8px; }
-          main .searchFormsTab .searchSection .parent .div3 p a:link {
-            text-decoration: none;
-            color: #000000; }
-          main .searchFormsTab .searchSection .parent .div3 p a:hover {
-            text-decoration: underline;
-            text-decoration-color: #ff6300;
-            color: #000000; }
-          main .searchFormsTab .searchSection .parent .div3 p a:visited {
-            text-decoration: none;
-            text-decoration-color: #ff6300;
-            color: #000000; }
-          main .searchFormsTab .searchSection .parent .div3 p a:active {
-            text-decoration: none;
-            color: #000000; }
-          main .searchFormsTab .searchSection .parent .div3 p span {
-            color: #ff6300; }
-      main .searchFormsTab .searchSection .parent .div4 {
-        grid-area: 1 / 5 / 2 / 7; }
-        main .searchFormsTab .searchSection .parent .div4 p {
-          font-size: 14px;
-          font-family: "SinkinSans-700Bold", sans-serif;
-          color: #ff6300; }
-      main .searchFormsTab .searchSection .parent .div5 {
-        grid-area: 2 / 5 / 3 / 6; }
-        main .searchFormsTab .searchSection .parent .div5 p {
-          font-size: 12px;
-          font-family: "SinkinSans-400Regular", sans-serif;
-          color: #000000;
-          margin: 0;
-          padding-bottom: 8px; }
-          main .searchFormsTab .searchSection .parent .div5 p a:link {
-            text-decoration: none;
-            color: #000000; }
-          main .searchFormsTab .searchSection .parent .div5 p a:hover {
-            text-decoration: underline;
-            text-decoration-color: #ff6300;
-            color: #000000; }
-          main .searchFormsTab .searchSection .parent .div5 p a:visited {
-            text-decoration: none;
-            text-decoration-color: #ff6300;
-            color: #000000; }
-          main .searchFormsTab .searchSection .parent .div5 p a:active {
-            text-decoration: none;
-            color: #000000; }
-          main .searchFormsTab .searchSection .parent .div5 p span {
-            color: #ff6300; }
-      main .searchFormsTab .searchSection .parent .div6 {
-        grid-area: 1 / 7 / 2 / 9; }
-        main .searchFormsTab .searchSection .parent .div6 p {
-          font-size: 14px;
-          font-family: "SinkinSans-700Bold", sans-serif;
-          color: #ff6300; }
-      main .searchFormsTab .searchSection .parent .div7 {
-        grid-area: 2 / 7 / 3 / 8; }
-        main .searchFormsTab .searchSection .parent .div7 p {
-          font-size: 12px;
-          font-family: "SinkinSans-400Regular", sans-serif;
-          color: #000000;
-          margin: 0;
-          padding-bottom: 8px; }
-          main .searchFormsTab .searchSection .parent .div7 p a:link {
-            text-decoration: none;
-            color: #000000; }
-          main .searchFormsTab .searchSection .parent .div7 p a:hover {
-            text-decoration: underline;
-            text-decoration-color: #ff6300;
-            color: #000000; }
-          main .searchFormsTab .searchSection .parent .div7 p a:visited {
-            text-decoration: none;
-            text-decoration-color: #ff6300;
-            color: #000000; }
-          main .searchFormsTab .searchSection .parent .div7 p a:active {
-            text-decoration: none;
-            color: #000000; }
-          main .searchFormsTab .searchSection .parent .div7 p span {
-            color: #ff6300; }
-      main .searchFormsTab .searchSection .parent .div8 {
-        grid-area: 2 / 9 / 3 / 10; }
-        main .searchFormsTab .searchSection .parent .div8 p {
-          font-size: 12px;
-          font-family: "SinkinSans-400Regular", sans-serif;
-          color: #000000;
-          margin: 0;
-          padding-bottom: 8px; }
-          main .searchFormsTab .searchSection .parent .div8 p a:link {
-            text-decoration: none;
-            color: #000000; }
-          main .searchFormsTab .searchSection .parent .div8 p a:hover {
-            text-decoration: underline;
-            text-decoration-color: #ff6300;
-            color: #000000; }
-          main .searchFormsTab .searchSection .parent .div8 p a:visited {
-            text-decoration: none;
-            text-decoration-color: #ff6300;
-            color: #000000; }
-          main .searchFormsTab .searchSection .parent .div8 p a:active {
-            text-decoration: none;
-            color: #000000; }
-          main .searchFormsTab .searchSection .parent .div8 p span {
-            color: #ff6300; }
-      main .searchFormsTab .searchSection .parent .div9 {
-        grid-area: 3 / 1 / 4 / 4; }
-        main .searchFormsTab .searchSection .parent .div9 p {
-          font-size: 14px;
-          font-family: "SinkinSans-700Bold", sans-serif;
-          color: #ff6300; }
-      main .searchFormsTab .searchSection .parent .div10 {
-        grid-area: 4 / 1 / 5 / 2; }
-        main .searchFormsTab .searchSection .parent .div10 p {
-          font-size: 12px;
-          font-family: "SinkinSans-400Regular", sans-serif;
-          color: #000000;
-          margin: 0;
-          padding-bottom: 8px; }
-          main .searchFormsTab .searchSection .parent .div10 p a:link {
-            text-decoration: none;
-            color: #000000; }
-          main .searchFormsTab .searchSection .parent .div10 p a:hover {
-            text-decoration: underline;
-            text-decoration-color: #ff6300;
-            color: #000000; }
-          main .searchFormsTab .searchSection .parent .div10 p a:visited {
-            text-decoration: none;
-            text-decoration-color: #ff6300;
-            color: #000000; }
-          main .searchFormsTab .searchSection .parent .div10 p a:active {
-            text-decoration: none;
-            color: #000000; }
-          main .searchFormsTab .searchSection .parent .div10 p span {
-            color: #ff6300; }
-      main .searchFormsTab .searchSection .parent .div11 {
-        grid-area: 4 / 3 / 5 / 4; }
-        main .searchFormsTab .searchSection .parent .div11 p {
-          font-size: 12px;
-          font-family: "SinkinSans-400Regular", sans-serif;
-          color: #000000;
-          margin: 0;
-          padding-bottom: 8px; }
-          main .searchFormsTab .searchSection .parent .div11 p a:link {
-            text-decoration: none;
-            color: #000000; }
-          main .searchFormsTab .searchSection .parent .div11 p a:hover {
-            text-decoration: underline;
-            text-decoration-color: #ff6300;
-            color: #000000; }
-          main .searchFormsTab .searchSection .parent .div11 p a:visited {
-            text-decoration: none;
-            text-decoration-color: #ff6300;
-            color: #000000; }
-          main .searchFormsTab .searchSection .parent .div11 p a:active {
-            text-decoration: none;
-            color: #000000; }
-          main .searchFormsTab .searchSection .parent .div11 p span {
-            color: #ff6300; }
-      main .searchFormsTab .searchSection .parent .div12 {
-        grid-area: 4 / 5 / 5 / 6; }
-        main .searchFormsTab .searchSection .parent .div12 p {
-          font-size: 12px;
-          font-family: "SinkinSans-400Regular", sans-serif;
-          color: #000000;
-          margin: 0;
-          padding-bottom: 8px; }
-          main .searchFormsTab .searchSection .parent .div12 p a:link {
-            text-decoration: none;
-            color: #000000; }
-          main .searchFormsTab .searchSection .parent .div12 p a:hover {
-            text-decoration: underline;
-            text-decoration-color: #ff6300;
-            color: #000000; }
-          main .searchFormsTab .searchSection .parent .div12 p a:visited {
-            text-decoration: none;
-            text-decoration-color: #ff6300;
-            color: #000000; }
-          main .searchFormsTab .searchSection .parent .div12 p a:active {
-            text-decoration: none;
-            color: #000000; }
-          main .searchFormsTab .searchSection .parent .div12 p span {
-            color: #ff6300; }
-      main .searchFormsTab .searchSection .parent .div13 {
-        grid-area: 4 / 7 / 5 / 8; }
-        main .searchFormsTab .searchSection .parent .div13 p {
-          font-size: 12px;
-          font-family: "SinkinSans-400Regular", sans-serif;
-          color: #000000;
-          margin: 0;
-          padding-bottom: 8px; }
-          main .searchFormsTab .searchSection .parent .div13 p a:link {
-            text-decoration: none;
-            color: #000000; }
-          main .searchFormsTab .searchSection .parent .div13 p a:hover {
-            text-decoration: underline;
-            text-decoration-color: #ff6300;
-            color: #000000; }
-          main .searchFormsTab .searchSection .parent .div13 p a:visited {
-            text-decoration: none;
-            text-decoration-color: #ff6300;
-            color: #000000; }
-          main .searchFormsTab .searchSection .parent .div13 p a:active {
-            text-decoration: none;
-            color: #000000; }
-          main .searchFormsTab .searchSection .parent .div13 p span {
-            color: #ff6300; }
-      main .searchFormsTab .searchSection .parent .div14 {
-        grid-area: 4 / 9 / 5 / 10; }
-        main .searchFormsTab .searchSection .parent .div14 p {
-          font-size: 12px;
-          font-family: "SinkinSans-400Regular", sans-serif;
-          color: #000000;
-          margin: 0;
-          padding-bottom: 8px; }
-          main .searchFormsTab .searchSection .parent .div14 p a:link {
-            text-decoration: none;
-            color: #000000; }
-          main .searchFormsTab .searchSection .parent .div14 p a:hover {
-            text-decoration: underline;
-            text-decoration-color: #ff6300;
-            color: #000000; }
-          main .searchFormsTab .searchSection .parent .div14 p a:visited {
-            text-decoration: none;
-            text-decoration-color: #ff6300;
-            color: #000000; }
-          main .searchFormsTab .searchSection .parent .div14 p a:active {
-            text-decoration: none;
-            color: #000000; }
-          main .searchFormsTab .searchSection .parent .div14 p span {
-            color: #ff6300; }
-      main .searchFormsTab .searchSection .parent .div15 {
-        grid-area: 5 / 1 / 6 / 4; }
-        main .searchFormsTab .searchSection .parent .div15 p {
-          font-size: 14px;
-          font-family: "SinkinSans-700Bold", sans-serif;
-          color: #ff6300; }
-      main .searchFormsTab .searchSection .parent .div16 {
-        grid-area: 6 / 1 / 7 / 2; }
-        main .searchFormsTab .searchSection .parent .div16 p {
-          font-size: 12px;
-          font-family: "SinkinSans-400Regular", sans-serif;
-          color: #000000;
-          margin: 0;
-          padding-bottom: 8px; }
-          main .searchFormsTab .searchSection .parent .div16 p a:link {
-            text-decoration: none;
-            color: #000000; }
-          main .searchFormsTab .searchSection .parent .div16 p a:hover {
-            text-decoration: underline;
-            text-decoration-color: #ff6300;
-            color: #000000; }
-          main .searchFormsTab .searchSection .parent .div16 p a:visited {
-            text-decoration: none;
-            text-decoration-color: #ff6300;
-            color: #000000; }
-          main .searchFormsTab .searchSection .parent .div16 p a:active {
-            text-decoration: none;
-            color: #000000; }
-          main .searchFormsTab .searchSection .parent .div16 p span {
-            color: #ff6300; }
-      main .searchFormsTab .searchSection .parent .div17 {
-        grid-area: 6 / 3 / 7 / 4; }
-        main .searchFormsTab .searchSection .parent .div17 p {
-          font-size: 12px;
-          font-family: "SinkinSans-400Regular", sans-serif;
-          color: #000000;
-          margin: 0;
-          padding-bottom: 8px; }
-          main .searchFormsTab .searchSection .parent .div17 p a:link {
-            text-decoration: none;
-            color: #000000; }
-          main .searchFormsTab .searchSection .parent .div17 p a:hover {
-            text-decoration: underline;
-            text-decoration-color: #ff6300;
-            color: #000000; }
-          main .searchFormsTab .searchSection .parent .div17 p a:visited {
-            text-decoration: none;
-            text-decoration-color: #ff6300;
-            color: #000000; }
-          main .searchFormsTab .searchSection .parent .div17 p a:active {
-            text-decoration: none;
-            color: #000000; }
-          main .searchFormsTab .searchSection .parent .div17 p span {
-            color: #ff6300; }
-      main .searchFormsTab .searchSection .parent .div18 {
-        grid-area: 6 / 5 / 7 / 6; }
-        main .searchFormsTab .searchSection .parent .div18 p {
-          font-size: 12px;
-          font-family: "SinkinSans-400Regular", sans-serif;
-          color: #000000;
-          margin: 0;
-          padding-bottom: 8px; }
-          main .searchFormsTab .searchSection .parent .div18 p a:link {
-            text-decoration: none;
-            color: #000000; }
-          main .searchFormsTab .searchSection .parent .div18 p a:hover {
-            text-decoration: underline;
-            text-decoration-color: #ff6300;
-            color: #000000; }
-          main .searchFormsTab .searchSection .parent .div18 p a:visited {
-            text-decoration: none;
-            text-decoration-color: #ff6300;
-            color: #000000; }
-          main .searchFormsTab .searchSection .parent .div18 p a:active {
-            text-decoration: none;
-            color: #000000; }
-          main .searchFormsTab .searchSection .parent .div18 p span {
-            color: #ff6300; }
-      main .searchFormsTab .searchSection .parent .div19 {
-        grid-area: 6 / 7 / 7 / 8; }
-        main .searchFormsTab .searchSection .parent .div19 p {
-          font-size: 12px;
-          font-family: "SinkinSans-400Regular", sans-serif;
-          color: #000000;
-          margin: 0;
-          padding-bottom: 8px; }
-          main .searchFormsTab .searchSection .parent .div19 p a:link {
-            text-decoration: none;
-            color: #000000; }
-          main .searchFormsTab .searchSection .parent .div19 p a:hover {
-            text-decoration: underline;
-            text-decoration-color: #ff6300;
-            color: #000000; }
-          main .searchFormsTab .searchSection .parent .div19 p a:visited {
-            text-decoration: none;
-            text-decoration-color: #ff6300;
-            color: #000000; }
-          main .searchFormsTab .searchSection .parent .div19 p a:active {
-            text-decoration: none;
-            text-decoration-color: #ff6300;
-            color: #000000; }
-          main .searchFormsTab .searchSection .parent .div19 p span {
-            color: #ff6300; }
-      main .searchFormsTab .searchSection .parent .div20 {
-        grid-area: 6 / 9 / 7 / 10; }
-        main .searchFormsTab .searchSection .parent .div20 p {
-          font-size: 12px;
-          font-family: "SinkinSans-400Regular", sans-serif;
-          color: #000000;
-          margin: 0;
-          padding-bottom: 8px; }
-          main .searchFormsTab .searchSection .parent .div20 p a:link {
-            text-decoration: none;
-            text-decoration-color: #ff6300;
-            color: #000000; }
-          main .searchFormsTab .searchSection .parent .div20 p a:hover {
-            text-decoration: underline;
-            text-decoration-color: #ff6300;
-            color: #000000; }
-          main .searchFormsTab .searchSection .parent .div20 p a:visited {
-            text-decoration: none;
-            text-decoration-color: #ff6300;
-            color: #000000; }
-          main .searchFormsTab .searchSection .parent .div20 p a:active {
-            text-decoration: none;
-            text-decoration-color: #ff6300;
-            color: #000000; }
-          main .searchFormsTab .searchSection .parent .div20 p span {
-            color: #ff6300; }
-    main .searchFormsTab .searchSection .informationText {
-      font-size: 10px;
-      font-family: "SinkinSans-400Regular", sans-serif;
-      margin-top: 10px;
-      line-height: 14px;
-      letter-spacing: 0.01rem; }
-      main .searchFormsTab .searchSection .informationText a:link {
-        text-decoration: none;
-        color: #4b95db; }
-      main .searchFormsTab .searchSection .informationText a:hover {
-        text-decoration: none;
-        color: #4b95db; }
-      main .searchFormsTab .searchSection .informationText a:visited {
-        text-decoration: none;
-        color: #4b95db; }
-      main .searchFormsTab .searchSection .informationText a:active {
-        text-decoration: none;
-        color: #4b95db; }
-@media only screen and (min-width: 768px) {
-  main .footerContainer {
-    display: grid;
+          main .adviceContainer .expertsContainer .div3 .card .bottomTextG {
+            width: 90%;
+            margin: 0 auto;
+            border-top: 1px solid #f0f0f0;
+            padding: 15px 0;
+            font-size: 14px;
+            font-family: "SinkinSans-400Regular", sans-serif;
+            letter-spacing: 0.01rem;
+            text-align: center; }
+            main .adviceContainer .expertsContainer .div3 .card .bottomTextG a {
+              text-decoration: none;
+              color: #000000; }
+              main .adviceContainer .expertsContainer .div3 .card .bottomTextG a span {
+                color: #ff6300; }
+  main .searchFormsTab {
+    background-color: #ffffff;
     width: 100%;
-    margin: 0 auto 200px;
-    background-color: #f0f0f0;
-    border-radius: 10px;
-    padding: 10px; }
-    main .footerContainer .parent {
-      padding: 20px 20px 20px 20px;
+    margin: 30px 0 15px 0; }
+    main .searchFormsTab .searchSection {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap; }
+      main .searchFormsTab .searchSection .parent {
+        display: grid;
+        grid-template-columns: 160px 1fr 1fr 1fr 140px 1fr 140px 1fr 140px;
+        grid-template-rows: 20px 70px 20px 100px 20px 100px;
+        grid-column-gap: 0;
+        grid-row-gap: 40px;
+        margin-bottom: 30px; }
+        main .searchFormsTab .searchSection .parent .div1 {
+          grid-area: 1 / 1 / 2 / 4; }
+          main .searchFormsTab .searchSection .parent .div1 p {
+            font-size: 14px;
+            font-family: "SinkinSans-700Bold", sans-serif;
+            color: #ff6300; }
+        main .searchFormsTab .searchSection .parent .div2 {
+          grid-area: 2 / 1 / 3 / 2; }
+          main .searchFormsTab .searchSection .parent .div2 p {
+            font-size: 12px;
+            font-family: "SinkinSans-400Regular", sans-serif;
+            color: #000000;
+            margin: 0;
+            padding-bottom: 8px; }
+            main .searchFormsTab .searchSection .parent .div2 p a:link {
+              text-decoration: none;
+              color: #000000; }
+            main .searchFormsTab .searchSection .parent .div2 p a:hover {
+              text-decoration: underline;
+              text-decoration-color: #ff6300;
+              color: #000000; }
+            main .searchFormsTab .searchSection .parent .div2 p a:visited {
+              text-decoration: none;
+              text-decoration-color: #ff6300;
+              color: #000000; }
+            main .searchFormsTab .searchSection .parent .div2 p a:active {
+              text-decoration: none;
+              text-decoration-color: #ff6300;
+              color: #000000; }
+            main .searchFormsTab .searchSection .parent .div2 p span {
+              color: #ff6300; }
+        main .searchFormsTab .searchSection .parent .div3 {
+          grid-area: 2 / 3 / 3 / 4; }
+          main .searchFormsTab .searchSection .parent .div3 p {
+            font-size: 12px;
+            font-family: "SinkinSans-400Regular", sans-serif;
+            color: #000000;
+            margin: 0;
+            padding-bottom: 8px; }
+            main .searchFormsTab .searchSection .parent .div3 p a:link {
+              text-decoration: none;
+              color: #000000; }
+            main .searchFormsTab .searchSection .parent .div3 p a:hover {
+              text-decoration: underline;
+              text-decoration-color: #ff6300;
+              color: #000000; }
+            main .searchFormsTab .searchSection .parent .div3 p a:visited {
+              text-decoration: none;
+              text-decoration-color: #ff6300;
+              color: #000000; }
+            main .searchFormsTab .searchSection .parent .div3 p a:active {
+              text-decoration: none;
+              color: #000000; }
+            main .searchFormsTab .searchSection .parent .div3 p span {
+              color: #ff6300; }
+        main .searchFormsTab .searchSection .parent .div4 {
+          grid-area: 1 / 5 / 2 / 7; }
+          main .searchFormsTab .searchSection .parent .div4 p {
+            font-size: 14px;
+            font-family: "SinkinSans-700Bold", sans-serif;
+            color: #ff6300; }
+        main .searchFormsTab .searchSection .parent .div5 {
+          grid-area: 2 / 5 / 3 / 6; }
+          main .searchFormsTab .searchSection .parent .div5 p {
+            font-size: 12px;
+            font-family: "SinkinSans-400Regular", sans-serif;
+            color: #000000;
+            margin: 0;
+            padding-bottom: 8px; }
+            main .searchFormsTab .searchSection .parent .div5 p a:link {
+              text-decoration: none;
+              color: #000000; }
+            main .searchFormsTab .searchSection .parent .div5 p a:hover {
+              text-decoration: underline;
+              text-decoration-color: #ff6300;
+              color: #000000; }
+            main .searchFormsTab .searchSection .parent .div5 p a:visited {
+              text-decoration: none;
+              text-decoration-color: #ff6300;
+              color: #000000; }
+            main .searchFormsTab .searchSection .parent .div5 p a:active {
+              text-decoration: none;
+              color: #000000; }
+            main .searchFormsTab .searchSection .parent .div5 p span {
+              color: #ff6300; }
+        main .searchFormsTab .searchSection .parent .div6 {
+          grid-area: 1 / 7 / 2 / 9; }
+          main .searchFormsTab .searchSection .parent .div6 p {
+            font-size: 14px;
+            font-family: "SinkinSans-700Bold", sans-serif;
+            color: #ff6300; }
+        main .searchFormsTab .searchSection .parent .div7 {
+          grid-area: 2 / 7 / 3 / 8; }
+          main .searchFormsTab .searchSection .parent .div7 p {
+            font-size: 12px;
+            font-family: "SinkinSans-400Regular", sans-serif;
+            color: #000000;
+            margin: 0;
+            padding-bottom: 8px; }
+            main .searchFormsTab .searchSection .parent .div7 p a:link {
+              text-decoration: none;
+              color: #000000; }
+            main .searchFormsTab .searchSection .parent .div7 p a:hover {
+              text-decoration: underline;
+              text-decoration-color: #ff6300;
+              color: #000000; }
+            main .searchFormsTab .searchSection .parent .div7 p a:visited {
+              text-decoration: none;
+              text-decoration-color: #ff6300;
+              color: #000000; }
+            main .searchFormsTab .searchSection .parent .div7 p a:active {
+              text-decoration: none;
+              color: #000000; }
+            main .searchFormsTab .searchSection .parent .div7 p span {
+              color: #ff6300; }
+        main .searchFormsTab .searchSection .parent .div8 {
+          grid-area: 2 / 9 / 3 / 10; }
+          main .searchFormsTab .searchSection .parent .div8 p {
+            font-size: 12px;
+            font-family: "SinkinSans-400Regular", sans-serif;
+            color: #000000;
+            margin: 0;
+            padding-bottom: 8px; }
+            main .searchFormsTab .searchSection .parent .div8 p a:link {
+              text-decoration: none;
+              color: #000000; }
+            main .searchFormsTab .searchSection .parent .div8 p a:hover {
+              text-decoration: underline;
+              text-decoration-color: #ff6300;
+              color: #000000; }
+            main .searchFormsTab .searchSection .parent .div8 p a:visited {
+              text-decoration: none;
+              text-decoration-color: #ff6300;
+              color: #000000; }
+            main .searchFormsTab .searchSection .parent .div8 p a:active {
+              text-decoration: none;
+              color: #000000; }
+            main .searchFormsTab .searchSection .parent .div8 p span {
+              color: #ff6300; }
+        main .searchFormsTab .searchSection .parent .div9 {
+          grid-area: 3 / 1 / 4 / 4; }
+          main .searchFormsTab .searchSection .parent .div9 p {
+            font-size: 14px;
+            font-family: "SinkinSans-700Bold", sans-serif;
+            color: #ff6300; }
+        main .searchFormsTab .searchSection .parent .div10 {
+          grid-area: 4 / 1 / 5 / 2; }
+          main .searchFormsTab .searchSection .parent .div10 p {
+            font-size: 12px;
+            font-family: "SinkinSans-400Regular", sans-serif;
+            color: #000000;
+            margin: 0;
+            padding-bottom: 8px; }
+            main .searchFormsTab .searchSection .parent .div10 p a:link {
+              text-decoration: none;
+              color: #000000; }
+            main .searchFormsTab .searchSection .parent .div10 p a:hover {
+              text-decoration: underline;
+              text-decoration-color: #ff6300;
+              color: #000000; }
+            main .searchFormsTab .searchSection .parent .div10 p a:visited {
+              text-decoration: none;
+              text-decoration-color: #ff6300;
+              color: #000000; }
+            main .searchFormsTab .searchSection .parent .div10 p a:active {
+              text-decoration: none;
+              color: #000000; }
+            main .searchFormsTab .searchSection .parent .div10 p span {
+              color: #ff6300; }
+        main .searchFormsTab .searchSection .parent .div11 {
+          grid-area: 4 / 3 / 5 / 4; }
+          main .searchFormsTab .searchSection .parent .div11 p {
+            font-size: 12px;
+            font-family: "SinkinSans-400Regular", sans-serif;
+            color: #000000;
+            margin: 0;
+            padding-bottom: 8px; }
+            main .searchFormsTab .searchSection .parent .div11 p a:link {
+              text-decoration: none;
+              color: #000000; }
+            main .searchFormsTab .searchSection .parent .div11 p a:hover {
+              text-decoration: underline;
+              text-decoration-color: #ff6300;
+              color: #000000; }
+            main .searchFormsTab .searchSection .parent .div11 p a:visited {
+              text-decoration: none;
+              text-decoration-color: #ff6300;
+              color: #000000; }
+            main .searchFormsTab .searchSection .parent .div11 p a:active {
+              text-decoration: none;
+              color: #000000; }
+            main .searchFormsTab .searchSection .parent .div11 p span {
+              color: #ff6300; }
+        main .searchFormsTab .searchSection .parent .div12 {
+          grid-area: 4 / 5 / 5 / 6; }
+          main .searchFormsTab .searchSection .parent .div12 p {
+            font-size: 12px;
+            font-family: "SinkinSans-400Regular", sans-serif;
+            color: #000000;
+            margin: 0;
+            padding-bottom: 8px; }
+            main .searchFormsTab .searchSection .parent .div12 p a:link {
+              text-decoration: none;
+              color: #000000; }
+            main .searchFormsTab .searchSection .parent .div12 p a:hover {
+              text-decoration: underline;
+              text-decoration-color: #ff6300;
+              color: #000000; }
+            main .searchFormsTab .searchSection .parent .div12 p a:visited {
+              text-decoration: none;
+              text-decoration-color: #ff6300;
+              color: #000000; }
+            main .searchFormsTab .searchSection .parent .div12 p a:active {
+              text-decoration: none;
+              color: #000000; }
+            main .searchFormsTab .searchSection .parent .div12 p span {
+              color: #ff6300; }
+        main .searchFormsTab .searchSection .parent .div13 {
+          grid-area: 4 / 7 / 5 / 8; }
+          main .searchFormsTab .searchSection .parent .div13 p {
+            font-size: 12px;
+            font-family: "SinkinSans-400Regular", sans-serif;
+            color: #000000;
+            margin: 0;
+            padding-bottom: 8px; }
+            main .searchFormsTab .searchSection .parent .div13 p a:link {
+              text-decoration: none;
+              color: #000000; }
+            main .searchFormsTab .searchSection .parent .div13 p a:hover {
+              text-decoration: underline;
+              text-decoration-color: #ff6300;
+              color: #000000; }
+            main .searchFormsTab .searchSection .parent .div13 p a:visited {
+              text-decoration: none;
+              text-decoration-color: #ff6300;
+              color: #000000; }
+            main .searchFormsTab .searchSection .parent .div13 p a:active {
+              text-decoration: none;
+              color: #000000; }
+            main .searchFormsTab .searchSection .parent .div13 p span {
+              color: #ff6300; }
+        main .searchFormsTab .searchSection .parent .div14 {
+          grid-area: 4 / 9 / 5 / 10; }
+          main .searchFormsTab .searchSection .parent .div14 p {
+            font-size: 12px;
+            font-family: "SinkinSans-400Regular", sans-serif;
+            color: #000000;
+            margin: 0;
+            padding-bottom: 8px; }
+            main .searchFormsTab .searchSection .parent .div14 p a:link {
+              text-decoration: none;
+              color: #000000; }
+            main .searchFormsTab .searchSection .parent .div14 p a:hover {
+              text-decoration: underline;
+              text-decoration-color: #ff6300;
+              color: #000000; }
+            main .searchFormsTab .searchSection .parent .div14 p a:visited {
+              text-decoration: none;
+              text-decoration-color: #ff6300;
+              color: #000000; }
+            main .searchFormsTab .searchSection .parent .div14 p a:active {
+              text-decoration: none;
+              color: #000000; }
+            main .searchFormsTab .searchSection .parent .div14 p span {
+              color: #ff6300; }
+        main .searchFormsTab .searchSection .parent .div15 {
+          grid-area: 5 / 1 / 6 / 4; }
+          main .searchFormsTab .searchSection .parent .div15 p {
+            font-size: 14px;
+            font-family: "SinkinSans-700Bold", sans-serif;
+            color: #ff6300; }
+        main .searchFormsTab .searchSection .parent .div16 {
+          grid-area: 6 / 1 / 7 / 2; }
+          main .searchFormsTab .searchSection .parent .div16 p {
+            font-size: 12px;
+            font-family: "SinkinSans-400Regular", sans-serif;
+            color: #000000;
+            margin: 0;
+            padding-bottom: 8px; }
+            main .searchFormsTab .searchSection .parent .div16 p a:link {
+              text-decoration: none;
+              color: #000000; }
+            main .searchFormsTab .searchSection .parent .div16 p a:hover {
+              text-decoration: underline;
+              text-decoration-color: #ff6300;
+              color: #000000; }
+            main .searchFormsTab .searchSection .parent .div16 p a:visited {
+              text-decoration: none;
+              text-decoration-color: #ff6300;
+              color: #000000; }
+            main .searchFormsTab .searchSection .parent .div16 p a:active {
+              text-decoration: none;
+              color: #000000; }
+            main .searchFormsTab .searchSection .parent .div16 p span {
+              color: #ff6300; }
+        main .searchFormsTab .searchSection .parent .div17 {
+          grid-area: 6 / 3 / 7 / 4; }
+          main .searchFormsTab .searchSection .parent .div17 p {
+            font-size: 12px;
+            font-family: "SinkinSans-400Regular", sans-serif;
+            color: #000000;
+            margin: 0;
+            padding-bottom: 8px; }
+            main .searchFormsTab .searchSection .parent .div17 p a:link {
+              text-decoration: none;
+              color: #000000; }
+            main .searchFormsTab .searchSection .parent .div17 p a:hover {
+              text-decoration: underline;
+              text-decoration-color: #ff6300;
+              color: #000000; }
+            main .searchFormsTab .searchSection .parent .div17 p a:visited {
+              text-decoration: none;
+              text-decoration-color: #ff6300;
+              color: #000000; }
+            main .searchFormsTab .searchSection .parent .div17 p a:active {
+              text-decoration: none;
+              color: #000000; }
+            main .searchFormsTab .searchSection .parent .div17 p span {
+              color: #ff6300; }
+        main .searchFormsTab .searchSection .parent .div18 {
+          grid-area: 6 / 5 / 7 / 6; }
+          main .searchFormsTab .searchSection .parent .div18 p {
+            font-size: 12px;
+            font-family: "SinkinSans-400Regular", sans-serif;
+            color: #000000;
+            margin: 0;
+            padding-bottom: 8px; }
+            main .searchFormsTab .searchSection .parent .div18 p a:link {
+              text-decoration: none;
+              color: #000000; }
+            main .searchFormsTab .searchSection .parent .div18 p a:hover {
+              text-decoration: underline;
+              text-decoration-color: #ff6300;
+              color: #000000; }
+            main .searchFormsTab .searchSection .parent .div18 p a:visited {
+              text-decoration: none;
+              text-decoration-color: #ff6300;
+              color: #000000; }
+            main .searchFormsTab .searchSection .parent .div18 p a:active {
+              text-decoration: none;
+              color: #000000; }
+            main .searchFormsTab .searchSection .parent .div18 p span {
+              color: #ff6300; }
+        main .searchFormsTab .searchSection .parent .div19 {
+          grid-area: 6 / 7 / 7 / 8; }
+          main .searchFormsTab .searchSection .parent .div19 p {
+            font-size: 12px;
+            font-family: "SinkinSans-400Regular", sans-serif;
+            color: #000000;
+            margin: 0;
+            padding-bottom: 8px; }
+            main .searchFormsTab .searchSection .parent .div19 p a:link {
+              text-decoration: none;
+              color: #000000; }
+            main .searchFormsTab .searchSection .parent .div19 p a:hover {
+              text-decoration: underline;
+              text-decoration-color: #ff6300;
+              color: #000000; }
+            main .searchFormsTab .searchSection .parent .div19 p a:visited {
+              text-decoration: none;
+              text-decoration-color: #ff6300;
+              color: #000000; }
+            main .searchFormsTab .searchSection .parent .div19 p a:active {
+              text-decoration: none;
+              text-decoration-color: #ff6300;
+              color: #000000; }
+            main .searchFormsTab .searchSection .parent .div19 p span {
+              color: #ff6300; }
+        main .searchFormsTab .searchSection .parent .div20 {
+          grid-area: 6 / 9 / 7 / 10; }
+          main .searchFormsTab .searchSection .parent .div20 p {
+            font-size: 12px;
+            font-family: "SinkinSans-400Regular", sans-serif;
+            color: #000000;
+            margin: 0;
+            padding-bottom: 8px; }
+            main .searchFormsTab .searchSection .parent .div20 p a:link {
+              text-decoration: none;
+              text-decoration-color: #ff6300;
+              color: #000000; }
+            main .searchFormsTab .searchSection .parent .div20 p a:hover {
+              text-decoration: underline;
+              text-decoration-color: #ff6300;
+              color: #000000; }
+            main .searchFormsTab .searchSection .parent .div20 p a:visited {
+              text-decoration: none;
+              text-decoration-color: #ff6300;
+              color: #000000; }
+            main .searchFormsTab .searchSection .parent .div20 p a:active {
+              text-decoration: none;
+              text-decoration-color: #ff6300;
+              color: #000000; }
+            main .searchFormsTab .searchSection .parent .div20 p span {
+              color: #ff6300; }
+      main .searchFormsTab .searchSection .informationText {
+        font-size: 10px;
+        font-family: "SinkinSans-400Regular", sans-serif;
+        margin-top: 10px;
+        line-height: 14px;
+        letter-spacing: 0.01rem; }
+        main .searchFormsTab .searchSection .informationText a:link {
+          text-decoration: none;
+          color: #4b95db; }
+        main .searchFormsTab .searchSection .informationText a:hover {
+          text-decoration: none;
+          color: #4b95db; }
+        main .searchFormsTab .searchSection .informationText a:visited {
+          text-decoration: none;
+          color: #4b95db; }
+        main .searchFormsTab .searchSection .informationText a:active {
+          text-decoration: none;
+          color: #4b95db; }
+  @media (min-width: 768px) {
+    main .footerContainer {
       display: grid;
-      grid-template-columns: 340px 180px 190px 75px 110px 95px 160px;
-      grid-template-rows: 275px;
-      grid-column-gap: 0;
-      grid-row-gap: 0; }
-      main .footerContainer .parent .div1 {
-        grid-area: 1 / 1 / 2 / 2;
-        margin: 10px 0 0 10px;
-        padding: 0; }
-        main .footerContainer .parent .div1 .greyContent {
-          color: #999999; }
-        main .footerContainer .parent .div1 .firstParagraph {
-          font-size: 14px;
-          font-family: "SinkinSans-700Bold", sans-serif;
-          color: #ff6300; }
-        main .footerContainer .parent .div1 p {
-          font-size: 12px;
-          font-family: "SinkinSans-400Regular", sans-serif;
-          color: #000000;
-          line-height: 4px; }
-          main .footerContainer .parent .div1 p a:link {
-            text-decoration: none;
-            color: #000000; }
-          main .footerContainer .parent .div1 p a:hover {
-            text-decoration: underline;
-            color: #000000; }
-          main .footerContainer .parent .div1 p a:visited {
-            text-decoration: none;
-            color: #000000; }
-          main .footerContainer .parent .div1 p a:active {
-            text-decoration: none;
-            color: #000000; }
-          main .footerContainer .parent .div1 p span {
+      width: 100%;
+      margin: 0 auto 200px;
+      background-color: #f0f0f0;
+      border-radius: 10px;
+      padding: 10px; }
+      main .footerContainer .parent {
+        padding: 20px 20px 20px 20px;
+        display: grid;
+        grid-template-columns: 340px 180px 190px 75px 110px 95px 160px;
+        grid-template-rows: 275px;
+        grid-column-gap: 0;
+        grid-row-gap: 0; }
+        main .footerContainer .parent .div1 {
+          grid-area: 1 / 1 / 2 / 2;
+          margin: 10px 0 0 10px;
+          padding: 0; }
+          main .footerContainer .parent .div1 .greyContent {
+            color: #999999; }
+          main .footerContainer .parent .div1 .firstParagraph {
+            font-size: 14px;
+            font-family: "SinkinSans-700Bold", sans-serif;
             color: #ff6300; }
-      main .footerContainer .parent .div2 {
-        grid-area: 1 / 3 / 2 / 4; }
-        main .footerContainer .parent .div2 .firstParagraph {
-          font-size: 14px;
-          font-family: "SinkinSans-700Bold", sans-serif;
-          color: #ff6300;
-          margin-bottom: 25px; }
-        main .footerContainer .parent .div2 p {
-          font-size: 12px;
-          font-family: "SinkinSans-400Regular", sans-serif;
-          color: #000000; }
-          main .footerContainer .parent .div2 p a:link {
-            text-decoration: none;
-            text-decoration-color: #ff6300;
+          main .footerContainer .parent .div1 p {
+            font-size: 12px;
+            font-family: "SinkinSans-400Regular", sans-serif;
+            color: #000000;
+            line-height: 4px; }
+            main .footerContainer .parent .div1 p a:link {
+              text-decoration: none;
+              color: #000000; }
+            main .footerContainer .parent .div1 p a:hover {
+              text-decoration: underline;
+              color: #000000; }
+            main .footerContainer .parent .div1 p a:visited {
+              text-decoration: none;
+              color: #000000; }
+            main .footerContainer .parent .div1 p a:active {
+              text-decoration: none;
+              color: #000000; }
+            main .footerContainer .parent .div1 p span {
+              color: #ff6300; }
+        main .footerContainer .parent .div2 {
+          grid-area: 1 / 3 / 2 / 4; }
+          main .footerContainer .parent .div2 .firstParagraph {
+            font-size: 14px;
+            font-family: "SinkinSans-700Bold", sans-serif;
+            color: #ff6300;
+            margin-bottom: 25px; }
+          main .footerContainer .parent .div2 p {
+            font-size: 12px;
+            font-family: "SinkinSans-400Regular", sans-serif;
             color: #000000; }
-          main .footerContainer .parent .div2 p a:hover {
-            text-decoration: underline;
-            text-decoration-color: #ff6300; }
-          main .footerContainer .parent .div2 p a:visited {
-            text-decoration: none;
-            text-decoration-color: #ff6300;
+            main .footerContainer .parent .div2 p a:link {
+              text-decoration: none;
+              text-decoration-color: #ff6300;
+              color: #000000; }
+            main .footerContainer .parent .div2 p a:hover {
+              text-decoration: underline;
+              text-decoration-color: #ff6300; }
+            main .footerContainer .parent .div2 p a:visited {
+              text-decoration: none;
+              text-decoration-color: #ff6300;
+              color: #000000; }
+            main .footerContainer .parent .div2 p a:active {
+              text-decoration: none;
+              text-decoration-color: #ff6300;
+              color: #000000; }
+            main .footerContainer .parent .div2 p span {
+              color: #ff6300; }
+        main .footerContainer .parent .div3 {
+          grid-area: 1 / 5 / 2 / 6; }
+          main .footerContainer .parent .div3 .firstParagraph {
+            font-size: 14px;
+            font-family: "SinkinSans-700Bold", sans-serif;
+            color: #ff6300;
+            margin-bottom: 25px; }
+          main .footerContainer .parent .div3 p {
+            font-size: 12px;
+            font-family: "SinkinSans-400Regular", sans-serif;
             color: #000000; }
-          main .footerContainer .parent .div2 p a:active {
-            text-decoration: none;
-            text-decoration-color: #ff6300;
+            main .footerContainer .parent .div3 p a:link {
+              text-decoration: none;
+              text-decoration-color: #ff6300;
+              color: #000000; }
+            main .footerContainer .parent .div3 p a:hover {
+              text-decoration: underline;
+              text-decoration-color: #ff6300;
+              color: #000000; }
+            main .footerContainer .parent .div3 p a:visited {
+              text-decoration: none;
+              text-decoration-color: #ff6300;
+              color: #000000; }
+            main .footerContainer .parent .div3 p a:active {
+              text-decoration: none;
+              text-decoration-color: #ff6300;
+              color: #000000; }
+            main .footerContainer .parent .div3 p span {
+              color: #ff6300; }
+        main .footerContainer .parent .div4 {
+          grid-area: 1 / 7 / 2 / 8; }
+          main .footerContainer .parent .div4 .firstParagraph {
+            font-size: 14px;
+            font-family: "SinkinSans-700Bold", sans-serif;
+            color: #ff6300;
+            margin-bottom: 25px; }
+          main .footerContainer .parent .div4 p {
+            font-size: 12px;
+            font-family: "SinkinSans-400Regular", sans-serif;
             color: #000000; }
-          main .footerContainer .parent .div2 p span {
-            color: #ff6300; }
-      main .footerContainer .parent .div3 {
-        grid-area: 1 / 5 / 2 / 6; }
-        main .footerContainer .parent .div3 .firstParagraph {
-          font-size: 14px;
-          font-family: "SinkinSans-700Bold", sans-serif;
-          color: #ff6300;
-          margin-bottom: 25px; }
-        main .footerContainer .parent .div3 p {
-          font-size: 12px;
-          font-family: "SinkinSans-400Regular", sans-serif;
-          color: #000000; }
-          main .footerContainer .parent .div3 p a:link {
-            text-decoration: none;
-            text-decoration-color: #ff6300;
-            color: #000000; }
-          main .footerContainer .parent .div3 p a:hover {
-            text-decoration: underline;
-            text-decoration-color: #ff6300;
-            color: #000000; }
-          main .footerContainer .parent .div3 p a:visited {
-            text-decoration: none;
-            text-decoration-color: #ff6300;
-            color: #000000; }
-          main .footerContainer .parent .div3 p a:active {
-            text-decoration: none;
-            text-decoration-color: #ff6300;
-            color: #000000; }
-          main .footerContainer .parent .div3 p span {
-            color: #ff6300; }
-      main .footerContainer .parent .div4 {
-        grid-area: 1 / 7 / 2 / 8; }
-        main .footerContainer .parent .div4 .firstParagraph {
-          font-size: 14px;
-          font-family: "SinkinSans-700Bold", sans-serif;
-          color: #ff6300;
-          margin-bottom: 25px; }
-        main .footerContainer .parent .div4 p {
-          font-size: 12px;
-          font-family: "SinkinSans-400Regular", sans-serif;
-          color: #000000; }
-          main .footerContainer .parent .div4 p a:link {
-            text-decoration: none;
-            text-decoration-color: #ff6300;
-            color: #000000; }
-          main .footerContainer .parent .div4 p a:hover {
-            text-decoration: underline;
-            text-decoration-color: #ff6300;
-            color: #000000; }
-          main .footerContainer .parent .div4 p a:visited {
-            text-decoration: none;
-            text-decoration-color: #ff6300;
-            color: #000000; }
-          main .footerContainer .parent .div4 p a:active {
-            text-decoration: none;
-            text-decoration-color: #ff6300;
-            color: #000000; }
-          main .footerContainer .parent .div4 p span {
-            color: #ff6300; }
-        main .footerContainer .parent .div4 .icons {
-          display: flex;
-          flex-direction: row;
-          justify-content: space-between;
-          margin-top: 60px; } }
+            main .footerContainer .parent .div4 p a:link {
+              text-decoration: none;
+              text-decoration-color: #ff6300;
+              color: #000000; }
+            main .footerContainer .parent .div4 p a:hover {
+              text-decoration: underline;
+              text-decoration-color: #ff6300;
+              color: #000000; }
+            main .footerContainer .parent .div4 p a:visited {
+              text-decoration: none;
+              text-decoration-color: #ff6300;
+              color: #000000; }
+            main .footerContainer .parent .div4 p a:active {
+              text-decoration: none;
+              text-decoration-color: #ff6300;
+              color: #000000; }
+            main .footerContainer .parent .div4 p span {
+              color: #ff6300; }
+          main .footerContainer .parent .div4 .icons {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-top: 60px; } }
 
 /*# sourceMappingURL=style.css.map */
