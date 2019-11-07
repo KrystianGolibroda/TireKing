@@ -1363,6 +1363,9 @@ main {
       max-height: 150px;
       height: 100%;
       margin: 45px 0; }
+      main .shopContainer .firestoneBaner .firestoneBanerImg {
+        width: 100%;
+        height: auto; }
   main .headerFirms {
     width: 100%;
     background-color: #ffffff;
@@ -1603,9 +1606,13 @@ main {
               main .adviceContainer .expertsContainer .div3 .card .bottomTextG a span {
                 color: #ff6300; }
   main .searchFormsTab {
-    background-color: #ffffff;
-    width: 100%;
-    margin: 30px 0 15px 0; }
+    display: none; }
+    @media (min-width: 768px) {
+      main .searchFormsTab {
+        display: flex;
+        background-color: #ffffff;
+        width: 100%;
+        margin: 30px 0 15px 0; } }
     main .searchFormsTab .searchSection {
       max-width: 1200px;
       margin: 0 auto;
@@ -1913,113 +1920,190 @@ main {
         main .searchFormsTab .searchSection .informationText a {
           text-decoration: none;
           color: #4b95db; }
-  main .footerContainer {
-    margin: 0 auto 200px;
-    background-color: #f0f0f0;
-    border-radius: 10px;
+  main .footer {
     width: 100%; }
-    main .footerContainer p {
-      margin: 0; }
-    main .footerContainer .footerContent {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      padding: 40px 30px 40px 30px; }
-      main .footerContainer .footerContent .div1 {
+    main .footer .footerContainer {
+      width: 100%;
+      background-color: #818181;
+      margin: 0 auto; }
+      @media (min-width: 768px) {
+        main .footer .footerContainer {
+          margin: 0 auto 200px;
+          background-color: #f0f0f0;
+          border-radius: 10px;
+          width: 100%; } }
+      main .footer .footerContainer .footerContent {
         display: flex;
-        flex-direction: column;
-        margin-right: 10%; }
-        main .footerContainer .footerContent .div1 .tireKingLogoFooter {
-          margin-bottom: 30px; }
-        main .footerContainer .footerContent .div1 .infolinia {
-          margin-bottom: 40px; }
-          main .footerContainer .footerContent .div1 .infolinia .firstParagraph {
-            font-size: 14px;
-            font-family: "SinkinSans-700Bold", sans-serif;
-            color: #ff6300; }
-          main .footerContainer .footerContent .div1 .infolinia .secondParagraph {
-            font-size: 18px;
-            font-family: "SinkinSans-700Bold", sans-serif;
-            color: #000000;
-            margin-bottom: 2%; }
-        main .footerContainer .footerContent .div1 .kontakt {
-          margin-bottom: 25px; }
-          main .footerContainer .footerContent .div1 .kontakt p {
+        flex-direction: column; }
+        @media (min-width: 768px) {
+          main .footer .footerContainer .footerContent {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 40px 30px 40px 30px; } }
+        main .footer .footerContainer .footerContent .div1 {
+          display: none; }
+          @media (min-width: 768px) {
+            main .footer .footerContainer .footerContent .div1 {
+              display: flex;
+              flex-direction: column;
+              margin-right: 10%; } }
+          main .footer .footerContainer .footerContent .div1 .tireKingLogoFooter {
+            margin-bottom: 30px; }
+          main .footer .footerContainer .footerContent .div1 .infolinia {
+            margin-bottom: 40px; }
+            main .footer .footerContainer .footerContent .div1 .infolinia .firstParagraph {
+              font-size: 14px;
+              font-family: "SinkinSans-700Bold", sans-serif;
+              color: #ff6300; }
+            main .footer .footerContainer .footerContent .div1 .infolinia .secondParagraph {
+              font-size: 18px;
+              font-family: "SinkinSans-700Bold", sans-serif;
+              color: #000000;
+              margin-bottom: 2%; }
+          main .footer .footerContainer .footerContent .div1 .kontakt {
+            margin-bottom: 25px; }
+            main .footer .footerContainer .footerContent .div1 .kontakt p {
+              font-size: 12px;
+              font-family: "SinkinSans-400Regular", sans-serif;
+              margin-bottom: 1%; }
+          main .footer .footerContainer .footerContent .div1 .regulamin .greyContent {
+            font-size: 10px;
+            font-family: "SinkinSans-400Regular", sans-serif;
+            color: #818181; }
+            main .footer .footerContainer .footerContent .div1 .regulamin .greyContent a {
+              text-decoration: underline;
+              text-decoration-color: #818181; }
+        main .footer .footerContainer .footerContent .div2 {
+          display: flex;
+          flex-direction: column;
+          margin: 0 auto; }
+          @media (min-width: 768px) {
+            main .footer .footerContainer .footerContent .div2 {
+              display: flex;
+              flex-direction: column; } }
+          main .footer .footerContainer .footerContent .div2 .firstParagraph {
+            display: none; }
+            @media (min-width: 768px) {
+              main .footer .footerContainer .footerContent .div2 .firstParagraph {
+                display: flex;
+                font-size: 14px;
+                font-family: "SinkinSans-700Bold", sans-serif;
+                color: #ff6300;
+                margin: 10px 0 35px; } }
+          main .footer .footerContainer .footerContent .div2 p {
+            display: flex;
+            margin: 2%;
             font-size: 12px;
             font-family: "SinkinSans-400Regular", sans-serif;
-            margin-bottom: 1%; }
-        main .footerContainer .footerContent .div1 .regulamin .greyContent {
-          font-size: 10px;
-          font-family: "SinkinSans-400Regular", sans-serif;
-          color: #818181; }
-          main .footerContainer .footerContent .div1 .regulamin .greyContent a {
-            text-decoration: underline;
-            text-decoration-color: #818181; }
-      main .footerContainer .footerContent .div2 {
-        display: flex;
-        flex-direction: column; }
-        main .footerContainer .footerContent .div2 .firstParagraph {
-          font-size: 14px;
-          font-family: "SinkinSans-700Bold", sans-serif;
-          color: #ff6300;
-          margin: 10px 0 35px; }
-        main .footerContainer .footerContent .div2 p {
-          font-size: 12px;
-          font-family: "SinkinSans-400Regular", sans-serif;
-          color: #000000;
-          margin-bottom: 8px; }
-          main .footerContainer .footerContent .div2 p a {
-            text-decoration: none; }
-            main .footerContainer .footerContent .div2 p a:hover {
-              text-decoration: underline;
-              text-decoration-color: #ff6300; }
-          main .footerContainer .footerContent .div2 p span {
-            color: #ff6300; }
-      main .footerContainer .footerContent .div3 {
-        display: flex;
-        flex-direction: column; }
-        main .footerContainer .footerContent .div3 .firstParagraph {
-          font-size: 14px;
-          font-family: "SinkinSans-700Bold", sans-serif;
-          color: #ff6300;
-          margin: 10px 0 35px; }
-        main .footerContainer .footerContent .div3 p {
-          font-size: 12px;
-          font-family: "SinkinSans-400Regular", sans-serif;
-          color: #000000;
-          margin-bottom: 8px; }
-          main .footerContainer .footerContent .div3 p a {
-            text-decoration: none; }
-            main .footerContainer .footerContent .div3 p a:hover {
-              text-decoration: underline;
-              text-decoration-color: #ff6300; }
-          main .footerContainer .footerContent .div3 p span {
-            color: #ff6300; }
-      main .footerContainer .footerContent .div4 {
-        display: flex;
-        flex-direction: column;
-        margin-right: 20px; }
-        main .footerContainer .footerContent .div4 .firstParagraph {
-          font-size: 14px;
-          font-family: "SinkinSans-700Bold", sans-serif;
-          color: #ff6300;
-          margin: 10px 0 35px; }
-        main .footerContainer .footerContent .div4 p {
-          font-size: 12px;
-          font-family: "SinkinSans-400Regular", sans-serif;
-          color: #000000;
-          margin-bottom: 8px; }
-          main .footerContainer .footerContent .div4 p a {
-            text-decoration: none; }
-            main .footerContainer .footerContent .div4 p a:hover {
-              text-decoration: underline;
-              text-decoration-color: #ff6300; }
-          main .footerContainer .footerContent .div4 p span {
-            color: #ff6300; }
-        main .footerContainer .footerContent .div4 .icons {
-          display: flex;
-          flex-direction: row;
-          justify-content: space-between;
-          margin-top: 70px; }
+            color: #ffffff; }
+            main .footer .footerContainer .footerContent .div2 p a {
+              text-decoration: none; }
+              main .footer .footerContainer .footerContent .div2 p a:hover {
+                text-decoration: underline;
+                text-decoration-color: #ff6300; }
+              main .footer .footerContainer .footerContent .div2 p a span {
+                color: #ff6300; }
+            @media (min-width: 768px) {
+              main .footer .footerContainer .footerContent .div2 p {
+                font-size: 12px;
+                font-family: "SinkinSans-400Regular", sans-serif;
+                color: #000000;
+                margin-bottom: 8px; }
+                main .footer .footerContainer .footerContent .div2 p a {
+                  text-decoration: none; }
+                  main .footer .footerContainer .footerContent .div2 p a:hover {
+                    text-decoration: underline;
+                    text-decoration-color: #ff6300; }
+                main .footer .footerContainer .footerContent .div2 p span {
+                  color: #ff6300; } }
+        main .footer .footerContainer .footerContent .div3 {
+          display: none; }
+          @media (min-width: 768px) {
+            main .footer .footerContainer .footerContent .div3 {
+              display: flex;
+              flex-direction: column; } }
+          main .footer .footerContainer .footerContent .div3 .firstParagraph {
+            font-size: 14px;
+            font-family: "SinkinSans-700Bold", sans-serif;
+            color: #ff6300;
+            margin: 10px 0 35px; }
+          main .footer .footerContainer .footerContent .div3 p {
+            font-size: 12px;
+            font-family: "SinkinSans-400Regular", sans-serif;
+            color: #000000;
+            margin-bottom: 8px; }
+            main .footer .footerContainer .footerContent .div3 p a {
+              text-decoration: none; }
+              main .footer .footerContainer .footerContent .div3 p a:hover {
+                text-decoration: underline;
+                text-decoration-color: #ff6300; }
+            main .footer .footerContainer .footerContent .div3 p span {
+              color: #ff6300; }
+        main .footer .footerContainer .footerContent .div4 {
+          margin: 0 auto; }
+          @media (min-width: 768px) {
+            main .footer .footerContainer .footerContent .div4 {
+              display: flex;
+              flex-direction: column;
+              margin-right: 20px; } }
+          main .footer .footerContainer .footerContent .div4 .firstParagraph {
+            display: none; }
+            @media (min-width: 768px) {
+              main .footer .footerContainer .footerContent .div4 .firstParagraph {
+                display: flex;
+                font-size: 14px;
+                font-family: "SinkinSans-700Bold", sans-serif;
+                color: #ff6300;
+                margin: 10px 0 35px; } }
+          main .footer .footerContainer .footerContent .div4 p {
+            display: flex;
+            font-size: 12px;
+            font-family: "SinkinSans-400Regular", sans-serif;
+            color: #ffffff; }
+            @media (min-width: 768px) {
+              main .footer .footerContainer .footerContent .div4 p {
+                font-size: 12px;
+                font-family: "SinkinSans-400Regular", sans-serif;
+                color: #000000;
+                margin-bottom: 8px; } }
+            main .footer .footerContainer .footerContent .div4 p a {
+              text-decoration: none; }
+              main .footer .footerContainer .footerContent .div4 p a:hover {
+                text-decoration: underline;
+                text-decoration-color: #ff6300; }
+            main .footer .footerContainer .footerContent .div4 p span {
+              color: #ff6300; }
+          main .footer .footerContainer .footerContent .div4 .icons {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end; }
+            @media (min-width: 768px) {
+              main .footer .footerContainer .footerContent .div4 .icons {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                margin-top: 70px; } }
+            main .footer .footerContainer .footerContent .div4 .icons .iconsFacebook .iconsFacebookContent {
+              content: url("../images/icon/facebook_mobile_white.png");
+              width: 40px;
+              height: 40px; }
+              @media (min-width: 768px) {
+                main .footer .footerContainer .footerContent .div4 .icons .iconsFacebook .iconsFacebookContent {
+                  content: url("../images/icon/facebook_ikona.png"); } }
+            main .footer .footerContainer .footerContent .div4 .icons .iconsYT .iconsYTContent {
+              content: url("../images/icon/youtube_mobile_black.png");
+              width: 40px;
+              height: 40px; }
+              @media (min-width: 768px) {
+                main .footer .footerContainer .footerContent .div4 .icons .iconsYT .iconsYTContent {
+                  content: url("../images/icon/youtube_ikona.png"); } }
+            main .footer .footerContainer .footerContent .div4 .icons .iconsInstagram .iconsInstagramContent {
+              content: url("../images/icon/instagram_mobile_white.png");
+              width: 40px;
+              height: 40px; }
+              @media (min-width: 768px) {
+                main .footer .footerContainer .footerContent .div4 .icons .iconsInstagram .iconsInstagramContent {
+                  content: url("../images/icon/instagram_ikona.png"); } }
 
 /*# sourceMappingURL=style.css.map */

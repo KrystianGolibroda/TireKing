@@ -1484,6 +1484,11 @@ main {
       max-height: 150px;
       height: 100%;
       margin: 45px 0;
+
+      .firestoneBanerImg {
+        width: 100%;
+        height: auto;
+      }
     }
   }
 
@@ -1846,9 +1851,13 @@ main {
   }
 
   .searchFormsTab {
-    background-color: $white;
-    width: 100%;
-    margin: 30px 0 15px 0;
+    display: none;
+    @media(min-width: 768px) {
+      display: flex;
+      background-color: $white;
+      width: 100%;
+      margin: 30px 0 15px 0;
+    }
 
     .searchSection {
       max-width: 1200px;
@@ -2321,167 +2330,257 @@ main {
     }
   }
 
-  .footerContainer {
-    margin: 0 auto 200px;
-    background-color: $grey;
-    border-radius: 10px;
+  .footer {
     width: 100%;
-    p {
-      margin: 0;
-    }
+    .footerContainer {
+      width: 100%;
+      background-color: $mobileFooter;
+      margin: 0 auto;
+      @media(min-width: 768px) {
+        margin: 0 auto 200px;
+        background-color: $grey;
+        border-radius: 10px;
+        width: 100%;
+      }
 
-    .footerContent {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      padding: 40px 30px 40px 30px;
-
-      .div1 {
+      .footerContent {
         display: flex;
         flex-direction: column;
-        margin-right: 10%;
-
-        .tireKingLogoFooter {
-          margin-bottom: 30px;
+        @media(min-width: 768px) {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          padding: 40px 30px 40px 30px;
         }
 
-        .infolinia {
-          margin-bottom: 40px;
+        .div1 {
+          display: none;
+          @media(min-width: 768px){
+            display: flex;
+            flex-direction: column;
+            margin-right: 10%;
+          }
+
+          .tireKingLogoFooter {
+            margin-bottom: 30px;
+          }
+
+          .infolinia {
+            margin-bottom: 40px;
+
+            .firstParagraph {
+              font-size: 14px;
+              font-family: $SS-700Bold;
+              color: $orangeButton;
+            }
+
+            .secondParagraph {
+              font-size: 18px;
+              font-family: $SS-700Bold;
+              color: $blackLikeHell;
+              margin-bottom: 2%;
+            }
+          }
+
+          .kontakt {
+            margin-bottom: 25px;
+            p {
+              font-size: 12px;
+              font-family: $SS-400Regular;
+              margin-bottom: 1%;
+            }
+          }
+
+          .regulamin {
+            .greyContent {
+              font-size: 10px;
+              font-family: $SS-400Regular;
+              color: $mobileFooter;
+
+              a {
+                text-decoration: underline;
+                text-decoration-color: $mobileFooter;
+              }
+            }
+          }
+        }
+
+        .div2 {
+          display: flex;
+          flex-direction: column;
+          margin: 0 auto;
+          @media(min-width:768px){
+            display: flex;
+            flex-direction: column;
+          }
+
+          .firstParagraph {
+            display: none;
+            @media(min-width: 768px){
+              display: flex;
+              font-size: 14px;
+              font-family: $SS-700Bold;
+              color: $orangeButton;
+              margin: 10px 0 35px;
+            }
+          }
+
+          p {
+            display: flex;
+            margin: 2%;
+            font-size: 12px;
+            font-family: $SS-400Regular;
+            color: $white;
+            a {
+              text-decoration: none;
+              &:hover {
+                text-decoration: underline;
+                text-decoration-color: $orangeButton;
+              }
+              span {
+                color: $orangeButton;
+              }
+            }
+            @media(min-width: 768px){
+              font-size: 12px;
+              font-family: $SS-400Regular;
+              color: $blackLikeHell;
+              margin-bottom: 8px;
+
+              a {
+                text-decoration: none;
+                &:hover {
+                  text-decoration: underline;
+                  text-decoration-color: $orangeButton;
+                }
+              }
+              span {
+                color: $orangeButton;
+              }
+            }
+          }
+        }
+
+        .div3 {
+          display: none;
+          @media(min-width: 768px){
+            display: flex;
+            flex-direction: column;
+          }
 
           .firstParagraph {
             font-size: 14px;
             font-family: $SS-700Bold;
             color: $orangeButton;
+            margin: 10px 0 35px;
           }
 
-          .secondParagraph {
-            font-size: 18px;
-            font-family: $SS-700Bold;
-            color: $blackLikeHell;
-            margin-bottom: 2%;
-          }
-        }
-
-        .kontakt {
-          margin-bottom: 25px;
           p {
             font-size: 12px;
             font-family: $SS-400Regular;
-            margin-bottom: 1%;
-          }
-        }
-
-        .regulamin {
-          .greyContent {
-            font-size: 10px;
-            font-family: $SS-400Regular;
-            color: $mobileFooter;
-
+            color: $blackLikeHell;
+            margin-bottom: 8px;
             a {
-              text-decoration: underline;
-              text-decoration-color: $mobileFooter;
+              text-decoration: none;
+              &:hover {
+                text-decoration: underline;
+                text-decoration-color: $orangeButton;
+              }
+            }
+            span {
+              color: $orangeButton;
             }
           }
         }
-      }
 
-      .div2 {
-        display: flex;
-        flex-direction: column;
+        .div4 {
+          margin: 0 auto;
+          @media(min-width:768px){
+            display: flex;
+            flex-direction: column;
+            margin-right: 20px;
+          }
 
-        .firstParagraph {
-          font-size: 14px;
-          font-family: $SS-700Bold;
-          color: $orangeButton;
-          margin: 10px 0 35px;
-        }
-
-        p {
-          font-size: 12px;
-          font-family: $SS-400Regular;
-          color: $blackLikeHell;
-          margin-bottom: 8px;
-          a {
-            text-decoration: none;
-            &:hover {
-              text-decoration: underline;
-              text-decoration-color: $orangeButton;
+          .firstParagraph {
+            display: none;
+            @media(min-width: 768px) {
+              display: flex;
+              font-size: 14px;
+              font-family: $SS-700Bold;
+              color: $orangeButton;
+              margin: 10px 0 35px;
             }
           }
-          span {
-            color: $orangeButton;
-          }
-        }
-      }
 
-      .div3 {
-        display: flex;
-        flex-direction: column;
-
-        .firstParagraph {
-          font-size: 14px;
-          font-family: $SS-700Bold;
-          color: $orangeButton;
-          margin: 10px 0 35px;
-        }
-
-        p {
-          font-size: 12px;
-          font-family: $SS-400Regular;
-          color: $blackLikeHell;
-          margin-bottom: 8px;
-          a {
-            text-decoration: none;
-            &:hover {
-              text-decoration: underline;
-              text-decoration-color: $orangeButton;
+          p {
+            display: flex;
+            font-size: 12px;
+            font-family: $SS-400Regular;
+            color: $white;
+            @media(min-width: 768px) {
+              font-size: 12px;
+              font-family: $SS-400Regular;
+              color: $blackLikeHell;
+              margin-bottom: 8px;
+            }
+            a {
+              text-decoration: none;
+              &:hover {
+                text-decoration: underline;
+                text-decoration-color: $orangeButton;
+              }
+            }
+            span {
+              color: $orangeButton;
             }
           }
-          span {
-            color: $orangeButton;
-          }
-        }
-      }
 
-      .div4 {
-        display: flex;
-        flex-direction: column;
-        margin-right: 20px;
+          .icons {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            @media(min-width: 768px){
+              display: flex;
+              flex-direction: row;
+              justify-content: space-between;
+              margin-top: 70px;
+            }
 
-        .firstParagraph {
-          font-size: 14px;
-          font-family: $SS-700Bold;
-          color: $orangeButton;
-          margin: 10px 0 35px;
-        }
-
-        p {
-          font-size: 12px;
-          font-family: $SS-400Regular;
-          color: $blackLikeHell;
-          margin-bottom: 8px;
-          a {
-            text-decoration: none;
-            &:hover {
-              text-decoration: underline;
-              text-decoration-color: $orangeButton;
+            .iconsFacebook{
+              .iconsFacebookContent{
+                content: url("../images/icon/facebook_mobile_white.png");
+                width: 40px;
+                height: 40px;
+                @media(min-width: 768px){
+                  content: url("../images/icon/facebook_ikona.png");
+                }
+              }
+            }
+            .iconsYT{
+              .iconsYTContent{
+                content: url("../images/icon/youtube_mobile_black.png");
+                width: 40px;
+                height: 40px;
+                @media(min-width: 768px){
+                  content: url("../images/icon/youtube_ikona.png");
+                }
+              }
+            }
+            .iconsInstagram{
+              .iconsInstagramContent{
+                content: url("../images/icon/instagram_mobile_white.png");
+                width: 40px;
+                height: 40px;
+                @media(min-width: 768px) {
+                  content: url("../images/icon/instagram_ikona.png");
+                }
+              }
             }
           }
-          span {
-            color: $orangeButton;
-          }
-        }
-
-        .icons {
-          display: flex;
-          flex-direction: row;
-          justify-content: space-between;
-          margin-top: 70px;
         }
       }
     }
   }
-
 }
 
 
