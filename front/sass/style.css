@@ -37,7 +37,7 @@ button:focus {
 
 .row:before,
 .row:after {
-  content: "";
+  content: " ";
   display: table;
   clear: both; }
 
@@ -327,7 +327,8 @@ button:focus {
   outline: none; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #000000; }
 
 .container {
   width: 100%;
@@ -1419,7 +1420,7 @@ main {
         transition: all .2s ease-in-out;
         cursor: pointer; }
       main .headerFirms .logoFirms .growImage:hover {
-        transform: scale(1.2); }
+        transform: scale(1.1); }
   main .adviceContainer {
     background-color: #f1f1f1;
     width: 100%;
@@ -1442,19 +1443,7 @@ main {
           font-size: 14px;
           font-family: "SinkinSans-400Regular", sans-serif;
           margin: 0; }
-          main .adviceContainer .expertsContainer .expertsText p a:link {
-            text-decoration: underline;
-            color: #000000;
-            text-decoration-color: #d9d9d9; }
-          main .adviceContainer .expertsContainer .expertsText p a:hover {
-            text-decoration: underline;
-            color: #000000;
-            text-decoration-color: #d9d9d9; }
-          main .adviceContainer .expertsContainer .expertsText p a:visited {
-            text-decoration: underline;
-            color: #000000;
-            text-decoration-color: #d9d9d9; }
-          main .adviceContainer .expertsContainer .expertsText p a:active {
+          main .adviceContainer .expertsContainer .expertsText p a {
             text-decoration: underline;
             color: #000000;
             text-decoration-color: #d9d9d9; }
@@ -1530,6 +1519,9 @@ main {
             main .adviceContainer .expertsContainer .div1 .cardBig .linkArticle a {
               text-decoration: none;
               color: #000000; }
+              main .adviceContainer .expertsContainer .div1 .cardBig .linkArticle a:hover {
+                text-decoration: underline;
+                text-decoration-color: #ff6300; }
               main .adviceContainer .expertsContainer .div1 .cardBig .linkArticle a span {
                 color: #ff6300; }
       main .adviceContainer .expertsContainer .div2 {
@@ -1566,6 +1558,9 @@ main {
             main .adviceContainer .expertsContainer .div2 .card .bottomTextG a {
               text-decoration: none;
               color: #000000; }
+              main .adviceContainer .expertsContainer .div2 .card .bottomTextG a:hover {
+                text-decoration: underline;
+                text-decoration-color: #ff6300; }
               main .adviceContainer .expertsContainer .div2 .card .bottomTextG a span {
                 color: #ff6300; }
       main .adviceContainer .expertsContainer .div3 {
@@ -1602,6 +1597,9 @@ main {
             main .adviceContainer .expertsContainer .div3 .card .bottomTextG a {
               text-decoration: none;
               color: #000000; }
+              main .adviceContainer .expertsContainer .div3 .card .bottomTextG a:hover {
+                text-decoration: underline;
+                text-decoration-color: #ff6300; }
               main .adviceContainer .expertsContainer .div3 .card .bottomTextG a span {
                 color: #ff6300; }
   main .searchFormsTab {
@@ -1915,105 +1913,113 @@ main {
         main .searchFormsTab .searchSection .informationText a {
           text-decoration: none;
           color: #4b95db; }
-  @media (min-width: 768px) {
-    main .footerContainer {
-      display: grid;
-      width: 100%;
-      margin: 0 auto 200px;
-      background-color: #f0f0f0;
-      border-radius: 10px;
-      padding: 10px; }
-      main .footerContainer .parent {
-        padding: 20px 20px 20px 20px;
-        display: grid;
-        grid-template-columns: 340px 180px 190px 75px 110px 95px 160px;
-        grid-template-rows: 275px;
-        grid-column-gap: 0;
-        grid-row-gap: 0; }
-        main .footerContainer .parent .div1 {
-          grid-area: 1 / 1 / 2 / 2;
-          margin: 10px 0 0 10px;
-          padding: 0; }
-          main .footerContainer .parent .div1 .greyContent {
-            color: #999999; }
-          main .footerContainer .parent .div1 .firstParagraph {
+  main .footerContainer {
+    margin: 0 auto 200px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    width: 100%; }
+    main .footerContainer p {
+      margin: 0; }
+    main .footerContainer .footerContent {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 40px 30px 40px 30px; }
+      main .footerContainer .footerContent .div1 {
+        display: flex;
+        flex-direction: column;
+        margin-right: 10%; }
+        main .footerContainer .footerContent .div1 .tireKingLogoFooter {
+          margin-bottom: 30px; }
+        main .footerContainer .footerContent .div1 .infolinia {
+          margin-bottom: 40px; }
+          main .footerContainer .footerContent .div1 .infolinia .firstParagraph {
             font-size: 14px;
             font-family: "SinkinSans-700Bold", sans-serif;
             color: #ff6300; }
-          main .footerContainer .parent .div1 p {
-            font-size: 12px;
-            font-family: "SinkinSans-400Regular", sans-serif;
+          main .footerContainer .footerContent .div1 .infolinia .secondParagraph {
+            font-size: 18px;
+            font-family: "SinkinSans-700Bold", sans-serif;
             color: #000000;
-            line-height: 4px; }
-            main .footerContainer .parent .div1 p a:link {
-              text-decoration: none;
-              color: #000000; }
-              main .footerContainer .parent .div1 p a:link:hover {
-                text-decoration: underline;
-                color: #000000; }
-            main .footerContainer .parent .div1 p span {
-              color: #ff6300; }
-        main .footerContainer .parent .div2 {
-          grid-area: 1 / 3 / 2 / 4; }
-          main .footerContainer .parent .div2 .firstParagraph {
-            font-size: 14px;
-            font-family: "SinkinSans-700Bold", sans-serif;
-            color: #ff6300;
-            margin-bottom: 25px; }
-          main .footerContainer .parent .div2 p {
+            margin-bottom: 2%; }
+        main .footerContainer .footerContent .div1 .kontakt {
+          margin-bottom: 25px; }
+          main .footerContainer .footerContent .div1 .kontakt p {
             font-size: 12px;
             font-family: "SinkinSans-400Regular", sans-serif;
-            color: #000000; }
-            main .footerContainer .parent .div2 p a:link {
-              text-decoration: none;
-              color: #000000; }
-              main .footerContainer .parent .div2 p a:link:hover {
-                text-decoration: underline;
-                color: #000000; }
-            main .footerContainer .parent .div2 p span {
-              color: #ff6300; }
-        main .footerContainer .parent .div3 {
-          grid-area: 1 / 5 / 2 / 6; }
-          main .footerContainer .parent .div3 .firstParagraph {
-            font-size: 14px;
-            font-family: "SinkinSans-700Bold", sans-serif;
-            color: #ff6300;
-            margin-bottom: 25px; }
-          main .footerContainer .parent .div3 p {
-            font-size: 12px;
-            font-family: "SinkinSans-400Regular", sans-serif;
-            color: #000000; }
-            main .footerContainer .parent .div3 p a:link {
-              text-decoration: none;
-              color: #000000; }
-              main .footerContainer .parent .div3 p a:link:hover {
-                text-decoration: underline;
-                color: #000000; }
-            main .footerContainer .parent .div3 p span {
-              color: #ff6300; }
-        main .footerContainer .parent .div4 {
-          grid-area: 1 / 7 / 2 / 8; }
-          main .footerContainer .parent .div4 .firstParagraph {
-            font-size: 14px;
-            font-family: "SinkinSans-700Bold", sans-serif;
-            color: #ff6300;
-            margin-bottom: 25px; }
-          main .footerContainer .parent .div4 p {
-            font-size: 12px;
-            font-family: "SinkinSans-400Regular", sans-serif;
-            color: #000000; }
-            main .footerContainer .parent .div4 p a:link {
-              text-decoration: none;
-              color: #000000; }
-              main .footerContainer .parent .div4 p a:link:hover {
-                text-decoration: underline;
-                color: #000000; }
-            main .footerContainer .parent .div4 p span {
-              color: #ff6300; }
-          main .footerContainer .parent .div4 .icons {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            margin-top: 60px; } }
+            margin-bottom: 1%; }
+        main .footerContainer .footerContent .div1 .regulamin .greyContent {
+          font-size: 10px;
+          font-family: "SinkinSans-400Regular", sans-serif;
+          color: #818181; }
+          main .footerContainer .footerContent .div1 .regulamin .greyContent a {
+            text-decoration: underline;
+            text-decoration-color: #818181; }
+      main .footerContainer .footerContent .div2 {
+        display: flex;
+        flex-direction: column; }
+        main .footerContainer .footerContent .div2 .firstParagraph {
+          font-size: 14px;
+          font-family: "SinkinSans-700Bold", sans-serif;
+          color: #ff6300;
+          margin: 10px 0 35px; }
+        main .footerContainer .footerContent .div2 p {
+          font-size: 12px;
+          font-family: "SinkinSans-400Regular", sans-serif;
+          color: #000000;
+          margin-bottom: 8px; }
+          main .footerContainer .footerContent .div2 p a {
+            text-decoration: none; }
+            main .footerContainer .footerContent .div2 p a:hover {
+              text-decoration: underline;
+              text-decoration-color: #ff6300; }
+          main .footerContainer .footerContent .div2 p span {
+            color: #ff6300; }
+      main .footerContainer .footerContent .div3 {
+        display: flex;
+        flex-direction: column; }
+        main .footerContainer .footerContent .div3 .firstParagraph {
+          font-size: 14px;
+          font-family: "SinkinSans-700Bold", sans-serif;
+          color: #ff6300;
+          margin: 10px 0 35px; }
+        main .footerContainer .footerContent .div3 p {
+          font-size: 12px;
+          font-family: "SinkinSans-400Regular", sans-serif;
+          color: #000000;
+          margin-bottom: 8px; }
+          main .footerContainer .footerContent .div3 p a {
+            text-decoration: none; }
+            main .footerContainer .footerContent .div3 p a:hover {
+              text-decoration: underline;
+              text-decoration-color: #ff6300; }
+          main .footerContainer .footerContent .div3 p span {
+            color: #ff6300; }
+      main .footerContainer .footerContent .div4 {
+        display: flex;
+        flex-direction: column;
+        margin-right: 20px; }
+        main .footerContainer .footerContent .div4 .firstParagraph {
+          font-size: 14px;
+          font-family: "SinkinSans-700Bold", sans-serif;
+          color: #ff6300;
+          margin: 10px 0 35px; }
+        main .footerContainer .footerContent .div4 p {
+          font-size: 12px;
+          font-family: "SinkinSans-400Regular", sans-serif;
+          color: #000000;
+          margin-bottom: 8px; }
+          main .footerContainer .footerContent .div4 p a {
+            text-decoration: none; }
+            main .footerContainer .footerContent .div4 p a:hover {
+              text-decoration: underline;
+              text-decoration-color: #ff6300; }
+          main .footerContainer .footerContent .div4 p span {
+            color: #ff6300; }
+        main .footerContainer .footerContent .div4 .icons {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          margin-top: 70px; }
 
 /*# sourceMappingURL=style.css.map */
