@@ -644,6 +644,7 @@ main {
           .firstOpinion {
             position: relative;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             max-width: 380px;
@@ -659,6 +660,24 @@ main {
             border-radius: 5px;
             z-index: 99;
 
+            p {
+              margin: 0;
+            }
+
+            .rowFlex {
+              display: flex;
+              flex-direction: row;
+
+              .rowFlexText {
+                font-size: 13px;
+                font-family: $SS-400Regular;
+              }
+              .starsRating {
+                i {
+                  color: $orangeButton;
+                }
+              }
+            }
 
             &:before {
               content: ' ';
@@ -706,6 +725,7 @@ main {
           .secondOpinion {
             display: flex;
             justify-content: center;
+            flex-direction: column;
             align-items: center;
             position: relative;
             max-width: 380px;
@@ -719,6 +739,25 @@ main {
             -webkit-border-radius: 5px;
             -moz-border-radius: 5px;
             border-radius: 5px;
+
+            p {
+              margin: 0;
+            }
+
+            .rowFlex {
+              display: flex;
+              flex-direction: row;
+
+              .rowFlexText {
+                font-size: 13px;
+                font-family: $SS-400Regular;
+              }
+              .starsRating {
+                i {
+                  color: $orangeButton;
+                }
+              }
+            }
 
             &:before {
               content: ' ';
@@ -767,6 +806,7 @@ main {
           .thirdOpinion {
             display: flex;
             justify-content: center;
+            flex-direction: column;
             align-items: center;
             position: relative;
             max-width: 380px;
@@ -780,6 +820,24 @@ main {
             -webkit-border-radius: 5px;
             -moz-border-radius: 5px;
             border-radius: 5px;
+
+            p {
+              margin: 0;
+            }
+            .rowFlex {
+              display: flex;
+              flex-direction: row;
+
+              .rowFlexText {
+                font-size: 13px;
+                font-family: $SS-400Regular;
+              }
+              .starsRating {
+                i {
+                  color: $orangeButton;
+                }
+              }
+            }
 
             .textOpinion {
               padding: 20px;
