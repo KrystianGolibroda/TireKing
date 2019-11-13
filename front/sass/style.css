@@ -943,25 +943,19 @@ main {
                 /* Opera */
                 -o-transform: skew(-20deg); }
             main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .usersOpinions {
-              padding-top: 20px;
+              position: relative;
               display: flex;
-              flex-direction: row; }
+              flex-direction: row;
+              padding: 35px 20px 0 20px;
+              align-items: center; }
               main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .usersOpinions .usersOpinionsImg {
-                margin: 0 auto;
-                align-items: center;
                 display: flex;
-                justify-content: center; }
-    main label {
-      position: relative;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-between; }
-      main label img {
-        display: flex;
-        align-items: center;
-        align-self: center;
-        justify-self: center; } }
+                position: absolute;
+                top: 35px;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                margin: auto; } }
   main .rating {
     width: 100%;
     display: flex;
@@ -1247,149 +1241,86 @@ main {
         font-size: 36px;
         font-family: "SinkinSans-700Bold", sans-serif;
         color: #000000; }
-    main .shopContainer .lowerCards {
+    main .shopContainer .slickContainer {
       display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      width: 100%; }
-      main .shopContainer .lowerCards .containerS {
-        max-width: 280px;
+      flex-direction: row; }
+      main .shopContainer .slickContainer .tireSellCards {
+        display: flex;
+        max-width: 285px;
         width: 100%;
-        height: 100%;
-        background-color: #ffffff;
+        height: auto;
         border-radius: 5px;
-        margin: 0 10px; }
-        main .shopContainer .lowerCards .containerS .header {
+        margin: 0 9px;
+        font-family: "SinkinSans-400Regular", sans-serif;
+        background-color: #ffffff; }
+        @media (min-width: 768px) {
+          main .shopContainer .slickContainer .tireSellCards {
+            display: flex;
+            width: 285px;
+            height: auto;
+            border-radius: 10px;
+            margin: 0 9px;
+            font-family: "SinkinSans-400Regular", sans-serif;
+            background-color: #ffffff; } }
+        main .shopContainer .slickContainer .tireSellCards .bestseller {
+          display: flex;
+          position: absolute;
+          font-size: 12px;
+          font-family: "SinkinSans-400Regular", sans-serif;
+          margin: 0;
+          padding: 6px 10px;
+          background-color: #6398d3;
+          color: #ffffff;
           border-radius: 5px 0 0 0; }
-          main .shopContainer .lowerCards .containerS .header .bestSeller {
-            margin-top: 4px;
-            color: #ffffff;
-            font-size: 12px;
-            font-family: "SinkinSans-400Regular", sans-serif;
-            border-radius: 5px 0 0 0; }
-            main .shopContainer .lowerCards .containerS .header .bestSeller span {
-              padding: 4px 10px;
-              border-radius: 5px 0 0 0;
-              background-color: #6398d3; }
-        main .shopContainer .lowerCards .containerS .content {
-          width: 100%;
-          display: flex;
-          flex-direction: column; }
-          main .shopContainer .lowerCards .containerS .content .tireImage {
-            margin: 35px auto;
-            width: 60%;
-            height: auto; }
-          main .shopContainer .lowerCards .containerS .content .tirePrice {
-            width: 90%;
-            margin: 0 auto;
-            font-size: 22px;
-            font-family: "SinkinSans-700Bold", sans-serif;
-            color: #333333; }
-            main .shopContainer .lowerCards .containerS .content .tirePrice .lowerSpan {
-              font-size: 18px; }
-            main .shopContainer .lowerCards .containerS .content .tirePrice .strikeSpan {
-              text-decoration: line-through;
-              font-size: 14px;
-              font-family: "SinkinSans-400Regular", sans-serif; }
-            main .shopContainer .lowerCards .containerS .content .tirePrice .strikeSpanAO {
-              font-size: 14px;
-              font-family: "SinkinSans-400Regular", sans-serif;
-              text-decoration: line-through;
-              color: #333333; }
-          main .shopContainer .lowerCards .containerS .content .tireDescription {
-            font-size: 14px;
-            font-family: "SinkinSans-400Regular", sans-serif;
-            margin: 0 auto 15px;
-            padding-bottom: 15px;
-            width: 90%;
-            line-height: 20px; }
-        main .shopContainer .lowerCards .containerS .footer {
-          display: flex;
-          justify-content: center;
-          align-items: center;
+        main .shopContainer .slickContainer .tireSellCards .cardContent {
           width: 90%;
-          border-top: 1px solid #d9d9d9;
-          margin: 0 auto; }
-          main .shopContainer .lowerCards .containerS .footer a {
-            font-size: 14px;
-            font-family: "SinkinSans-400Regular", sans-serif;
-            padding: 10px 0;
-            text-decoration: none;
-            color: #000000; }
-            main .shopContainer .lowerCards .containerS .footer a:hover {
-              text-decoration: underline;
-              text-decoration-color: #ff6300; }
-            main .shopContainer .lowerCards .containerS .footer a span {
-              color: #ff6300; }
-      main .shopContainer .lowerCards .containerP {
-        max-width: 280px;
-        width: 100%;
-        height: 100%;
-        background-color: #ffffff;
-        border-radius: 5px;
-        margin: 0 10px; }
-        main .shopContainer .lowerCards .containerP .header {
-          border-radius: 5px 0 0 0; }
-          main .shopContainer .lowerCards .containerP .header .bestSeller {
-            margin-top: 4px;
-            color: #ffffff;
-            font-size: 12px;
-            font-family: "SinkinSans-400Regular", sans-serif;
-            border-radius: 5px 0 0 0; }
-            main .shopContainer .lowerCards .containerP .header .bestSeller span {
-              padding: 4px 10px;
-              border-radius: 5px 0 0 0;
-              background-color: #6398d3; }
-        main .shopContainer .lowerCards .containerP .content {
-          width: 100%;
-          display: flex;
-          flex-direction: column; }
-          main .shopContainer .lowerCards .containerP .content .tireImage {
-            margin: 35px auto;
-            width: 60%;
-            height: auto; }
-          main .shopContainer .lowerCards .containerP .content .tirePrice {
-            width: 90%;
-            margin: 0 auto;
-            font-size: 22px;
+          margin: 0 auto;
+          max-height: 450px; }
+          main .shopContainer .slickContainer .tireSellCards .cardContent img {
+            display: flex;
+            justify-content: center;
+            width: 78%;
+            height: auto;
+            margin: 30px auto; }
+          main .shopContainer .slickContainer .tireSellCards .cardContent .tirePrice {
+            margin: 0;
             font-family: "SinkinSans-700Bold", sans-serif;
             color: #ff6300; }
-            main .shopContainer .lowerCards .containerP .content .tirePrice .lowerSpan {
-              font-size: 18px; }
-            main .shopContainer .lowerCards .containerP .content .tirePrice .strikeSpan {
+            main .shopContainer .slickContainer .tireSellCards .cardContent .tirePrice .tirePricePenny {
+              font-size: 18px;
+              margin-left: 0; }
+            main .shopContainer .slickContainer .tireSellCards .cardContent .tirePrice .tirePriceDiscount {
               text-decoration: line-through;
-              font-size: 14px;
-              font-family: "SinkinSans-400Regular", sans-serif; }
-            main .shopContainer .lowerCards .containerP .content .tirePrice .strikeSpanAO {
-              font-size: 14px;
               font-family: "SinkinSans-400Regular", sans-serif;
-              text-decoration: line-through;
-              color: #333333; }
-          main .shopContainer .lowerCards .containerP .content .tireDescription {
-            font-size: 14px;
-            font-family: "SinkinSans-400Regular", sans-serif;
-            margin: 0 auto 15px;
-            padding-bottom: 15px;
-            width: 90%;
-            line-height: 20px; }
-        main .shopContainer .lowerCards .containerP .footer {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          width: 90%;
-          border-top: 1px solid #d9d9d9;
-          margin: 0 auto; }
-          main .shopContainer .lowerCards .containerP .footer a {
-            font-size: 14px;
-            font-family: "SinkinSans-400Regular", sans-serif;
-            padding: 10px 0;
+              color: #000000; }
+          main .shopContainer .slickContainer .tireSellCards .cardContent .tirePriceBlack {
+            margin: 0;
+            font-family: "SinkinSans-700Bold", sans-serif;
+            color: #333333; }
+            main .shopContainer .slickContainer .tireSellCards .cardContent .tirePriceBlack .tirePricePenny {
+              font-size: 18px;
+              margin-left: 0; }
+          main .shopContainer .slickContainer .tireSellCards .cardContent .tireDescription p {
+            margin: 0;
+            font-size: 14px; }
+            main .shopContainer .slickContainer .tireSellCards .cardContent .tireDescription p:last-child {
+              margin-bottom: 20px; }
+          main .shopContainer .slickContainer .tireSellCards .cardContent a {
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
             text-decoration: none;
-            color: #000000; }
-            main .shopContainer .lowerCards .containerP .footer a:hover {
+            color: #000000;
+            text-align: center;
+            padding: 20px 0;
+            border-top: 1px solid #d9d9d9; }
+            main .shopContainer .slickContainer .tireSellCards .cardContent a:hover {
               text-decoration: underline;
               text-decoration-color: #ff6300; }
-            main .shopContainer .lowerCards .containerP .footer a span {
-              color: #ff6300; }
+            main .shopContainer .slickContainer .tireSellCards .cardContent a span {
+              font-family: "SinkinSans-400Regular", sans-serif;
+              color: #ff6300;
+              margin-left: 2%; }
     main .shopContainer .firestoneBaner {
       max-width: 1200px;
       width: 100%;
