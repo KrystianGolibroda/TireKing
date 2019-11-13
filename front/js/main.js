@@ -143,9 +143,11 @@ setInterval(function time(){
 }, 1000);
 
 
+//Karuzela opinii
 
 
-//Karuzela
+
+//Karuzela karty produktowej
 $(document).ready(function () {
    $('.lowerCards').slick({
       infinite: true,
@@ -222,3 +224,4 @@ $(function(){
       });
    });
 });
+

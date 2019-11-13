@@ -750,6 +750,7 @@ main {
             main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .firstOpinion {
               position: relative;
               display: flex;
+              flex-direction: column;
               justify-content: center;
               align-items: center;
               max-width: 380px;
@@ -763,6 +764,16 @@ main {
               -moz-border-radius: 5px;
               border-radius: 5px;
               z-index: 99; }
+              main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .firstOpinion p {
+                margin: 0; }
+              main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .firstOpinion .rowFlex {
+                display: flex;
+                flex-direction: row; }
+                main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .firstOpinion .rowFlex .rowFlexText {
+                  font-size: 13px;
+                  font-family: "SinkinSans-400Regular", sans-serif; }
+                main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .firstOpinion .rowFlex .starsRating i {
+                  color: #ff6300; }
               main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .firstOpinion:before {
                 content: ' ';
                 position: absolute;
@@ -804,6 +815,7 @@ main {
             main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .secondOpinion {
               display: flex;
               justify-content: center;
+              flex-direction: column;
               align-items: center;
               position: relative;
               max-width: 380px;
@@ -817,6 +829,16 @@ main {
               -webkit-border-radius: 5px;
               -moz-border-radius: 5px;
               border-radius: 5px; }
+              main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .secondOpinion p {
+                margin: 0; }
+              main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .secondOpinion .rowFlex {
+                display: flex;
+                flex-direction: row; }
+                main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .secondOpinion .rowFlex .rowFlexText {
+                  font-size: 13px;
+                  font-family: "SinkinSans-400Regular", sans-serif; }
+                main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .secondOpinion .rowFlex .starsRating i {
+                  color: #ff6300; }
               main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .secondOpinion:before {
                 content: ' ';
                 position: absolute;
@@ -858,6 +880,7 @@ main {
             main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .thirdOpinion {
               display: flex;
               justify-content: center;
+              flex-direction: column;
               align-items: center;
               position: relative;
               max-width: 380px;
@@ -871,6 +894,16 @@ main {
               -webkit-border-radius: 5px;
               -moz-border-radius: 5px;
               border-radius: 5px; }
+              main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .thirdOpinion p {
+                margin: 0; }
+              main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .thirdOpinion .rowFlex {
+                display: flex;
+                flex-direction: row; }
+                main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .thirdOpinion .rowFlex .rowFlexText {
+                  font-size: 13px;
+                  font-family: "SinkinSans-400Regular", sans-serif; }
+                main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .thirdOpinion .rowFlex .starsRating i {
+                  color: #ff6300; }
               main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .thirdOpinion .textOpinion {
                 padding: 20px; }
               main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .thirdOpinion:before {
