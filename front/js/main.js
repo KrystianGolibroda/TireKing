@@ -149,7 +149,7 @@ setInterval(function time(){
 
 //Karuzela karty produktowej
 $(document).ready(function () {
-   $('.lowerCards').slick({
+   $('.slickContainer').slick({
       infinite: true,
       slidesToShow: 4,
       slidesToScroll: 1,
