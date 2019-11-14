@@ -519,16 +519,15 @@
     <div class="shopContainer container-fluid">
         <div class="wrap">
             <div class="row">
-                <div class="textCards">
-                    <p class="textCardsParagraphs">Oferta specjalna</p>
-                    <p class="textCardsParagraphs">Polecane</p>
-                </div>
                 <div class="upperCards">
-                    <div class="specialOfferCard">
-                        <div class="bigCard" id="the-final-countdown">
+                    <div class="ofertaSpecjalna">
+                        <div class="ofertaSpecjalnaText">
+                            <p>Oferta specjalna</p>
+                        </div>
+                        <div class="ofertaSpecjalnaContent">
                             <div class="clock">
                                 <p>Koniec za </p>
-                                <div class="TickTock">
+                                <div class="TickTock" id="the-final-countdown">
                                     <span class="TickHours TickTockBackground"></span>
                                     <span>:</span>
                                     <span class="TickMinutes TickTockBackground"></span>
@@ -536,55 +535,72 @@
                                     <span class="TickSeconds TickTockBackground"></span>
                                 </div>
                             </div>
-                            <div class="columnAlignment">
-                                <div class="firstColumn">
-                                    <div class="content">
-                                        <img class="tireImage" src="../images/opony/Uniroyal_rainsport_tire.png"/>
-                                        <p class="discount">
-                                            <span class="discountBackground">-30%</span>
-                                        </p>
-                                        <p class="tirePrice">164.<span class="lowerSpan">10 zł</span><span class="strikeSpan">/szt.</span> <span class="strikeSpanAO">  214.00 zł/szt.</span></p>
-                                        <p class="tireDescription">Uniroyal <br />RAINSPORT 3 205/55 R16 91 H<br />.</p>
-                                    </div>
-                                    <div class="footer">
-                                        <a href="#">zobacz więcej <span> > </span></a>
+                            <div class="ofertaSpecjalnaRow">
+                                <div class="tireSellCards">
+                                    <div class="cardContent">
+                                        <a href=""><img src="../images/opony/Uniroyal_rainsport_tire.png" alt="Firestone ROADHAWK"></a>
+                                        <span class="tireListingDiscount">-30%</span>
+                                        <p class="tirePrice" style="font-size: 22px;">191.<span class="tirePricePenny">00 zł</span><span style="font-size: 14px;">/szt.</span> <span class="tirePriceDiscount" style="font-size: 14px;">248 zł/szt.</span></p>
+                                        <div class="tireDescription">
+                                            <p>Firestone</p>
+                                            <p>ROADHAWK 195/65 R15</p>
+                                            <p>91 T</p>
+                                        </div>
+                                        <a class="tireListingShowMore" href="#">zobacz więcej <span> > </span></a>
                                     </div>
                                 </div>
-                                <div class="secondColumn">
-                                    <div class="content">
-                                        <img class="tireImage" src="../images/opony/goodyear_efficientgrip_performance_oferta_specjalna.png"/>
-                                        <p class="discount"><span>-30%</span></p>
-                                        <p class="tirePrice">172.<span class="lowerSpan">00 zł</span><span class="strikeSpan">/szt.</span> <span class="strikeSpanAO">  248.00 zł/szt.</span></p>
-                                        <p class="tireDescription">Goodyear <br />EFFICIENTGRIP PERFORMANCE <br />195/65 R15 91 H</p>
-                                    </div>
-                                    <div class="footer">
-                                        <a href="#">zobacz więcej <span> > </span></a>
+                                <div class="tireSellCards">
+                                    <div class="cardContent">
+                                        <a href="#"><img src="../images/opony/goodyear_efficientgrip_performance_oferta_specjalna.png" alt="Firestone ROADHAWK"></a>
+                                        <span class="tireListingDiscount">-30%</span>
+                                        <p class="tirePriceBlack" style="font-size: 22px;">175.<span class="tirePricePenny">00 zł</span><span style="font-size: 14px;">/szt.</span></p>
+                                        <div class="tireDescription">
+                                            <p>Goodyear</p>
+                                            <p>EFFICIENTGRIP PERFORMANCE</p>
+                                            <p>195/65 R15 91 H</p>
+                                        </div>
+                                        <a class="tireListingShowMore" href="#">zobacz więcej <span> > </span></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="normalCard">
-                        <div class="smallCard">
-                            <div class="content">
-                                <img class="tireImage" src="../images/opony/Opona_2.png"/>
-                                <p class="tirePrice">175.<span class="lowerSpan">00 zł</span><span class="strikeSpan">/szt.</span></p>
-                                <p class="tireDescription">Goodyear <br />EFFICIENTGRIP PERFORMANCE <br />195/65 R15 91 H</p>
-                            </div>
-                            <div class="footer">
-                                <a href="#">zobacz więcej <span> > </span></a>
-                            </div>
+                    <div class="polecane">
+                        <div class="polecaneText">
+                            <p>Polecane</p>
                         </div>
-                    </div>
-                    <div class="normalCard">
-                        <div class="smallCard">
-                            <div class="content">
-                                <img class="tireImage" src="../images/opony/Opona_2.png"/>
-                                <p class="tirePrice">175.<span class="lowerSpan">00 zł</span><span class="strikeSpan">/szt.</span></p>
-                                <p class="tireDescription">Goodyear <br />EFFICIENTGRIP PERFORMANCE <br />195/65 R15 91 H</p>
+                        <div class="polecaneContentRow">
+                            <div class="polecaneContent">
+                                <div class="tireSellCards">
+                                    <p class="bestseller" style="visibility: hidden;">Bestseller</p>
+                                    <div class="cardContent">
+                                        <a href=""><img src="../images/opony/Opona_1.png" alt="Firestone ROADHAWK"></a>
+                                        <span class="tireListingDiscount">-30%</span>
+                                        <p class="tirePrice" style="font-size: 22px;">191.<span class="tirePricePenny">00 zł</span><span style="font-size: 14px;">/szt.</span> <span class="tirePriceDiscount" style="font-size: 14px;">248 zł/szt.</span></p>
+                                        <div class="tireDescription">
+                                            <p>Firestone</p>
+                                            <p>ROADHAWK 195/65 R15</p>
+                                            <p>91 T</p>
+                                        </div>
+                                        <a class="tireListingShowMore" href="#">zobacz więcej <span> > </span></a>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="footer">
-                                <a href="#">zobacz więcej <span> > </span></a>
+                            <div class="polecaneContent">
+                                <div class="tireSellCards">
+                                    <p class="bestseller" style="visibility: hidden;">Bestseller</p>
+                                    <div class="cardContent">
+                                        <a href="#"><img src="../images/opony/Opona_2.png" alt="Firestone ROADHAWK"></a>
+                                        <span class="tireListingDiscount">-30%</span>
+                                        <p class="tirePriceBlack" style="font-size: 22px;">175.<span class="tirePricePenny">00 zł</span><span style="font-size: 14px;">/szt.</span></p>
+                                        <div class="tireDescription">
+                                            <p>Goodyear</p>
+                                            <p>EFFICIENTGRIP PERFORMANCE</p>
+                                            <p>195/65 R15 91 H</p>
+                                        </div>
+                                        <a class="tireListingShowMore" href="#">zobacz więcej <span> > </span></a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -596,114 +612,122 @@
                     <div class="tireSellCards">
                         <p class="bestseller">Bestseller</p>
                         <div class="cardContent">
-                            <img src="../images/opony/Opona_1.png" alt="Firestone ROADHAWK">
+                            <a href=""><img src="../images/opony/Opona_1.png" alt="Firestone ROADHAWK"></a>
+                            <span class="tireListingDiscount">-30%</span>
                             <p class="tirePrice" style="font-size: 22px;">191.<span class="tirePricePenny">00 zł</span><span style="font-size: 14px;">/szt.</span> <span class="tirePriceDiscount" style="font-size: 14px;">248 zł/szt.</span></p>
                             <div class="tireDescription">
                                 <p>Firestone</p>
                                 <p>ROADHAWK 195/65 R15</p>
                                 <p>91 T</p>
                             </div>
-                            <a href="#">zobacz więcej <span> > </span></a>
+                            <a class="tireListingShowMore" href="#">zobacz więcej <span> > </span></a>
                         </div>
                     </div>
                     <div class="tireSellCards">
                         <p class="bestseller">Bestseller</p>
                         <div class="cardContent">
-                            <img src="../images/opony/Opona_2.png" alt="Firestone ROADHAWK">
+                            <a href="#"><img src="../images/opony/Opona_2.png" alt="Firestone ROADHAWK"></a>
+                            <span class="tireListingDiscount">-30%</span>
                             <p class="tirePriceBlack" style="font-size: 22px;">175.<span class="tirePricePenny">00 zł</span><span style="font-size: 14px;">/szt.</span></p>
                             <div class="tireDescription">
                                 <p>Goodyear</p>
                                 <p>EFFICIENTGRIP PERFORMANCE</p>
                                 <p>195/65 R15 91 H</p>
                             </div>
-                            <a href="#">zobacz więcej <span> > </span></a>
+                            <a class="tireListingShowMore" href="#">zobacz więcej <span> > </span></a>
                         </div>
                     </div>
                     <div class="tireSellCards">
                         <p class="bestseller">Bestseller</p>
                         <div class="cardContent">
-                            <img src="../images/opony/Opona_1.png" alt="Firestone ROADHAWK">
+                            <a href=""><img src="../images/opony/Opona_1.png" alt="Firestone ROADHAWK"></a>
+                            <span class="tireListingDiscount">-30%</span>
                             <p class="tirePrice" style="font-size: 22px;">191.<span class="tirePricePenny">00 zł</span><span style="font-size: 14px;">/szt.</span> <span class="tirePriceDiscount" style="font-size: 14px;">248 zł/szt.</span></p>
                             <div class="tireDescription">
                                 <p>Firestone</p>
                                 <p>ROADHAWK 195/65 R15</p>
                                 <p>91 T</p>
                             </div>
-                            <a href="#">zobacz więcej <span> > </span></a>
+                            <a class="tireListingShowMore" href="#">zobacz więcej <span> > </span></a>
                         </div>
                     </div>
                     <div class="tireSellCards">
                         <p class="bestseller">Bestseller</p>
                         <div class="cardContent">
-                            <img src="../images/opony/Opona_2.png" alt="Firestone ROADHAWK">
+                            <a href="#"><img src="../images/opony/Opona_2.png" alt="Firestone ROADHAWK"></a>
+                            <span class="tireListingDiscount">-30%</span>
                             <p class="tirePriceBlack" style="font-size: 22px;">175.<span class="tirePricePenny">00 zł</span><span style="font-size: 14px;">/szt.</span></p>
                             <div class="tireDescription">
                                 <p>Goodyear</p>
                                 <p>EFFICIENTGRIP PERFORMANCE</p>
                                 <p>195/65 R15 91 H</p>
                             </div>
-                            <a href="#">zobacz więcej <span> > </span></a>
+                            <a class="tireListingShowMore" href="#">zobacz więcej <span> > </span></a>
                         </div>
                     </div>
                     <div class="tireSellCards">
                         <p class="bestseller">Bestseller</p>
                         <div class="cardContent">
-                            <img src="../images/opony/Opona_1.png" alt="Firestone ROADHAWK">
+                            <a href=""><img src="../images/opony/Opona_1.png" alt="Firestone ROADHAWK"></a>
+                            <span class="tireListingDiscount">-30%</span>
                             <p class="tirePrice" style="font-size: 22px;">191.<span class="tirePricePenny">00 zł</span><span style="font-size: 14px;">/szt.</span> <span class="tirePriceDiscount" style="font-size: 14px;">248 zł/szt.</span></p>
                             <div class="tireDescription">
                                 <p>Firestone</p>
                                 <p>ROADHAWK 195/65 R15</p>
                                 <p>91 T</p>
                             </div>
-                            <a href="#">zobacz więcej <span> > </span></a>
+                            <a class="tireListingShowMore" href="#">zobacz więcej <span> > </span></a>
                         </div>
                     </div>
                     <div class="tireSellCards">
                         <p class="bestseller">Bestseller</p>
                         <div class="cardContent">
-                            <img src="../images/opony/Opona_2.png" alt="Firestone ROADHAWK">
+                            <a href="#"><img src="../images/opony/Opona_2.png" alt="Firestone ROADHAWK"></a>
+                            <span class="tireListingDiscount">-30%</span>
                             <p class="tirePriceBlack" style="font-size: 22px;">175.<span class="tirePricePenny">00 zł</span><span style="font-size: 14px;">/szt.</span></p>
                             <div class="tireDescription">
                                 <p>Goodyear</p>
                                 <p>EFFICIENTGRIP PERFORMANCE</p>
                                 <p>195/65 R15 91 H</p>
                             </div>
-                            <a href="#">zobacz więcej <span> > </span></a>
+                            <a class="tireListingShowMore" href="#">zobacz więcej <span> > </span></a>
                         </div>
                     </div>
                     <div class="tireSellCards">
                         <p class="bestseller">Bestseller</p>
                         <div class="cardContent">
-                            <img src="../images/opony/Opona_1.png" alt="Firestone ROADHAWK">
+                            <a href=""><img src="../images/opony/Opona_1.png" alt="Firestone ROADHAWK"></a>
+                            <span class="tireListingDiscount">-30%</span>
                             <p class="tirePrice" style="font-size: 22px;">191.<span class="tirePricePenny">00 zł</span><span style="font-size: 14px;">/szt.</span> <span class="tirePriceDiscount" style="font-size: 14px;">248 zł/szt.</span></p>
                             <div class="tireDescription">
                                 <p>Firestone</p>
                                 <p>ROADHAWK 195/65 R15</p>
                                 <p>91 T</p>
                             </div>
-                            <a href="#">zobacz więcej <span> > </span></a>
+                            <a class="tireListingShowMore" href="#">zobacz więcej <span> > </span></a>
                         </div>
                     </div>
                     <div class="tireSellCards">
                         <p class="bestseller">Bestseller</p>
                         <div class="cardContent">
-                            <img src="../images/opony/Opona_2.png" alt="Firestone ROADHAWK">
+                            <a href="#"><img src="../images/opony/Opona_2.png" alt="Firestone ROADHAWK"></a>
+                            <span class="tireListingDiscount">-30%</span>
                             <p class="tirePriceBlack" style="font-size: 22px;">175.<span class="tirePricePenny">00 zł</span><span style="font-size: 14px;">/szt.</span></p>
                             <div class="tireDescription">
                                 <p>Goodyear</p>
                                 <p>EFFICIENTGRIP PERFORMANCE</p>
                                 <p>195/65 R15 91 H</p>
                             </div>
-                            <a href="#">zobacz więcej <span> > </span></a>
+                            <a class="tireListingShowMore" href="#">zobacz więcej <span> > </span></a>
                         </div>
                     </div>
                 </div>
                 <div class="firestoneBaner">
-                    <a href=""><img class="firestoneBanerImg" src="../images/baner_firestone.png"/></a>
+                    <a class="tireListingShowMore" href=""><img class="firestoneBanerImg" src="../images/baner_firestone.png"/></a>
                 </div>
             </div>
         </div>
-    </div>q
+    </div>
     <!-- Producenci opon -->
     <div class="container-fluid">
         <div class="wrap">

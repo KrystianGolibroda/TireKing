@@ -1007,18 +1007,24 @@ main {
       display: flex;
       flex-direction: row;
       justify-content: space-between; }
-      main .shopContainer .upperCards .specialOfferCard {
-        width: 50%;
+      main .shopContainer .upperCards .ofertaSpecjalna {
         display: flex;
         flex-direction: column; }
-        main .shopContainer .upperCards .specialOfferCard .bigCard {
-          max-height: 445px;
-          height: 100%;
-          background-color: #ffffff;
-          border-radius: 5px;
+        main .shopContainer .upperCards .ofertaSpecjalna .ofertaSpecjalnaText {
+          font-size: 36px;
+          font-family: "SinkinSans-700Bold", sans-serif;
+          color: #000000; }
+        main .shopContainer .upperCards .ofertaSpecjalna .ofertaSpecjalnaContent {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
           max-width: 590px;
-          width: 100%; }
-          main .shopContainer .upperCards .specialOfferCard .bigCard .clock {
+          max-height: 445px;
+          height: auto;
+          width: 100%;
+          background-color: #ffffff;
+          border-radius: 5px; }
+          main .shopContainer .upperCards .ofertaSpecjalna .ofertaSpecjalnaContent .clock {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -1031,209 +1037,203 @@ main {
             margin-top: 0;
             border-radius: 5px 5px 0 0;
             font-size: 22px;
-            font-family: "SinkinSans-500Medium", sans-serif;
-            margin-bottom: 20px; }
-            main .shopContainer .upperCards .specialOfferCard .bigCard .clock .TickTock {
+            font-family: "SinkinSans-500Medium", sans-serif; }
+            main .shopContainer .upperCards .ofertaSpecjalna .ofertaSpecjalnaContent .clock .TickTock {
               margin: 0 5px 0 5px;
               display: flex;
               flex-direction: row; }
-              main .shopContainer .upperCards .specialOfferCard .bigCard .clock .TickTock .TickTockBackground {
+              main .shopContainer .upperCards .ofertaSpecjalna .ofertaSpecjalnaContent .clock .TickTock .TickTockBackground {
                 padding: 2px 5px;
                 background-color: #000000;
                 margin: 0 5px 0 5px; }
-          main .shopContainer .upperCards .specialOfferCard .bigCard .columnAlignment {
+          main .shopContainer .upperCards .ofertaSpecjalna .ofertaSpecjalnaContent .ofertaSpecjalnaRow {
             display: flex;
-            flex-direction: row;
-            justify-content: space-evenly; }
-            main .shopContainer .upperCards .specialOfferCard .bigCard .columnAlignment .firstColumn {
+            flex-direction: row; }
+            main .shopContainer .upperCards .ofertaSpecjalna .ofertaSpecjalnaContent .ofertaSpecjalnaRow .tireSellCards {
               display: flex;
-              flex-direction: column;
-              max-width: 280px;
+              max-width: 285px;
               width: 100%;
-              height: 100%; }
-              main .shopContainer .upperCards .specialOfferCard .bigCard .columnAlignment .firstColumn .content {
-                width: 100%;
-                display: flex;
-                flex-direction: column; }
-                main .shopContainer .upperCards .specialOfferCard .bigCard .columnAlignment .firstColumn .content .tireImage {
-                  margin: 20px auto 9px;
-                  width: 50%;
-                  height: auto; }
-                main .shopContainer .upperCards .specialOfferCard .bigCard .columnAlignment .firstColumn .content .discount {
-                  width: 90%;
-                  margin: 0 auto;
+              height: auto;
+              border-radius: 5px;
+              margin: 0 9px;
+              font-family: "SinkinSans-400Regular", sans-serif;
+              background-color: #ffffff;
+              align-items: flex-end; }
+              @media (min-width: 768px) {
+                main .shopContainer .upperCards .ofertaSpecjalna .ofertaSpecjalnaContent .ofertaSpecjalnaRow .tireSellCards {
+                  display: flex;
+                  width: 285px;
+                  height: auto;
+                  border-radius: 10px;
+                  margin: 0 9px;
                   font-family: "SinkinSans-400Regular", sans-serif;
+                  background-color: #ffffff; } }
+              main .shopContainer .upperCards .ofertaSpecjalna .ofertaSpecjalnaContent .ofertaSpecjalnaRow .tireSellCards .bestseller {
+                display: flex;
+                position: absolute;
+                font-size: 12px;
+                font-family: "SinkinSans-400Regular", sans-serif;
+                margin: 0;
+                padding: 6px 10px;
+                background-color: #6398d3;
+                color: #ffffff;
+                border-radius: 5px 0 0 0; }
+              main .shopContainer .upperCards .ofertaSpecjalna .ofertaSpecjalnaContent .ofertaSpecjalnaRow .tireSellCards .cardContent {
+                width: 90%;
+                margin: 0 auto;
+                max-height: 450px; }
+                main .shopContainer .upperCards .ofertaSpecjalna .ofertaSpecjalnaContent .ofertaSpecjalnaRow .tireSellCards .cardContent img {
+                  display: flex;
+                  justify-content: center;
+                  width: 60%;
+                  height: auto;
+                  margin: 5px auto 1%; }
+                main .shopContainer .upperCards .ofertaSpecjalna .ofertaSpecjalnaContent .ofertaSpecjalnaRow .tireSellCards .cardContent .tireListingDiscount {
                   font-size: 14px;
-                  color: #ffffff; }
-                  main .shopContainer .upperCards .specialOfferCard .bigCard .columnAlignment .firstColumn .content .discount span {
-                    background-color: #ff6300;
-                    padding: 2px 12px; }
-                main .shopContainer .upperCards .specialOfferCard .bigCard .columnAlignment .firstColumn .content .tirePrice {
-                  width: 90%;
-                  margin: 0 auto;
-                  font-size: 22px;
+                  font-family: "SinkinSans-400Regular", sans-serif;
+                  padding: 2px 8px;
+                  color: #ffffff;
+                  background-color: #ff6300; }
+                main .shopContainer .upperCards .ofertaSpecjalna .ofertaSpecjalnaContent .ofertaSpecjalnaRow .tireSellCards .cardContent .tirePrice {
+                  margin: 0;
                   font-family: "SinkinSans-700Bold", sans-serif;
                   color: #ff6300; }
-                  main .shopContainer .upperCards .specialOfferCard .bigCard .columnAlignment .firstColumn .content .tirePrice .lowerSpan {
-                    font-size: 18px; }
-                  main .shopContainer .upperCards .specialOfferCard .bigCard .columnAlignment .firstColumn .content .tirePrice .strikeSpan {
+                  main .shopContainer .upperCards .ofertaSpecjalna .ofertaSpecjalnaContent .ofertaSpecjalnaRow .tireSellCards .cardContent .tirePrice .tirePricePenny {
+                    font-size: 18px;
+                    margin-left: 0; }
+                  main .shopContainer .upperCards .ofertaSpecjalna .ofertaSpecjalnaContent .ofertaSpecjalnaRow .tireSellCards .cardContent .tirePrice .tirePriceDiscount {
                     text-decoration: line-through;
-                    font-size: 14px;
-                    font-family: "SinkinSans-400Regular", sans-serif; }
-                  main .shopContainer .upperCards .specialOfferCard .bigCard .columnAlignment .firstColumn .content .tirePrice .strikeSpanAO {
-                    font-size: 14px;
                     font-family: "SinkinSans-400Regular", sans-serif;
-                    text-decoration: line-through;
                     color: #333333; }
-                main .shopContainer .upperCards .specialOfferCard .bigCard .columnAlignment .firstColumn .content .tireDescription {
-                  font-size: 14px;
-                  font-family: "SinkinSans-400Regular", sans-serif;
-                  margin: 0 auto 15px;
-                  width: 90%;
-                  line-height: 20px; }
-              main .shopContainer .upperCards .specialOfferCard .bigCard .columnAlignment .firstColumn .footer {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                width: 90%;
-                border-top: 1px solid #d9d9d9;
-                margin: 15px auto 0; }
-                main .shopContainer .upperCards .specialOfferCard .bigCard .columnAlignment .firstColumn .footer a {
-                  font-size: 14px;
-                  font-family: "SinkinSans-400Regular", sans-serif;
-                  padding: 10px 0;
-                  text-decoration: none;
-                  color: #000000; }
-                  main .shopContainer .upperCards .specialOfferCard .bigCard .columnAlignment .firstColumn .footer a:hover {
-                    text-decoration: underline;
-                    text-decoration-color: #ff6300; }
-                  main .shopContainer .upperCards .specialOfferCard .bigCard .columnAlignment .firstColumn .footer a span {
-                    color: #ff6300; }
-            main .shopContainer .upperCards .specialOfferCard .bigCard .columnAlignment .secondColumn {
-              display: flex;
-              flex-direction: column;
-              max-width: 280px;
-              width: 100%;
-              height: 100%; }
-              main .shopContainer .upperCards .specialOfferCard .bigCard .columnAlignment .secondColumn .content {
-                width: 100%;
-                display: flex;
-                flex-direction: column; }
-                main .shopContainer .upperCards .specialOfferCard .bigCard .columnAlignment .secondColumn .content .tireImage {
-                  margin: 0 auto 5px;
-                  width: 50%;
-                  height: auto; }
-                main .shopContainer .upperCards .specialOfferCard .bigCard .columnAlignment .secondColumn .content .discount {
-                  width: 90%;
-                  margin: 0 auto;
-                  font-family: "SinkinSans-400Regular", sans-serif;
-                  font-size: 14px;
-                  color: #ffffff; }
-                  main .shopContainer .upperCards .specialOfferCard .bigCard .columnAlignment .secondColumn .content .discount span {
-                    background-color: #ff6300;
-                    padding: 2px 12px; }
-                main .shopContainer .upperCards .specialOfferCard .bigCard .columnAlignment .secondColumn .content .tirePrice {
-                  width: 90%;
-                  margin: 0 auto;
-                  font-size: 22px;
+                main .shopContainer .upperCards .ofertaSpecjalna .ofertaSpecjalnaContent .ofertaSpecjalnaRow .tireSellCards .cardContent .tirePriceBlack {
+                  margin: 0;
                   font-family: "SinkinSans-700Bold", sans-serif;
-                  color: #ff6300; }
-                  main .shopContainer .upperCards .specialOfferCard .bigCard .columnAlignment .secondColumn .content .tirePrice .lowerSpan {
-                    font-size: 18px; }
-                  main .shopContainer .upperCards .specialOfferCard .bigCard .columnAlignment .secondColumn .content .tirePrice .strikeSpan {
-                    text-decoration: line-through;
-                    font-size: 14px;
-                    font-family: "SinkinSans-400Regular", sans-serif; }
-                  main .shopContainer .upperCards .specialOfferCard .bigCard .columnAlignment .secondColumn .content .tirePrice .strikeSpanAO {
-                    font-size: 14px;
-                    font-family: "SinkinSans-400Regular", sans-serif;
-                    text-decoration: line-through;
-                    color: #333333; }
-                main .shopContainer .upperCards .specialOfferCard .bigCard .columnAlignment .secondColumn .content .tireDescription {
+                  color: #333333; }
+                  main .shopContainer .upperCards .ofertaSpecjalna .ofertaSpecjalnaContent .ofertaSpecjalnaRow .tireSellCards .cardContent .tirePriceBlack .tirePricePenny {
+                    font-size: 18px;
+                    margin-left: 0; }
+                main .shopContainer .upperCards .ofertaSpecjalna .ofertaSpecjalnaContent .ofertaSpecjalnaRow .tireSellCards .cardContent .tireDescription p {
+                  margin: 0;
+                  font-size: 14px; }
+                  main .shopContainer .upperCards .ofertaSpecjalna .ofertaSpecjalnaContent .ofertaSpecjalnaRow .tireSellCards .cardContent .tireDescription p:last-child {
+                    margin-bottom: 20px; }
+                main .shopContainer .upperCards .ofertaSpecjalna .ofertaSpecjalnaContent .ofertaSpecjalnaRow .tireSellCards .cardContent .tireListingShowMore {
                   font-size: 14px;
                   font-family: "SinkinSans-400Regular", sans-serif;
-                  margin: 0 auto 15px;
-                  width: 90%;
-                  line-height: 20px; }
-              main .shopContainer .upperCards .specialOfferCard .bigCard .columnAlignment .secondColumn .footer {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                width: 90%;
-                border-top: 1px solid #d9d9d9;
-                margin: 15px auto 0; }
-                main .shopContainer .upperCards .specialOfferCard .bigCard .columnAlignment .secondColumn .footer a {
-                  font-size: 14px;
-                  font-family: "SinkinSans-400Regular", sans-serif;
-                  padding: 10px 0;
+                  margin: 0 auto;
+                  display: flex;
+                  justify-content: center;
                   text-decoration: none;
-                  color: #000000; }
-                  main .shopContainer .upperCards .specialOfferCard .bigCard .columnAlignment .secondColumn .footer a:hover {
+                  color: #000000;
+                  text-align: center;
+                  padding: 14px 0 16px;
+                  border-top: 1px solid #d9d9d9; }
+                  main .shopContainer .upperCards .ofertaSpecjalna .ofertaSpecjalnaContent .ofertaSpecjalnaRow .tireSellCards .cardContent .tireListingShowMore:hover {
                     text-decoration: underline;
                     text-decoration-color: #ff6300; }
-                  main .shopContainer .upperCards .specialOfferCard .bigCard .columnAlignment .secondColumn .footer a span {
-                    color: #ff6300; }
-      main .shopContainer .upperCards .normalCard {
-        width: 25%;
+                  main .shopContainer .upperCards .ofertaSpecjalna .ofertaSpecjalnaContent .ofertaSpecjalnaRow .tireSellCards .cardContent .tireListingShowMore span {
+                    font-family: "SinkinSans-400Regular", sans-serif;
+                    color: #ff6300;
+                    margin-left: 2%; }
+      main .shopContainer .upperCards .polecane {
         display: flex;
         flex-direction: column; }
-        main .shopContainer .upperCards .normalCard .smallCard {
-          max-width: 280px;
-          width: 100%;
-          height: 445px;
-          background-color: #ffffff;
-          border-radius: 5px;
-          margin: 0 10px; }
-          main .shopContainer .upperCards .normalCard .smallCard .content {
-            width: 100%;
+        main .shopContainer .upperCards .polecane .polecaneText {
+          font-size: 36px;
+          font-family: "SinkinSans-700Bold", sans-serif;
+          color: #000000; }
+        main .shopContainer .upperCards .polecane .polecaneContentRow {
+          display: flex;
+          flex-direction: row; }
+          main .shopContainer .upperCards .polecane .polecaneContentRow .polecaneContent {
             display: flex;
             flex-direction: column; }
-            main .shopContainer .upperCards .normalCard .smallCard .content .tireImage {
-              margin: 35px auto;
-              width: 60%;
-              height: auto; }
-            main .shopContainer .upperCards .normalCard .smallCard .content .tirePrice {
-              width: 90%;
-              margin: 5px auto;
-              font-size: 22px;
-              font-family: "SinkinSans-700Bold", sans-serif;
-              color: #333333; }
-              main .shopContainer .upperCards .normalCard .smallCard .content .tirePrice .lowerSpan {
-                font-size: 18px; }
-              main .shopContainer .upperCards .normalCard .smallCard .content .tirePrice .strikeSpan {
-                text-decoration: line-through;
-                font-size: 14px;
-                font-family: "SinkinSans-400Regular", sans-serif; }
-              main .shopContainer .upperCards .normalCard .smallCard .content .tirePrice .strikeSpanAO {
-                font-size: 14px;
+            main .shopContainer .upperCards .polecane .polecaneContentRow .polecaneContent .tireSellCards {
+              display: flex;
+              max-width: 285px;
+              width: 100%;
+              height: auto;
+              border-radius: 5px;
+              margin: 0 9px;
+              font-family: "SinkinSans-400Regular", sans-serif;
+              background-color: #ffffff; }
+              @media (min-width: 768px) {
+                main .shopContainer .upperCards .polecane .polecaneContentRow .polecaneContent .tireSellCards {
+                  display: flex;
+                  width: 285px;
+                  height: auto;
+                  border-radius: 10px;
+                  margin: 0 9px;
+                  font-family: "SinkinSans-400Regular", sans-serif;
+                  background-color: #ffffff; } }
+              main .shopContainer .upperCards .polecane .polecaneContentRow .polecaneContent .tireSellCards .bestseller {
+                display: flex;
+                position: absolute;
+                font-size: 12px;
                 font-family: "SinkinSans-400Regular", sans-serif;
-                text-decoration: line-through;
-                color: #333333; }
-            main .shopContainer .upperCards .normalCard .smallCard .content .tireDescription {
-              font-size: 14px;
-              font-family: "SinkinSans-400Regular", sans-serif;
-              margin: 0 auto 15px;
-              padding-bottom: 40px;
-              width: 90%;
-              line-height: 20px; }
-          main .shopContainer .upperCards .normalCard .smallCard .footer {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 90%;
-            border-top: 1px solid #d9d9d9;
-            margin: 0 auto; }
-            main .shopContainer .upperCards .normalCard .smallCard .footer a {
-              font-size: 14px;
-              font-family: "SinkinSans-400Regular", sans-serif;
-              padding: 10px 0;
-              text-decoration: none;
-              color: #000000; }
-              main .shopContainer .upperCards .normalCard .smallCard .footer a:hover {
-                text-decoration: underline;
-                text-decoration-color: #ff6300; }
-              main .shopContainer .upperCards .normalCard .smallCard .footer a span {
-                color: #ff6300; }
+                margin: 0;
+                padding: 6px 10px;
+                background-color: #6398d3;
+                color: #ffffff;
+                border-radius: 5px 0 0 0; }
+              main .shopContainer .upperCards .polecane .polecaneContentRow .polecaneContent .tireSellCards .cardContent {
+                width: 90%;
+                margin: 0 auto;
+                max-height: 450px; }
+                main .shopContainer .upperCards .polecane .polecaneContentRow .polecaneContent .tireSellCards .cardContent img {
+                  display: flex;
+                  justify-content: center;
+                  width: 80%;
+                  height: auto;
+                  margin: 30px auto 1%; }
+                main .shopContainer .upperCards .polecane .polecaneContentRow .polecaneContent .tireSellCards .cardContent .tireListingDiscount {
+                  font-size: 14px;
+                  font-family: "SinkinSans-400Regular", sans-serif;
+                  padding: 2px 8px;
+                  color: #ffffff;
+                  background-color: #ff6300;
+                  visibility: hidden; }
+                main .shopContainer .upperCards .polecane .polecaneContentRow .polecaneContent .tireSellCards .cardContent .tirePrice {
+                  margin: 0;
+                  font-family: "SinkinSans-700Bold", sans-serif;
+                  color: #ff6300; }
+                  main .shopContainer .upperCards .polecane .polecaneContentRow .polecaneContent .tireSellCards .cardContent .tirePrice .tirePricePenny {
+                    font-size: 18px;
+                    margin-left: 0; }
+                  main .shopContainer .upperCards .polecane .polecaneContentRow .polecaneContent .tireSellCards .cardContent .tirePrice .tirePriceDiscount {
+                    text-decoration: line-through;
+                    font-family: "SinkinSans-400Regular", sans-serif;
+                    color: #333333; }
+                main .shopContainer .upperCards .polecane .polecaneContentRow .polecaneContent .tireSellCards .cardContent .tirePriceBlack {
+                  margin: 0;
+                  font-family: "SinkinSans-700Bold", sans-serif;
+                  color: #333333; }
+                  main .shopContainer .upperCards .polecane .polecaneContentRow .polecaneContent .tireSellCards .cardContent .tirePriceBlack .tirePricePenny {
+                    font-size: 18px;
+                    margin-left: 0; }
+                main .shopContainer .upperCards .polecane .polecaneContentRow .polecaneContent .tireSellCards .cardContent .tireDescription p {
+                  margin: 0;
+                  font-size: 14px; }
+                  main .shopContainer .upperCards .polecane .polecaneContentRow .polecaneContent .tireSellCards .cardContent .tireDescription p:last-child {
+                    margin-bottom: 20px; }
+                main .shopContainer .upperCards .polecane .polecaneContentRow .polecaneContent .tireSellCards .cardContent .tireListingShowMore {
+                  font-size: 14px;
+                  font-family: "SinkinSans-400Regular", sans-serif;
+                  margin: 0 auto;
+                  display: flex;
+                  justify-content: center;
+                  text-decoration: none;
+                  color: #000000;
+                  text-align: center;
+                  padding: 14px 0 16px;
+                  border-top: 1px solid #d9d9d9; }
+                  main .shopContainer .upperCards .polecane .polecaneContentRow .polecaneContent .tireSellCards .cardContent .tireListingShowMore:hover {
+                    text-decoration: underline;
+                    text-decoration-color: #ff6300; }
+                  main .shopContainer .upperCards .polecane .polecaneContentRow .polecaneContent .tireSellCards .cardContent .tireListingShowMore span {
+                    font-family: "SinkinSans-400Regular", sans-serif;
+                    color: #ff6300;
+                    margin-left: 2%; }
     main .shopContainer .textLower {
       display: flex;
       flex-direction: row; }
@@ -1279,9 +1279,16 @@ main {
           main .shopContainer .slickContainer .tireSellCards .cardContent img {
             display: flex;
             justify-content: center;
-            width: 78%;
+            width: 80%;
             height: auto;
-            margin: 30px auto; }
+            margin: 30px auto 1%; }
+          main .shopContainer .slickContainer .tireSellCards .cardContent .tireListingDiscount {
+            font-size: 14px;
+            font-family: "SinkinSans-400Regular", sans-serif;
+            padding: 2px 8px;
+            color: #ffffff;
+            background-color: #ff6300;
+            visibility: hidden; }
           main .shopContainer .slickContainer .tireSellCards .cardContent .tirePrice {
             margin: 0;
             font-family: "SinkinSans-700Bold", sans-serif;
@@ -1292,7 +1299,7 @@ main {
             main .shopContainer .slickContainer .tireSellCards .cardContent .tirePrice .tirePriceDiscount {
               text-decoration: line-through;
               font-family: "SinkinSans-400Regular", sans-serif;
-              color: #000000; }
+              color: #333333; }
           main .shopContainer .slickContainer .tireSellCards .cardContent .tirePriceBlack {
             margin: 0;
             font-family: "SinkinSans-700Bold", sans-serif;
@@ -1305,19 +1312,21 @@ main {
             font-size: 14px; }
             main .shopContainer .slickContainer .tireSellCards .cardContent .tireDescription p:last-child {
               margin-bottom: 20px; }
-          main .shopContainer .slickContainer .tireSellCards .cardContent a {
+          main .shopContainer .slickContainer .tireSellCards .cardContent .tireListingShowMore {
+            font-size: 14px;
+            font-family: "SinkinSans-400Regular", sans-serif;
             margin: 0 auto;
             display: flex;
             justify-content: center;
             text-decoration: none;
             color: #000000;
             text-align: center;
-            padding: 20px 0;
+            padding: 14px 0 16px;
             border-top: 1px solid #d9d9d9; }
-            main .shopContainer .slickContainer .tireSellCards .cardContent a:hover {
+            main .shopContainer .slickContainer .tireSellCards .cardContent .tireListingShowMore:hover {
               text-decoration: underline;
               text-decoration-color: #ff6300; }
-            main .shopContainer .slickContainer .tireSellCards .cardContent a span {
+            main .shopContainer .slickContainer .tireSellCards .cardContent .tireListingShowMore span {
               font-family: "SinkinSans-400Regular", sans-serif;
               color: #ff6300;
               margin-left: 2%; }
