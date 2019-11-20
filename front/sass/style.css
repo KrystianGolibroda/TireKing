@@ -226,7 +226,7 @@ body, html {
   position: fixed;
   align-items: center;
   z-index: 9999;
-  width: 100%;
+  width: 99%;
   bottom: 0;
   right: 0;
   left: 0;
@@ -746,7 +746,8 @@ main {
           margin-bottom: 30px; }
           main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns {
             display: flex;
-            flex-direction: column; }
+            flex-direction: column;
+            width: 32%; }
             main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .firstOpinion {
               position: relative;
               display: flex;
@@ -1437,7 +1438,10 @@ main {
   main .adviceContainer {
     background-color: #f1f1f1;
     width: 100%;
-    padding-bottom: 50px; }
+    padding-bottom: 10px; }
+    @media (min-width: 750px) {
+      main .adviceContainer {
+        padding-bottom: 50px; } }
     main .adviceContainer .expertsContainer {
       max-width: 1200px;
       margin: 0 auto; }
@@ -1676,6 +1680,7 @@ main {
             display: none; } }
         main .adviceContainer .expertsContainer .expertsMobileCarousel .card {
           max-height: 370px;
+          max-width: 370px;
           width: 100%;
           border-radius: 10px;
           background-color: #ffffff;
@@ -2028,24 +2033,23 @@ main {
   main .footer {
     width: 100%; }
     main .footer .footerContainer {
-      width: 100%;
-      background-color: #818181;
-      margin: 0 auto; }
+      display: none; }
       @media (min-width: 768px) {
         main .footer .footerContainer {
+          display: flex;
           margin: 0 auto 200px;
           background-color: #f0f0f0;
           border-radius: 10px;
           width: 100%; } }
       main .footer .footerContainer .footerContent {
-        display: flex;
-        flex-direction: column; }
+        display: none; }
         @media (min-width: 768px) {
           main .footer .footerContainer .footerContent {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-            padding: 40px 30px 40px 30px; } }
+            padding: 40px 30px 40px 30px;
+            width: 100%; } }
         main .footer .footerContainer .footerContent .div1 {
           display: none; }
           @media (min-width: 768px) {
@@ -2080,10 +2084,8 @@ main {
               text-decoration: underline;
               text-decoration-color: #818181; }
         main .footer .footerContainer .footerContent .div2 {
-          display: flex;
-          flex-direction: column;
-          margin: 0 auto; }
-          @media (min-width: 768px) {
+          display: none; }
+          @media (min-width: 100px) {
             main .footer .footerContainer .footerContent .div2 {
               display: flex;
               flex-direction: column; } }
@@ -2146,7 +2148,9 @@ main {
             main .footer .footerContainer .footerContent .div3 p span {
               color: #ff6300; }
         main .footer .footerContainer .footerContent .div4 {
-          margin: 0 auto; }
+          margin: 0 auto;
+          display: flex;
+          flex-direction: column; }
           @media (min-width: 768px) {
             main .footer .footerContainer .footerContent .div4 {
               display: flex;
@@ -2210,5 +2214,82 @@ main {
               @media (min-width: 768px) {
                 main .footer .footerContainer .footerContent .div4 .icons .iconsInstagram .iconsInstagramContent {
                   content: url("../images/icon/instagram_ikona.png"); } }
+    main .footer .footerContainerMobile {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      margin: 0 auto;
+      text-align: left;
+      background-color: #818181;
+      padding-bottom: 20px;
+      margin-bottom: 50px; }
+      @media (min-width: 768px) {
+        main .footer .footerContainerMobile {
+          display: none; } }
+      main .footer .footerContainerMobile .mobileFooterContent {
+        display: flex;
+        flex-direction: column;
+        text-align: left; }
+        main .footer .footerContainerMobile .mobileFooterContent .helpDeskMobileFooterAlign {
+          display: flex;
+          flex-direction: column;
+          align-items: center; }
+          main .footer .footerContainerMobile .mobileFooterContent .helpDeskMobileFooterAlign .helpDeskMobileFooter {
+            padding: 15px; }
+            main .footer .footerContainerMobile .mobileFooterContent .helpDeskMobileFooterAlign .helpDeskMobileFooter p {
+              margin: 4px 0;
+              font-size: 14px;
+              font-family: "SinkinSans-400Regular", sans-serif; }
+              main .footer .footerContainerMobile .mobileFooterContent .helpDeskMobileFooterAlign .helpDeskMobileFooter p a {
+                text-decoration: none;
+                color: #ffffff; }
+                main .footer .footerContainerMobile .mobileFooterContent .helpDeskMobileFooterAlign .helpDeskMobileFooter p a span {
+                  color: #ff6300; }
+        main .footer .footerContainerMobile .mobileFooterContent .regulaminAndIcons {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-evenly;
+          align-items: center;
+          padding-top: 10px;
+          width: 100%; }
+          main .footer .footerContainerMobile .mobileFooterContent .regulaminAndIcons .regulaminAndIconsText {
+            display: flex;
+            flex-direction: column;
+            width: 55%; }
+            main .footer .footerContainerMobile .mobileFooterContent .regulaminAndIcons .regulaminAndIconsText p {
+              width: 85%;
+              margin: 0;
+              font-size: 10px;
+              color: #ffffff; }
+              main .footer .footerContainerMobile .mobileFooterContent .regulaminAndIcons .regulaminAndIconsText p a {
+                text-decoration: underline;
+                text-decoration-color: #ff6300;
+                color: #ff6300; }
+          main .footer .footerContainerMobile .mobileFooterContent .regulaminAndIcons .iconsMobile {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 20%; }
+            main .footer .footerContainerMobile .mobileFooterContent .regulaminAndIcons .iconsMobile .iconsFacebook {
+              display: flex;
+              flex-direction: row; }
+              main .footer .footerContainerMobile .mobileFooterContent .regulaminAndIcons .iconsMobile .iconsFacebook .iconsFacebookContent {
+                content: url("../images/icon/facebook_mobile_white.png");
+                width: 40px;
+                height: 40px; }
+            main .footer .footerContainerMobile .mobileFooterContent .regulaminAndIcons .iconsMobile .iconsYT {
+              display: flex;
+              flex-direction: row; }
+              main .footer .footerContainerMobile .mobileFooterContent .regulaminAndIcons .iconsMobile .iconsYT .iconsYTContent {
+                content: url("../images/icon/youtube_mobile_black.png");
+                width: 40px;
+                height: 40px; }
+            main .footer .footerContainerMobile .mobileFooterContent .regulaminAndIcons .iconsMobile .iconsInstagram {
+              display: flex;
+              flex-direction: row; }
+              main .footer .footerContainerMobile .mobileFooterContent .regulaminAndIcons .iconsMobile .iconsInstagram .iconsInstagramContent {
+                content: url("../images/icon/instagram_mobile_white.png");
+                width: 40px;
+                height: 40px; }
 
 /*# sourceMappingURL=style.css.map */
