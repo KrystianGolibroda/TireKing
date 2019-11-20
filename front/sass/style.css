@@ -1350,13 +1350,33 @@ main {
       align-items: center;
       flex-direction: column; }
       main .headerFirms .textFirms h2 {
-        font-size: 36px;
+        font-size: 16px;
         font-family: "SinkinSans-700Bold", sans-serif;
-        padding-top: 25px; }
+        padding-top: 25px;
+        text-align: center; }
+        @media (min-width: 570px) {
+          main .headerFirms .textFirms h2 {
+            font-size: 22px;
+            font-family: "SinkinSans-700Bold", sans-serif;
+            padding-top: 25px; } }
+        @media (min-width: 760px) {
+          main .headerFirms .textFirms h2 {
+            font-size: 30px;
+            font-family: "SinkinSans-700Bold", sans-serif;
+            padding-top: 25px; } }
+        @media (min-width: 1000px) {
+          main .headerFirms .textFirms h2 {
+            font-size: 36px;
+            font-family: "SinkinSans-700Bold", sans-serif;
+            padding-top: 25px; } }
       main .headerFirms .textFirms p {
-        font-size: 14px;
-        font-family: "SinkinSans-400Regular", sans-serif;
-        line-height: 1px; }
+        display: none; }
+        @media (min-width: 750px) {
+          main .headerFirms .textFirms p {
+            display: flex;
+            font-size: 14px;
+            font-family: "SinkinSans-400Regular", sans-serif;
+            line-height: 1px; } }
         main .headerFirms .textFirms p a:link {
           text-decoration: underline;
           text-decoration-color: #d9d9d9;
@@ -1382,21 +1402,38 @@ main {
           main .headerFirms .textFirms p a:active span {
             color: #ff6300; }
     main .headerFirms .logoFirms {
-      margin-top: 60px;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: center; }
-      main .headerFirms .logoFirms img {
+      display: none; }
+      @media (min-width: 750px) {
+        main .headerFirms .logoFirms {
+          margin-top: 60px;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          align-items: center; }
+          main .headerFirms .logoFirms img {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px; }
+          main .headerFirms .logoFirms .growImage {
+            transition: all .2s ease-in-out;
+            cursor: pointer; }
+          main .headerFirms .logoFirms .growImage:hover {
+            transform: scale(1.1); } }
+    main .headerFirms .logoFirmsMobile {
+      margin-top: 40px; }
+      main .headerFirms .logoFirmsMobile img {
         display: flex;
         justify-content: space-between;
         padding: 10px; }
-      main .headerFirms .logoFirms .growImage {
+      main .headerFirms .logoFirmsMobile .growImage {
         transition: all .2s ease-in-out;
         cursor: pointer; }
-      main .headerFirms .logoFirms .growImage:hover {
+      main .headerFirms .logoFirmsMobile .growImage:hover {
         transform: scale(1.1); }
+      @media (min-width: 750px) {
+        main .headerFirms .logoFirmsMobile {
+          display: none; } }
   main .adviceContainer {
     background-color: #f1f1f1;
     width: 100%;
@@ -1411,11 +1448,31 @@ main {
         align-items: center;
         padding-bottom: 20px; }
         main .adviceContainer .expertsContainer .expertsText .pHeader {
-          font-size: 36px;
+          font-size: 16px;
           font-family: "SinkinSans-700Bold", sans-serif;
-          margin: 0;
-          padding-top: 25px; }
+          padding-top: 25px;
+          text-align: center; }
+          @media (min-width: 570px) {
+            main .adviceContainer .expertsContainer .expertsText .pHeader {
+              font-size: 22px;
+              font-family: "SinkinSans-700Bold", sans-serif;
+              margin: 0;
+              padding-top: 25px; } }
+          @media (min-width: 760px) {
+            main .adviceContainer .expertsContainer .expertsText .pHeader {
+              font-size: 30px;
+              font-family: "SinkinSans-700Bold", sans-serif;
+              margin: 0;
+              padding-top: 25px; } }
+          @media (min-width: 1000px) {
+            main .adviceContainer .expertsContainer .expertsText .pHeader {
+              font-size: 36px;
+              font-family: "SinkinSans-700Bold", sans-serif;
+              margin: 0;
+              padding-top: 25px; } }
         main .adviceContainer .expertsContainer .expertsText p {
+          text-align: center;
+          padding: 0 2%;
           font-size: 14px;
           font-family: "SinkinSans-400Regular", sans-serif;
           margin: 0; }
@@ -1426,103 +1483,217 @@ main {
           main .adviceContainer .expertsContainer .expertsText p span {
             color: #ff6300; }
       main .adviceContainer .expertsContainer .parent {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 1fr;
-        grid-column-gap: 20px;
-        margin-top: 20px; }
-      main .adviceContainer .expertsContainer .div1 {
-        grid-area: 1 / 1 / 2 / 2;
-        max-height: 780px; }
-        main .adviceContainer .expertsContainer .div1 .cardBig {
-          background-color: #ffffff;
-          width: 100%;
-          border-radius: 10px; }
-          main .adviceContainer .expertsContainer .div1 .cardBig .imagePlacement {
-            position: relative;
-            text-align: center;
-            color: #ffffff; }
-            main .adviceContainer .expertsContainer .div1 .cardBig .imagePlacement img {
+        display: none; }
+        @media (min-width: 750px) {
+          main .adviceContainer .expertsContainer .parent {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between; } }
+        main .adviceContainer .expertsContainer .parent .div1 {
+          display: flex;
+          flex-direction: column;
+          width: 32%; }
+          main .adviceContainer .expertsContainer .parent .div1 .cardBig {
+            background-color: #ffffff;
+            width: 100%;
+            border-radius: 10px; }
+            main .adviceContainer .expertsContainer .parent .div1 .cardBig .imagePlacement {
+              position: relative;
+              text-align: center;
+              color: #ffffff; }
+              main .adviceContainer .expertsContainer .parent .div1 .cardBig .imagePlacement img {
+                width: 100%;
+                height: auto;
+                border-radius: 10px 10px 0 0; }
+              main .adviceContainer .expertsContainer .parent .div1 .cardBig .imagePlacement .topPlacement {
+                display: none; }
+                @media (min-width: 750px) {
+                  main .adviceContainer .expertsContainer .parent .div1 .cardBig .imagePlacement .topPlacement {
+                    display: block;
+                    position: absolute;
+                    top: 9px;
+                    left: 21px;
+                    font-size: 14px;
+                    font-family: "SinkinSans-400Regular", sans-serif;
+                    background-color: #000000;
+                    padding: 0 10px; } }
+              main .adviceContainer .expertsContainer .parent .div1 .cardBig .imagePlacement .bottomPlacement {
+                display: none; }
+                @media (min-width: 750px) {
+                  main .adviceContainer .expertsContainer .parent .div1 .cardBig .imagePlacement .bottomPlacement {
+                    display: block;
+                    position: absolute;
+                    bottom: 15px;
+                    left: 15px;
+                    font-size: 15px;
+                    font-family: "SinkinSans-400Regular", sans-serif;
+                    text-align: left; }
+                    main .adviceContainer .expertsContainer .parent .div1 .cardBig .imagePlacement .bottomPlacement p {
+                      line-height: 10px; }
+                      main .adviceContainer .expertsContainer .parent .div1 .cardBig .imagePlacement .bottomPlacement p span {
+                        padding: 1px 10px;
+                        background-color: #000000; } }
+                @media (min-width: 990px) {
+                  main .adviceContainer .expertsContainer .parent .div1 .cardBig .imagePlacement .bottomPlacement {
+                    display: block;
+                    position: absolute;
+                    bottom: 21px;
+                    left: 21px;
+                    font-size: 20px;
+                    font-family: "SinkinSans-400Regular", sans-serif;
+                    text-align: left; }
+                    main .adviceContainer .expertsContainer .parent .div1 .cardBig .imagePlacement .bottomPlacement p {
+                      line-height: 10px; }
+                      main .adviceContainer .expertsContainer .parent .div1 .cardBig .imagePlacement .bottomPlacement p span {
+                        padding: 0 10px;
+                        background-color: #000000; } }
+                @media (min-width: 1150px) {
+                  main .adviceContainer .expertsContainer .parent .div1 .cardBig .imagePlacement .bottomPlacement {
+                    display: block;
+                    position: absolute;
+                    bottom: 21px;
+                    left: 21px;
+                    font-size: 24px;
+                    font-family: "SinkinSans-400Regular", sans-serif;
+                    text-align: left; }
+                    main .adviceContainer .expertsContainer .parent .div1 .cardBig .imagePlacement .bottomPlacement p {
+                      line-height: 10px; }
+                      main .adviceContainer .expertsContainer .parent .div1 .cardBig .imagePlacement .bottomPlacement p span {
+                        padding: 0 10px;
+                        background-color: #000000; } }
+            main .adviceContainer .expertsContainer .parent .div1 .cardBig .textArticle {
+              font-size: 14px;
+              font-family: "SinkinSans-400Regular", sans-serif;
+              letter-spacing: 0.01rem;
+              max-height: 300px;
+              overflow: hidden;
+              padding: 0 25px;
+              text-decoration: none;
+              color: #000000; }
+            main .adviceContainer .expertsContainer .parent .div1 .cardBig .linkArticle {
+              width: 90%;
+              margin: 0 auto;
+              border-top: 1px solid #f0f0f0;
+              padding: 15px 0;
+              font-size: 14px;
+              font-family: "SinkinSans-400Regular", sans-serif;
+              letter-spacing: 0.01rem;
+              text-align: center; }
+              main .adviceContainer .expertsContainer .parent .div1 .cardBig .linkArticle a {
+                text-decoration: none;
+                color: #000000; }
+                main .adviceContainer .expertsContainer .parent .div1 .cardBig .linkArticle a:hover {
+                  text-decoration: underline;
+                  text-decoration-color: #ff6300; }
+                main .adviceContainer .expertsContainer .parent .div1 .cardBig .linkArticle a span {
+                  color: #ff6300; }
+        main .adviceContainer .expertsContainer .parent .div2 {
+          display: flex;
+          flex-direction: column;
+          width: 32%; }
+          main .adviceContainer .expertsContainer .parent .div2 .card {
+            max-height: 370px;
+            width: 100%;
+            border-radius: 10px;
+            background-color: #ffffff;
+            margin-bottom: 25px; }
+            main .adviceContainer .expertsContainer .parent .div2 .card:last-child {
+              margin-bottom: 0; }
+            main .adviceContainer .expertsContainer .parent .div2 .card img {
               width: 100%;
               height: auto;
               border-radius: 10px 10px 0 0; }
-            main .adviceContainer .expertsContainer .div1 .cardBig .imagePlacement .topPlacement {
-              display: none; }
-              @media (min-width: 750px) {
-                main .adviceContainer .expertsContainer .div1 .cardBig .imagePlacement .topPlacement {
-                  display: block;
-                  position: absolute;
-                  top: 9px;
-                  left: 21px;
-                  font-size: 14px;
-                  font-family: "SinkinSans-400Regular", sans-serif;
-                  background-color: #000000;
-                  padding: 0 10px; } }
-            main .adviceContainer .expertsContainer .div1 .cardBig .imagePlacement .bottomPlacement {
-              display: none; }
-              @media (min-width: 750px) {
-                main .adviceContainer .expertsContainer .div1 .cardBig .imagePlacement .bottomPlacement {
-                  display: block;
-                  position: absolute;
-                  bottom: 21px;
-                  left: 21px;
-                  font-size: 24px;
-                  font-family: "SinkinSans-400Regular", sans-serif;
-                  text-align: left; }
-                  main .adviceContainer .expertsContainer .div1 .cardBig .imagePlacement .bottomPlacement p {
-                    line-height: 10px; }
-                    main .adviceContainer .expertsContainer .div1 .cardBig .imagePlacement .bottomPlacement p span {
-                      padding: 0 10px;
-                      background-color: #000000; } }
-          main .adviceContainer .expertsContainer .div1 .cardBig .textArticle {
-            font-size: 14px;
-            font-family: "SinkinSans-400Regular", sans-serif;
-            letter-spacing: 0.01rem;
-            max-height: 300px;
-            overflow: hidden;
-            padding: 0 25px;
-            text-decoration: none;
-            color: #000000; }
-          main .adviceContainer .expertsContainer .div1 .cardBig .linkArticle {
-            width: 90%;
-            margin: 0 auto;
-            border-top: 1px solid #f0f0f0;
-            padding: 15px 0;
-            font-size: 14px;
-            font-family: "SinkinSans-400Regular", sans-serif;
-            letter-spacing: 0.01rem;
-            text-align: center; }
-            main .adviceContainer .expertsContainer .div1 .cardBig .linkArticle a {
+            main .adviceContainer .expertsContainer .parent .div2 .card .upperTextG {
+              font-size: 14px;
+              font-family: "SinkinSans-400Regular", sans-serif;
+              padding: 0 20px;
+              line-height: 15px;
               text-decoration: none;
               color: #000000; }
-              main .adviceContainer .expertsContainer .div1 .cardBig .linkArticle a:hover {
-                text-decoration: underline;
-                text-decoration-color: #ff6300; }
-              main .adviceContainer .expertsContainer .div1 .cardBig .linkArticle a span {
-                color: #ff6300; }
-      main .adviceContainer .expertsContainer .div2 {
-        grid-area: 1 / 2 / 2 / 3;
-        max-height: 780px; }
-        main .adviceContainer .expertsContainer .div2 .card {
+            main .adviceContainer .expertsContainer .parent .div2 .card .bottomTextG {
+              width: 90%;
+              margin: 0 auto;
+              border-top: 1px solid #f0f0f0;
+              padding: 15px 0;
+              font-size: 14px;
+              font-family: "SinkinSans-400Regular", sans-serif;
+              letter-spacing: 0.01rem;
+              text-align: center; }
+              main .adviceContainer .expertsContainer .parent .div2 .card .bottomTextG a {
+                text-decoration: none;
+                color: #000000; }
+                main .adviceContainer .expertsContainer .parent .div2 .card .bottomTextG a:hover {
+                  text-decoration: underline;
+                  text-decoration-color: #ff6300; }
+                main .adviceContainer .expertsContainer .parent .div2 .card .bottomTextG a span {
+                  color: #ff6300; }
+        main .adviceContainer .expertsContainer .parent .div3 {
+          display: flex;
+          flex-direction: column;
+          width: 32%; }
+          main .adviceContainer .expertsContainer .parent .div3 .card {
+            max-height: 370px;
+            width: 100%;
+            border-radius: 10px;
+            background-color: #ffffff;
+            margin-bottom: 25px; }
+            main .adviceContainer .expertsContainer .parent .div3 .card:last-child {
+              margin-bottom: 0; }
+            main .adviceContainer .expertsContainer .parent .div3 .card img {
+              width: 100%;
+              height: auto;
+              border-radius: 10px 10px 0 0; }
+            main .adviceContainer .expertsContainer .parent .div3 .card .upperTextG {
+              font-size: 14px;
+              font-family: "SinkinSans-400Regular", sans-serif;
+              padding: 0 20px;
+              line-height: 15px;
+              text-decoration: none;
+              color: #000000; }
+            main .adviceContainer .expertsContainer .parent .div3 .card .bottomTextG {
+              width: 90%;
+              margin: 0 auto;
+              border-top: 1px solid #f0f0f0;
+              padding: 15px 0;
+              font-size: 14px;
+              font-family: "SinkinSans-400Regular", sans-serif;
+              letter-spacing: 0.01rem;
+              text-align: center; }
+              main .adviceContainer .expertsContainer .parent .div3 .card .bottomTextG a {
+                text-decoration: none;
+                color: #000000; }
+                main .adviceContainer .expertsContainer .parent .div3 .card .bottomTextG a:hover {
+                  text-decoration: underline;
+                  text-decoration-color: #ff6300; }
+                main .adviceContainer .expertsContainer .parent .div3 .card .bottomTextG a span {
+                  color: #ff6300; }
+      main .adviceContainer .expertsContainer .expertsMobileCarousel {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; }
+        @media (min-width: 750px) {
+          main .adviceContainer .expertsContainer .expertsMobileCarousel {
+            display: none; } }
+        main .adviceContainer .expertsContainer .expertsMobileCarousel .card {
           max-height: 370px;
           width: 100%;
           border-radius: 10px;
           background-color: #ffffff;
           margin-bottom: 25px; }
-          main .adviceContainer .expertsContainer .div2 .card:last-child {
+          main .adviceContainer .expertsContainer .expertsMobileCarousel .card:last-child {
             margin-bottom: 0; }
-          main .adviceContainer .expertsContainer .div2 .card img {
+          main .adviceContainer .expertsContainer .expertsMobileCarousel .card img {
             width: 100%;
             height: auto;
             border-radius: 10px 10px 0 0; }
-          main .adviceContainer .expertsContainer .div2 .card .upperTextG {
+          main .adviceContainer .expertsContainer .expertsMobileCarousel .card .upperTextG {
             font-size: 14px;
             font-family: "SinkinSans-400Regular", sans-serif;
-            padding: 0 20px;
+            padding: 0 5px;
             line-height: 15px;
             text-decoration: none;
             color: #000000; }
-          main .adviceContainer .expertsContainer .div2 .card .bottomTextG {
+          main .adviceContainer .expertsContainer .expertsMobileCarousel .card .bottomTextG {
             width: 90%;
             margin: 0 auto;
             border-top: 1px solid #f0f0f0;
@@ -1531,52 +1702,13 @@ main {
             font-family: "SinkinSans-400Regular", sans-serif;
             letter-spacing: 0.01rem;
             text-align: center; }
-            main .adviceContainer .expertsContainer .div2 .card .bottomTextG a {
+            main .adviceContainer .expertsContainer .expertsMobileCarousel .card .bottomTextG a {
               text-decoration: none;
               color: #000000; }
-              main .adviceContainer .expertsContainer .div2 .card .bottomTextG a:hover {
+              main .adviceContainer .expertsContainer .expertsMobileCarousel .card .bottomTextG a:hover {
                 text-decoration: underline;
                 text-decoration-color: #ff6300; }
-              main .adviceContainer .expertsContainer .div2 .card .bottomTextG a span {
-                color: #ff6300; }
-      main .adviceContainer .expertsContainer .div3 {
-        grid-area: 1 / 3 / 2 / 4;
-        max-height: 780px; }
-        main .adviceContainer .expertsContainer .div3 .card {
-          max-height: 370px;
-          width: 100%;
-          border-radius: 10px;
-          background-color: #ffffff;
-          margin-bottom: 25px; }
-          main .adviceContainer .expertsContainer .div3 .card:last-child {
-            margin-bottom: 0; }
-          main .adviceContainer .expertsContainer .div3 .card img {
-            width: 100%;
-            height: auto;
-            border-radius: 10px 10px 0 0; }
-          main .adviceContainer .expertsContainer .div3 .card .upperTextG {
-            font-size: 14px;
-            font-family: "SinkinSans-400Regular", sans-serif;
-            padding: 0 20px;
-            line-height: 15px;
-            text-decoration: none;
-            color: #000000; }
-          main .adviceContainer .expertsContainer .div3 .card .bottomTextG {
-            width: 90%;
-            margin: 0 auto;
-            border-top: 1px solid #f0f0f0;
-            padding: 15px 0;
-            font-size: 14px;
-            font-family: "SinkinSans-400Regular", sans-serif;
-            letter-spacing: 0.01rem;
-            text-align: center; }
-            main .adviceContainer .expertsContainer .div3 .card .bottomTextG a {
-              text-decoration: none;
-              color: #000000; }
-              main .adviceContainer .expertsContainer .div3 .card .bottomTextG a:hover {
-                text-decoration: underline;
-                text-decoration-color: #ff6300; }
-              main .adviceContainer .expertsContainer .div3 .card .bottomTextG a span {
+              main .adviceContainer .expertsContainer .expertsMobileCarousel .card .bottomTextG a span {
                 color: #ff6300; }
   main .searchFormsTab {
     display: none; }
