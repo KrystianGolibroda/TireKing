@@ -143,9 +143,30 @@ setInterval(function time(){
 }, 1000);
 
 
-//Karuzela opinii
+//Karuzela logo firm
 
-
+$(document).ready(function(){
+   $('.logoFirmsMobile').owlCarousel( {
+      autoplay: true,
+      autoplayTimeout: 3000,
+      autoplayHoverPause: false,
+      // slideSpeed: 50,
+      items: 3,
+      loop: true,
+      margin: 30,
+      dots: false,
+      responsive: {
+         0:{
+            items: 2,
+            margin: 30,
+         },
+         400:{
+            items: 3,
+            margin: 30,
+         }
+      }
+   });
+});
 
 //Karuzela karty produktowej
 $(document).ready(function () {
@@ -163,7 +184,7 @@ $(document).ready(function () {
                slidesToScroll: 1,
                infinite: true,
             }
-            },
+         },
          {
             breakpoint: 600,
             settings: {
@@ -181,6 +202,20 @@ $(document).ready(function () {
             }
          }
       ]
+   });
+});
+
+//Karuzela porad ekspertów
+$(document).ready(function () {
+   $('.expertsMobileCarousel').owlCarousel( {
+      autoplay: true,
+      autoplayTimeout: 8000,
+      autoplayHoverPause: false,
+      items: 1,
+      loop: true,
+      margin: 15,
+      stagePadding: 50,
+      rtl: false,
    });
 });
 
