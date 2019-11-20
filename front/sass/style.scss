@@ -640,6 +640,7 @@ main {
           .opinionsContainerColumns {
             display: flex;
             flex-direction: column;
+            width: 32%;
 
             .firstOpinion {
               position: relative;
@@ -1622,7 +1623,10 @@ main {
   .adviceContainer {
     background-color: $shopBackgroundColor;
     width: 100%;
-    padding-bottom: 50px;
+    padding-bottom: 10px;
+    @media(min-width: 750px){
+      padding-bottom: 50px;
+    }
 
     .expertsContainer {
       max-width: 1200px;
@@ -1947,6 +1951,7 @@ main {
         }
         .card {
           max-height: 370px;
+          max-width: 370px;
           width: 100%;
           border-radius: 10px;
           background-color: $white;
@@ -2483,10 +2488,9 @@ main {
   .footer {
     width: 100%;
     .footerContainer {
-      width: 100%;
-      background-color: $mobileFooter;
-      margin: 0 auto;
+      display: none;
       @media(min-width: 768px) {
+        display: flex;
         margin: 0 auto 200px;
         background-color: $grey;
         border-radius: 10px;
@@ -2494,13 +2498,13 @@ main {
       }
 
       .footerContent {
-        display: flex;
-        flex-direction: column;
+        display: none;
         @media(min-width: 768px) {
           display: flex;
           flex-direction: row;
           justify-content: space-between;
           padding: 40px 30px 40px 30px;
+          width: 100%;
         }
 
         .div1 {
@@ -2556,10 +2560,8 @@ main {
         }
 
         .div2 {
-          display: flex;
-          flex-direction: column;
-          margin: 0 auto;
-          @media(min-width:768px){
+          display: none;
+          @media(min-width:100px){
             display: flex;
             flex-direction: column;
           }
@@ -2645,6 +2647,8 @@ main {
 
         .div4 {
           margin: 0 auto;
+          display: flex;
+          flex-direction: column;
           @media(min-width:768px){
             display: flex;
             flex-direction: column;
@@ -2724,6 +2728,114 @@ main {
                 @media(min-width: 768px) {
                   content: url("../images/icon/instagram_ikona.png");
                 }
+              }
+            }
+          }
+        }
+      }
+
+
+    }
+
+    .footerContainerMobile {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      margin: 0 auto;
+      text-align: left;
+      background-color: $mobileFooter;
+      padding-bottom: 20px;
+      margin-bottom: 50px;
+      @media(min-width: 768px) {
+        display: none;
+      }
+
+      .mobileFooterContent {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+
+        .helpDeskMobileFooterAlign {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          .helpDeskMobileFooter {
+            padding: 15px;
+            p {
+              margin: 4px 0;
+              font-size: 14px;
+              font-family: $SS-400Regular;
+              a {
+                text-decoration: none;
+                color: $white;
+                span {
+                  color: $orangeButton;
+
+                }
+              }
+            }
+          }
+        }
+
+        .regulaminAndIcons {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-evenly;
+          align-items: center;
+          padding-top: 10px;
+          width: 100%;
+
+          .regulaminAndIconsText {
+            display: flex;
+            flex-direction: column;
+            width: 55%;
+            p {
+              width: 85%;
+              margin: 0;
+              font-size: 10px;
+              color: $white;
+
+              a {
+                text-decoration: underline;
+                text-decoration-color: $orangeButton;
+                color: $orangeButton;
+              }
+            }
+          }
+          .iconsMobile {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 20%;
+
+            .iconsFacebook{
+              display: flex;
+              flex-direction: row;
+
+              .iconsFacebookContent{
+                content: url("../images/icon/facebook_mobile_white.png");
+                width: 40px;
+                height: 40px;
+              }
+            }
+            .iconsYT{
+              display: flex;
+              flex-direction: row;
+
+              .iconsYTContent{
+                content: url("../images/icon/youtube_mobile_black.png");
+                width: 40px;
+                height: 40px;
+              }
+            }
+            .iconsInstagram{
+              display: flex;
+              flex-direction: row;
+              .iconsInstagramContent{
+                content: url("../images/icon/instagram_mobile_white.png");
+                width: 40px;
+                height: 40px;
               }
             }
           }

@@ -146,11 +146,10 @@ setInterval(function time(){
 //Karuzela logo firm
 
 $(document).ready(function(){
-   $('.logoFirmsMobile').owlCarousel( {
+   $('.logoFirmsMobile').owlCarousel({
       autoplay: true,
       autoplayTimeout: 3000,
       autoplayHoverPause: false,
-      // slideSpeed: 50,
       items: 3,
       loop: true,
       margin: 30,
@@ -211,10 +210,9 @@ $(document).ready(function () {
       autoplay: true,
       autoplayTimeout: 8000,
       autoplayHoverPause: false,
-      items: 1,
+      items: 2,
       loop: true,
       margin: 15,
-      stagePadding: 50,
       rtl: false,
    });
 });
