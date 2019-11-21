@@ -145,25 +145,18 @@ setInterval(function time(){
 
 //Karuzela logo firm
 
-$(document).ready(function(){
-   $('.logoFirmsMobile').owlCarousel({
+$(document).ready(function () {
+   $('.logoFirmsMobile').slick({
+      variableWidth: true,
       autoplay: true,
-      autoplayTimeout: 3000,
-      autoplayHoverPause: false,
-      items: 3,
-      loop: true,
-      margin: 30,
+      autoplaySpeed: 0,
+      speed: 4000,
+      cssEase: 'linear',
+      slidesToShow: 1,
+      slidesToScroll: 1,
       dots: false,
-      responsive: {
-         0:{
-            items: 2,
-            margin: 30,
-         },
-         400:{
-            items: 3,
-            margin: 30,
-         }
-      }
+      arrows: false,
+      verticalSwiping: true
    });
 });
 
@@ -181,7 +174,7 @@ $(document).ready(function () {
             settings: {
                slidesToShow: 3,
                slidesToScroll: 1,
-               infinite: true,
+               infinite: true
             }
          },
          {
@@ -205,17 +198,34 @@ $(document).ready(function () {
 });
 
 //Karuzela porad ekspertów
+
 $(document).ready(function () {
-   $('.expertsMobileCarousel').owlCarousel( {
+   $('.expertsMobileCarousel').slick({
+      infinite: false,
+      slidesToShow: 2,
+      slidesToScroll: 1,
       autoplay: true,
-      autoplayTimeout: 8000,
-      autoplayHoverPause: false,
-      items: 2,
-      loop: true,
-      margin: 15,
-      rtl: false,
+      autoplaySpeed: 4000,
+      dots: true,
+      arrows: false,
    });
 });
+
+//Karuzela opinii
+
+$(document).ready(function () {
+   $('.opinionsSlickMobile').slick({
+      infinite: false,
+      slidesToShow: 2,
+      slidesToScroll: 1,
+      autoplay: false,
+      autoplaySpeed: 4000,
+      dots: true,
+      arrows: false
+   })
+});
+
+
 
 // Rozwijane menu:
 $(document).ready(function () {
