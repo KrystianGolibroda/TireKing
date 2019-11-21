@@ -409,11 +409,7 @@ nav {
   background-color: #ffffff; }
   nav .menuBottom {
     display: block;
-    width: 100%;
-    margin: 0 auto;
-    /* Dropdown */
-    /* Sub Dropdown */
-    /* Display none by Default */ }
+    margin: 0 auto; }
     nav .menuBottom #top-nav {
       min-height: 50px; }
       nav .menuBottom #top-nav ul {
@@ -427,8 +423,7 @@ nav {
         justify-content: space-between;
         align-items: center;
         height: 90px;
-        max-width: 1200px;
-        width: 100%; }
+        max-width: 1200px; }
     nav .menuBottom #top-nav ul li {
       color: #221d24; }
     nav .menuBottom #top-nav ul li a {
@@ -465,130 +460,177 @@ nav {
       display: none; }
 
 main {
-  width: 98%;
   align-items: center; }
-  @media (min-width: 768px) {
-    main .carSearchContainer {
+  main .carSearchContainer {
+    background-color: #f8f8f8;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important; }
+    @media (min-width: 750px) {
+      main .carSearchContainer {
+        background-image: url("../images/michelin_background.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-top: 50px !important;
+        padding-bottom: 475px !important; } }
+    main .carSearchContainer .carSearchBox {
       background-color: #f8f8f8;
-      padding-top: 10px !important;
-      padding-bottom: 10px !important; } }
-  @media (min-width: 768px) and (min-width: 550px) {
-    main .carSearchContainer {
-      background-image: url("../images/michelin_background.png");
-      width: 100%;
-      background-repeat: no-repeat;
-      background-size: cover;
-      padding-top: 50px !important;
-      padding-bottom: 475px !important; } }
-  @media (min-width: 768px) {
-      main .carSearchContainer .carSearchBox {
-        background-color: #f8f8f8;
-        display: flex;
-        flex-direction: column;
-        border: 1px solid black;
-        border-radius: 10px;
-        max-width: 1030px;
-        margin: 0 auto; } }
-    @media (min-width: 768px) and (min-width: 550px) {
-      main .carSearchContainer .carSearchBox {
-        -webkit-box-shadow: 0 0 10px 0 #8d8d8d;
-        -moz-box-shadow: 0 0 10px 0 #8d8d8d;
-        box-shadow: 0 0 10px 0 #8d8d8d;
-        border: none; }
-        main .carSearchContainer .carSearchBox .top {
-          border-radius: 10px;
-          max-width: 1030px;
-          max-height: 440px;
-          background-color: #f8f8f8; }
-          main .carSearchContainer .carSearchBox .top .tabLink {
-            font-family: "SinkinSans-700Bold", sans-serif;
-            font-size: 19px;
-            letter-spacing: 0.01rem;
-            cursor: pointer;
-            width: 50%;
-            float: left;
-            padding: 15px;
-            text-align: center;
-            outline: none;
-            border: none;
-            background-color: #e2e2e2;
-            color: #000000; }
-          main .carSearchContainer .carSearchBox .top .tabContent {
-            box-sizing: border-box;
-            display: flex;
-            align-items: baseline;
-            height: 385px;
+      display: flex;
+      flex-direction: column;
+      border: 1px solid black;
+      border-radius: 10px;
+      max-width: 1030px;
+      margin: 0 auto; }
+      @media (min-width: 550px) {
+        main .carSearchContainer .carSearchBox {
+          -webkit-box-shadow: 0 0 10px 0 #8d8d8d;
+          -moz-box-shadow: 0 0 10px 0 #8d8d8d;
+          box-shadow: 0 0 10px 0 #8d8d8d;
+          border: none; }
+          main .carSearchContainer .carSearchBox .top {
+            border-radius: 10px;
             max-width: 1030px;
-            width: 100%; }
-            main .carSearchContainer .carSearchBox .top .tabContent .selectContainer {
+            max-height: 440px;
+            background-color: #f8f8f8; }
+            main .carSearchContainer .carSearchBox .top .tabLink {
               font-family: "SinkinSans-700Bold", sans-serif;
-              font-size: 14px;
+              font-size: 19px;
+              letter-spacing: 0.01rem;
+              cursor: pointer;
+              width: 50%;
+              float: left;
+              padding: 15px;
+              text-align: center;
+              outline: none;
+              border: none;
+              background-color: #e2e2e2;
+              color: #000000; }
+            main .carSearchContainer .carSearchBox .top .tabContent {
+              box-sizing: border-box;
               display: flex;
-              flex-direction: row;
+              align-items: baseline;
+              height: 385px;
+              max-width: 1030px;
               width: 100%; }
-              main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .firstBox {
-                max-width: 515px;
-                width: 100%;
-                max-height: 365px;
-                height: 100%;
-                margin: 0 auto;
+              main .carSearchContainer .carSearchBox .top .tabContent .selectContainer {
+                font-family: "SinkinSans-700Bold", sans-serif;
+                font-size: 14px;
                 display: flex;
-                flex-direction: column; }
-                main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .firstBox .endContent {
+                flex-direction: row;
+                width: 100%; }
+                main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .firstBox {
                   max-width: 515px;
-                  width: 100%; }
-                  main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .firstBox .endContent .smallSelectBox {
-                    max-width: 445px;
+                  width: 100%;
+                  max-height: 365px;
+                  height: 100%;
+                  margin: 0 auto;
+                  display: flex;
+                  flex-direction: column; }
+                  main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .firstBox .endContent {
+                    max-width: 515px;
+                    width: 100%; }
+                    main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .firstBox .endContent .smallSelectBox {
+                      max-width: 445px;
+                      width: 100%;
+                      max-height: 80px;
+                      height: 100%;
+                      margin-top: 45px;
+                      display: flex;
+                      flex-direction: row;
+                      justify-content: space-between;
+                      float: right; }
+                      main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .firstBox .endContent .smallSelectBox .selectLabelBox {
+                        position: relative;
+                        width: 135px; }
+                        main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .firstBox .endContent .smallSelectBox .selectLabelBox .triangle-bottomleft {
+                          margin-left: 85px;
+                          position: relative;
+                          top: 0;
+                          width: 0;
+                          height: 0;
+                          display: flex;
+                          align-items: center;
+                          justify-content: center;
+                          border-style: solid;
+                          border-width: 0 0 45px 50px;
+                          border-color: transparent transparent transparent #ffffff;
+                          transform: skewX(63deg);
+                          -ms-transform: skewX(63deg);
+                          -moz-transform: skewX(63deg);
+                          -webkit-transform: skew(63deg); }
+                        main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .firstBox .endContent .smallSelectBox .selectLabelBox .triangle-bottom {
+                          margin: 0 auto;
+                          position: relative;
+                          top: 0;
+                          width: 0;
+                          height: 0;
+                          border-style: solid;
+                          border-width: 22px 17px 0 17px;
+                          border-color: #ffffff transparent transparent transparent; }
+                        main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .firstBox .endContent .smallSelectBox .selectLabelBox .triangle-bottomright {
+                          margin-right: 50px;
+                          position: relative;
+                          top: 0;
+                          width: 0;
+                          height: 0;
+                          border-style: solid;
+                          border-width: 45px 0 0 50px;
+                          border-color: #ffffff transparent transparent transparent;
+                          transform: skewX(-63deg);
+                          -ms-transform: skewX(-63deg);
+                          -moz-transform: skewX(-63deg);
+                          -webkit-transform: skewX(-63deg); }
+                        main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .firstBox .endContent .smallSelectBox .selectLabelBox .upLabel {
+                          display: block;
+                          padding-bottom: 6px;
+                          padding-left: 12px;
+                          font-size: 14px;
+                          font-family: "SinkinSans-700Bold", sans-serif;
+                          color: #929292;
+                          letter-spacing: 0.03rem;
+                          position: relative;
+                          z-index: 2; }
+                        main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .firstBox .endContent .smallSelectBox .selectLabelBox .smallSelect {
+                          max-height: 50px;
+                          height: 100%;
+                          width: 100%;
+                          padding-left: 12px;
+                          font-size: 14px;
+                          font-family: "SinkinSans-700Bold", sans-serif;
+                          -moz-appearance: none;
+                          -webkit-appearance: none;
+                          appearance: none;
+                          background-image: url("../images/icon/angle_down_orange.png");
+                          background-repeat: no-repeat, repeat;
+                          background-position: right .7em top 50%, 0 0;
+                          background-size: .65em auto, 100%;
+                          border: 1px solid #dbdbdb;
+                          border-radius: 5px;
+                          position: relative;
+                          z-index: 2; }
+                    main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .firstBox .endContent .tireImageDiv {
+                      float: right;
+                      margin-right: 22px; }
+                      main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .firstBox .endContent .tireImageDiv .tireImage {
+                        margin-top: 30px;
+                        max-width: 400px;
+                        width: 100%;
+                        height: auto; }
+                main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .secondBox {
+                  max-width: 515px;
+                  width: 100%;
+                  margin: 0 auto;
+                  display: flex;
+                  flex-direction: column; }
+                  main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .secondBox .smallSelectBox {
                     width: 100%;
-                    max-height: 80px;
-                    height: 100%;
                     margin-top: 45px;
                     display: flex;
                     flex-direction: row;
-                    justify-content: space-between;
-                    float: right; }
-                    main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .firstBox .endContent .smallSelectBox .selectLabelBox {
-                      position: relative;
-                      width: 135px; }
-                      main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .firstBox .endContent .smallSelectBox .selectLabelBox .triangle-bottomleft {
-                        margin-left: 85px;
-                        position: relative;
-                        top: 0;
-                        width: 0;
-                        height: 0;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        border-style: solid;
-                        border-width: 0 0 45px 50px;
-                        border-color: transparent transparent transparent #ffffff;
-                        transform: skewX(63deg);
-                        -ms-transform: skewX(63deg);
-                        -moz-transform: skewX(63deg);
-                        -webkit-transform: skew(63deg); }
-                      main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .firstBox .endContent .smallSelectBox .selectLabelBox .triangle-bottom {
-                        margin: 0 auto;
-                        position: relative;
-                        top: 0;
-                        width: 0;
-                        height: 0;
-                        border-style: solid;
-                        border-width: 22px 17px 0 17px;
-                        border-color: #ffffff transparent transparent transparent; }
-                      main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .firstBox .endContent .smallSelectBox .selectLabelBox .triangle-bottomright {
-                        margin-right: 50px;
-                        position: relative;
-                        top: 0;
-                        width: 0;
-                        height: 0;
-                        border-style: solid;
-                        border-width: 45px 0 0 50px;
-                        border-color: #ffffff transparent transparent transparent;
-                        transform: skewX(-63deg);
-                        -ms-transform: skewX(-63deg);
-                        -moz-transform: skewX(-63deg);
-                        -webkit-transform: skewX(-63deg); }
-                      main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .firstBox .endContent .smallSelectBox .selectLabelBox .upLabel {
+                    justify-content: center; }
+                    main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .secondBox .smallSelectBox .selectLabelBox {
+                      max-width: 365px;
+                      width: 100%; }
+                      main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .secondBox .smallSelectBox .selectLabelBox label {
                         display: block;
                         padding-bottom: 6px;
                         padding-left: 12px;
@@ -598,9 +640,8 @@ main {
                         letter-spacing: 0.03rem;
                         position: relative;
                         z-index: 2; }
-                      main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .firstBox .endContent .smallSelectBox .selectLabelBox .smallSelect {
-                        max-height: 50px;
-                        height: 100%;
+                      main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .secondBox .smallSelectBox .selectLabelBox .smallSelectT {
+                        height: 50px;
                         width: 100%;
                         padding-left: 12px;
                         font-size: 14px;
@@ -616,365 +657,516 @@ main {
                         border-radius: 5px;
                         position: relative;
                         z-index: 2; }
-                  main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .firstBox .endContent .tireImageDiv {
-                    float: right;
-                    margin-right: 22px; }
-                    main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .firstBox .endContent .tireImageDiv .tireImage {
-                      margin-top: 30px;
-                      max-width: 400px;
-                      width: 100%;
-                      height: auto; }
-              main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .secondBox {
-                max-width: 515px;
-                width: 100%;
-                margin: 0 auto;
-                display: flex;
-                flex-direction: column; }
-                main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .secondBox .smallSelectBox {
-                  width: 100%;
-                  margin-top: 45px;
-                  display: flex;
-                  flex-direction: row;
-                  justify-content: center; }
-                  main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .secondBox .smallSelectBox .selectLabelBox {
-                    max-width: 365px;
-                    width: 100%; }
-                    main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .secondBox .smallSelectBox .selectLabelBox label {
-                      display: block;
-                      padding-bottom: 6px;
-                      padding-left: 12px;
+                  main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .secondBox .buttonBox {
+                    width: 100%;
+                    margin-top: 45px;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center; }
+                    main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .secondBox .buttonBox .buttonSearchBox {
+                      max-width: 365px;
+                      width: 100%; }
+                      main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .secondBox .buttonBox .buttonSearchBox button {
+                        width: 100%;
+                        height: 50px;
+                        background-color: #ff6300;
+                        color: #ffffff;
+                        border: none;
+                        border-radius: 5px;
+                        cursor: pointer;
+                        font-size: 19px;
+                        font-family: "SinkinSans-700Bold", sans-serif;
+                        letter-spacing: 0.05rem; }
+                  main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .secondBox .advancedSearch {
+                    width: 100%;
+                    margin-top: 40px;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center; }
+                    main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .secondBox .advancedSearch a {
+                      color: #000000;
                       font-size: 14px;
                       font-family: "SinkinSans-700Bold", sans-serif;
-                      color: #929292;
-                      letter-spacing: 0.03rem;
-                      position: relative;
-                      z-index: 2; }
-                    main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .secondBox .smallSelectBox .selectLabelBox .smallSelectT {
-                      height: 50px;
-                      width: 100%;
-                      padding-left: 12px;
-                      font-size: 14px;
-                      font-family: "SinkinSans-700Bold", sans-serif;
-                      -moz-appearance: none;
-                      -webkit-appearance: none;
-                      appearance: none;
-                      background-image: url("../images/icon/angle_down_orange.png");
-                      background-repeat: no-repeat, repeat;
-                      background-position: right .7em top 50%, 0 0;
-                      background-size: .65em auto, 100%;
-                      border: 1px solid #dbdbdb;
-                      border-radius: 5px;
-                      position: relative;
-                      z-index: 2; }
-                main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .secondBox .buttonBox {
-                  width: 100%;
-                  margin-top: 45px;
-                  display: flex;
-                  flex-direction: row;
-                  justify-content: center; }
-                  main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .secondBox .buttonBox .buttonSearchBox {
-                    max-width: 365px;
-                    width: 100%; }
-                    main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .secondBox .buttonBox .buttonSearchBox button {
-                      width: 100%;
-                      height: 50px;
-                      background-color: #ff6300;
-                      color: #ffffff;
-                      border: none;
-                      border-radius: 5px;
-                      cursor: pointer;
-                      font-size: 19px;
-                      font-family: "SinkinSans-700Bold", sans-serif;
-                      letter-spacing: 0.05rem; }
-                main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .secondBox .advancedSearch {
-                  width: 100%;
-                  margin-top: 40px;
-                  display: flex;
-                  flex-direction: row;
-                  justify-content: center; }
-                  main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .secondBox .advancedSearch a {
-                    color: #000000;
-                    font-size: 14px;
-                    font-family: "SinkinSans-700Bold", sans-serif;
-                    text-decoration: none; }
-                    main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .secondBox .advancedSearch a:hover {
-                      text-decoration: underline;
-                      text-decoration-color: #ff6300; } }
-  @media (min-width: 768px) {
-    main .bottomPromoIcons {
-      display: none; } }
-  @media (min-width: 768px) and (min-width: 800px) {
-    main .bottomPromoIcons {
-      height: 65px;
-      background-color: #ffffff;
-      border-radius: 0 0 10px 10px;
-      width: 100%;
-      display: flex;
-      flex-direction: row; }
-      main .bottomPromoIcons .promoContainer {
-        font-size: 12px;
-        font-family: "SinkinSans-400Regular", sans-serif;
-        text-align: center;
-        margin: 10px 0;
-        width: 33%; }
-        main .bottomPromoIcons .promoContainer .boxPromo {
-          display: flex;
-          flex-direction: row;
-          text-align: center;
-          justify-content: center; }
-          main .bottomPromoIcons .promoContainer .boxPromo p {
-            margin-left: 10px; } }
-  @media (min-width: 768px) {
-    main .opinions {
-      width: 100%; }
-      main .opinions .opinionsText {
+                      text-decoration: none; }
+                      main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .secondBox .advancedSearch a:hover {
+                        text-decoration: underline;
+                        text-decoration-color: #ff6300; } }
+  main .bottomPromoIcons {
+    display: none; }
+    @media (min-width: 800px) {
+      main .bottomPromoIcons {
+        height: 65px;
+        background-color: #ffffff;
+        border-radius: 0 0 10px 10px;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center; }
-        main .opinions .opinionsText h2 {
-          font-size: 36px;
-          font-family: "SinkinSans-700Bold", sans-serif;
-          padding: 0 0 20px 0; }
-        main .opinions .opinionsText .opinionsContainer {
-          position: relative;
-          max-width: 1200px;
-          width: 100%;
+        flex-direction: row; }
+        main .bottomPromoIcons .promoContainer {
+          font-size: 12px;
+          font-family: "SinkinSans-400Regular", sans-serif;
+          text-align: center;
+          margin: 10px 0;
+          width: 33%; }
+          main .bottomPromoIcons .promoContainer .boxPromo {
+            display: flex;
+            flex-direction: row;
+            text-align: center;
+            justify-content: center; }
+            main .bottomPromoIcons .promoContainer .boxPromo p {
+              margin-left: 10px; } }
+  main .opinions {
+    width: 100%; }
+    main .opinions .opinionsText {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      main .opinions .opinionsText h2 {
+        font-size: 36px;
+        font-family: "SinkinSans-700Bold", sans-serif;
+        padding: 0 0 20px 0; }
+      main .opinions .opinionsText .opinionsContainer {
+        display: none; }
+        @media (min-width: 750px) {
+          main .opinions .opinionsText .opinionsContainer {
+            position: relative;
+            max-width: 1200px;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-bottom: 30px; } }
+        main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns {
           display: flex;
-          flex-direction: row;
-          justify-content: space-between;
-          margin-bottom: 30px; }
-          main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns {
+          flex-direction: column;
+          width: 32%; }
+          main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .firstOpinion {
+            position: relative;
             display: flex;
             flex-direction: column;
-            width: 32%; }
-            main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .firstOpinion {
-              position: relative;
+            justify-content: center;
+            align-items: center;
+            max-width: 380px;
+            height: 150px;
+            width: 100%;
+            text-align: center;
+            line-height: 20px;
+            background-color: transparent;
+            border: 2px solid #ff6300;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+            z-index: 99; }
+            main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .firstOpinion p {
+              margin: 0; }
+            main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .firstOpinion .rowFlex {
               display: flex;
-              flex-direction: column;
-              justify-content: center;
-              align-items: center;
-              max-width: 380px;
-              height: 150px;
-              width: 100%;
-              text-align: center;
-              line-height: 20px;
-              background-color: transparent;
-              border: 2px solid #ff6300;
-              -webkit-border-radius: 5px;
-              -moz-border-radius: 5px;
-              border-radius: 5px;
-              z-index: 99; }
-              main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .firstOpinion p {
-                margin: 0; }
-              main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .firstOpinion .rowFlex {
-                display: flex;
-                flex-direction: row; }
-                main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .firstOpinion .rowFlex .rowFlexText {
-                  font-size: 13px;
-                  font-family: "SinkinSans-400Regular", sans-serif; }
-                main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .firstOpinion .rowFlex .starsRating i {
-                  color: #ff6300; }
-              main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .firstOpinion:before {
-                content: ' ';
-                position: absolute;
-                width: 0;
-                height: 0;
-                left: 40px;
-                top: 150px;
-                border: 12px solid;
-                border-color: #ff6300 transparent transparent #ff6300;
-                transform: skew(-20deg);
-                /* Safari */
-                -webkit-transform: skew(-20deg);
-                /* Firefox */
-                -moz-transform: skew(-20deg);
-                /* IE */
-                -ms-transform: skew(-20deg);
-                /* Opera */
-                -o-transform: skew(-20deg);
-                z-index: 1; }
-              main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .firstOpinion:after {
-                content: ' ';
-                position: absolute;
-                width: 0;
-                height: 0;
-                left: 42px;
-                top: 149px;
-                border: 11px solid;
-                border-color: #ffffff transparent transparent #ffffff;
-                transform: skew(-20deg);
-                /* Safari */
-                -webkit-transform: skew(-20deg);
-                /* Firefox */
-                -moz-transform: skew(-20deg);
-                /* IE */
-                -ms-transform: skew(-20deg);
-                /* Opera */
-                -o-transform: skew(-20deg);
-                z-index: 1; }
-            main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .secondOpinion {
+              flex-direction: row; }
+              main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .firstOpinion .rowFlex .rowFlexText {
+                font-size: 13px;
+                font-family: "SinkinSans-400Regular", sans-serif; }
+              main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .firstOpinion .rowFlex .starsRating i {
+                color: #ff6300; }
+            main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .firstOpinion:before {
+              content: ' ';
+              position: absolute;
+              width: 0;
+              height: 0;
+              left: 40px;
+              top: 150px;
+              border: 12px solid;
+              border-color: #ff6300 transparent transparent #ff6300;
+              transform: skew(-20deg);
+              -webkit-transform: skew(-20deg);
+              -moz-transform: skew(-20deg);
+              -ms-transform: skew(-20deg);
+              -o-transform: skew(-20deg);
+              z-index: 1; }
+            main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .firstOpinion:after {
+              content: ' ';
+              position: absolute;
+              width: 0;
+              height: 0;
+              left: 42px;
+              top: 149px;
+              border: 11px solid;
+              border-color: #ffffff transparent transparent #ffffff;
+              transform: skew(-20deg);
+              -webkit-transform: skew(-20deg);
+              -moz-transform: skew(-20deg);
+              -ms-transform: skew(-20deg);
+              -o-transform: skew(-20deg);
+              z-index: 1; }
+          main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .secondOpinion {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            max-width: 380px;
+            max-height: 150px;
+            width: 100%;
+            height: 150px;
+            text-align: center;
+            line-height: 20px;
+            background-color: transparent;
+            border: 2px solid #ff6300;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px; }
+            main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .secondOpinion p {
+              margin: 0; }
+            main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .secondOpinion .rowFlex {
               display: flex;
-              justify-content: center;
-              flex-direction: column;
-              align-items: center;
-              position: relative;
-              max-width: 380px;
-              max-height: 150px;
-              width: 100%;
-              height: 100%;
-              text-align: center;
-              line-height: 20px;
-              background-color: transparent;
-              border: 2px solid #ff6300;
-              -webkit-border-radius: 5px;
-              -moz-border-radius: 5px;
-              border-radius: 5px; }
-              main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .secondOpinion p {
-                margin: 0; }
-              main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .secondOpinion .rowFlex {
-                display: flex;
-                flex-direction: row; }
-                main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .secondOpinion .rowFlex .rowFlexText {
-                  font-size: 13px;
-                  font-family: "SinkinSans-400Regular", sans-serif; }
-                main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .secondOpinion .rowFlex .starsRating i {
-                  color: #ff6300; }
-              main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .secondOpinion:before {
-                content: ' ';
-                position: absolute;
-                width: 0;
-                height: 0;
-                left: 40px;
-                top: 150px;
-                border: 12px solid;
-                border-color: #ff6300 transparent transparent #ff6300;
-                transform: skew(-20deg);
-                /* Safari */
-                -webkit-transform: skew(-20deg);
-                /* Firefox */
-                -moz-transform: skew(-20deg);
-                /* IE */
-                -ms-transform: skew(-20deg);
-                /* Opera */
-                -o-transform: skew(-20deg);
-                z-index: 3; }
-              main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .secondOpinion:after {
-                content: ' ';
-                position: absolute;
-                width: 0;
-                height: 0;
-                left: 42px;
-                top: 149px;
-                border: 11px solid;
-                border-color: #ffffff transparent transparent #ffffff;
-                transform: skew(-20deg);
-                /* Safari */
-                -webkit-transform: skew(-20deg);
-                /* Firefox */
-                -moz-transform: skew(-20deg);
-                /* IE */
-                -ms-transform: skew(-20deg);
-                /* Opera */
-                -o-transform: skew(-20deg);
-                z-index: 4; }
-            main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .thirdOpinion {
+              flex-direction: row; }
+              main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .secondOpinion .rowFlex .rowFlexText {
+                font-size: 13px;
+                font-family: "SinkinSans-400Regular", sans-serif; }
+              main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .secondOpinion .rowFlex .starsRating i {
+                color: #ff6300; }
+            main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .secondOpinion:before {
+              content: ' ';
+              position: absolute;
+              width: 0;
+              height: 0;
+              left: 40px;
+              top: 150px;
+              border: 12px solid;
+              border-color: #ff6300 transparent transparent #ff6300;
+              transform: skew(-20deg);
+              -webkit-transform: skew(-20deg);
+              -moz-transform: skew(-20deg);
+              -ms-transform: skew(-20deg);
+              -o-transform: skew(-20deg);
+              z-index: 3; }
+            main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .secondOpinion:after {
+              content: ' ';
+              position: absolute;
+              width: 0;
+              height: 0;
+              left: 42px;
+              top: 149px;
+              border: 11px solid;
+              border-color: #ffffff transparent transparent #ffffff;
+              transform: skew(-20deg);
+              -webkit-transform: skew(-20deg);
+              -moz-transform: skew(-20deg);
+              -ms-transform: skew(-20deg);
+              -o-transform: skew(-20deg);
+              z-index: 4; }
+          main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .thirdOpinion {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            max-width: 380px;
+            max-height: 150px;
+            width: 100%;
+            height: 150px;
+            text-align: center;
+            line-height: 20px;
+            background-color: transparent;
+            border: 2px solid #ff6300;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px; }
+            main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .thirdOpinion p {
+              margin: 0; }
+            main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .thirdOpinion .rowFlex {
               display: flex;
-              justify-content: center;
-              flex-direction: column;
-              align-items: center;
-              position: relative;
-              max-width: 380px;
-              max-height: 150px;
-              width: 100%;
-              height: 100%;
-              text-align: center;
-              line-height: 20px;
-              background-color: transparent;
-              border: 2px solid #ff6300;
-              -webkit-border-radius: 5px;
-              -moz-border-radius: 5px;
-              border-radius: 5px; }
-              main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .thirdOpinion p {
-                margin: 0; }
-              main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .thirdOpinion .rowFlex {
-                display: flex;
-                flex-direction: row; }
-                main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .thirdOpinion .rowFlex .rowFlexText {
-                  font-size: 13px;
-                  font-family: "SinkinSans-400Regular", sans-serif; }
-                main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .thirdOpinion .rowFlex .starsRating i {
-                  color: #ff6300; }
-              main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .thirdOpinion .textOpinion {
-                padding: 20px; }
-              main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .thirdOpinion:before {
-                content: ' ';
-                position: absolute;
-                width: 0;
-                height: 0;
-                left: 40px;
-                top: 150px;
-                border: 12px solid;
-                border-color: #ff6300 transparent transparent #ff6300;
-                transform: skew(-20deg);
-                /* Safari */
-                -webkit-transform: skew(-20deg);
-                /* Firefox */
-                -moz-transform: skew(-20deg);
-                /* IE */
-                -ms-transform: skew(-20deg);
-                /* Opera */
-                -o-transform: skew(-20deg); }
-              main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .thirdOpinion:after {
-                content: ' ';
-                position: absolute;
-                width: 0;
-                height: 0;
-                left: 42px;
-                top: 149px;
-                border: 11px solid;
-                border-color: #ffffff transparent transparent #ffffff;
-                transform: skew(-20deg);
-                /* Safari */
-                -webkit-transform: skew(-20deg);
-                /* Firefox */
-                -moz-transform: skew(-20deg);
-                /* IE */
-                -ms-transform: skew(-20deg);
-                /* Opera */
-                -o-transform: skew(-20deg); }
-            main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .usersOpinions {
-              position: relative;
+              flex-direction: row; }
+              main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .thirdOpinion .rowFlex .rowFlexText {
+                font-size: 13px;
+                font-family: "SinkinSans-400Regular", sans-serif; }
+              main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .thirdOpinion .rowFlex .starsRating i {
+                color: #ff6300; }
+            main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .thirdOpinion .textOpinion {
+              padding: 20px; }
+            main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .thirdOpinion:before {
+              content: ' ';
+              position: absolute;
+              width: 0;
+              height: 0;
+              left: 40px;
+              top: 150px;
+              border: 12px solid;
+              border-color: #ff6300 transparent transparent #ff6300;
+              transform: skew(-20deg);
+              -webkit-transform: skew(-20deg);
+              -moz-transform: skew(-20deg);
+              -ms-transform: skew(-20deg);
+              -o-transform: skew(-20deg); }
+            main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .thirdOpinion:after {
+              content: ' ';
+              position: absolute;
+              width: 0;
+              height: 0;
+              left: 42px;
+              top: 149px;
+              border: 11px solid;
+              border-color: #ffffff transparent transparent #ffffff;
+              transform: skew(-20deg);
+              -webkit-tranform: skew(-20deg);
+              -moz-transform: skew(-20deg);
+              -ms-transform: skew(-20deg);
+              -o-transform: skew(-20deg); }
+          main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .usersOpinions {
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            padding: 35px 20px 0 20px;
+            align-items: center; }
+            main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .usersOpinions .usersOpinionsImg {
               display: flex;
-              flex-direction: row;
-              padding: 35px 20px 0 20px;
-              align-items: center; }
-              main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .usersOpinions .usersOpinionsImg {
-                display: flex;
-                position: absolute;
-                top: 35px;
-                bottom: 0;
-                left: 0;
-                right: 0;
-                margin: auto; } }
+              position: absolute;
+              top: 35px;
+              bottom: 0;
+              left: 0;
+              right: 0;
+              margin: auto; }
+      main .opinions .opinionsText .opinionsSlickMobile {
+        position: relative;
+        max-width: 1200px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 30px; }
+        @media (min-width: 750px) {
+          main .opinions .opinionsText .opinionsSlickMobile {
+            display: none; } }
+        main .opinions .opinionsText .opinionsSlickMobile .opinionsContainerColumns {
+          display: flex;
+          flex-direction: column;
+          width: 32%;
+          margin: 0 6px; }
+          main .opinions .opinionsText .opinionsSlickMobile .opinionsContainerColumns .firstOpinion {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            max-width: 320px;
+            height: 150px;
+            width: 100%;
+            text-align: center;
+            line-height: 20px;
+            background-color: transparent;
+            border: 2px solid #ff6300;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+            z-index: 99; }
+            main .opinions .opinionsText .opinionsSlickMobile .opinionsContainerColumns .firstOpinion p {
+              margin: 0; }
+            main .opinions .opinionsText .opinionsSlickMobile .opinionsContainerColumns .firstOpinion .rowFlex {
+              display: flex;
+              flex-direction: row; }
+              main .opinions .opinionsText .opinionsSlickMobile .opinionsContainerColumns .firstOpinion .rowFlex .rowFlexText {
+                font-size: 13px;
+                font-family: "SinkinSans-400Regular", sans-serif; }
+              main .opinions .opinionsText .opinionsSlickMobile .opinionsContainerColumns .firstOpinion .rowFlex .starsRating i {
+                color: #ff6300; }
+            main .opinions .opinionsText .opinionsSlickMobile .opinionsContainerColumns .firstOpinion:before {
+              content: ' ';
+              position: absolute;
+              width: 0;
+              height: 0;
+              left: 40px;
+              top: 150px;
+              border: 12px solid;
+              border-color: #ff6300 transparent transparent #ff6300;
+              transform: skew(-20deg);
+              -webkit-transform: skew(-20deg);
+              -moz-transform: skew(-20deg);
+              -ms-transform: skew(-20deg);
+              -o-transform: skew(-20deg);
+              z-index: 1; }
+            main .opinions .opinionsText .opinionsSlickMobile .opinionsContainerColumns .firstOpinion:after {
+              content: ' ';
+              position: absolute;
+              width: 0;
+              height: 0;
+              left: 42px;
+              top: 149px;
+              border: 11px solid;
+              border-color: #ffffff transparent transparent #ffffff;
+              transform: skew(-20deg);
+              -webkit-transform: skew(-20deg);
+              -moz-transform: skew(-20deg);
+              -ms-transform: skew(-20deg);
+              -o-transform: skew(-20deg);
+              z-index: 1; }
+          main .opinions .opinionsText .opinionsSlickMobile .opinionsContainerColumns .secondOpinion {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            max-width: 320px;
+            max-height: 150px;
+            width: 100%;
+            height: 150px;
+            text-align: center;
+            line-height: 20px;
+            background-color: transparent;
+            border: 2px solid #ff6300;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px; }
+            main .opinions .opinionsText .opinionsSlickMobile .opinionsContainerColumns .secondOpinion p {
+              margin: 0; }
+            main .opinions .opinionsText .opinionsSlickMobile .opinionsContainerColumns .secondOpinion .rowFlex {
+              display: flex;
+              flex-direction: row; }
+              main .opinions .opinionsText .opinionsSlickMobile .opinionsContainerColumns .secondOpinion .rowFlex .rowFlexText {
+                font-size: 13px;
+                font-family: "SinkinSans-400Regular", sans-serif; }
+              main .opinions .opinionsText .opinionsSlickMobile .opinionsContainerColumns .secondOpinion .rowFlex .starsRating i {
+                color: #ff6300; }
+            main .opinions .opinionsText .opinionsSlickMobile .opinionsContainerColumns .secondOpinion:before {
+              content: ' ';
+              position: absolute;
+              width: 0;
+              height: 0;
+              left: 40px;
+              top: 150px;
+              border: 12px solid;
+              border-color: #ff6300 transparent transparent #ff6300;
+              transform: skew(-20deg);
+              -webkit-transform: skew(-20deg);
+              -moz-transform: skew(-20deg);
+              -ms-transform: skew(-20deg);
+              -o-transform: skew(-20deg);
+              z-index: 3; }
+            main .opinions .opinionsText .opinionsSlickMobile .opinionsContainerColumns .secondOpinion:after {
+              content: ' ';
+              position: absolute;
+              width: 0;
+              height: 0;
+              left: 42px;
+              top: 149px;
+              border: 11px solid;
+              border-color: #ffffff transparent transparent #ffffff;
+              transform: skew(-20deg);
+              -webkit-transform: skew(-20deg);
+              -moz-transform: skew(-20deg);
+              -ms-transform: skew(-20deg);
+              -o-transform: skew(-20deg);
+              z-index: 4; }
+          main .opinions .opinionsText .opinionsSlickMobile .opinionsContainerColumns .thirdOpinion {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            max-width: 320px;
+            max-height: 150px;
+            width: 100%;
+            height: 150px;
+            text-align: center;
+            line-height: 20px;
+            background-color: transparent;
+            border: 2px solid #ff6300;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px; }
+            main .opinions .opinionsText .opinionsSlickMobile .opinionsContainerColumns .thirdOpinion p {
+              margin: 0; }
+            main .opinions .opinionsText .opinionsSlickMobile .opinionsContainerColumns .thirdOpinion .rowFlex {
+              display: flex;
+              flex-direction: row; }
+              main .opinions .opinionsText .opinionsSlickMobile .opinionsContainerColumns .thirdOpinion .rowFlex .rowFlexText {
+                font-size: 13px;
+                font-family: "SinkinSans-400Regular", sans-serif; }
+              main .opinions .opinionsText .opinionsSlickMobile .opinionsContainerColumns .thirdOpinion .rowFlex .starsRating i {
+                color: #ff6300; }
+            main .opinions .opinionsText .opinionsSlickMobile .opinionsContainerColumns .thirdOpinion .textOpinion {
+              padding: 20px; }
+            main .opinions .opinionsText .opinionsSlickMobile .opinionsContainerColumns .thirdOpinion:before {
+              content: ' ';
+              position: absolute;
+              width: 0;
+              height: 0;
+              left: 40px;
+              top: 150px;
+              border: 12px solid;
+              border-color: #ff6300 transparent transparent #ff6300;
+              transform: skew(-20deg);
+              -webkit-transform: skew(-20deg);
+              -moz-transform: skew(-20deg);
+              -ms-transform: skew(-20deg);
+              -o-transform: skew(-20deg); }
+            main .opinions .opinionsText .opinionsSlickMobile .opinionsContainerColumns .thirdOpinion:after {
+              content: ' ';
+              position: absolute;
+              width: 0;
+              height: 0;
+              left: 42px;
+              top: 149px;
+              border: 11px solid;
+              border-color: #ffffff transparent transparent #ffffff;
+              transform: skew(-20deg);
+              -webkit-tranform: skew(-20deg);
+              -moz-transform: skew(-20deg);
+              -ms-transform: skew(-20deg);
+              -o-transform: skew(-20deg); }
+          main .opinions .opinionsText .opinionsSlickMobile .opinionsContainerColumns .usersOpinions {
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            padding: 20px 20px 25px;
+            align-items: center; }
+            main .opinions .opinionsText .opinionsSlickMobile .opinionsContainerColumns .usersOpinions .usersOpinionsImg {
+              display: flex;
+              position: absolute;
+              top: 0;
+              bottom: 0;
+              left: 0;
+              right: 0; }
   main .rating {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center; }
+    display: none; }
+    @media (min-width: 768px) {
+      main .rating {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 40px; } }
     main .rating .numberRating {
+      display: flex;
       max-width: 220px;
       width: 100%;
-      font-size: 59px;
-      font-family: "SinkinSans-700Bold", sans-serif; }
+      font-size: 49px;
+      font-family: "SinkinSans-700Bold", sans-serif;
+      margin: 0; }
+      @media (min-width: 750px) {
+        main .rating .numberRating {
+          display: flex;
+          max-width: 220px;
+          width: 100%;
+          font-size: 59px;
+          font-family: "SinkinSans-700Bold", sans-serif; } }
       main .rating .numberRating span {
         font-family: "SinkinSans-300Light", sans-serif; }
     main .rating .descriptionRating {
       max-width: 635px;
       width: 100%;
-      font-size: 21px;
+      font-size: 12px;
       font-family: "SinkinSans-700Bold", sans-serif; }
+      @media (min-width: 750px) {
+        main .rating .descriptionRating {
+          max-width: 635px;
+          width: 100%;
+          font-size: 16px;
+          font-family: "SinkinSans-700Bold", sans-serif; } }
+      @media (min-width: 1000px) {
+        main .rating .descriptionRating {
+          max-width: 635px;
+          width: 100%;
+          font-size: 21px;
+          font-family: "SinkinSans-700Bold", sans-serif; } }
       main .rating .descriptionRating a {
         color: #808080;
         text-decoration: none; }
@@ -991,12 +1183,25 @@ main {
         border: none;
         border-radius: 5px;
         font-family: "SinkinSans-700Bold", sans-serif;
-        font-size: 14px;
+        font-size: 10px;
         letter-spacing: 0.05rem;
         cursor: pointer; }
+        @media (min-width: 780px) {
+          main .rating .buttonOpinions button {
+            height: 50px;
+            width: 100%;
+            color: #ffffff;
+            background-color: #000000;
+            border: none;
+            border-radius: 5px;
+            font-family: "SinkinSans-700Bold", sans-serif;
+            font-size: 14px;
+            letter-spacing: 0.05rem;
+            cursor: pointer; } }
   main .shopContainer {
     background-color: #f1f1f1;
-    width: 100%; }
+    width: 100%;
+    padding-bottom: 10px; }
     main .shopContainer .textCards {
       display: flex;
       flex-direction: row; }
@@ -1012,9 +1217,21 @@ main {
         display: flex;
         flex-direction: column; }
         main .shopContainer .upperCards .ofertaSpecjalna .ofertaSpecjalnaText {
-          font-size: 36px;
+          font-size: 18px;
           font-family: "SinkinSans-700Bold", sans-serif;
-          color: #000000; }
+          color: #000000;
+          margin: 15px auto; }
+          @media (min-width: 570px) {
+            main .shopContainer .upperCards .ofertaSpecjalna .ofertaSpecjalnaText {
+              font-size: 22px;
+              margin: 15px 0;
+              float: left; } }
+          @media (min-width: 760px) {
+            main .shopContainer .upperCards .ofertaSpecjalna .ofertaSpecjalnaText {
+              font-size: 30px; } }
+          @media (min-width: 1000px) {
+            main .shopContainer .upperCards .ofertaSpecjalna .ofertaSpecjalnaText {
+              font-size: 36px; } }
         main .shopContainer .upperCards .ofertaSpecjalna .ofertaSpecjalnaContent {
           display: flex;
           flex-direction: column;
@@ -1137,12 +1354,27 @@ main {
                     color: #ff6300;
                     margin-left: 2%; }
       main .shopContainer .upperCards .polecane {
-        display: flex;
-        flex-direction: column; }
+        display: none; }
+        @media (min-width: 950px) {
+          main .shopContainer .upperCards .polecane {
+            display: flex;
+            flex-direction: column; } }
         main .shopContainer .upperCards .polecane .polecaneText {
-          font-size: 36px;
+          font-size: 18px;
           font-family: "SinkinSans-700Bold", sans-serif;
-          color: #000000; }
+          color: #000000;
+          margin: 15px auto; }
+          @media (min-width: 570px) {
+            main .shopContainer .upperCards .polecane .polecaneText {
+              font-size: 22px;
+              margin: 15px 0;
+              float: left; } }
+          @media (min-width: 760px) {
+            main .shopContainer .upperCards .polecane .polecaneText {
+              font-size: 30px; } }
+          @media (min-width: 1000px) {
+            main .shopContainer .upperCards .polecane .polecaneText {
+              font-size: 36px; } }
         main .shopContainer .upperCards .polecane .polecaneContentRow {
           display: flex;
           flex-direction: row; }
@@ -1239,9 +1471,21 @@ main {
       display: flex;
       flex-direction: row; }
       main .shopContainer .textLower .textLowerContent {
-        font-size: 36px;
+        font-size: 18px;
         font-family: "SinkinSans-700Bold", sans-serif;
-        color: #000000; }
+        color: #000000;
+        margin: 15px auto; }
+        @media (min-width: 570px) {
+          main .shopContainer .textLower .textLowerContent {
+            font-size: 22px;
+            margin: 15px 0;
+            float: left; } }
+        @media (min-width: 760px) {
+          main .shopContainer .textLower .textLowerContent {
+            font-size: 30px; } }
+        @media (min-width: 1000px) {
+          main .shopContainer .textLower .textLowerContent {
+            font-size: 36px; } }
     main .shopContainer .slickContainer {
       display: flex;
       flex-direction: row; }
@@ -1332,11 +1576,15 @@ main {
               color: #ff6300;
               margin-left: 2%; }
     main .shopContainer .firestoneBaner {
-      max-width: 1200px;
-      width: 100%;
-      max-height: 150px;
-      height: 100%;
-      margin: 45px 0; }
+      display: none; }
+      @media (min-width: 768px) {
+        main .shopContainer .firestoneBaner {
+          display: flex;
+          max-width: 1200px;
+          width: 100%;
+          max-height: 150px;
+          height: 100%;
+          margin: 45px 0; } }
       main .shopContainer .firestoneBaner .firestoneBanerImg {
         width: 100%;
         height: auto; }
@@ -1422,11 +1670,15 @@ main {
           main .headerFirms .logoFirms .growImage:hover {
             transform: scale(1.1); } }
     main .headerFirms .logoFirmsMobile {
-      margin-top: 40px; }
+      margin-top: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
       main .headerFirms .logoFirmsMobile img {
         display: flex;
         justify-content: space-between;
-        padding: 10px; }
+        padding: 10px;
+        margin: 0 12px; }
       main .headerFirms .logoFirmsMobile .growImage {
         transition: all .2s ease-in-out;
         cursor: pointer; }
@@ -1684,7 +1936,9 @@ main {
           width: 100%;
           border-radius: 10px;
           background-color: #ffffff;
-          margin-bottom: 25px; }
+          margin-bottom: 25px;
+          margin-left: 6px;
+          margin-right: 6px; }
           main .adviceContainer .expertsContainer .expertsMobileCarousel .card:last-child {
             margin-bottom: 0; }
           main .adviceContainer .expertsContainer .expertsMobileCarousel .card img {
@@ -1730,297 +1984,90 @@ main {
       flex-direction: row;
       flex-wrap: wrap; }
       main .searchFormsTab .searchSection .parent {
-        display: grid;
-        grid-template-columns: 160px 1fr 1fr 1fr 140px 1fr 140px 1fr 140px;
-        grid-template-rows: 20px 70px 20px 100px 20px 100px;
-        grid-column-gap: 0;
-        grid-row-gap: 40px;
-        margin-bottom: 30px; }
-        main .searchFormsTab .searchSection .parent .div1 {
-          grid-area: 1 / 1 / 2 / 4; }
-          main .searchFormsTab .searchSection .parent .div1 p {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%; }
+        main .searchFormsTab .searchSection .parent .popularneRozmiaryOpon {
+          display: flex;
+          flex-direction: column; }
+          main .searchFormsTab .searchSection .parent .popularneRozmiaryOpon .popularneRozmiaryOponText p {
             font-size: 14px;
             font-family: "SinkinSans-700Bold", sans-serif;
             color: #ff6300; }
-        main .searchFormsTab .searchSection .parent .div2 {
-          grid-area: 2 / 1 / 3 / 2; }
-          main .searchFormsTab .searchSection .parent .div2 p {
-            font-size: 12px;
-            font-family: "SinkinSans-400Regular", sans-serif;
-            color: #000000;
-            margin: 0;
-            padding-bottom: 8px; }
-            main .searchFormsTab .searchSection .parent .div2 p a {
-              text-decoration: none;
-              color: #000000; }
-              main .searchFormsTab .searchSection .parent .div2 p a:hover {
-                text-decoration: underline;
-                text-decoration-color: #ff6300;
-                color: #000000; }
-            main .searchFormsTab .searchSection .parent .div2 p span {
-              color: #ff6300; }
-        main .searchFormsTab .searchSection .parent .div3 {
-          grid-area: 2 / 3 / 3 / 4; }
-          main .searchFormsTab .searchSection .parent .div3 p {
-            font-size: 12px;
-            font-family: "SinkinSans-400Regular", sans-serif;
-            color: #000000;
-            margin: 0;
-            padding-bottom: 8px; }
-            main .searchFormsTab .searchSection .parent .div3 p a {
-              text-decoration: none;
-              color: #000000; }
-              main .searchFormsTab .searchSection .parent .div3 p a:hover {
-                text-decoration: underline;
-                text-decoration-color: #ff6300;
-                color: #000000; }
-            main .searchFormsTab .searchSection .parent .div3 p span {
-              color: #ff6300; }
-        main .searchFormsTab .searchSection .parent .div4 {
-          grid-area: 1 / 5 / 2 / 7; }
-          main .searchFormsTab .searchSection .parent .div4 p {
+          main .searchFormsTab .searchSection .parent .popularneRozmiaryOpon .rowAlignment {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between; }
+            main .searchFormsTab .searchSection .parent .popularneRozmiaryOpon .rowAlignment .popularneRozmiaryOponContent {
+              display: flex;
+              flex-direction: column; }
+              main .searchFormsTab .searchSection .parent .popularneRozmiaryOpon .rowAlignment .popularneRozmiaryOponContent p {
+                font-size: 12px;
+                font-family: "SinkinSans-400Regular", sans-serif;
+                color: #000000;
+                margin: 0;
+                padding-bottom: 8px; }
+                main .searchFormsTab .searchSection .parent .popularneRozmiaryOpon .rowAlignment .popularneRozmiaryOponContent p a {
+                  text-decoration: none;
+                  color: #000000; }
+                  main .searchFormsTab .searchSection .parent .popularneRozmiaryOpon .rowAlignment .popularneRozmiaryOponContent p a:hover {
+                    text-decoration: underline;
+                    text-decoration-color: #ff6300;
+                    color: #000000; }
+                main .searchFormsTab .searchSection .parent .popularneRozmiaryOpon .rowAlignment .popularneRozmiaryOponContent p span {
+                  color: #ff6300; }
+        main .searchFormsTab .searchSection .parent .oponyWgSezonu {
+          display: flex;
+          flex-direction: column; }
+          main .searchFormsTab .searchSection .parent .oponyWgSezonu .oponyWgSezonuText p {
             font-size: 14px;
             font-family: "SinkinSans-700Bold", sans-serif;
             color: #ff6300; }
-        main .searchFormsTab .searchSection .parent .div5 {
-          grid-area: 2 / 5 / 3 / 6; }
-          main .searchFormsTab .searchSection .parent .div5 p {
-            font-size: 12px;
-            font-family: "SinkinSans-400Regular", sans-serif;
-            color: #000000;
-            margin: 0;
-            padding-bottom: 8px; }
-            main .searchFormsTab .searchSection .parent .div5 p a {
-              text-decoration: none;
-              color: #000000; }
-              main .searchFormsTab .searchSection .parent .div5 p a:hover {
-                text-decoration: underline;
-                text-decoration-color: #ff6300;
+          main .searchFormsTab .searchSection .parent .oponyWgSezonu .oponyWgSezonuContent {
+            display: flex;
+            flex-direction: column; }
+            main .searchFormsTab .searchSection .parent .oponyWgSezonu .oponyWgSezonuContent p {
+              font-size: 12px;
+              font-family: "SinkinSans-400Regular", sans-serif;
+              color: #000000;
+              margin: 0;
+              padding-bottom: 8px; }
+              main .searchFormsTab .searchSection .parent .oponyWgSezonu .oponyWgSezonuContent p a {
+                text-decoration: none;
                 color: #000000; }
-            main .searchFormsTab .searchSection .parent .div5 p span {
-              color: #ff6300; }
-        main .searchFormsTab .searchSection .parent .div6 {
-          grid-area: 1 / 7 / 2 / 9; }
-          main .searchFormsTab .searchSection .parent .div6 p {
-            font-size: 14px;
-            font-family: "SinkinSans-700Bold", sans-serif;
-            color: #ff6300; }
-        main .searchFormsTab .searchSection .parent .div7 {
-          grid-area: 2 / 7 / 3 / 8; }
-          main .searchFormsTab .searchSection .parent .div7 p {
-            font-size: 12px;
-            font-family: "SinkinSans-400Regular", sans-serif;
-            color: #000000;
-            margin: 0;
-            padding-bottom: 8px; }
-            main .searchFormsTab .searchSection .parent .div7 p a {
-              text-decoration: none;
-              color: #000000; }
-              main .searchFormsTab .searchSection .parent .div7 p a:hover {
-                text-decoration: underline;
-                text-decoration-color: #ff6300;
+                main .searchFormsTab .searchSection .parent .oponyWgSezonu .oponyWgSezonuContent p a:hover {
+                  text-decoration: underline;
+                  text-decoration-color: #ff6300;
+                  color: #000000; }
+              main .searchFormsTab .searchSection .parent .oponyWgSezonu .oponyWgSezonuContent p span {
+                color: #ff6300; }
+        main .searchFormsTab .searchSection .parent .oponyWgPojazdu .oponyWgPojazduText p {
+          font-size: 14px;
+          font-family: "SinkinSans-700Bold", sans-serif;
+          color: #ff6300; }
+        main .searchFormsTab .searchSection .parent .oponyWgPojazdu .rowAlignment {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between; }
+          main .searchFormsTab .searchSection .parent .oponyWgPojazdu .rowAlignment .oponyWgPojazduContent {
+            display: flex;
+            flex-direction: column; }
+            main .searchFormsTab .searchSection .parent .oponyWgPojazdu .rowAlignment .oponyWgPojazduContent p {
+              font-size: 12px;
+              font-family: "SinkinSans-400Regular", sans-serif;
+              color: #000000;
+              margin: 0;
+              padding-bottom: 8px; }
+              main .searchFormsTab .searchSection .parent .oponyWgPojazdu .rowAlignment .oponyWgPojazduContent p a {
+                text-decoration: none;
                 color: #000000; }
-            main .searchFormsTab .searchSection .parent .div7 p span {
-              color: #ff6300; }
-        main .searchFormsTab .searchSection .parent .div8 {
-          grid-area: 2 / 9 / 3 / 10; }
-          main .searchFormsTab .searchSection .parent .div8 p {
-            font-size: 12px;
-            font-family: "SinkinSans-400Regular", sans-serif;
-            color: #000000;
-            margin: 0;
-            padding-bottom: 8px; }
-            main .searchFormsTab .searchSection .parent .div8 p a {
-              text-decoration: none;
-              color: #000000; }
-              main .searchFormsTab .searchSection .parent .div8 p a:hover {
-                text-decoration: underline;
-                text-decoration-color: #ff6300;
-                color: #000000; }
-            main .searchFormsTab .searchSection .parent .div8 p span {
-              color: #ff6300; }
-        main .searchFormsTab .searchSection .parent .div9 {
-          grid-area: 3 / 1 / 4 / 4; }
-          main .searchFormsTab .searchSection .parent .div9 p {
-            font-size: 14px;
-            font-family: "SinkinSans-700Bold", sans-serif;
-            color: #ff6300; }
-        main .searchFormsTab .searchSection .parent .div10 {
-          grid-area: 4 / 1 / 5 / 2; }
-          main .searchFormsTab .searchSection .parent .div10 p {
-            font-size: 12px;
-            font-family: "SinkinSans-400Regular", sans-serif;
-            color: #000000;
-            margin: 0;
-            padding-bottom: 8px; }
-            main .searchFormsTab .searchSection .parent .div10 p a {
-              text-decoration: none;
-              color: #000000; }
-              main .searchFormsTab .searchSection .parent .div10 p a:hover {
-                text-decoration: underline;
-                text-decoration-color: #ff6300;
-                color: #000000; }
-            main .searchFormsTab .searchSection .parent .div10 p span {
-              color: #ff6300; }
-        main .searchFormsTab .searchSection .parent .div11 {
-          grid-area: 4 / 3 / 5 / 4; }
-          main .searchFormsTab .searchSection .parent .div11 p {
-            font-size: 12px;
-            font-family: "SinkinSans-400Regular", sans-serif;
-            color: #000000;
-            margin: 0;
-            padding-bottom: 8px; }
-            main .searchFormsTab .searchSection .parent .div11 p a {
-              text-decoration: none;
-              color: #000000; }
-              main .searchFormsTab .searchSection .parent .div11 p a:hover {
-                text-decoration: underline;
-                text-decoration-color: #ff6300;
-                color: #000000; }
-            main .searchFormsTab .searchSection .parent .div11 p span {
-              color: #ff6300; }
-        main .searchFormsTab .searchSection .parent .div12 {
-          grid-area: 4 / 5 / 5 / 6; }
-          main .searchFormsTab .searchSection .parent .div12 p {
-            font-size: 12px;
-            font-family: "SinkinSans-400Regular", sans-serif;
-            color: #000000;
-            margin: 0;
-            padding-bottom: 8px; }
-            main .searchFormsTab .searchSection .parent .div12 p a {
-              text-decoration: none;
-              color: #000000; }
-              main .searchFormsTab .searchSection .parent .div12 p a:hover {
-                text-decoration: underline;
-                text-decoration-color: #ff6300;
-                color: #000000; }
-            main .searchFormsTab .searchSection .parent .div12 p span {
-              color: #ff6300; }
-        main .searchFormsTab .searchSection .parent .div13 {
-          grid-area: 4 / 7 / 5 / 8; }
-          main .searchFormsTab .searchSection .parent .div13 p {
-            font-size: 12px;
-            font-family: "SinkinSans-400Regular", sans-serif;
-            color: #000000;
-            margin: 0;
-            padding-bottom: 8px; }
-            main .searchFormsTab .searchSection .parent .div13 p a {
-              text-decoration: none;
-              color: #000000; }
-              main .searchFormsTab .searchSection .parent .div13 p a:hover {
-                text-decoration: underline;
-                text-decoration-color: #ff6300;
-                color: #000000; }
-            main .searchFormsTab .searchSection .parent .div13 p span {
-              color: #ff6300; }
-        main .searchFormsTab .searchSection .parent .div14 {
-          grid-area: 4 / 9 / 5 / 10; }
-          main .searchFormsTab .searchSection .parent .div14 p {
-            font-size: 12px;
-            font-family: "SinkinSans-400Regular", sans-serif;
-            color: #000000;
-            margin: 0;
-            padding-bottom: 8px; }
-            main .searchFormsTab .searchSection .parent .div14 p a {
-              text-decoration: none;
-              color: #000000; }
-              main .searchFormsTab .searchSection .parent .div14 p a:hover {
-                text-decoration: underline;
-                text-decoration-color: #ff6300;
-                color: #000000; }
-            main .searchFormsTab .searchSection .parent .div14 p span {
-              color: #ff6300; }
-        main .searchFormsTab .searchSection .parent .div15 {
-          grid-area: 5 / 1 / 6 / 4; }
-          main .searchFormsTab .searchSection .parent .div15 p {
-            font-size: 14px;
-            font-family: "SinkinSans-700Bold", sans-serif;
-            color: #ff6300; }
-        main .searchFormsTab .searchSection .parent .div16 {
-          grid-area: 6 / 1 / 7 / 2; }
-          main .searchFormsTab .searchSection .parent .div16 p {
-            font-size: 12px;
-            font-family: "SinkinSans-400Regular", sans-serif;
-            color: #000000;
-            margin: 0;
-            padding-bottom: 8px; }
-            main .searchFormsTab .searchSection .parent .div16 p a {
-              text-decoration: none;
-              color: #000000; }
-              main .searchFormsTab .searchSection .parent .div16 p a:hover {
-                text-decoration: underline;
-                text-decoration-color: #ff6300;
-                color: #000000; }
-            main .searchFormsTab .searchSection .parent .div16 p span {
-              color: #ff6300; }
-        main .searchFormsTab .searchSection .parent .div17 {
-          grid-area: 6 / 3 / 7 / 4; }
-          main .searchFormsTab .searchSection .parent .div17 p {
-            font-size: 12px;
-            font-family: "SinkinSans-400Regular", sans-serif;
-            color: #000000;
-            margin: 0;
-            padding-bottom: 8px; }
-            main .searchFormsTab .searchSection .parent .div17 p a {
-              text-decoration: none;
-              color: #000000; }
-              main .searchFormsTab .searchSection .parent .div17 p a:hover {
-                text-decoration: underline;
-                text-decoration-color: #ff6300;
-                color: #000000; }
-            main .searchFormsTab .searchSection .parent .div17 p span {
-              color: #ff6300; }
-        main .searchFormsTab .searchSection .parent .div18 {
-          grid-area: 6 / 5 / 7 / 6; }
-          main .searchFormsTab .searchSection .parent .div18 p {
-            font-size: 12px;
-            font-family: "SinkinSans-400Regular", sans-serif;
-            color: #000000;
-            margin: 0;
-            padding-bottom: 8px; }
-            main .searchFormsTab .searchSection .parent .div18 p a {
-              text-decoration: none;
-              color: #000000; }
-              main .searchFormsTab .searchSection .parent .div18 p a:hover {
-                text-decoration: underline;
-                text-decoration-color: #ff6300;
-                color: #000000; }
-            main .searchFormsTab .searchSection .parent .div18 p span {
-              color: #ff6300; }
-        main .searchFormsTab .searchSection .parent .div19 {
-          grid-area: 6 / 7 / 7 / 8; }
-          main .searchFormsTab .searchSection .parent .div19 p {
-            font-size: 12px;
-            font-family: "SinkinSans-400Regular", sans-serif;
-            color: #000000;
-            margin: 0;
-            padding-bottom: 8px; }
-            main .searchFormsTab .searchSection .parent .div19 p a {
-              text-decoration: none;
-              color: #000000; }
-              main .searchFormsTab .searchSection .parent .div19 p a:hover {
-                text-decoration: underline;
-                text-decoration-color: #ff6300;
-                color: #000000; }
-            main .searchFormsTab .searchSection .parent .div19 p span {
-              color: #ff6300; }
-        main .searchFormsTab .searchSection .parent .div20 {
-          grid-area: 6 / 9 / 7 / 10; }
-          main .searchFormsTab .searchSection .parent .div20 p {
-            font-size: 12px;
-            font-family: "SinkinSans-400Regular", sans-serif;
-            color: #000000;
-            margin: 0;
-            padding-bottom: 8px; }
-            main .searchFormsTab .searchSection .parent .div20 p a {
-              text-decoration: none;
-              color: #000000; }
-              main .searchFormsTab .searchSection .parent .div20 p a:hover {
-                text-decoration: underline;
-                text-decoration-color: #ff6300;
-                color: #000000; }
-            main .searchFormsTab .searchSection .parent .div20 p span {
-              color: #ff6300; }
+                main .searchFormsTab .searchSection .parent .oponyWgPojazdu .rowAlignment .oponyWgPojazduContent p a:hover {
+                  text-decoration: underline;
+                  text-decoration-color: #ff6300;
+                  color: #000000; }
+              main .searchFormsTab .searchSection .parent .oponyWgPojazdu .rowAlignment .oponyWgPojazduContent p span {
+                color: #ff6300; }
       main .searchFormsTab .searchSection .informationText {
         font-size: 10px;
         font-family: "SinkinSans-400Regular", sans-serif;
@@ -2042,21 +2089,15 @@ main {
           border-radius: 10px;
           width: 100%; } }
       main .footer .footerContainer .footerContent {
-        display: none; }
-        @media (min-width: 768px) {
-          main .footer .footerContainer .footerContent {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            padding: 40px 30px 40px 30px;
-            width: 100%; } }
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 40px 30px 40px 30px;
+        width: 100%; }
         main .footer .footerContainer .footerContent .div1 {
-          display: none; }
-          @media (min-width: 768px) {
-            main .footer .footerContainer .footerContent .div1 {
-              display: flex;
-              flex-direction: column;
-              margin-right: 10%; } }
+          display: flex;
+          flex-direction: column;
+          margin-right: 10%; }
           main .footer .footerContainer .footerContent .div1 .tireKingLogoFooter {
             margin-bottom: 30px; }
           main .footer .footerContainer .footerContent .div1 .infolinia {
@@ -2064,7 +2105,8 @@ main {
             main .footer .footerContainer .footerContent .div1 .infolinia .firstParagraph {
               font-size: 14px;
               font-family: "SinkinSans-700Bold", sans-serif;
-              color: #ff6300; }
+              color: #ff6300;
+              margin: 0; }
             main .footer .footerContainer .footerContent .div1 .infolinia .secondParagraph {
               font-size: 18px;
               font-family: "SinkinSans-700Bold", sans-serif;
@@ -2084,11 +2126,8 @@ main {
               text-decoration: underline;
               text-decoration-color: #818181; }
         main .footer .footerContainer .footerContent .div2 {
-          display: none; }
-          @media (min-width: 100px) {
-            main .footer .footerContainer .footerContent .div2 {
-              display: flex;
-              flex-direction: column; } }
+          display: flex;
+          flex-direction: column; }
           main .footer .footerContainer .footerContent .div2 .firstParagraph {
             display: none; }
             @media (min-width: 768px) {
@@ -2126,7 +2165,7 @@ main {
                   color: #ff6300; } }
         main .footer .footerContainer .footerContent .div3 {
           display: none; }
-          @media (min-width: 768px) {
+          @media (min-width: 960px) {
             main .footer .footerContainer .footerContent .div3 {
               display: flex;
               flex-direction: column; } }
@@ -2148,14 +2187,9 @@ main {
             main .footer .footerContainer .footerContent .div3 p span {
               color: #ff6300; }
         main .footer .footerContainer .footerContent .div4 {
-          margin: 0 auto;
           display: flex;
-          flex-direction: column; }
-          @media (min-width: 768px) {
-            main .footer .footerContainer .footerContent .div4 {
-              display: flex;
-              flex-direction: column;
-              margin-right: 20px; } }
+          flex-direction: column;
+          margin-right: 20px; }
           main .footer .footerContainer .footerContent .div4 .firstParagraph {
             display: none; }
             @media (min-width: 768px) {

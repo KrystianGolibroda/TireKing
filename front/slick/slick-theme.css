@@ -93,7 +93,7 @@
     display: inline-block;
     height: 20px;
     width: 20px;
-    margin: 0 5px;
+    margin: 0;
     padding: 0;
     cursor: pointer; }
     .slick-dots li button {
@@ -106,7 +106,7 @@
       line-height: 0px;
       font-size: 0px;
       color: transparent;
-      padding: 5px;
+      padding: 0;
       cursor: pointer; }
       .slick-dots li button:hover, .slick-dots li button:focus {
         outline: none; }
@@ -118,13 +118,13 @@
         width: 20px;
         height: 20px;
         font-family: "slick";
-        font-size: 6px;
+        font-size: 15px;
         line-height: 20px;
         text-align: center;
-        color: black;
+        color: #E6E6E6;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale; }
     .slick-dots li.slick-active button:before {
-      color: black; }
+      color: #000000; }
 
 /*# sourceMappingURL=slick-theme.css.map */
