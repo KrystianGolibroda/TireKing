@@ -1038,12 +1038,23 @@ main {
           display: flex;
           flex-direction: column;
           justify-content: space-between;
-          max-width: 590px;
-          max-height: 445px;
+          max-width: 720px;
+          max-height: 615px;
           height: auto;
           width: 100%;
           background-color: #ffffff;
           border-radius: 5px; }
+          @media (min-width: 750px) {
+            main .shopContainer .upperCards .ofertaSpecjalna .ofertaSpecjalnaContent {
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              max-width: 590px;
+              max-height: 445px;
+              height: auto;
+              width: 100%;
+              background-color: #ffffff;
+              border-radius: 5px; } }
           main .shopContainer .upperCards .ofertaSpecjalna .ofertaSpecjalnaContent .clock {
             display: flex;
             align-items: center;
