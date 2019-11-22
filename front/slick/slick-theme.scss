@@ -16,7 +16,7 @@ $slick-dot-color-active: #000000 !default;
 $slick-prev-character: "\2190" !default;
 $slick-next-character: "\2192" !default;
 $slick-dot-character: "\2022" !default;
-$slick-dot-size: 15px !default;
+$slick-dot-size: 18px !default;
 $slick-opacity-default: 0.75 !default;
 $slick-opacity-on-hover: 1 !default;
 $slick-opacity-not-active: 0.25 !default;
@@ -46,7 +46,6 @@ $slick-opacity-not-active: 0.25 !default;
         background: #fff slick-image-url("ajax-loader.gif") center center no-repeat;
     }
 }
-
 /* Icons */
 @if $slick-font-family == "slick" {
     @font-face {
@@ -156,7 +155,7 @@ $slick-opacity-not-active: 0.25 !default;
         display: inline-block;
         height: 20px;
         width: 20px;
-        margin: 0;
+        margin: 0 5px;
         padding: 0;
         cursor: pointer;
         button {
@@ -169,7 +168,7 @@ $slick-opacity-not-active: 0.25 !default;
             line-height: 0px;
             font-size: 0px;
             color: transparent;
-            padding: 0;
+            padding: 5px;
             cursor: pointer;
             &:hover, &:focus {
                 outline: none;
