@@ -145,18 +145,29 @@ setInterval(function time(){
 
 //Karuzela logo firm
 
-$(document).ready(function () {
-   $('.logoFirmsMobile').slick({
-      variableWidth: true,
+$(document).ready(function(){
+   $('.slickMobileFirms').slick({
       autoplay: true,
+      variableWidth: true,
       autoplaySpeed: 0,
-      speed: 4000,
+      speed: 3000,
       cssEase: 'linear',
-      slidesToShow: 1,
-      slidesToScroll: 1,
       dots: false,
       arrows: false,
-      verticalSwiping: true
+      infinite: true,
+   });
+});
+
+$(document).ready(function () {
+   $('.slickMobileFirms').slick({
+      autoplay: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      autoplaySpeed: 5000,
+      dots: false,
+      arrows: false,
+      infinite: true,
+      cssEase: 'linear',
    });
 });
 
@@ -168,29 +179,26 @@ $(document).ready(function () {
       slidesToScroll: 1,
       autoplay: true,
       autoplaySpeed: 4000,
+      marginLeft: 9,
+      marginRight: 9,
+      useCSS: true,
       responsive: [
          {
             breakpoint: 1024,
             settings: {
                slidesToShow: 3,
                slidesToScroll: 1,
-               infinite: true
+               infinite: true,
+               dots: true,
             }
          },
          {
             breakpoint: 600,
             settings: {
                slidesToShow: 2,
-               slidesToScroll: 2,
-               infinite: true
-            }
-         },
-         {
-            breakpoint: 480,
-            settings: {
-               slidesToShow: 1,
                slidesToScroll: 1,
-               infinite: true
+               infinite: true,
+               dots: true,
             }
          }
       ]
@@ -198,34 +206,18 @@ $(document).ready(function () {
 });
 
 //Karuzela porad ekspertów
-
 $(document).ready(function () {
-   $('.expertsMobileCarousel').slick({
-      infinite: false,
+   $('.expertsMobileCarousel').slick( {
+      autoplay: true,
       slidesToShow: 2,
       slidesToScroll: 1,
-      autoplay: true,
       autoplaySpeed: 4000,
-      dots: true,
       arrows: false,
+      dots: true,
+      infinite: true,
+      mobileFirst: true
    });
 });
-
-//Karuzela opinii
-
-$(document).ready(function () {
-   $('.opinionsSlickMobile').slick({
-      infinite: false,
-      slidesToShow: 2,
-      slidesToScroll: 1,
-      autoplay: false,
-      autoplaySpeed: 4000,
-      dots: true,
-      arrows: false
-   })
-});
-
-
 
 // Rozwijane menu:
 $(document).ready(function () {
