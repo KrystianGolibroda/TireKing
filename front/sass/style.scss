@@ -1034,12 +1034,23 @@ main {
           display: flex;
           flex-direction: column;
           justify-content: space-between;
-          max-width: 590px;
-          max-height: 445px;
+          max-width: 720px;
+          max-height: 615px;
           height: auto;
           width: 100%;
           background-color: $white;
           border-radius: 5px;
+          @media(min-width: 750px){
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            max-width: 590px;
+            max-height: 445px;
+            height: auto;
+            width: 100%;
+            background-color: $white;
+            border-radius: 5px;
+          }
 
           .clock {
             display: flex;
