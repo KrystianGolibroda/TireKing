@@ -1000,11 +1000,30 @@ main {
       .ofertaSpecjalna {
         display: flex;
         flex-direction: column;
+        margin: 0 auto;
+        @media(min-width: 750px){
+          display: flex;
+          flex-direction: column;
+        }
 
         .ofertaSpecjalnaText {
-          font-size: 36px;
+          font-size: 22px;
           font-family: $SS-700Bold;
           color: $blackLikeHell;
+          margin: 10px 0;
+          text-align: center;
+          @media(min-width: 750px){
+            font-size: 28px;
+            font-family: $SS-700Bold;
+            color: $blackLikeHell;
+            margin: 15px 0;
+          }
+          @media(min-width: 1000px){
+            font-size: 36px;
+            font-family: $SS-700Bold;
+            color: $blackLikeHell;
+            margin: 20px 0;
+          }
         }
 
         .ofertaSpecjalnaContent {
@@ -1030,9 +1049,11 @@ main {
             height: 60px;
             margin-top: 0;
             border-radius: 5px 5px 0 0;
-            font-size: 22px;
+            font-size: 16px;
             font-family: $SS-500Medium;
-            //margin-bottom: 20px;
+            @media(min-width: 750px) {
+              font-size: 22px;
+            }
 
             .TickTock {
               margin: 0 5px 0 5px;
@@ -1108,9 +1129,10 @@ main {
                 }
 
                 .tirePrice {
-                  margin: 0;
+                  margin: 5px 0 0 0;
                   font-family: $SS-700Bold;
                   color: $orangeButton;
+                  line-height: 16px;
 
                   .tirePricePenny {
                     font-size: 18px;
@@ -1125,9 +1147,10 @@ main {
                 }
 
                 .tirePriceBlack {
-                  margin: 0;
+                  margin: 5px 0 0 0;
                   font-family: $SS-700Bold;
                   color: $price;
+                  line-height: 16px;
 
                   .tirePricePenny {
                     font-size: 18px;
@@ -1178,13 +1201,29 @@ main {
       }
 
       .polecane {
-        display: flex;
-        flex-direction: column;
+        display: none;
+        @media(min-width: 750px){
+          display: flex;
+          flex-direction: column;
+        }
 
         .polecaneText {
-          font-size: 36px;
+          font-size: 16px;
           font-family: $SS-700Bold;
           color: $blackLikeHell;
+          margin: 10px 0;
+          @media(min-width: 750px){
+            font-size: 28px;
+            font-family: $SS-700Bold;
+            color: $blackLikeHell;
+            margin: 15px 0;
+          }
+          @media(min-width: 1000px) {
+            font-size: 36px;
+            font-family: $SS-700Bold;
+            color: $blackLikeHell;
+            margin: 20px 0;
+          }
         }
 
         .polecaneContentRow {
@@ -1210,10 +1249,11 @@ main {
                 width: 285px;
                 //height: 450px;
                 height: auto;
-                border-radius: 10px;
+                border-radius: 5px;
                 margin: 0 9px;
                 font-family: $SS-400Regular;
                 background-color: $white;
+                align-items: flex-end;
               }
 
               .bestseller {
@@ -1251,9 +1291,10 @@ main {
                 }
 
                 .tirePrice {
-                  margin: 0;
+                  margin: 5px 0 0 0;
                   font-family: $SS-700Bold;
                   color: $orangeButton;
+                  line-height: 18px;
 
                   .tirePricePenny {
                     font-size: 18px;
@@ -1268,9 +1309,10 @@ main {
                 }
 
                 .tirePriceBlack {
-                  margin: 0;
+                  margin: 5px 0 0 0;
                   font-family: $SS-700Bold;
                   color: $price;
+                  line-height: 18px;
 
                   .tirePricePenny {
                     font-size: 18px;
@@ -1322,40 +1364,58 @@ main {
       }
     }
 
-    .textLower {
-      display: flex;
-      flex-direction: row;
-
-      .textLowerContent {
+    .najczesciejKupowane {
+      font-size: 22px;
+      font-family: $SS-700Bold;
+      color: $blackLikeHell;
+      margin: 10px 0;
+      text-align: center;
+      @media(min-width: 750px){
+        font-size: 28px;
+        font-family: $SS-700Bold;
+        color: $blackLikeHell;
+        margin: 15px 0;
+        text-align: left;
+      }
+      @media(min-width: 1000px) {
         font-size: 36px;
         font-family: $SS-700Bold;
         color: $blackLikeHell;
+        margin: 20px 0;
+        text-align: left;
       }
     }
 
     .slickContainer {
       display: flex;
       flex-direction: row;
+      padding-bottom: 5px;
+      @media(min-width: 768px){
+        padding-bottom: 0;
+      }
+
 
       .tireSellCards {
         display: flex;
         max-width: 285px;
         width: 100%;
         height: auto;
+        margin: 0 3px;
         border-radius: 5px;
-        margin: 0 9px;
         font-family: $SS-400Regular;
         background-color: $white;
+        align-items: flex-end;
 
         @media(min-width: 768px) {
           display: flex;
           width: 285px;
           //height: 450px;
           height: auto;
-          border-radius: 10px;
+          border-radius: 5px;
           margin: 0 9px;
           font-family: $SS-400Regular;
           background-color: $white;
+          align-items: flex-end;
         }
 
         .bestseller {
@@ -1368,6 +1428,7 @@ main {
           background-color: $bestseller;
           color: $white;
           border-radius: 5px 0 0 0 ;
+          top: 0;
         }
 
         .cardContent {
@@ -1392,81 +1453,241 @@ main {
             visibility: hidden;
           }
 
-          .tirePrice {
-            margin: 0;
-            font-family: $SS-700Bold;
-            color: $orangeButton;
+            .tirePrice {
+              margin: 10px 0 0 0;
+              font-family: $SS-700Bold;
+              color: $orangeButton;
+              line-height: 18px;
 
-            .tirePricePenny {
-              font-size: 18px;
-              margin-left: 0;
-            }
+              .tirePricePenny {
+                font-size: 18px;
+                margin-left: 0;
+              }
 
-            .tirePriceDiscount {
-              text-decoration: line-through;
-              font-family: $SS-400Regular;
-              color: $price;
-            }
-          }
-
-          .tirePriceBlack {
-            margin: 0;
-            font-family: $SS-700Bold;
-            color: $price;
-
-            .tirePricePenny {
-              font-size: 18px;
-              margin-left: 0;
-            }
-
-
-          }
-
-          .tireDescription {
-            p {
-              margin: 0;
-              font-size: 14px;
-
-              &:last-child {
-                margin-bottom: 20px;
+              .tirePriceDiscount {
+                text-decoration: line-through;
+                font-family: $SS-400Regular;
+                color: $price;
               }
             }
-          }
 
-          .tireListingShowMore {
-            font-size: 14px;
-            font-family: $SS-400Regular;
-            margin: 0 auto;
-            display: flex;
-            justify-content: center;
-            text-decoration: none;
-            color: $blackLikeHell;
-            text-align: center;
-            padding: 14px 0 16px;
-            border-top: 1px solid $podkreslnik;
+            .tirePriceBlack {
+              margin: 10px 0 0 0;
+              font-family: $SS-700Bold;
+              color: $price;
+              line-height: 18px;
 
-            &:hover {
-              text-decoration: underline;
-              text-decoration-color: $orangeButton;
+              .tirePricePenny {
+                font-size: 18px;
+                margin-left: 0;
+              }
+
+
             }
 
-            span {
+            .tireDescription {
+              p {
+                margin: 0;
+                font-size: 14px;
+
+                &:last-child {
+                  margin-bottom: 20px;
+                }
+              }
+            }
+
+            .tireListingShowMore {
+              font-size: 14px;
               font-family: $SS-400Regular;
-              color: $orangeButton;
-              margin-left: 2%;
-            }
+              margin: 0 auto;
+              display: flex;
+              justify-content: center;
+              text-decoration: none;
+              color: $blackLikeHell;
+              text-align: center;
+              padding: 14px 0 16px;
+              border-top: 1px solid $podkreslnik;
+
+              &:hover {
+                text-decoration: underline;
+                text-decoration-color: $orangeButton;
+              }
+
+              span {
+                font-family: $SS-400Regular;
+                color: $orangeButton;
+                margin-left: 2%;
+              }
           }
         }
       }
     }
 
+    .polecaneMobileText {
+      text-align: center;
+      font-size: 22px;
+      font-family: $SS-700Bold;
+      color: $blackLikeHell;
+      margin: 10px 0;
+      @media(min-width: 750px){
+        display: none;
+      }
+    }
+
+    .polecaneMobile{
+      display: flex;
+      flex-direction: row;
+      padding-bottom: 15px;
+      @media(min-width: 750px){
+        display: none;
+      }
+      .polecaneMobileFlex{
+        flex: 50%;
+        margin: 0 3px;
+
+        .polecaneContent {
+          display: flex;
+          flex-direction: column;
+
+          .tireSellCards {
+            display: flex;
+            max-width: 285px;
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin: 0 9px;
+            font-family: $SS-400Regular;
+            background-color: $white;
+
+            @media(min-width: 768px) {
+              display: flex;
+              width: 285px;
+              //height: 450px;
+              height: auto;
+              border-radius: 5px;
+              margin: 0 9px;
+              font-family: $SS-400Regular;
+              background-color: $white;
+              align-items: flex-end;
+            }
+
+            .bestseller {
+              display: flex;
+              position: absolute;
+              font-size: 12px;
+              font-family: $SS-400Regular;
+              margin: 0;
+              padding: 6px 10px;
+              background-color: $bestseller;
+              color: $white;
+              border-radius: 5px 0 0 0 ;
+            }
+
+            .cardContent {
+              width: 90%;
+              margin: 0 auto;
+              max-height: 450px;
+
+              img {
+                display: flex;
+                justify-content: center;
+                width: 80%;
+                height: auto;
+                margin: 30px auto 1%;
+              }
+
+              .tireListingDiscount {
+                font-size: 14px;
+                font-family: $SS-400Regular;
+                padding: 2px 8px;
+                color: $white;
+                background-color: $orangeButton;
+                visibility: hidden;
+              }
+
+              .tirePrice {
+                margin: 5px 0 0 0;
+                font-family: $SS-700Bold;
+                color: $orangeButton;
+                line-height: 18px;
+
+                .tirePricePenny {
+                  font-size: 18px;
+                  margin-left: 0;
+                }
+
+                .tirePriceDiscount {
+                  text-decoration: line-through;
+                  font-family: $SS-400Regular;
+                  color: $price;
+                }
+              }
+
+              .tirePriceBlack {
+                margin: 5px 0 0 0;
+                font-family: $SS-700Bold;
+                color: $price;
+                line-height: 18px;
+
+                .tirePricePenny {
+                  font-size: 18px;
+                  margin-left: 0;
+                }
+
+
+              }
+
+              .tireDescription {
+                p {
+                  margin: 0;
+                  font-size: 14px;
+
+                  &:last-child {
+                    margin-bottom: 20px;
+                  }
+                }
+              }
+
+              .tireListingShowMore {
+                font-size: 14px;
+                font-family: $SS-400Regular;
+                margin: 0 auto;
+                display: flex;
+                justify-content: center;
+                text-decoration: none;
+                color: $blackLikeHell;
+                text-align: center;
+                padding: 14px 0 16px;
+                border-top: 1px solid $podkreslnik;
+
+                &:hover {
+                  text-decoration: underline;
+                  text-decoration-color: $orangeButton;
+                }
+
+                span {
+                  font-family: $SS-400Regular;
+                  color: $orangeButton;
+                  margin-left: 2%;
+                }
+              }
+            }
+          }
+
+        }
+      }
+    }
 
     .firestoneBaner {
-      max-width: 1200px;
-      width: 100%;
-      max-height: 150px;
-      height: 100%;
-      margin: 45px 0;
+      display: none;
+      @media(min-width: 768px){
+        display: flex;
+        max-width: 1200px;
+        width: 100%;
+        max-height: 150px;
+        height: 100%;
+        margin: 45px 0;
+      }
 
       .firestoneBanerImg {
         width: 100%;
@@ -1478,7 +1699,10 @@ main {
   .headerFirms {
     width: 100%;
     background-color: $white;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
+    @media(min-width: 768px){
+      margin-bottom: 10px;
+    }
 
     .textFirms {
       line-height: 10px;
@@ -1486,26 +1710,29 @@ main {
       justify-content: center;
       align-items: center;
       flex-direction: column;
+      margin: 15px 0 8px;
 
       h2 {
         font-size: 16px;
         font-family: $SS-700Bold;
         padding-top: 25px;
         text-align: center;
+        margin: 0;
+
         @media(min-width: 570px){
           font-size: 22px;
           font-family: $SS-700Bold;
-          padding-top: 25px;
+
         }
         @media(min-width: 760px) {
           font-size: 30px;
           font-family: $SS-700Bold;
-          padding-top: 25px;
+          line-height: 30px;
         }
         @media(min-width: 1000px) {
           font-size: 36px;
           font-family: $SS-700Bold;
-          padding-top: 25px;
+
         }
       }
 
@@ -1519,7 +1746,7 @@ main {
         }
 
         a {
-
+          margin-top: 20px;
           span {
 
           }
@@ -1571,7 +1798,7 @@ main {
     .logoFirms {
       display: none;
       @media(min-width: 750px) {
-        margin-top: 60px;
+        margin-top: 30px;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -1595,13 +1822,17 @@ main {
       }
     }
 
-    .logoFirmsMobile {
-      margin-top: 40px;
+    .slickMobileFirms {
+      margin-top: 30px;
+      display: flex;
+      flex-direction: row;
 
       img {
         display: flex;
         justify-content: space-between;
         padding: 10px;
+        margin-left: 12px;
+        margin-right: 12px;
       }
 
       .growImage {
@@ -1955,7 +2186,7 @@ main {
           width: 100%;
           border-radius: 10px;
           background-color: $white;
-          margin-bottom: 25px;
+          margin: 0 8px 6px 8px;
 
           &:last-child {
             margin-bottom: 0;

@@ -146,24 +146,28 @@ setInterval(function time(){
 //Karuzela logo firm
 
 $(document).ready(function(){
-   $('.logoFirmsMobile').owlCarousel({
+   $('.slickMobileFirms').slick({
       autoplay: true,
-      autoplayTimeout: 3000,
-      autoplayHoverPause: false,
-      items: 3,
-      loop: true,
-      margin: 30,
+      variableWidth: true,
+      autoplaySpeed: 0,
+      speed: 3000,
+      cssEase: 'linear',
       dots: false,
-      responsive: {
-         0:{
-            items: 2,
-            margin: 30,
-         },
-         400:{
-            items: 3,
-            margin: 30,
-         }
-      }
+      arrows: false,
+      infinite: true,
+   });
+});
+
+$(document).ready(function () {
+   $('.slickMobileFirms').slick({
+      autoplay: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      autoplaySpeed: 5000,
+      dots: false,
+      arrows: false,
+      infinite: true,
+      cssEase: 'linear',
    });
 });
 
@@ -175,6 +179,9 @@ $(document).ready(function () {
       slidesToScroll: 1,
       autoplay: true,
       autoplaySpeed: 4000,
+      marginLeft: 9,
+      marginRight: 9,
+      useCSS: true,
       responsive: [
          {
             breakpoint: 1024,
@@ -182,22 +189,16 @@ $(document).ready(function () {
                slidesToShow: 3,
                slidesToScroll: 1,
                infinite: true,
+               dots: true,
             }
          },
          {
             breakpoint: 600,
             settings: {
                slidesToShow: 2,
-               slidesToScroll: 2,
-               infinite: true
-            }
-         },
-         {
-            breakpoint: 480,
-            settings: {
-               slidesToShow: 1,
                slidesToScroll: 1,
-               infinite: true
+               infinite: true,
+               dots: true,
             }
          }
       ]
@@ -206,14 +207,15 @@ $(document).ready(function () {
 
 //Karuzela porad ekspertów
 $(document).ready(function () {
-   $('.expertsMobileCarousel').owlCarousel( {
+   $('.expertsMobileCarousel').slick( {
       autoplay: true,
-      autoplayTimeout: 8000,
-      autoplayHoverPause: false,
-      items: 2,
-      loop: true,
-      margin: 15,
-      rtl: false,
+      slidesToShow: 2,
+      slidesToScroll: 1,
+      autoplaySpeed: 4000,
+      arrows: false,
+      dots: true,
+      infinite: true,
+      mobileFirst: true
    });
 });
 
