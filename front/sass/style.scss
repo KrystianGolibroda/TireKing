@@ -1571,7 +1571,7 @@ main {
             width: 100%;
             height: auto;
             border-radius: 5px;
-            margin: 0 9px;
+            margin: 0  9px;
             font-family: $SS-400Regular;
             background-color: $white;
 
@@ -2270,469 +2270,71 @@ main {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
+      width: 96%;
+      padding: 0 2% 0 2%;
 
-      .parent {
-        display: grid;
-        grid-template-columns: 160px 1fr 1fr 1fr 140px 1fr 140px 1fr 140px;
-        grid-template-rows: 20px 70px 20px 100px 20px 100px;
-        grid-column-gap: 0;
-        grid-row-gap: 40px;
-        margin-bottom: 30px;
+      .searchSectionText{
+        display: flex;
+        flex-direction: row;
+        //justify-content: space-between;
+        white-space: nowrap;
 
-        .div1 {
-          grid-area: 1 / 1 / 2 / 4;
+        .textSearch{
+          display: flex;
 
           p {
+            display: flex;
             font-size: 14px;
             font-family: $SS-700Bold;
             color: $orangeButton;
+            margin: 0;
+            padding: 5px 0;
           }
         }
+      }
 
-        .div2 {
-          grid-area: 2 / 1 / 3 / 2;
+      .searchSectionFlex {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        padding: 25px 0 30px 0;
 
+        .opony1{
+          display: flex;
+          flex-direction: column;
+          max-width: 150px;
+          width: 100%;
+          text-align: left;
+          justify-content: flex-end;
           p {
             font-size: 12px;
             font-family: $SS-400Regular;
             color: $blackLikeHell;
             margin: 0;
             padding-bottom: 8px;
-
             a {
-              text-decoration: none;
+             text-decoration: none;
               color: $blackLikeHell;
-
               &:hover {
                 text-decoration: underline;
                 text-decoration-color: $orangeButton;
                 color: $blackLikeHell;
               }
             }
-
-            span {
+            span{
               color: $orangeButton;
             }
           }
-        }
-
-        .div3 {
-          grid-area: 2 / 3 / 3 / 4;
-
-          p {
-            font-size: 12px;
-            font-family: $SS-400Regular;
-            color: $blackLikeHell;
-            margin: 0;
-            padding-bottom: 8px;
-
-            a {
-              text-decoration: none;
-              color: $blackLikeHell;
-
-              &:hover {
-                text-decoration: underline;
-                text-decoration-color: $orangeButton;
-                color: $blackLikeHell;
-              }
-            }
-
-            span {
-              color: $orangeButton;
-            }
-          }
-        }
-
-        .div4 {
-          grid-area: 1 / 5 / 2 / 7;
-
-          p {
+          .FirstNav {
             font-size: 14px;
             font-family: $SS-700Bold;
             color: $orangeButton;
+            margin-bottom: 26px;
+            white-space: nowrap;
           }
         }
 
-        .div5 {
-          grid-area: 2 / 5 / 3 / 6;
-
-          p {
-            font-size: 12px;
-            font-family: $SS-400Regular;
-            color: $blackLikeHell;
-            margin: 0;
-            padding-bottom: 8px;
-
-            a {
-              text-decoration: none;
-              color: $blackLikeHell;
-
-              &:hover {
-                text-decoration: underline;
-                text-decoration-color: $orangeButton;
-                color: $blackLikeHell;
-              }
-            }
-
-            span {
-              color: $orangeButton;
-            }
-          }
-        }
-
-        .div6 {
-          grid-area: 1 / 7 / 2 / 9;
-
-          p {
-            font-size: 14px;
-            font-family: $SS-700Bold;
-            color: $orangeButton;
-          }
-        }
-
-        .div7 {
-          grid-area: 2 / 7 / 3 / 8;
-
-          p {
-            font-size: 12px;
-            font-family: $SS-400Regular;
-            color: $blackLikeHell;
-            margin: 0;
-            padding-bottom: 8px;
-
-            a {
-              text-decoration: none;
-              color: $blackLikeHell;
-
-              &:hover {
-                text-decoration: underline;
-                text-decoration-color: $orangeButton;
-                color: $blackLikeHell;
-              }
-            }
-
-            span {
-              color: $orangeButton;
-            }
-          }
-        }
-
-        .div8 {
-          grid-area: 2 / 9 / 3 / 10;
-
-          p {
-            font-size: 12px;
-            font-family: $SS-400Regular;
-            color: $blackLikeHell;
-            margin: 0;
-            padding-bottom: 8px;
-
-            a {
-              text-decoration: none;
-              color: $blackLikeHell;
-
-              &:hover {
-                text-decoration: underline;
-                text-decoration-color: $orangeButton;
-                color: $blackLikeHell;
-              }
-            }
-
-            span {
-              color: $orangeButton;
-            }
-          }
-        }
-
-        .div9 {
-          grid-area: 3 / 1 / 4 / 4;
-
-          p {
-            font-size: 14px;
-            font-family: $SS-700Bold;
-            color: $orangeButton;
-          }
-        }
-
-        .div10 {
-          grid-area: 4 / 1 / 5 / 2;
-
-          p {
-            font-size: 12px;
-            font-family: $SS-400Regular;
-            color: $blackLikeHell;
-            margin: 0;
-            padding-bottom: 8px;
-
-            a {
-              text-decoration: none;
-              color: $blackLikeHell;
-
-              &:hover {
-                text-decoration: underline;
-                text-decoration-color: $orangeButton;
-                color: $blackLikeHell;
-              }
-            }
-
-            span {
-              color: $orangeButton;
-            }
-          }
-        }
-
-        .div11 {
-          grid-area: 4 / 3 / 5 / 4;
-
-          p {
-            font-size: 12px;
-            font-family: $SS-400Regular;
-            color: $blackLikeHell;
-            margin: 0;
-            padding-bottom: 8px;
-
-            a {
-              text-decoration: none;
-              color: $blackLikeHell;
-
-              &:hover {
-                text-decoration: underline;
-                text-decoration-color: $orangeButton;
-                color: $blackLikeHell;
-              }
-            }
-
-            span {
-              color: $orangeButton;
-            }
-          }
-        }
-
-        .div12 {
-          grid-area: 4 / 5 / 5 / 6;
-
-          p {
-            font-size: 12px;
-            font-family: $SS-400Regular;
-            color: $blackLikeHell;
-            margin: 0;
-            padding-bottom: 8px;
-
-            a {
-              text-decoration: none;
-              color: $blackLikeHell;
-
-              &:hover {
-                text-decoration: underline;
-                text-decoration-color: $orangeButton;
-                color: $blackLikeHell;
-              }
-            }
-
-            span {
-              color: $orangeButton;
-            }
-          }
-        }
-
-        .div13 {
-          grid-area: 4 / 7 / 5 / 8;
-
-          p {
-            font-size: 12px;
-            font-family: $SS-400Regular;
-            color: $blackLikeHell;
-            margin: 0;
-            padding-bottom: 8px;
-
-            a {
-              text-decoration: none;
-              color: $blackLikeHell;
-
-              &:hover {
-                text-decoration: underline;
-                text-decoration-color: $orangeButton;
-                color: $blackLikeHell;
-              }
-            }
-
-            span {
-              color: $orangeButton;
-            }
-          }
-        }
-
-        .div14 {
-          grid-area: 4 / 9 / 5 / 10;
-
-          p {
-            font-size: 12px;
-            font-family: $SS-400Regular;
-            color: $blackLikeHell;
-            margin: 0;
-            padding-bottom: 8px;
-
-            a {
-              text-decoration: none;
-              color: $blackLikeHell;
-
-              &:hover {
-                text-decoration: underline;
-                text-decoration-color: $orangeButton;
-                color: $blackLikeHell;
-              }
-            }
-
-            span {
-              color: $orangeButton;
-            }
-          }
-        }
-
-        .div15 {
-          grid-area: 5 / 1 / 6 / 4;
-
-          p {
-            font-size: 14px;
-            font-family: $SS-700Bold;
-            color: $orangeButton;
-          }
-        }
-
-        .div16 {
-          grid-area: 6 / 1 / 7 / 2;
-
-          p {
-            font-size: 12px;
-            font-family: $SS-400Regular;
-            color: $blackLikeHell;
-            margin: 0;
-            padding-bottom: 8px;
-
-            a {
-              text-decoration: none;
-              color: $blackLikeHell;
-
-              &:hover {
-                text-decoration: underline;
-                text-decoration-color: $orangeButton;
-                color: $blackLikeHell;
-              }
-            }
-
-            span {
-              color: $orangeButton;
-            }
-          }
-        }
-
-        .div17 {
-          grid-area: 6 / 3 / 7 / 4;
-
-          p {
-            font-size: 12px;
-            font-family: $SS-400Regular;
-            color: $blackLikeHell;
-            margin: 0;
-            padding-bottom: 8px;
-
-            a {
-              text-decoration: none;
-              color: $blackLikeHell;
-
-              &:hover {
-                text-decoration: underline;
-                text-decoration-color: $orangeButton;
-                color: $blackLikeHell;
-              }
-            }
-
-            span {
-              color: $orangeButton;
-            }
-          }
-        }
-
-        .div18 {
-          grid-area: 6 / 5 / 7 / 6;
-
-          p {
-            font-size: 12px;
-            font-family: $SS-400Regular;
-            color: $blackLikeHell;
-            margin: 0;
-            padding-bottom: 8px;
-
-            a {
-              text-decoration: none;
-              color: $blackLikeHell;
-
-              &:hover {
-                text-decoration: underline;
-                text-decoration-color: $orangeButton;
-                color: $blackLikeHell;
-              }
-            }
-
-            span {
-              color: $orangeButton;
-            }
-          }
-        }
-
-        .div19 {
-          grid-area: 6 / 7 / 7 / 8;
-
-          p {
-            font-size: 12px;
-            font-family: $SS-400Regular;
-            color: $blackLikeHell;
-            margin: 0;
-            padding-bottom: 8px;
-
-            a {
-              text-decoration: none;
-              color: $blackLikeHell;
-
-              &:hover {
-                text-decoration: underline;
-                text-decoration-color: $orangeButton;
-                color: $blackLikeHell;
-              }
-            }
-
-            span {
-              color: $orangeButton;
-            }
-          }
-        }
-
-        .div20 {
-          grid-area: 6 / 9 / 7 / 10;
-
-          p {
-            font-size: 12px;
-            font-family: $SS-400Regular;
-            color: $blackLikeHell;
-            margin: 0;
-            padding-bottom: 8px;
-
-            a {
-              text-decoration: none;
-              color: $blackLikeHell;
-
-              &:hover {
-                text-decoration: underline;
-                text-decoration-color: $orangeButton;
-                color: $blackLikeHell;
-              }
-            }
-
-            span {
-              color: $orangeButton;
-            }
-          }
-        }
       }
 
       .informationText {
@@ -2771,6 +2373,7 @@ main {
           justify-content: space-between;
           padding: 40px 30px 40px 30px;
           width: 100%;
+          white-space: nowrap;
         }
 
         .div1 {
@@ -2861,6 +2464,7 @@ main {
 
               span {
                 color: $orangeButton;
+                display: inline;
               }
             }
 
@@ -2921,7 +2525,6 @@ main {
         }
 
         .div4 {
-          margin: 0 auto;
           display: flex;
           flex-direction: column;
           @media(min-width: 768px) {
