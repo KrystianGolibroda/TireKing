@@ -1700,7 +1700,7 @@ main {
           main .adviceContainer .expertsContainer .parent .div1 .cardBig {
             background-color: #ffffff;
             width: 100%;
-            border-radius: 10px; }
+            border-radius: 5px; }
             main .adviceContainer .expertsContainer .parent .div1 .cardBig .imagePlacement {
               position: relative;
               text-align: center;
@@ -1708,7 +1708,7 @@ main {
               main .adviceContainer .expertsContainer .parent .div1 .cardBig .imagePlacement img {
                 width: 100%;
                 height: auto;
-                border-radius: 10px 10px 0 0; }
+                border-radius: 5px 5px 0 0; }
               main .adviceContainer .expertsContainer .parent .div1 .cardBig .imagePlacement .topPlacement {
                 display: none; }
                 @media (min-width: 750px) {
@@ -1798,7 +1798,7 @@ main {
           main .adviceContainer .expertsContainer .parent .div2 .card {
             max-height: 370px;
             width: 100%;
-            border-radius: 10px;
+            border-radius: 5px;
             background-color: #ffffff;
             margin-bottom: 25px; }
             main .adviceContainer .expertsContainer .parent .div2 .card:last-child {
@@ -1806,7 +1806,7 @@ main {
             main .adviceContainer .expertsContainer .parent .div2 .card img {
               width: 100%;
               height: auto;
-              border-radius: 10px 10px 0 0; }
+              border-radius: 5px 5px 0 0; }
             main .adviceContainer .expertsContainer .parent .div2 .card .upperTextG {
               font-size: 14px;
               font-family: "SinkinSans-400Regular", sans-serif;
@@ -1838,7 +1838,7 @@ main {
           main .adviceContainer .expertsContainer .parent .div3 .card {
             max-height: 370px;
             width: 100%;
-            border-radius: 10px;
+            border-radius: 5px;
             background-color: #ffffff;
             margin-bottom: 25px; }
             main .adviceContainer .expertsContainer .parent .div3 .card:last-child {
@@ -1846,7 +1846,7 @@ main {
             main .adviceContainer .expertsContainer .parent .div3 .card img {
               width: 100%;
               height: auto;
-              border-radius: 10px 10px 0 0; }
+              border-radius: 5px 5px 0 0; }
             main .adviceContainer .expertsContainer .parent .div3 .card .upperTextG {
               font-size: 14px;
               font-family: "SinkinSans-400Regular", sans-serif;
@@ -1882,7 +1882,7 @@ main {
           max-height: 370px;
           max-width: 370px;
           width: 100%;
-          border-radius: 10px;
+          border-radius: 5px;
           background-color: #ffffff;
           margin: 0 8px 6px 8px; }
           main .adviceContainer .expertsContainer .expertsMobileCarousel .card:last-child {
@@ -1890,7 +1890,7 @@ main {
           main .adviceContainer .expertsContainer .expertsMobileCarousel .card img {
             width: 100%;
             height: auto;
-            border-radius: 10px 10px 0 0; }
+            border-radius: 5px 5px 0 0; }
           main .adviceContainer .expertsContainer .expertsMobileCarousel .card .upperTextG {
             font-size: 14px;
             font-family: "SinkinSans-400Regular", sans-serif;
