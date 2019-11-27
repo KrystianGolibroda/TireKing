@@ -1435,7 +1435,7 @@ main {
             width: 100%;
             height: auto;
             border-radius: 5px;
-            margin: 0 9px;
+            margin: 0  9px;
             font-family: "SinkinSans-400Regular", sans-serif;
             background-color: #ffffff; }
             @media (min-width: 768px) {
@@ -1928,299 +1928,56 @@ main {
       margin: 0 auto;
       display: flex;
       flex-direction: row;
-      flex-wrap: wrap; }
-      main .searchFormsTab .searchSection .parent {
-        display: grid;
-        grid-template-columns: 160px 1fr 1fr 1fr 140px 1fr 140px 1fr 140px;
-        grid-template-rows: 20px 70px 20px 100px 20px 100px;
-        grid-column-gap: 0;
-        grid-row-gap: 40px;
-        margin-bottom: 30px; }
-        main .searchFormsTab .searchSection .parent .div1 {
-          grid-area: 1 / 1 / 2 / 4; }
-          main .searchFormsTab .searchSection .parent .div1 p {
+      flex-wrap: wrap;
+      width: 96%;
+      padding: 0 2% 0 2%; }
+      main .searchFormsTab .searchSection .searchSectionText {
+        display: flex;
+        flex-direction: row;
+        white-space: nowrap; }
+        main .searchFormsTab .searchSection .searchSectionText .textSearch {
+          display: flex; }
+          main .searchFormsTab .searchSection .searchSectionText .textSearch p {
+            display: flex;
             font-size: 14px;
             font-family: "SinkinSans-700Bold", sans-serif;
-            color: #ff6300; }
-        main .searchFormsTab .searchSection .parent .div2 {
-          grid-area: 2 / 1 / 3 / 2; }
-          main .searchFormsTab .searchSection .parent .div2 p {
+            color: #ff6300;
+            margin: 0;
+            padding: 5px 0; }
+      main .searchFormsTab .searchSection .searchSectionFlex {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        padding: 25px 0 30px 0; }
+        main .searchFormsTab .searchSection .searchSectionFlex .opony1 {
+          display: flex;
+          flex-direction: column;
+          max-width: 150px;
+          width: 100%;
+          text-align: left;
+          justify-content: flex-end; }
+          main .searchFormsTab .searchSection .searchSectionFlex .opony1 p {
             font-size: 12px;
             font-family: "SinkinSans-400Regular", sans-serif;
             color: #000000;
             margin: 0;
             padding-bottom: 8px; }
-            main .searchFormsTab .searchSection .parent .div2 p a {
+            main .searchFormsTab .searchSection .searchSectionFlex .opony1 p a {
               text-decoration: none;
               color: #000000; }
-              main .searchFormsTab .searchSection .parent .div2 p a:hover {
+              main .searchFormsTab .searchSection .searchSectionFlex .opony1 p a:hover {
                 text-decoration: underline;
                 text-decoration-color: #ff6300;
                 color: #000000; }
-            main .searchFormsTab .searchSection .parent .div2 p span {
+            main .searchFormsTab .searchSection .searchSectionFlex .opony1 p span {
               color: #ff6300; }
-        main .searchFormsTab .searchSection .parent .div3 {
-          grid-area: 2 / 3 / 3 / 4; }
-          main .searchFormsTab .searchSection .parent .div3 p {
-            font-size: 12px;
-            font-family: "SinkinSans-400Regular", sans-serif;
-            color: #000000;
-            margin: 0;
-            padding-bottom: 8px; }
-            main .searchFormsTab .searchSection .parent .div3 p a {
-              text-decoration: none;
-              color: #000000; }
-              main .searchFormsTab .searchSection .parent .div3 p a:hover {
-                text-decoration: underline;
-                text-decoration-color: #ff6300;
-                color: #000000; }
-            main .searchFormsTab .searchSection .parent .div3 p span {
-              color: #ff6300; }
-        main .searchFormsTab .searchSection .parent .div4 {
-          grid-area: 1 / 5 / 2 / 7; }
-          main .searchFormsTab .searchSection .parent .div4 p {
+          main .searchFormsTab .searchSection .searchSectionFlex .opony1 .FirstNav {
             font-size: 14px;
             font-family: "SinkinSans-700Bold", sans-serif;
-            color: #ff6300; }
-        main .searchFormsTab .searchSection .parent .div5 {
-          grid-area: 2 / 5 / 3 / 6; }
-          main .searchFormsTab .searchSection .parent .div5 p {
-            font-size: 12px;
-            font-family: "SinkinSans-400Regular", sans-serif;
-            color: #000000;
-            margin: 0;
-            padding-bottom: 8px; }
-            main .searchFormsTab .searchSection .parent .div5 p a {
-              text-decoration: none;
-              color: #000000; }
-              main .searchFormsTab .searchSection .parent .div5 p a:hover {
-                text-decoration: underline;
-                text-decoration-color: #ff6300;
-                color: #000000; }
-            main .searchFormsTab .searchSection .parent .div5 p span {
-              color: #ff6300; }
-        main .searchFormsTab .searchSection .parent .div6 {
-          grid-area: 1 / 7 / 2 / 9; }
-          main .searchFormsTab .searchSection .parent .div6 p {
-            font-size: 14px;
-            font-family: "SinkinSans-700Bold", sans-serif;
-            color: #ff6300; }
-        main .searchFormsTab .searchSection .parent .div7 {
-          grid-area: 2 / 7 / 3 / 8; }
-          main .searchFormsTab .searchSection .parent .div7 p {
-            font-size: 12px;
-            font-family: "SinkinSans-400Regular", sans-serif;
-            color: #000000;
-            margin: 0;
-            padding-bottom: 8px; }
-            main .searchFormsTab .searchSection .parent .div7 p a {
-              text-decoration: none;
-              color: #000000; }
-              main .searchFormsTab .searchSection .parent .div7 p a:hover {
-                text-decoration: underline;
-                text-decoration-color: #ff6300;
-                color: #000000; }
-            main .searchFormsTab .searchSection .parent .div7 p span {
-              color: #ff6300; }
-        main .searchFormsTab .searchSection .parent .div8 {
-          grid-area: 2 / 9 / 3 / 10; }
-          main .searchFormsTab .searchSection .parent .div8 p {
-            font-size: 12px;
-            font-family: "SinkinSans-400Regular", sans-serif;
-            color: #000000;
-            margin: 0;
-            padding-bottom: 8px; }
-            main .searchFormsTab .searchSection .parent .div8 p a {
-              text-decoration: none;
-              color: #000000; }
-              main .searchFormsTab .searchSection .parent .div8 p a:hover {
-                text-decoration: underline;
-                text-decoration-color: #ff6300;
-                color: #000000; }
-            main .searchFormsTab .searchSection .parent .div8 p span {
-              color: #ff6300; }
-        main .searchFormsTab .searchSection .parent .div9 {
-          grid-area: 3 / 1 / 4 / 4; }
-          main .searchFormsTab .searchSection .parent .div9 p {
-            font-size: 14px;
-            font-family: "SinkinSans-700Bold", sans-serif;
-            color: #ff6300; }
-        main .searchFormsTab .searchSection .parent .div10 {
-          grid-area: 4 / 1 / 5 / 2; }
-          main .searchFormsTab .searchSection .parent .div10 p {
-            font-size: 12px;
-            font-family: "SinkinSans-400Regular", sans-serif;
-            color: #000000;
-            margin: 0;
-            padding-bottom: 8px; }
-            main .searchFormsTab .searchSection .parent .div10 p a {
-              text-decoration: none;
-              color: #000000; }
-              main .searchFormsTab .searchSection .parent .div10 p a:hover {
-                text-decoration: underline;
-                text-decoration-color: #ff6300;
-                color: #000000; }
-            main .searchFormsTab .searchSection .parent .div10 p span {
-              color: #ff6300; }
-        main .searchFormsTab .searchSection .parent .div11 {
-          grid-area: 4 / 3 / 5 / 4; }
-          main .searchFormsTab .searchSection .parent .div11 p {
-            font-size: 12px;
-            font-family: "SinkinSans-400Regular", sans-serif;
-            color: #000000;
-            margin: 0;
-            padding-bottom: 8px; }
-            main .searchFormsTab .searchSection .parent .div11 p a {
-              text-decoration: none;
-              color: #000000; }
-              main .searchFormsTab .searchSection .parent .div11 p a:hover {
-                text-decoration: underline;
-                text-decoration-color: #ff6300;
-                color: #000000; }
-            main .searchFormsTab .searchSection .parent .div11 p span {
-              color: #ff6300; }
-        main .searchFormsTab .searchSection .parent .div12 {
-          grid-area: 4 / 5 / 5 / 6; }
-          main .searchFormsTab .searchSection .parent .div12 p {
-            font-size: 12px;
-            font-family: "SinkinSans-400Regular", sans-serif;
-            color: #000000;
-            margin: 0;
-            padding-bottom: 8px; }
-            main .searchFormsTab .searchSection .parent .div12 p a {
-              text-decoration: none;
-              color: #000000; }
-              main .searchFormsTab .searchSection .parent .div12 p a:hover {
-                text-decoration: underline;
-                text-decoration-color: #ff6300;
-                color: #000000; }
-            main .searchFormsTab .searchSection .parent .div12 p span {
-              color: #ff6300; }
-        main .searchFormsTab .searchSection .parent .div13 {
-          grid-area: 4 / 7 / 5 / 8; }
-          main .searchFormsTab .searchSection .parent .div13 p {
-            font-size: 12px;
-            font-family: "SinkinSans-400Regular", sans-serif;
-            color: #000000;
-            margin: 0;
-            padding-bottom: 8px; }
-            main .searchFormsTab .searchSection .parent .div13 p a {
-              text-decoration: none;
-              color: #000000; }
-              main .searchFormsTab .searchSection .parent .div13 p a:hover {
-                text-decoration: underline;
-                text-decoration-color: #ff6300;
-                color: #000000; }
-            main .searchFormsTab .searchSection .parent .div13 p span {
-              color: #ff6300; }
-        main .searchFormsTab .searchSection .parent .div14 {
-          grid-area: 4 / 9 / 5 / 10; }
-          main .searchFormsTab .searchSection .parent .div14 p {
-            font-size: 12px;
-            font-family: "SinkinSans-400Regular", sans-serif;
-            color: #000000;
-            margin: 0;
-            padding-bottom: 8px; }
-            main .searchFormsTab .searchSection .parent .div14 p a {
-              text-decoration: none;
-              color: #000000; }
-              main .searchFormsTab .searchSection .parent .div14 p a:hover {
-                text-decoration: underline;
-                text-decoration-color: #ff6300;
-                color: #000000; }
-            main .searchFormsTab .searchSection .parent .div14 p span {
-              color: #ff6300; }
-        main .searchFormsTab .searchSection .parent .div15 {
-          grid-area: 5 / 1 / 6 / 4; }
-          main .searchFormsTab .searchSection .parent .div15 p {
-            font-size: 14px;
-            font-family: "SinkinSans-700Bold", sans-serif;
-            color: #ff6300; }
-        main .searchFormsTab .searchSection .parent .div16 {
-          grid-area: 6 / 1 / 7 / 2; }
-          main .searchFormsTab .searchSection .parent .div16 p {
-            font-size: 12px;
-            font-family: "SinkinSans-400Regular", sans-serif;
-            color: #000000;
-            margin: 0;
-            padding-bottom: 8px; }
-            main .searchFormsTab .searchSection .parent .div16 p a {
-              text-decoration: none;
-              color: #000000; }
-              main .searchFormsTab .searchSection .parent .div16 p a:hover {
-                text-decoration: underline;
-                text-decoration-color: #ff6300;
-                color: #000000; }
-            main .searchFormsTab .searchSection .parent .div16 p span {
-              color: #ff6300; }
-        main .searchFormsTab .searchSection .parent .div17 {
-          grid-area: 6 / 3 / 7 / 4; }
-          main .searchFormsTab .searchSection .parent .div17 p {
-            font-size: 12px;
-            font-family: "SinkinSans-400Regular", sans-serif;
-            color: #000000;
-            margin: 0;
-            padding-bottom: 8px; }
-            main .searchFormsTab .searchSection .parent .div17 p a {
-              text-decoration: none;
-              color: #000000; }
-              main .searchFormsTab .searchSection .parent .div17 p a:hover {
-                text-decoration: underline;
-                text-decoration-color: #ff6300;
-                color: #000000; }
-            main .searchFormsTab .searchSection .parent .div17 p span {
-              color: #ff6300; }
-        main .searchFormsTab .searchSection .parent .div18 {
-          grid-area: 6 / 5 / 7 / 6; }
-          main .searchFormsTab .searchSection .parent .div18 p {
-            font-size: 12px;
-            font-family: "SinkinSans-400Regular", sans-serif;
-            color: #000000;
-            margin: 0;
-            padding-bottom: 8px; }
-            main .searchFormsTab .searchSection .parent .div18 p a {
-              text-decoration: none;
-              color: #000000; }
-              main .searchFormsTab .searchSection .parent .div18 p a:hover {
-                text-decoration: underline;
-                text-decoration-color: #ff6300;
-                color: #000000; }
-            main .searchFormsTab .searchSection .parent .div18 p span {
-              color: #ff6300; }
-        main .searchFormsTab .searchSection .parent .div19 {
-          grid-area: 6 / 7 / 7 / 8; }
-          main .searchFormsTab .searchSection .parent .div19 p {
-            font-size: 12px;
-            font-family: "SinkinSans-400Regular", sans-serif;
-            color: #000000;
-            margin: 0;
-            padding-bottom: 8px; }
-            main .searchFormsTab .searchSection .parent .div19 p a {
-              text-decoration: none;
-              color: #000000; }
-              main .searchFormsTab .searchSection .parent .div19 p a:hover {
-                text-decoration: underline;
-                text-decoration-color: #ff6300;
-                color: #000000; }
-            main .searchFormsTab .searchSection .parent .div19 p span {
-              color: #ff6300; }
-        main .searchFormsTab .searchSection .parent .div20 {
-          grid-area: 6 / 9 / 7 / 10; }
-          main .searchFormsTab .searchSection .parent .div20 p {
-            font-size: 12px;
-            font-family: "SinkinSans-400Regular", sans-serif;
-            color: #000000;
-            margin: 0;
-            padding-bottom: 8px; }
-            main .searchFormsTab .searchSection .parent .div20 p a {
-              text-decoration: none;
-              color: #000000; }
-              main .searchFormsTab .searchSection .parent .div20 p a:hover {
-                text-decoration: underline;
-                text-decoration-color: #ff6300;
-                color: #000000; }
-            main .searchFormsTab .searchSection .parent .div20 p span {
-              color: #ff6300; }
+            color: #ff6300;
+            margin-bottom: 26px;
+            white-space: nowrap; }
       main .searchFormsTab .searchSection .informationText {
         font-size: 10px;
         font-family: "SinkinSans-400Regular", sans-serif;
@@ -2249,7 +2006,8 @@ main {
             flex-direction: row;
             justify-content: space-between;
             padding: 40px 30px 40px 30px;
-            width: 100%; } }
+            width: 100%;
+            white-space: nowrap; } }
         main .footer .footerContainer .footerContent .div1 {
           display: none; }
           @media (min-width: 768px) {
@@ -2310,7 +2068,8 @@ main {
                 text-decoration: underline;
                 text-decoration-color: #ff6300; }
               main .footer .footerContainer .footerContent .div2 p a span {
-                color: #ff6300; }
+                color: #ff6300;
+                display: inline; }
             @media (min-width: 768px) {
               main .footer .footerContainer .footerContent .div2 p {
                 font-size: 12px;
@@ -2348,7 +2107,6 @@ main {
             main .footer .footerContainer .footerContent .div3 p span {
               color: #ff6300; }
         main .footer .footerContainer .footerContent .div4 {
-          margin: 0 auto;
           display: flex;
           flex-direction: column; }
           @media (min-width: 768px) {
