@@ -171,6 +171,17 @@ $(document).ready(function () {
    });
 });
 
+//Karuzela opinii
+$(document).ready(function () {
+   $('.opinionsContainerMobile').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      dots: true,
+      arrows: false,
+      autoplay: true,
+   });
+});
+
 //Karuzela karty produktowej
 $(document).ready(function () {
    $('.slickContainer').slick({
@@ -186,7 +197,7 @@ $(document).ready(function () {
          {
             breakpoint: 1024,
             settings: {
-               slidesToShow: 3,
+               slidesToShow: 2,
                slidesToScroll: 1,
                infinite: true,
                dots: true,
@@ -208,14 +219,12 @@ $(document).ready(function () {
 //Karuzela porad ekspertów
 $(document).ready(function () {
    $('.expertsMobileCarousel').slick( {
-      autoplay: true,
-      slidesToShow: 2,
+      slidesToShow: 1,
       slidesToScroll: 1,
-      autoplaySpeed: 4000,
-      arrows: false,
       dots: true,
-      infinite: true,
-      mobileFirst: true
+      arrows: false,
+      autoplay: false,
+      infinite: false,
    });
 });
 
