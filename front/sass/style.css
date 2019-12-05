@@ -467,128 +467,177 @@ nav {
 main {
   width: 98%;
   align-items: center; }
-  @media (min-width: 768px) {
-    main .carSearchContainer {
+  main .carSearchContainer {
+    background-color: #f8f8f8;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important; }
+    @media (min-width: 550px) {
+      main .carSearchContainer {
+        background-image: url("../images/michelin_background.png");
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-top: 50px !important;
+        padding-bottom: 475px !important; } }
+    main .carSearchContainer .carSearchBox {
       background-color: #f8f8f8;
-      padding-top: 10px !important;
-      padding-bottom: 10px !important; } }
-  @media (min-width: 768px) and (min-width: 550px) {
-    main .carSearchContainer {
-      background-image: url("../images/michelin_background.png");
-      width: 100%;
-      background-repeat: no-repeat;
-      background-size: cover;
-      padding-top: 50px !important;
-      padding-bottom: 475px !important; } }
-  @media (min-width: 768px) {
-      main .carSearchContainer .carSearchBox {
-        background-color: #f8f8f8;
-        display: flex;
-        flex-direction: column;
-        border: 1px solid black;
-        border-radius: 10px;
-        max-width: 1030px;
-        margin: 0 auto; } }
-    @media (min-width: 768px) and (min-width: 550px) {
-      main .carSearchContainer .carSearchBox {
-        -webkit-box-shadow: 0 0 10px 0 #8d8d8d;
-        -moz-box-shadow: 0 0 10px 0 #8d8d8d;
-        box-shadow: 0 0 10px 0 #8d8d8d;
-        border: none; }
-        main .carSearchContainer .carSearchBox .top {
-          border-radius: 10px;
-          max-width: 1030px;
-          max-height: 440px;
-          background-color: #f8f8f8; }
-          main .carSearchContainer .carSearchBox .top .tabLink {
-            font-family: "SinkinSans-700Bold", sans-serif;
-            font-size: 19px;
-            letter-spacing: 0.01rem;
-            cursor: pointer;
-            width: 50%;
-            float: left;
-            padding: 15px;
-            text-align: center;
-            outline: none;
-            border: none;
-            background-color: #e2e2e2;
-            color: #000000; }
-          main .carSearchContainer .carSearchBox .top .tabContent {
-            box-sizing: border-box;
-            display: flex;
-            align-items: baseline;
-            height: 385px;
+      display: flex;
+      flex-direction: column;
+      border: 1px solid black;
+      border-radius: 10px;
+      max-width: 1030px;
+      margin: 0 auto; }
+      @media (min-width: 550px) {
+        main .carSearchContainer .carSearchBox {
+          -webkit-box-shadow: 0 0 10px 0 #8d8d8d;
+          -moz-box-shadow: 0 0 10px 0 #8d8d8d;
+          box-shadow: 0 0 10px 0 #8d8d8d;
+          border: none; }
+          main .carSearchContainer .carSearchBox .top {
+            border-radius: 10px;
             max-width: 1030px;
-            width: 100%; }
-            main .carSearchContainer .carSearchBox .top .tabContent .selectContainer {
+            max-height: 440px;
+            background-color: #f8f8f8; }
+            main .carSearchContainer .carSearchBox .top .tabLink {
               font-family: "SinkinSans-700Bold", sans-serif;
-              font-size: 14px;
+              font-size: 19px;
+              letter-spacing: 0.01rem;
+              cursor: pointer;
+              width: 50%;
+              float: left;
+              padding: 15px;
+              text-align: center;
+              outline: none;
+              border: none;
+              background-color: #e2e2e2;
+              color: #000000; }
+            main .carSearchContainer .carSearchBox .top .tabContent {
+              box-sizing: border-box;
               display: flex;
-              flex-direction: row;
+              align-items: baseline;
+              height: 385px;
+              max-width: 1030px;
               width: 100%; }
-              main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .firstBox {
-                max-width: 515px;
-                width: 100%;
-                max-height: 365px;
-                height: 100%;
-                margin: 0 auto;
+              main .carSearchContainer .carSearchBox .top .tabContent .selectContainer {
+                font-family: "SinkinSans-700Bold", sans-serif;
+                font-size: 14px;
                 display: flex;
-                flex-direction: column; }
-                main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .firstBox .endContent {
+                flex-direction: row;
+                width: 100%; }
+                main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .firstBox {
                   max-width: 515px;
-                  width: 100%; }
-                  main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .firstBox .endContent .smallSelectBox {
-                    max-width: 445px;
+                  width: 100%;
+                  max-height: 365px;
+                  height: 100%;
+                  margin: 0 auto;
+                  display: flex;
+                  flex-direction: column; }
+                  main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .firstBox .endContent {
+                    max-width: 515px;
+                    width: 100%; }
+                    main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .firstBox .endContent .smallSelectBox {
+                      max-width: 445px;
+                      width: 100%;
+                      max-height: 80px;
+                      height: 100%;
+                      margin-top: 45px;
+                      display: flex;
+                      flex-direction: row;
+                      justify-content: space-between;
+                      float: right; }
+                      main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .firstBox .endContent .smallSelectBox .selectLabelBox {
+                        position: relative;
+                        width: 135px; }
+                        main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .firstBox .endContent .smallSelectBox .selectLabelBox .triangle-bottomleft {
+                          margin-left: 85px;
+                          position: relative;
+                          top: 0;
+                          width: 0;
+                          height: 0;
+                          display: flex;
+                          align-items: center;
+                          justify-content: center;
+                          border-style: solid;
+                          border-width: 0 0 45px 50px;
+                          border-color: transparent transparent transparent #ffffff;
+                          transform: skewX(63deg);
+                          -ms-transform: skewX(63deg);
+                          -moz-transform: skewX(63deg);
+                          -webkit-transform: skew(63deg); }
+                        main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .firstBox .endContent .smallSelectBox .selectLabelBox .triangle-bottom {
+                          margin: 0 auto;
+                          position: relative;
+                          top: 0;
+                          width: 0;
+                          height: 0;
+                          border-style: solid;
+                          border-width: 22px 17px 0 17px;
+                          border-color: #ffffff transparent transparent transparent; }
+                        main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .firstBox .endContent .smallSelectBox .selectLabelBox .triangle-bottomright {
+                          margin-right: 50px;
+                          position: relative;
+                          top: 0;
+                          width: 0;
+                          height: 0;
+                          border-style: solid;
+                          border-width: 45px 0 0 50px;
+                          border-color: #ffffff transparent transparent transparent;
+                          transform: skewX(-63deg);
+                          -ms-transform: skewX(-63deg);
+                          -moz-transform: skewX(-63deg);
+                          -webkit-transform: skewX(-63deg); }
+                        main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .firstBox .endContent .smallSelectBox .selectLabelBox .upLabel {
+                          display: block;
+                          padding-bottom: 6px;
+                          padding-left: 12px;
+                          font-size: 14px;
+                          font-family: "SinkinSans-700Bold", sans-serif;
+                          color: #929292;
+                          letter-spacing: 0.03rem;
+                          position: relative;
+                          z-index: 2; }
+                        main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .firstBox .endContent .smallSelectBox .selectLabelBox .smallSelect {
+                          max-height: 50px;
+                          height: 100%;
+                          width: 100%;
+                          padding-left: 12px;
+                          font-size: 14px;
+                          font-family: "SinkinSans-700Bold", sans-serif;
+                          -moz-appearance: none;
+                          -webkit-appearance: none;
+                          appearance: none;
+                          background-image: url("../images/icon/angle_down_orange.png");
+                          background-repeat: no-repeat, repeat;
+                          background-position: right .7em top 50%, 0 0;
+                          background-size: .65em auto, 100%;
+                          border: 1px solid #dbdbdb;
+                          border-radius: 5px;
+                          position: relative;
+                          z-index: 2; }
+                    main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .firstBox .endContent .tireImageDiv {
+                      float: right;
+                      margin-right: 22px; }
+                      main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .firstBox .endContent .tireImageDiv .tireImage {
+                        margin-top: 30px;
+                        max-width: 400px;
+                        width: 100%;
+                        height: auto; }
+                main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .secondBox {
+                  max-width: 515px;
+                  width: 100%;
+                  margin: 0 auto;
+                  display: flex;
+                  flex-direction: column; }
+                  main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .secondBox .smallSelectBox {
                     width: 100%;
-                    max-height: 80px;
-                    height: 100%;
                     margin-top: 45px;
                     display: flex;
                     flex-direction: row;
-                    justify-content: space-between;
-                    float: right; }
-                    main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .firstBox .endContent .smallSelectBox .selectLabelBox {
-                      position: relative;
-                      width: 135px; }
-                      main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .firstBox .endContent .smallSelectBox .selectLabelBox .triangle-bottomleft {
-                        margin-left: 85px;
-                        position: relative;
-                        top: 0;
-                        width: 0;
-                        height: 0;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        border-style: solid;
-                        border-width: 0 0 45px 50px;
-                        border-color: transparent transparent transparent #ffffff;
-                        transform: skewX(63deg);
-                        -ms-transform: skewX(63deg);
-                        -moz-transform: skewX(63deg);
-                        -webkit-transform: skew(63deg); }
-                      main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .firstBox .endContent .smallSelectBox .selectLabelBox .triangle-bottom {
-                        margin: 0 auto;
-                        position: relative;
-                        top: 0;
-                        width: 0;
-                        height: 0;
-                        border-style: solid;
-                        border-width: 22px 17px 0 17px;
-                        border-color: #ffffff transparent transparent transparent; }
-                      main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .firstBox .endContent .smallSelectBox .selectLabelBox .triangle-bottomright {
-                        margin-right: 50px;
-                        position: relative;
-                        top: 0;
-                        width: 0;
-                        height: 0;
-                        border-style: solid;
-                        border-width: 45px 0 0 50px;
-                        border-color: #ffffff transparent transparent transparent;
-                        transform: skewX(-63deg);
-                        -ms-transform: skewX(-63deg);
-                        -moz-transform: skewX(-63deg);
-                        -webkit-transform: skewX(-63deg); }
-                      main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .firstBox .endContent .smallSelectBox .selectLabelBox .upLabel {
+                    justify-content: center; }
+                    main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .secondBox .smallSelectBox .selectLabelBox {
+                      max-width: 365px;
+                      width: 100%; }
+                      main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .secondBox .smallSelectBox .selectLabelBox label {
                         display: block;
                         padding-bottom: 6px;
                         padding-left: 12px;
@@ -598,9 +647,8 @@ main {
                         letter-spacing: 0.03rem;
                         position: relative;
                         z-index: 2; }
-                      main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .firstBox .endContent .smallSelectBox .selectLabelBox .smallSelect {
-                        max-height: 50px;
-                        height: 100%;
+                      main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .secondBox .smallSelectBox .selectLabelBox .smallSelectT {
+                        height: 50px;
                         width: 100%;
                         padding-left: 12px;
                         font-size: 14px;
@@ -616,347 +664,295 @@ main {
                         border-radius: 5px;
                         position: relative;
                         z-index: 2; }
-                  main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .firstBox .endContent .tireImageDiv {
-                    float: right;
-                    margin-right: 22px; }
-                    main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .firstBox .endContent .tireImageDiv .tireImage {
-                      margin-top: 30px;
-                      max-width: 400px;
-                      width: 100%;
-                      height: auto; }
-              main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .secondBox {
-                max-width: 515px;
-                width: 100%;
-                margin: 0 auto;
-                display: flex;
-                flex-direction: column; }
-                main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .secondBox .smallSelectBox {
-                  width: 100%;
-                  margin-top: 45px;
-                  display: flex;
-                  flex-direction: row;
-                  justify-content: center; }
-                  main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .secondBox .smallSelectBox .selectLabelBox {
-                    max-width: 365px;
-                    width: 100%; }
-                    main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .secondBox .smallSelectBox .selectLabelBox label {
-                      display: block;
-                      padding-bottom: 6px;
-                      padding-left: 12px;
+                  main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .secondBox .buttonBox {
+                    width: 100%;
+                    margin-top: 45px;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center; }
+                    main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .secondBox .buttonBox .buttonSearchBox {
+                      max-width: 365px;
+                      width: 100%; }
+                      main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .secondBox .buttonBox .buttonSearchBox button {
+                        width: 100%;
+                        height: 50px;
+                        background-color: #ff6300;
+                        color: #ffffff;
+                        border: none;
+                        border-radius: 5px;
+                        cursor: pointer;
+                        font-size: 19px;
+                        font-family: "SinkinSans-700Bold", sans-serif;
+                        letter-spacing: 0.05rem; }
+                  main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .secondBox .advancedSearch {
+                    width: 100%;
+                    margin-top: 40px;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center; }
+                    main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .secondBox .advancedSearch a {
+                      color: #000000;
                       font-size: 14px;
                       font-family: "SinkinSans-700Bold", sans-serif;
-                      color: #929292;
-                      letter-spacing: 0.03rem;
-                      position: relative;
-                      z-index: 2; }
-                    main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .secondBox .smallSelectBox .selectLabelBox .smallSelectT {
-                      height: 50px;
-                      width: 100%;
-                      padding-left: 12px;
-                      font-size: 14px;
-                      font-family: "SinkinSans-700Bold", sans-serif;
-                      -moz-appearance: none;
-                      -webkit-appearance: none;
-                      appearance: none;
-                      background-image: url("../images/icon/angle_down_orange.png");
-                      background-repeat: no-repeat, repeat;
-                      background-position: right .7em top 50%, 0 0;
-                      background-size: .65em auto, 100%;
-                      border: 1px solid #dbdbdb;
-                      border-radius: 5px;
-                      position: relative;
-                      z-index: 2; }
-                main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .secondBox .buttonBox {
-                  width: 100%;
-                  margin-top: 45px;
-                  display: flex;
-                  flex-direction: row;
-                  justify-content: center; }
-                  main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .secondBox .buttonBox .buttonSearchBox {
-                    max-width: 365px;
-                    width: 100%; }
-                    main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .secondBox .buttonBox .buttonSearchBox button {
-                      width: 100%;
-                      height: 50px;
-                      background-color: #ff6300;
-                      color: #ffffff;
-                      border: none;
-                      border-radius: 5px;
-                      cursor: pointer;
-                      font-size: 19px;
-                      font-family: "SinkinSans-700Bold", sans-serif;
-                      letter-spacing: 0.05rem; }
-                main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .secondBox .advancedSearch {
-                  width: 100%;
-                  margin-top: 40px;
-                  display: flex;
-                  flex-direction: row;
-                  justify-content: center; }
-                  main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .secondBox .advancedSearch a {
-                    color: #000000;
-                    font-size: 14px;
-                    font-family: "SinkinSans-700Bold", sans-serif;
-                    text-decoration: none; }
-                    main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .secondBox .advancedSearch a:hover {
-                      text-decoration: underline;
-                      text-decoration-color: #ff6300; } }
-  @media (min-width: 768px) {
-    main .bottomPromoIcons {
-      display: none; } }
-  @media (min-width: 768px) and (min-width: 800px) {
-    main .bottomPromoIcons {
-      height: 65px;
-      background-color: #ffffff;
-      border-radius: 0 0 10px 10px;
-      width: 100%;
-      display: flex;
-      flex-direction: row; }
-      main .bottomPromoIcons .promoContainer {
-        font-size: 12px;
-        font-family: "SinkinSans-400Regular", sans-serif;
-        text-align: center;
-        margin: 10px 0;
-        width: 33%; }
-        main .bottomPromoIcons .promoContainer .boxPromo {
-          display: flex;
-          flex-direction: row;
-          text-align: center;
-          justify-content: center; }
-          main .bottomPromoIcons .promoContainer .boxPromo p {
-            margin-left: 10px; } }
-  @media (min-width: 768px) {
-    main .opinions {
-      width: 100%; }
-      main .opinions .opinionsText {
+                      text-decoration: none; }
+                      main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .secondBox .advancedSearch a:hover {
+                        text-decoration: underline;
+                        text-decoration-color: #ff6300; } }
+  main .bottomPromoIcons {
+    display: none; }
+    @media (min-width: 800px) {
+      main .bottomPromoIcons {
+        height: 65px;
+        background-color: #ffffff;
+        border-radius: 0 0 10px 10px;
+        width: 100%;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center; }
-        main .opinions .opinionsText h2 {
-          font-size: 36px;
-          font-family: "SinkinSans-700Bold", sans-serif;
-          padding: 0 0 20px 0; }
-        main .opinions .opinionsText .opinionsContainer {
-          position: relative;
-          max-width: 1200px;
-          width: 100%;
+        flex-direction: row; }
+        main .bottomPromoIcons .promoContainer {
+          font-size: 12px;
+          font-family: "SinkinSans-400Regular", sans-serif;
+          text-align: center;
+          margin: 10px 0;
+          width: 33%; }
+          main .bottomPromoIcons .promoContainer .boxPromo {
+            display: flex;
+            flex-direction: row;
+            text-align: center;
+            justify-content: center; }
+            main .bottomPromoIcons .promoContainer .boxPromo p {
+              margin-left: 10px; } }
+  main .opinions {
+    width: 100%; }
+    main .opinions .opinionsText {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      main .opinions .opinionsText h2 {
+        font-size: 36px;
+        font-family: "SinkinSans-700Bold", sans-serif;
+        padding: 0 0 20px 0; }
+      main .opinions .opinionsText .opinionsContainer {
+        position: relative;
+        max-width: 1200px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 30px; }
+        main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns {
           display: flex;
-          flex-direction: row;
-          justify-content: space-between;
-          margin-bottom: 30px; }
-          main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns {
+          flex-direction: column;
+          width: 32%; }
+          main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .firstOpinion {
+            position: relative;
             display: flex;
             flex-direction: column;
-            width: 32%; }
-            main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .firstOpinion {
-              position: relative;
+            justify-content: center;
+            align-items: center;
+            max-width: 380px;
+            height: 150px;
+            width: 100%;
+            text-align: center;
+            line-height: 20px;
+            background-color: transparent;
+            border: 2px solid #ff6300;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+            z-index: 99; }
+            main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .firstOpinion p {
+              margin: 0; }
+            main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .firstOpinion .rowFlex {
               display: flex;
-              flex-direction: column;
-              justify-content: center;
-              align-items: center;
-              max-width: 380px;
-              height: 150px;
-              width: 100%;
-              text-align: center;
-              line-height: 20px;
-              background-color: transparent;
-              border: 2px solid #ff6300;
-              -webkit-border-radius: 5px;
-              -moz-border-radius: 5px;
-              border-radius: 5px;
-              z-index: 99; }
-              main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .firstOpinion p {
-                margin: 0; }
-              main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .firstOpinion .rowFlex {
-                display: flex;
-                flex-direction: row; }
-                main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .firstOpinion .rowFlex .rowFlexText {
-                  font-size: 13px;
-                  font-family: "SinkinSans-400Regular", sans-serif; }
-                main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .firstOpinion .rowFlex .starsRating i {
-                  color: #ff6300; }
-              main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .firstOpinion:before {
-                content: ' ';
-                position: absolute;
-                width: 0;
-                height: 0;
-                left: 40px;
-                top: 150px;
-                border: 12px solid;
-                border-color: #ff6300 transparent transparent #ff6300;
-                transform: skew(-20deg);
-                /* Safari */
-                -webkit-transform: skew(-20deg);
-                /* Firefox */
-                -moz-transform: skew(-20deg);
-                /* IE */
-                -ms-transform: skew(-20deg);
-                /* Opera */
-                -o-transform: skew(-20deg);
-                z-index: 1; }
-              main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .firstOpinion:after {
-                content: ' ';
-                position: absolute;
-                width: 0;
-                height: 0;
-                left: 42px;
-                top: 149px;
-                border: 11px solid;
-                border-color: #ffffff transparent transparent #ffffff;
-                transform: skew(-20deg);
-                /* Safari */
-                -webkit-transform: skew(-20deg);
-                /* Firefox */
-                -moz-transform: skew(-20deg);
-                /* IE */
-                -ms-transform: skew(-20deg);
-                /* Opera */
-                -o-transform: skew(-20deg);
-                z-index: 1; }
-            main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .secondOpinion {
+              flex-direction: row; }
+              main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .firstOpinion .rowFlex .rowFlexText {
+                font-size: 13px;
+                font-family: "SinkinSans-400Regular", sans-serif; }
+              main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .firstOpinion .rowFlex .starsRating i {
+                color: #ff6300; }
+            main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .firstOpinion:before {
+              content: ' ';
+              position: absolute;
+              width: 0;
+              height: 0;
+              left: 40px;
+              top: 150px;
+              border: 12px solid;
+              border-color: #ff6300 transparent transparent #ff6300;
+              transform: skew(-20deg);
+              /* Safari */
+              -webkit-transform: skew(-20deg);
+              /* Firefox */
+              -moz-transform: skew(-20deg);
+              /* IE */
+              -ms-transform: skew(-20deg);
+              /* Opera */
+              -o-transform: skew(-20deg);
+              z-index: 1; }
+            main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .firstOpinion:after {
+              content: ' ';
+              position: absolute;
+              width: 0;
+              height: 0;
+              left: 42px;
+              top: 149px;
+              border: 11px solid;
+              border-color: #ffffff transparent transparent #ffffff;
+              transform: skew(-20deg);
+              /* Safari */
+              -webkit-transform: skew(-20deg);
+              /* Firefox */
+              -moz-transform: skew(-20deg);
+              /* IE */
+              -ms-transform: skew(-20deg);
+              /* Opera */
+              -o-transform: skew(-20deg);
+              z-index: 1; }
+          main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .secondOpinion {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            max-width: 380px;
+            max-height: 150px;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            line-height: 20px;
+            background-color: transparent;
+            border: 2px solid #ff6300;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px; }
+            main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .secondOpinion p {
+              margin: 0; }
+            main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .secondOpinion .rowFlex {
               display: flex;
-              justify-content: center;
-              flex-direction: column;
-              align-items: center;
-              position: relative;
-              max-width: 380px;
-              max-height: 150px;
-              width: 100%;
-              height: 100%;
-              text-align: center;
-              line-height: 20px;
-              background-color: transparent;
-              border: 2px solid #ff6300;
-              -webkit-border-radius: 5px;
-              -moz-border-radius: 5px;
-              border-radius: 5px; }
-              main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .secondOpinion p {
-                margin: 0; }
-              main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .secondOpinion .rowFlex {
-                display: flex;
-                flex-direction: row; }
-                main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .secondOpinion .rowFlex .rowFlexText {
-                  font-size: 13px;
-                  font-family: "SinkinSans-400Regular", sans-serif; }
-                main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .secondOpinion .rowFlex .starsRating i {
-                  color: #ff6300; }
-              main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .secondOpinion:before {
-                content: ' ';
-                position: absolute;
-                width: 0;
-                height: 0;
-                left: 40px;
-                top: 150px;
-                border: 12px solid;
-                border-color: #ff6300 transparent transparent #ff6300;
-                transform: skew(-20deg);
-                /* Safari */
-                -webkit-transform: skew(-20deg);
-                /* Firefox */
-                -moz-transform: skew(-20deg);
-                /* IE */
-                -ms-transform: skew(-20deg);
-                /* Opera */
-                -o-transform: skew(-20deg);
-                z-index: 3; }
-              main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .secondOpinion:after {
-                content: ' ';
-                position: absolute;
-                width: 0;
-                height: 0;
-                left: 42px;
-                top: 149px;
-                border: 11px solid;
-                border-color: #ffffff transparent transparent #ffffff;
-                transform: skew(-20deg);
-                /* Safari */
-                -webkit-transform: skew(-20deg);
-                /* Firefox */
-                -moz-transform: skew(-20deg);
-                /* IE */
-                -ms-transform: skew(-20deg);
-                /* Opera */
-                -o-transform: skew(-20deg);
-                z-index: 4; }
-            main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .thirdOpinion {
+              flex-direction: row; }
+              main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .secondOpinion .rowFlex .rowFlexText {
+                font-size: 13px;
+                font-family: "SinkinSans-400Regular", sans-serif; }
+              main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .secondOpinion .rowFlex .starsRating i {
+                color: #ff6300; }
+            main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .secondOpinion:before {
+              content: ' ';
+              position: absolute;
+              width: 0;
+              height: 0;
+              left: 40px;
+              top: 150px;
+              border: 12px solid;
+              border-color: #ff6300 transparent transparent #ff6300;
+              transform: skew(-20deg);
+              /* Safari */
+              -webkit-transform: skew(-20deg);
+              /* Firefox */
+              -moz-transform: skew(-20deg);
+              /* IE */
+              -ms-transform: skew(-20deg);
+              /* Opera */
+              -o-transform: skew(-20deg);
+              z-index: 3; }
+            main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .secondOpinion:after {
+              content: ' ';
+              position: absolute;
+              width: 0;
+              height: 0;
+              left: 42px;
+              top: 149px;
+              border: 11px solid;
+              border-color: #ffffff transparent transparent #ffffff;
+              transform: skew(-20deg);
+              /* Safari */
+              -webkit-transform: skew(-20deg);
+              /* Firefox */
+              -moz-transform: skew(-20deg);
+              /* IE */
+              -ms-transform: skew(-20deg);
+              /* Opera */
+              -o-transform: skew(-20deg);
+              z-index: 4; }
+          main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .thirdOpinion {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            max-width: 380px;
+            max-height: 150px;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            line-height: 20px;
+            background-color: transparent;
+            border: 2px solid #ff6300;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px; }
+            main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .thirdOpinion p {
+              margin: 0; }
+            main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .thirdOpinion .rowFlex {
               display: flex;
-              justify-content: center;
-              flex-direction: column;
-              align-items: center;
-              position: relative;
-              max-width: 380px;
-              max-height: 150px;
-              width: 100%;
-              height: 100%;
-              text-align: center;
-              line-height: 20px;
-              background-color: transparent;
-              border: 2px solid #ff6300;
-              -webkit-border-radius: 5px;
-              -moz-border-radius: 5px;
-              border-radius: 5px; }
-              main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .thirdOpinion p {
-                margin: 0; }
-              main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .thirdOpinion .rowFlex {
-                display: flex;
-                flex-direction: row; }
-                main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .thirdOpinion .rowFlex .rowFlexText {
-                  font-size: 13px;
-                  font-family: "SinkinSans-400Regular", sans-serif; }
-                main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .thirdOpinion .rowFlex .starsRating i {
-                  color: #ff6300; }
-              main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .thirdOpinion .textOpinion {
-                padding: 20px; }
-              main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .thirdOpinion:before {
-                content: ' ';
-                position: absolute;
-                width: 0;
-                height: 0;
-                left: 40px;
-                top: 150px;
-                border: 12px solid;
-                border-color: #ff6300 transparent transparent #ff6300;
-                transform: skew(-20deg);
-                /* Safari */
-                -webkit-transform: skew(-20deg);
-                /* Firefox */
-                -moz-transform: skew(-20deg);
-                /* IE */
-                -ms-transform: skew(-20deg);
-                /* Opera */
-                -o-transform: skew(-20deg); }
-              main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .thirdOpinion:after {
-                content: ' ';
-                position: absolute;
-                width: 0;
-                height: 0;
-                left: 42px;
-                top: 149px;
-                border: 11px solid;
-                border-color: #ffffff transparent transparent #ffffff;
-                transform: skew(-20deg);
-                /* Safari */
-                -webkit-transform: skew(-20deg);
-                /* Firefox */
-                -moz-transform: skew(-20deg);
-                /* IE */
-                -ms-transform: skew(-20deg);
-                /* Opera */
-                -o-transform: skew(-20deg); }
-            main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .usersOpinions {
-              position: relative;
+              flex-direction: row; }
+              main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .thirdOpinion .rowFlex .rowFlexText {
+                font-size: 13px;
+                font-family: "SinkinSans-400Regular", sans-serif; }
+              main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .thirdOpinion .rowFlex .starsRating i {
+                color: #ff6300; }
+            main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .thirdOpinion .textOpinion {
+              padding: 20px; }
+            main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .thirdOpinion:before {
+              content: ' ';
+              position: absolute;
+              width: 0;
+              height: 0;
+              left: 40px;
+              top: 150px;
+              border: 12px solid;
+              border-color: #ff6300 transparent transparent #ff6300;
+              transform: skew(-20deg);
+              /* Safari */
+              -webkit-transform: skew(-20deg);
+              /* Firefox */
+              -moz-transform: skew(-20deg);
+              /* IE */
+              -ms-transform: skew(-20deg);
+              /* Opera */
+              -o-transform: skew(-20deg); }
+            main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .thirdOpinion:after {
+              content: ' ';
+              position: absolute;
+              width: 0;
+              height: 0;
+              left: 42px;
+              top: 149px;
+              border: 11px solid;
+              border-color: #ffffff transparent transparent #ffffff;
+              transform: skew(-20deg);
+              /* Safari */
+              -webkit-transform: skew(-20deg);
+              /* Firefox */
+              -moz-transform: skew(-20deg);
+              /* IE */
+              -ms-transform: skew(-20deg);
+              /* Opera */
+              -o-transform: skew(-20deg); }
+          main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .usersOpinions {
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            padding: 35px 20px 0 20px;
+            align-items: center; }
+            main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .usersOpinions .usersOpinionsImg {
               display: flex;
-              flex-direction: row;
-              padding: 35px 20px 0 20px;
-              align-items: center; }
-              main .opinions .opinionsText .opinionsContainer .opinionsContainerColumns .usersOpinions .usersOpinionsImg {
-                display: flex;
-                position: absolute;
-                top: 35px;
-                bottom: 0;
-                left: 0;
-                right: 0;
-                margin: auto; } }
+              position: absolute;
+              top: 35px;
+              bottom: 0;
+              left: 0;
+              right: 0;
+              margin: auto; }
   main .rating {
     width: 100%;
     display: flex;

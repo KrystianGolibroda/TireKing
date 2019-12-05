@@ -281,9 +281,8 @@ nav {
 
 
 main {
-  width: 98%;
+  max-width: 98%;
   align-items: center;
-  @media (min-width: 768px) {
     .carSearchContainer {
       background-color: $carContainer;
       padding-top: 10px !important;
@@ -913,21 +912,6 @@ main {
       }
     }
 
-    //label {
-    //  position: relative;
-    //  display: flex;
-    //  flex-direction: row;
-    //  align-items: center;
-    //  justify-content: space-between;
-    //
-    //  img {
-    //    display: flex;
-    //    align-items: center;
-    //    align-self: center;
-    //    justify-self: center;
-    //  }
-    //}
-  }
 
   .rating {
     width: 100%;
