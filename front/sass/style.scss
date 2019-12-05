@@ -622,19 +622,35 @@ main {
         align-items: center;
 
         h2 {
-          font-size: 36px;
+          font-size: 22px;
           font-family: $SS-700Bold;
-          padding: 0 0 20px 0;
+          color: $blackLikeHell;
+          margin: 25px 0;
+          text-align: center;
+          @media(min-width: 750px) {
+            font-size: 28px;
+            font-family: $SS-700Bold;
+            color: $blackLikeHell;
+            margin: 15px 0;
+          }
+          @media(min-width: 1000px) {
+            font-size: 36px;
+            font-family: $SS-700Bold;
+            padding: 0 0 20px 0;
+          }
         }
 
         .opinionsContainer {
-          position: relative;
-          max-width: 1200px;
-          width: 100%;
-          display: flex;
-          flex-direction: row;
-          justify-content: space-between;
-          margin-bottom: 30px;
+          display: none;
+          @media(min-width: 750px){
+            position: relative;
+            max-width: 1200px;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-bottom: 30px;
+          }
 
           .opinionsContainerColumns {
             display: flex;
@@ -909,16 +925,306 @@ main {
             }
           }
         }
+
+        .opinionsContainerMobile {
+          position: relative;
+          max-width: 1200px;
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          margin-bottom: 30px;
+          @media(min-width: 750px){
+            display:none;
+          }
+
+          .opinionsContainerColumns {
+            display: flex;
+            flex-direction: column;
+            width: 32%;
+
+            .firstOpinion {
+              position: relative;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              max-width: 300px;
+              height: 120px;
+              width: 100%;
+              //max-height: auto;
+              text-align: center;
+              line-height: 20px;
+              background-color: transparent;
+              border: 2px solid $orangeButton;
+              -webkit-border-radius: 5px;
+              -moz-border-radius: 5px;
+              border-radius: 5px;
+              z-index: 99;
+
+              p {
+                margin: 0;
+              }
+
+              .rowFlex {
+                display: flex;
+                flex-direction: row;
+
+                .rowFlexText {
+                  font-size: 13px;
+                  font-family: $SS-400Regular;
+                }
+
+                .starsRating {
+                  i {
+                    color: $orangeButton;
+                  }
+                }
+              }
+
+              &:before {
+                content: ' ';
+                position: absolute;
+                width: 0;
+                height: 0;
+                left: 35px;
+                top: 120px;
+                border: 12px solid;
+                border-color: $orangeButton transparent transparent $orangeButton;
+                transform: skew(-20deg);
+                /* Safari */
+                -webkit-transform: skew(-20deg);
+                /* Firefox */
+                -moz-transform: skew(-20deg);
+                /* IE */
+                -ms-transform: skew(-20deg);
+                /* Opera */
+                -o-transform: skew(-20deg);
+                z-index: 1;
+              }
+
+              &:after {
+                content: ' ';
+                position: absolute;
+                width: 0;
+                height: 0;
+                left: 37px;
+                top: 119px;
+                border: 11px solid;
+                border-color: $white transparent transparent $white;
+                transform: skew(-20deg);
+                /* Safari */
+                -webkit-transform: skew(-20deg);
+                /* Firefox */
+                -moz-transform: skew(-20deg);
+                /* IE */
+                -ms-transform: skew(-20deg);
+                /* Opera */
+                -o-transform: skew(-20deg);
+                z-index: 1;
+              }
+            }
+
+            .secondOpinion {
+              position: relative;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              max-width: 300px;
+              height: 120px;
+              width: 100%;
+              //max-height: auto;
+              text-align: center;
+              line-height: 20px;
+              background-color: transparent;
+              border: 2px solid $orangeButton;
+              -webkit-border-radius: 5px;
+              -moz-border-radius: 5px;
+              border-radius: 5px;
+              z-index: 99;
+
+              p {
+                margin: 0;
+              }
+
+              .rowFlex {
+                display: flex;
+                flex-direction: row;
+
+                .rowFlexText {
+                  font-size: 13px;
+                  font-family: $SS-400Regular;
+                }
+
+                .starsRating {
+                  i {
+                    color: $orangeButton;
+                  }
+                }
+              }
+
+              &:before {
+                content: ' ';
+                position: absolute;
+                width: 0;
+                height: 0;
+                left: 35px;
+                top: 120px;
+                border: 12px solid;
+                border-color: $orangeButton transparent transparent $orangeButton;
+                transform: skew(-20deg);
+                /* Safari */
+                -webkit-transform: skew(-20deg);
+                /* Firefox */
+                -moz-transform: skew(-20deg);
+                /* IE */
+                -ms-transform: skew(-20deg);
+                /* Opera */
+                -o-transform: skew(-20deg);
+                z-index: 1;
+              }
+
+              &:after {
+                content: ' ';
+                position: absolute;
+                width: 0;
+                height: 0;
+                left: 37px;
+                top: 119px;
+                border: 11px solid;
+                border-color: $white transparent transparent $white;
+                transform: skew(-20deg);
+                /* Safari */
+                -webkit-transform: skew(-20deg);
+                /* Firefox */
+                -moz-transform: skew(-20deg);
+                /* IE */
+                -ms-transform: skew(-20deg);
+                /* Opera */
+                -o-transform: skew(-20deg);
+                z-index: 1;
+              }
+            }
+
+            .thirdOpinion {
+              position: relative;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              max-width: 300px;
+              height: 120px;
+              width: 100%;
+              //max-height: auto;
+              text-align: center;
+              line-height: 20px;
+              background-color: transparent;
+              border: 2px solid $orangeButton;
+              -webkit-border-radius: 5px;
+              -moz-border-radius: 5px;
+              border-radius: 5px;
+              z-index: 99;
+
+              p {
+                margin: 0;
+              }
+
+              .rowFlex {
+                display: flex;
+                flex-direction: row;
+
+                .rowFlexText {
+                  font-size: 13px;
+                  font-family: $SS-400Regular;
+                }
+
+                .starsRating {
+                  i {
+                    color: $orangeButton;
+                  }
+                }
+              }
+
+              &:before {
+                content: ' ';
+                position: absolute;
+                width: 0;
+                height: 0;
+                left: 35px;
+                top: 120px;
+                border: 12px solid;
+                border-color: $orangeButton transparent transparent $orangeButton;
+                transform: skew(-20deg);
+                /* Safari */
+                -webkit-transform: skew(-20deg);
+                /* Firefox */
+                -moz-transform: skew(-20deg);
+                /* IE */
+                -ms-transform: skew(-20deg);
+                /* Opera */
+                -o-transform: skew(-20deg);
+                z-index: 1;
+              }
+
+              &:after {
+                content: ' ';
+                position: absolute;
+                width: 0;
+                height: 0;
+                left: 37px;
+                top: 119px;
+                border: 11px solid;
+                border-color: $white transparent transparent $white;
+                transform: skew(-20deg);
+                /* Safari */
+                -webkit-transform: skew(-20deg);
+                /* Firefox */
+                -moz-transform: skew(-20deg);
+                /* IE */
+                -ms-transform: skew(-20deg);
+                /* Opera */
+                -o-transform: skew(-20deg);
+                z-index: 1;
+              }
+            }
+
+            .usersOpinions {
+              position: relative;
+              display: flex;
+              flex-direction: row;
+              padding: 25px 20px 0 20px;
+              align-items: center;
+              margin-bottom: 25px;
+
+              .usersOpinionsImg {
+                //width: 100%;
+                //height: auto;
+                display: flex;
+                position: absolute;
+                top: 35px;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                margin: auto;
+              }
+            }
+          }
+        }
       }
     }
 
 
+
   .rating {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    display: none;
+    @media(min-width: 768px){
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
 
     .numberRating {
       max-width: 220px;
