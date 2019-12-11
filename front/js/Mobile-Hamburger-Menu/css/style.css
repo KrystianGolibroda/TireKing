@@ -1,0 +1,94 @@
+
+
+/* Hamburger Menu */
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto';
+	font-size: 10px;
+	letter-spacing: 1.7px;
+}
+.menu {
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: #262626;
+	height: 50px;
+	width: 50px;
+	cursor: pointer;
+	transition: 0.3s;
+	z-index: 9999;
+}
+.menu span {
+	position: absolute;
+	height: 3px;
+	width: 25px;
+	background-color: #fff;
+   	top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: 0.3s;
+}
+.menu span:before {
+	content: '';
+	position: absolute;
+	top: -8px;
+	background-color: #fff;
+	height: 3px;
+	width: 25px;
+	transition: 0.3s;
+}
+.menu span:after {
+	content: '';
+	position: absolute;
+	top: 8px;
+	background-color: #fff;
+	height: 3px;
+	width: 25px;
+	transition: 0.3s;
+}
+.menu.active span { background-color: transparent; }
+.menu.active span:before { transform: rotate(45deg);top: 0; }
+.menu.active span:after { transform: rotate(-45deg);top: 0; }
+
+/* End */
+
+/* Navigationbar */
+
+.navbar-menu {
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    transform: translateX(-100%);
+    transition: 0.5s;
+}
+.navbar-menu.active { transform: translateX(0);transition: 0.5s; }
+.navbar-menu .menu-listing { padding: 0;margin: 0;text-align: right; }
+.menu-listing li { display: inline-block; }
+.menu-listing li a {
+	background-color: #fff;
+	color: #262626;
+	display: block;
+	font-size: 1rem;
+	height: 50px;
+	line-height: 50px;
+	padding: 0 20px;
+	letter-spacing: 1px;
+	text-decoration: none;
+	transition: 0.5s;
+}
+.menu-listing li a:hover { background-color: #262626;color: #fff;transition: 0.5s; }
+
+/* End */
+
+/* Banner Section */
+
+.banner-img { background: url('https://picsum.photos/1920/1080/?random') no-repeat 100% 100%/cover;height: 100vh; }
+.banner-heads { position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);width: 100%;text-align: center; }
+.banner-info h1 { font-size: 3.6rem;color: #262626; }
+
+/* End */

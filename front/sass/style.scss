@@ -320,9 +320,94 @@ nav {
   }
 }
 
+.sidepanel  {
+  width: 0;
+  position: fixed;
+  height: 375px;
+  bottom: 50px;
+  right: 0;
+  border-radius: 5px;
+  background-color: #363636;
+  overflow-x: hidden;
+  transition: 0.5s ease;
+  padding-top: 16px;
+  z-index: 9999;
+
+    a {
+      padding: 8px 32px 8px 32px;
+      text-decoration: none;
+      font-size: 15px;
+      font-family: $SS-700Bold;
+      color: $white;
+      text-align: left;
+      display: block;
+      transition: 0.3s;
+      &:hover{
+        color: $orangeButton;
+      }
+      .spanMobileMenu{
+        font-size: 15px;
+        margin: 0;
+        padding: 0;
+      }
+    }
+
+    .closebtn{
+      position: absolute;
+      top: 0;
+      right: -8px;
+      font-size: 30px;
+    }
+    .rowDirectionMobile {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-content: center;
+      align-items: center;
+    }
+}
+
+.mobileBottomMenu{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: $white;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  z-index: 9999;
+  @media(min-width: 750px){
+    display: none;
+  }
+
+  a {
+    img{
+      height: 25px;
+      width: 100%;
+    }
+    i{
+      font-size: 25px;
+      width: 100%;
+    }
+  }
+
+  .openbtn {
+    font-size: 25px;
+    cursor: pointer;
+    color: $blackLikeHell;
+    background-color: $white;
+    //padding: 10px 15px;
+    border: none;
+  }
+}
 
 main {
-  max-width: 98%;
+  width: 98%;
   align-items: center;
     .carSearchContainer {
       background-color: $carInActiveContainer;
@@ -388,9 +473,15 @@ main {
                 display: flex;
                 flex-direction: column;
                 background-color: $carInActiveContainer;
-                color: $blackLikeHell;
+                color: $greyFooter;
                 border: none;
                 padding: 5px;
+                &:focus{
+                  color: $blackLikeHell;
+                }
+                &:active{
+                  color: $blackLikeHell;
+                }
                 @media(min-width: 750px){
                   font-family: $SS-700Bold;
                   font-size: 19px;
@@ -402,8 +493,11 @@ main {
                   text-align: center;
                   outline: none;
                   border: none;
-                  background-color: $carInActiveContainer;
+                  background-color: #e2e2e2;
                   color: $blackLikeHell;
+                  &:focus{
+                    background-color: #f8f8f8;
+                  }
                 }
               }
             }
