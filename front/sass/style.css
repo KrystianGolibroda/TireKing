@@ -315,11 +315,6 @@ a {
 @font-face {
   font-family: 'SinkinSans-300Light';
   src: url("../fonts/SinkinSans-300Light.ttf"); }
-header {
-  box-shadow: 0 0 10px 0 #666666;
-  margin: 0 auto;
-  background-color: #f0f0f0; }
-
 input:focus,
 select:focus,
 textarea:focus,
@@ -355,6 +350,11 @@ body, html {
 .container-fluid {
   padding-right: 1rem !important;
   padding-left: 1rem !important; }
+
+header {
+  box-shadow: 0 0 10px 0 #666666;
+  margin: 0 auto;
+  background-color: #f0f0f0; }
 
 .menuTop {
   height: 32px;
@@ -417,26 +417,58 @@ nav {
     nav .menuBottom #top-nav {
       min-height: 50px; }
       nav .menuBottom #top-nav ul {
-        font-size: 18px;
-        font-family: "SinkinSans-700Bold", sans-serif;
-        margin: 0 auto;
-        padding: 0;
-        list-style: none;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        height: 90px;
-        max-width: 1200px;
-        width: 100%; }
+        display: none; }
+        @media (min-width: 750px) {
+          nav .menuBottom #top-nav ul {
+            font-size: 11px;
+            font-family: "SinkinSans-700Bold", sans-serif;
+            margin: 0 auto;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            height: 90px;
+            max-width: 1200px;
+            width: 100%; } }
+        @media (min-width: 1000px) {
+          nav .menuBottom #top-nav ul {
+            font-size: 18px;
+            font-family: "SinkinSans-700Bold", sans-serif;
+            margin: 0 auto;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            height: 90px;
+            max-width: 1200px;
+            width: 100%; } }
     nav .menuBottom #top-nav ul li {
-      color: #221d24; }
+      color: #221d24;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center; }
     nav .menuBottom #top-nav ul li a {
       display: block;
       color: #221d24; }
     nav .menuBottom #top-nav ul li ul {
       margin-top: 10px;
       display: none; }
+    nav .menuBottom #top-nav ul li a {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center; }
+    nav .menuBottom #top-nav ul li a span {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin-left: 5px; }
     nav .menuBottom #top-nav ul li ul li {
       font-size: 15px;
       font-family: "SinkinSans-400Regular", sans-serif;
@@ -453,7 +485,8 @@ nav {
       position: relative;
       z-index: 9999; }
     nav .menuBottom ul.dropdown-menu {
-      position: absolute; }
+      position: absolute;
+      top: 25px; }
     nav .menuBottom ul.dropdown-menu li {
       display: block !important;
       white-space: nowrap; }
@@ -463,16 +496,22 @@ nav {
       background-color: #f00 !important; }
     nav .menuBottom ul.dropdown-menu {
       display: none; }
+    nav .menuBottom .menuHideDesktop {
+      display: none; }
+      @media (min-width: 750px) {
+        nav .menuBottom .menuHideDesktop {
+          display: flex; } }
 
 main {
   max-width: 98%;
   align-items: center; }
   main .carSearchContainer {
-    background-color: #f8f8f8;
+    background-color: #e2e2e2;
     padding-top: 10px !important;
     padding-bottom: 10px !important; }
-    @media (min-width: 550px) {
+    @media (min-width: 750px) {
       main .carSearchContainer {
+        background-color: #f8f8f8;
         background-image: url("../images/michelin_background.png");
         width: 100%;
         background-repeat: no-repeat;
@@ -480,61 +519,106 @@ main {
         padding-top: 50px !important;
         padding-bottom: 475px !important; } }
     main .carSearchContainer .carSearchBox {
-      background-color: #f8f8f8;
+      background-color: #e2e2e2;
       display: flex;
       flex-direction: column;
-      border: 1px solid black;
-      border-radius: 10px;
       max-width: 1030px;
       margin: 0 auto; }
-      @media (min-width: 550px) {
+      @media (min-width: 750px) {
         main .carSearchContainer .carSearchBox {
+          background-color: #f8f8f8;
+          display: flex;
+          flex-direction: column;
+          border-radius: 10px;
+          max-width: 1030px;
+          margin: 0 auto;
           -webkit-box-shadow: 0 0 10px 0 #8d8d8d;
           -moz-box-shadow: 0 0 10px 0 #8d8d8d;
           box-shadow: 0 0 10px 0 #8d8d8d;
-          border: none; }
+          border: none; } }
+      main .carSearchContainer .carSearchBox .top {
+        display: flex;
+        flex-direction: column;
+        background-color: #e2e2e2; }
+        @media (min-width: 750px) {
           main .carSearchContainer .carSearchBox .top {
+            display: flex;
             border-radius: 10px;
             max-width: 1030px;
             max-height: 440px;
-            background-color: #f8f8f8; }
-            main .carSearchContainer .carSearchBox .top .tabLink {
-              font-family: "SinkinSans-700Bold", sans-serif;
-              font-size: 19px;
-              letter-spacing: 0.01rem;
-              cursor: pointer;
-              width: 50%;
-              float: left;
-              padding: 15px;
-              text-align: center;
-              outline: none;
-              border: none;
-              background-color: #e2e2e2;
-              color: #000000; }
-            main .carSearchContainer .carSearchBox .top .tabContent {
-              box-sizing: border-box;
+            background-color: #f8f8f8; } }
+        main .carSearchContainer .carSearchBox .top .topRowDirection {
+          display: flex;
+          flex-direction: column; }
+          @media (min-width: 750px) {
+            main .carSearchContainer .carSearchBox .top .topRowDirection {
               display: flex;
-              align-items: baseline;
-              height: 385px;
-              max-width: 1030px;
-              width: 100%; }
-              main .carSearchContainer .carSearchBox .top .tabContent .selectContainer {
+              flex-direction: row; } }
+          main .carSearchContainer .carSearchBox .top .topRowDirection .tabLink {
+            font-family: "SinkinSans-700Bold", sans-serif;
+            font-size: 19px;
+            letter-spacing: 0.01rem;
+            cursor: pointer;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            background-color: #e2e2e2;
+            color: #000000;
+            border: none;
+            padding: 5px; }
+            @media (min-width: 750px) {
+              main .carSearchContainer .carSearchBox .top .topRowDirection .tabLink {
                 font-family: "SinkinSans-700Bold", sans-serif;
-                font-size: 14px;
+                font-size: 19px;
+                letter-spacing: 0.01rem;
+                cursor: pointer;
+                width: 50%;
+                float: left;
+                padding: 15px;
+                text-align: center;
+                outline: none;
+                border: none;
+                background-color: #e2e2e2;
+                color: #000000; } }
+        main .carSearchContainer .carSearchBox .top .tabContent {
+          box-sizing: border-box;
+          display: flex;
+          align-items: baseline;
+          height: 385px;
+          max-width: 1030px;
+          width: 100%; }
+          main .carSearchContainer .carSearchBox .top .tabContent .selectContainer {
+            font-family: "SinkinSans-700Bold", sans-serif;
+            font-size: 14px;
+            display: flex;
+            flex-direction: column;
+            width: 100%; }
+            @media (min-width: 750px) {
+              main .carSearchContainer .carSearchBox .top .tabContent .selectContainer {
                 display: flex;
                 flex-direction: row;
+                width: 100%;
+                font-size: 14px;
+                font-family: "SinkinSans-700Bold", sans-serif; } }
+            main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .firstBox {
+              max-width: 515px;
+              width: 100%;
+              margin: 0 auto;
+              display: flex;
+              flex-direction: column; }
+              main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .firstBox .endContent {
+                max-width: 515px;
                 width: 100%; }
-                main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .firstBox {
-                  max-width: 515px;
+                main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .firstBox .endContent .smallSelectBox {
+                  max-width: 365px;
                   width: 100%;
-                  max-height: 365px;
+                  max-height: 80px;
                   height: 100%;
-                  margin: 0 auto;
                   display: flex;
-                  flex-direction: column; }
-                  main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .firstBox .endContent {
-                    max-width: 515px;
-                    width: 100%; }
+                  flex-direction: row;
+                  justify-content: space-between;
+                  margin: 45px auto 0; }
+                  @media (min-width: 750px) {
                     main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .firstBox .endContent .smallSelectBox {
                       max-width: 445px;
                       width: 100%;
@@ -544,48 +628,66 @@ main {
                       display: flex;
                       flex-direction: row;
                       justify-content: space-between;
-                      float: right; }
+                      float: right; } }
+                  main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .firstBox .endContent .smallSelectBox .selectLabelBox {
+                    position: relative;
+                    width: 115px; }
+                    @media (min-width: 750px) {
                       main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .firstBox .endContent .smallSelectBox .selectLabelBox {
                         position: relative;
-                        width: 135px; }
-                        main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .firstBox .endContent .smallSelectBox .selectLabelBox .triangle-bottomleft {
-                          margin-left: 85px;
-                          position: relative;
-                          top: 0;
-                          width: 0;
-                          height: 0;
-                          display: flex;
-                          align-items: center;
-                          justify-content: center;
-                          border-style: solid;
-                          border-width: 0 0 45px 50px;
-                          border-color: transparent transparent transparent #ffffff;
-                          transform: skewX(63deg);
-                          -ms-transform: skewX(63deg);
-                          -moz-transform: skewX(63deg);
-                          -webkit-transform: skew(63deg); }
-                        main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .firstBox .endContent .smallSelectBox .selectLabelBox .triangle-bottom {
-                          margin: 0 auto;
-                          position: relative;
-                          top: 0;
-                          width: 0;
-                          height: 0;
-                          border-style: solid;
-                          border-width: 22px 17px 0 17px;
-                          border-color: #ffffff transparent transparent transparent; }
-                        main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .firstBox .endContent .smallSelectBox .selectLabelBox .triangle-bottomright {
-                          margin-right: 50px;
-                          position: relative;
-                          top: 0;
-                          width: 0;
-                          height: 0;
-                          border-style: solid;
-                          border-width: 45px 0 0 50px;
-                          border-color: #ffffff transparent transparent transparent;
-                          transform: skewX(-63deg);
-                          -ms-transform: skewX(-63deg);
-                          -moz-transform: skewX(-63deg);
-                          -webkit-transform: skewX(-63deg); }
+                        width: 135px; } }
+                    @media (min-width: 750px) {
+                      main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .firstBox .endContent .smallSelectBox .selectLabelBox .triangle-bottomleft {
+                        margin-left: 85px;
+                        position: relative;
+                        top: 0;
+                        width: 0;
+                        height: 0;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border-style: solid;
+                        border-width: 0 0 45px 50px;
+                        border-color: transparent transparent transparent #ffffff;
+                        transform: skewX(63deg);
+                        -ms-transform: skewX(63deg);
+                        -moz-transform: skewX(63deg);
+                        -webkit-transform: skew(63deg); } }
+                    @media (min-width: 750px) {
+                      main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .firstBox .endContent .smallSelectBox .selectLabelBox .triangle-bottom {
+                        margin: 0 auto;
+                        position: relative;
+                        top: 0;
+                        width: 0;
+                        height: 0;
+                        border-style: solid;
+                        border-width: 22px 17px 0 17px;
+                        border-color: #ffffff transparent transparent transparent; } }
+                    @media (min-width: 750px) {
+                      main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .firstBox .endContent .smallSelectBox .selectLabelBox .triangle-bottomright {
+                        margin-right: 50px;
+                        position: relative;
+                        top: 0;
+                        width: 0;
+                        height: 0;
+                        border-style: solid;
+                        border-width: 45px 0 0 50px;
+                        border-color: #ffffff transparent transparent transparent;
+                        transform: skewX(-63deg);
+                        -ms-transform: skewX(-63deg);
+                        -moz-transform: skewX(-63deg);
+                        -webkit-transform: skewX(-63deg); } }
+                    main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .firstBox .endContent .smallSelectBox .selectLabelBox .upLabel {
+                      display: block;
+                      padding-bottom: 6px;
+                      padding-left: 2px;
+                      font-size: 14px;
+                      font-family: "SinkinSans-500Medium", sans-serif;
+                      color: #929292;
+                      letter-spacing: 0.03rem;
+                      position: relative;
+                      z-index: 2; }
+                      @media (min-width: 750px) {
                         main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .firstBox .endContent .smallSelectBox .selectLabelBox .upLabel {
                           display: block;
                           padding-bottom: 6px;
@@ -595,7 +697,26 @@ main {
                           color: #929292;
                           letter-spacing: 0.03rem;
                           position: relative;
-                          z-index: 2; }
+                          z-index: 2; } }
+                    main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .firstBox .endContent .smallSelectBox .selectLabelBox .smallSelect {
+                      max-height: 40px;
+                      height: 100%;
+                      width: 100%;
+                      padding-left: 6px;
+                      font-size: 14px;
+                      font-family: "SinkinSans-700Bold", sans-serif;
+                      -moz-appearance: none;
+                      -webkit-appearance: none;
+                      appearance: none;
+                      background-image: url("../images/icon/angle_down_orange.png");
+                      background-repeat: no-repeat, repeat;
+                      background-position: right .7em top 50%, 0 0;
+                      background-size: .65em auto, 100%;
+                      border: 1px solid #dbdbdb;
+                      border-radius: 5px;
+                      position: relative;
+                      z-index: 2; }
+                      @media (min-width: 750px) {
                         main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .firstBox .endContent .smallSelectBox .selectLabelBox .smallSelect {
                           max-height: 50px;
                           height: 100%;
@@ -613,31 +734,46 @@ main {
                           border: 1px solid #dbdbdb;
                           border-radius: 5px;
                           position: relative;
-                          z-index: 2; }
+                          z-index: 2; } }
+                main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .firstBox .endContent .tireImageDiv {
+                  display: none; }
+                  @media (min-width: 750px) {
                     main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .firstBox .endContent .tireImageDiv {
+                      display: flex;
                       float: right;
-                      margin-right: 22px; }
-                      main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .firstBox .endContent .tireImageDiv .tireImage {
-                        margin-top: 30px;
-                        max-width: 400px;
-                        width: 100%;
-                        height: auto; }
-                main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .secondBox {
-                  max-width: 515px;
-                  width: 100%;
-                  margin: 0 auto;
-                  display: flex;
-                  flex-direction: column; }
-                  main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .secondBox .smallSelectBox {
+                      margin-right: 22px; } }
+                  main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .firstBox .endContent .tireImageDiv .tireImage {
+                    margin-top: 30px;
+                    max-width: 400px;
                     width: 100%;
-                    margin-top: 45px;
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: center; }
-                    main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .secondBox .smallSelectBox .selectLabelBox {
-                      max-width: 365px;
-                      width: 100%; }
-                      main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .secondBox .smallSelectBox .selectLabelBox label {
+                    height: auto; }
+            main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .secondBox {
+              max-width: 515px;
+              width: 100%;
+              margin: 0 auto;
+              display: flex;
+              flex-direction: column; }
+              main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .secondBox .smallSelectBox {
+                width: 100%;
+                margin-top: 45px;
+                display: flex;
+                flex-direction: row;
+                justify-content: center; }
+                main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .secondBox .smallSelectBox .selectLabelBox {
+                  max-width: 365px;
+                  width: 100%; }
+                  main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .secondBox .smallSelectBox .selectLabelBox .upLabel {
+                    display: block;
+                    padding-bottom: 6px;
+                    padding-left: 2px;
+                    font-size: 14px;
+                    font-family: "SinkinSans-500Medium", sans-serif;
+                    color: #929292;
+                    letter-spacing: 0.03rem;
+                    position: relative;
+                    z-index: 2; }
+                    @media (min-width: 750px) {
+                      main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .secondBox .smallSelectBox .selectLabelBox .upLabel {
                         display: block;
                         padding-bottom: 6px;
                         padding-left: 12px;
@@ -646,9 +782,29 @@ main {
                         color: #929292;
                         letter-spacing: 0.03rem;
                         position: relative;
-                        z-index: 2; }
+                        z-index: 2; } }
+                  main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .secondBox .smallSelectBox .selectLabelBox .smallSelectT {
+                    max-height: 40px;
+                    height: 100%;
+                    width: 100%;
+                    padding-left: 6px;
+                    font-size: 14px;
+                    font-family: "SinkinSans-700Bold", sans-serif;
+                    -moz-appearance: none;
+                    -webkit-appearance: none;
+                    appearance: none;
+                    background-image: url("../images/icon/angle_down_orange.png");
+                    background-repeat: no-repeat, repeat;
+                    background-position: right .7em top 50%, 0 0;
+                    background-size: .65em auto, 100%;
+                    border: 1px solid #dbdbdb;
+                    border-radius: 5px;
+                    position: relative;
+                    z-index: 2; }
+                    @media (min-width: 750px) {
                       main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .secondBox .smallSelectBox .selectLabelBox .smallSelectT {
-                        height: 50px;
+                        max-height: 50px;
+                        height: 100%;
                         width: 100%;
                         padding-left: 12px;
                         font-size: 14px;
@@ -663,44 +819,58 @@ main {
                         border: 1px solid #dbdbdb;
                         border-radius: 5px;
                         position: relative;
-                        z-index: 2; }
+                        z-index: 2; } }
+              main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .secondBox .buttonBox {
+                width: 100%;
+                margin-top: 40px;
+                display: flex;
+                flex-direction: row;
+                justify-content: center; }
+                @media (min-width: 750px) {
                   main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .secondBox .buttonBox {
                     width: 100%;
                     margin-top: 45px;
                     display: flex;
                     flex-direction: row;
-                    justify-content: center; }
-                    main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .secondBox .buttonBox .buttonSearchBox {
-                      max-width: 365px;
-                      width: 100%; }
-                      main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .secondBox .buttonBox .buttonSearchBox button {
-                        width: 100%;
-                        height: 50px;
-                        background-color: #ff6300;
-                        color: #ffffff;
-                        border: none;
-                        border-radius: 5px;
-                        cursor: pointer;
-                        font-size: 19px;
-                        font-family: "SinkinSans-700Bold", sans-serif;
-                        letter-spacing: 0.05rem; }
+                    justify-content: center; } }
+                main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .secondBox .buttonBox .buttonSearchBox {
+                  max-width: 365px;
+                  width: 100%; }
+                  main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .secondBox .buttonBox .buttonSearchBox button {
+                    width: 100%;
+                    height: 50px;
+                    background-color: #ff6300;
+                    color: #ffffff;
+                    border: none;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    font-size: 19px;
+                    font-family: "SinkinSans-700Bold", sans-serif;
+                    letter-spacing: 0.05rem; }
+              main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .secondBox .advancedSearch {
+                width: 100%;
+                margin-top: 20px;
+                display: flex;
+                flex-direction: row;
+                justify-content: center; }
+                @media (min-width: 750px) {
                   main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .secondBox .advancedSearch {
                     width: 100%;
                     margin-top: 40px;
                     display: flex;
                     flex-direction: row;
-                    justify-content: center; }
-                    main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .secondBox .advancedSearch a {
-                      color: #000000;
-                      font-size: 14px;
-                      font-family: "SinkinSans-700Bold", sans-serif;
-                      text-decoration: none; }
-                      main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .secondBox .advancedSearch a:hover {
-                        text-decoration: underline;
-                        text-decoration-color: #ff6300; } }
+                    justify-content: center; } }
+                main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .secondBox .advancedSearch a {
+                  color: #000000;
+                  font-size: 14px;
+                  font-family: "SinkinSans-700Bold", sans-serif;
+                  text-decoration: none; }
+                  main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .secondBox .advancedSearch a:hover {
+                    text-decoration: underline;
+                    text-decoration-color: #ff6300; }
   main .bottomPromoIcons {
     display: none; }
-    @media (min-width: 800px) {
+    @media (min-width: 750px) {
       main .bottomPromoIcons {
         height: 65px;
         background-color: #ffffff;
@@ -1273,7 +1443,8 @@ main {
               font-size: 36px;
               font-family: "SinkinSans-700Bold", sans-serif;
               color: #000000;
-              margin: 20px 0; } }
+              margin: 20px 0;
+              text-align: left; } }
         main .shopContainer .upperCards .ofertaSpecjalna .ofertaSpecjalnaContent {
           display: flex;
           flex-direction: column;
