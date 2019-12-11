@@ -18,7 +18,7 @@
   overflow: hidden;
   display: block;
   margin: 0;
-  padding: 0 20% 0 0; }
+  padding: 0 0 0 0; }
   .slick-list:focus {
     outline: none; }
   .slick-list.dragging {

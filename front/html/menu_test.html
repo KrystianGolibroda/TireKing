@@ -133,42 +133,289 @@
     });
 
 </script>-->
-<header>
-<div id="top-nav">
-    <ul class="">
 
-        <li><a href="#"><img src="../images/logotireking.png" height="39" width="211"/></a></li>
+<div class="carSearchContainer container-fluid">
+    <div class="wrap">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="carSearchBox">
+                    <div class="top">
+                        <button class="tabLink" onclick="openPage('Home', this, '#f8f8f8')" id="defaultOpen" style="border-radius: 10px 0 0 0">szukaj opon wg rozmiaru</button>
+                        <button class="tabLink" onclick="openPage('News', this, '#f8f8f8')" style="border-radius: 0 10px 0 0">szukaj opon wg auta</button>
+                        <div id="Home" class="tabContent">
+                            <div class="selectContainer">
+                                <div class="firstBox">
+                                    <div class="endContent">
+                                        <div class="smallSelectBox">
+                                            <div class="selectLabelBox">
+                                                <label class="upLabel" for="width">Szerokość</label>
+                                                <select id="width" class="smallSelect">
+                                                    <option value="0">Dowolna</option>
+                                                    <option value="1">115</option>
+                                                    <option value="2">125</option>
+                                                    <option value="3">135</option>
+                                                    <option value="4">140</option>
+                                                    <option value="5">145</option>
+                                                    <option value="6">150</option>
+                                                    <option value="7">155</option>
+                                                    <option value="8">160</option>
+                                                    <option value="9">165</option>
+                                                    <option value="10">170</option>
+                                                    <option value="11">175</option>
+                                                    <option value="12">180</option>
+                                                    <option value="13">185</option>
+                                                    <option value="14">190</option>
+                                                    <option value="15">195</option>
+                                                    <option value="16">200</option>
+                                                    <option value="17">205</option>
+                                                    <option value="18">210</option>
+                                                    <option value="19">215</option>
+                                                    <option value="20">220</option>
+                                                    <option value="21">225</option>
+                                                    <option value="22">230</option>
+                                                    <option value="23">235</option>
+                                                    <option value="24">240</option>
+                                                    <option value="25">245</option>
+                                                    <option value="26">255</option>
+                                                    <option value="27">260</option>
+                                                    <option value="28">265</option>
+                                                    <option value="29">275</option>
+                                                    <option value="30">280</option>
+                                                    <option value="31">285</option>
+                                                    <option value="32">295</option>
+                                                    <option value="33">300</option>
+                                                    <option value="34">305</option>
+                                                    <option value="35">315</option>
+                                                    <option value="36">325</option>
+                                                    <option value="37">335</option>
+                                                    <option value="38">345</option>
+                                                    <option value="39">355</option>
+                                                    <option value="40">5</option>
+                                                    <option value="41">5.5</option>
+                                                    <option value="42">6</option>
+                                                    <option value="43">6.4</option>
+                                                    <option value="44">6.5</option>
+                                                    <option value="45">7</option>
+                                                    <option value="46">7.5</option>
+                                                    <option value="47">8</option>
+                                                    <option value="48">17</option>
+                                                    <option value="49">27</option>
+                                                    <option value="50">30</option>
+                                                    <option value="51">31</option>
+                                                    <option value="52">32</option>
+                                                    <option value="53">33</option>
+                                                    <option value="54">35</option>
+                                                    <option value="55">37</option>
+                                                    <option value="56">38</option>
+                                                    <option value="57">38.5</option>
+                                                    <option value="58">39</option>
+                                                    <option value="59">40</option>
+                                                    <option value="60">42</option>
+                                                </select>
+                                                <div class="triangle-bottomleft"></div>
+                                            </div>
+                                            <div class="selectLabelBox">
+                                                <label class="upLabel" for="profil">Profil</label>
+                                                <select id="profil" class="smallSelect">
+                                                    <option value="0">Dowolna</option>
+                                                    <option value="1">7</option>
+                                                    <option value="2">8.5</option>
+                                                    <option value="3">9.5</option>
+                                                    <option value="4">10</option>
+                                                    <option value="5">10.5</option>
+                                                    <option value="6">11.5</option>
+                                                    <option value="7">12</option>
+                                                    <option value="8">12.5</option>
+                                                    <option value="9">13</option>
+                                                    <option value="10">13.5</option>
+                                                    <option value="11">14.5</option>
+                                                    <option value="12">25</option>
+                                                    <option value="13">30</option>
+                                                    <option value="14">35</option>
+                                                    <option value="15">38</option>
+                                                    <option value="16">40</option>
+                                                    <option value="17">45</option>
+                                                    <option value="18">50</option>
+                                                    <option value="19">55</option>
+                                                    <option value="20">60</option>
+                                                    <option value="21">65</option>
+                                                    <option value="22">70</option>
+                                                    <option value="23">75</option>
+                                                    <option value="24">80</option>
+                                                    <option value="25">82</option>
+                                                    <option value="26">85</option>
+                                                    <option value="27">90</option>
+                                                    <option value="28">100</option>
+                                                    <option value="29">490</option>
+                                                    <option value="30">510</option>
+                                                    <option value="31">520</option>
+                                                    <option value="32">540</option>
+                                                    <option value="33">550</option>
+                                                    <option value="34">560</option>
+                                                    <option value="35">580</option>
+                                                    <option value="36">590</option>
+                                                    <option value="37">600</option>
+                                                    <option value="38">610</option>
+                                                    <option value="39">625</option>
+                                                    <option value="40">640</option>
+                                                    <option value="41">650</option>
+                                                    <option value="42">660</option>
+                                                    <option value="43">680</option>
+                                                </select>
+                                                <div class="triangle-bottom"></div>
+                                            </div>
+                                            <div class="selectLabelBox">
+                                                <label class="upLabel" for="srednica">Średnica</label>
+                                                <select id="srednica" class="smallSelect">
+                                                    <option value="0">Dowolna</option>
+                                                    <option value="1">10</option>
+                                                    <option value="2">12</option>
+                                                    <option value="3">13</option>
+                                                    <option value="4">14</option>
+                                                    <option value="5">15</option>
+                                                    <option value="6">16</option>
+                                                    <option value="7">17</option>
+                                                    <option value="8">18</option>
+                                                    <option value="9">19</option>
+                                                    <option value="10">20</option>
+                                                    <option value="11">21</option>
+                                                    <option value="12">22</option>
+                                                    <option value="13">23</option>
+                                                    <option value="14">24</option>
+                                                    <option value="15">26</option>
+                                                    <option value="16">45</option>
+                                                    <option value="17">365</option>
+                                                    <option value="18">400</option>
+                                                    <option value="19">415</option>
+                                                    <option value="20">460</option>
+                                                </select>
+                                                <div class="triangle-bottomright"></div>
+                                            </div>
+                                        </div>
+                                        <div class="tireImageDiv">
+                                            <img class="tireImage" src="../images/tire_searchbar_przezroczysta.png"/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="secondBox">
+                                    <div class="smallSelectBox">
+                                        <div class="selectLabelBox">
+                                            <label for="producent">Producent</label>
+                                            <select id="producent" class="smallSelectT">
+                                                <option value="0">wszyscy</option>
+                                                <option value="1">Accelera</option>
+                                                <option value="2">Achilles</option>
+                                                <option value="3">Aeolus</option>
+                                                <option value="4">Alliance</option>
+                                                <option value="5">Altenzo</option>
+                                                <option value="6">Antares</option>
+                                                <option value="7">Aoteli</option>
+                                                <option value="8">Aplus</option>
+                                                <option value="9">Apollo</option>
+                                                <option value="10">Aptany</option>
+                                                <option value="11">Arivo</option>
+                                                <option value="12">Atlas</option>
+                                                <option value="13">Atturo</option>
+                                                <option value="14">Aufine</option>
+                                                <option value="15">Aurora</option>
+                                                <option value="16">Austone</option>
+                                                <option value="17">Autogreen</option>
+                                                <option value="18">Autogrip</option>
+                                                <option value="19">Autoguard</option>
+                                                <option value="20">Avon</option>
+                                                <option value="21">Barkley</option>
+                                                <option value="22">Barum</option>
+                                                <option value="23">Belshina</option>
+                                                <option value="24">Berlin Tires</option>
+                                                <option value="25">Bfgoodrich</option>
+                                                <option value="26">Blacklion</option>
+                                                <option value="27">Bridgestone</option>
+                                                <option value="28">Camac</option>
+                                                <option value="29">Ceat</option>
+                                                <option value="30">Cheng Shin</option>
+                                                <option value="31">Chengshan</option>
+                                                <option value="32">Collins</option>
+                                                <option value="33">Comforser</option>
+                                                <option value="34">Continental</option>
+                                                <option value="35">Cooper</option>
+                                                <option value="36">Courier</option>
+                                                <option value="37">CST</option>
+                                                <option value="38">Dayton</option>
+                                                <option value="39">Dean</option>
+                                                <option value="40">Delinte</option>
+                                                <option value="41">Dębica</option>
+                                                <option value="42">Diplomat</option>
+                                                <option value="43">Doublestar</option>
+                                                <option value="44">Dunlop</option>
+                                                <option value="45">Duraturn</option>
+                                                <option value="46">Duro</option>
+                                                <option value="47">Ep-tyres</option>
+                                                <option value="48">Esa Tecar</option>
+                                                <option value="49">Event tyres</option>
+                                                <option value="50">Evergreen</option>
+                                                <option value="51">Falken</option>
+                                                <option value="52">Federal</option>
+                                                <option value="53">Firemax</option>
+                                                <option value="54">Firenza</option>
+                                                <option value="55">Firestone</option>
+                                                <option value="56">Firststop</option>
+                                                <option value="57">Formula</option>
+                                                <option value="58">Fortuna</option>
+                                                <option value="59">Fortune</option>
+                                                <option value="60">Fulda</option>
+                                                <option value="61">Fullrun</option>
+                                                <option value="62">Fullway</option>
+                                                <option value="63">General</option>
+                                                <option value="64">Gislaved</option>
+                                                <option value="65">Giti</option>
+                                                <option value="66">Goform</option>
+                                                <option value="67">Goldline</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="buttonBox">
+                                        <a class="buttonSearchBox" href="#">
+                                            <button>szukaj opon</button>
+                                        </a>
+                                    </div>
+                                    <div class="advancedSearch">
+                                        <a href="#">
+                                            Wyszukiwanie zaawansowane
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="News" class="tabContent">
 
-        <li class="dropdown"><a href="#">Opony samochodowe <span><img src="../images/icon/angle_down.png" width="10" height="16"/></span> </a>
-            <ul class="dropdown-menu">
-                <li><a href="#">Opony zimowe</a></li>
-                <li><a href="#">Opony letnie</a></li>
-                <li><a href="#">Opony całoroczne</a></li>
-                <li><a href="#">Opony ciężarowe</a></li>
-            </ul>
-        </li>
-        <li class="dropdown"><a href="#">Pozostałe opony <span><img src="../images/icon/angle_down.png" width="10" height="16"/></span> </a>
-            <ul class="dropdown-menu">
-                <li><a href="#">Opony motocyklowe</a></li>
-                <li><a href="#">Opony quadowe</a></li>
-            </ul>
-        </li>
-        <li class="dropdown"><a href="#">Felgi <span><img src="../images/icon/angle_down.png" width="10" height="16"/></span> </a>
-            <ul class="dropdown-menu">
-                <li><a href="#">Felgi aluminiowe</a></li>
-                <li><a href="#">Felgi stalowe</a></li>
-            </ul>
-        </li>
-        <li style="font-size: 14px;" class="dropdown"><a href="#">Ostatnio oglądane <span><img src="../images/icon/angle_down.png" width="10" height="16"/></span> </a>
-            <ul class="dropdown-menu">
-                <li><a href="#">Continental</a></li>
-                <li><a href="#">Falken</a></li>
-            </ul>
-        </li>
-        <li><a href="#"><img src="../images/koszyk.png" height="39" width="51"/></a></li>
-    </ul>
+                        </div>
+                    </div>
+                    <div class="bottomPromoIcons">
+                        <div class="promoContainer">
+                            <div class="boxPromo">
+                                <img src="../images/icon/fachowe_doradztwo_ikona.png" height="40" width="42"/>
+                                <p>Fachowe doradztwo</p>
+                            </div>
+                        </div>
+                        <div class="promoContainer">
+                            <div class="boxPromo">
+                                <img src="../images/icon/14_dni_zwrot_ikona.png" height="40" width="35"/>
+                                <p>14 dni na zwrot</p>
+                            </div>
+                        </div>
+                        <div class="promoContainer">
+                            <div class="boxPromo">
+                                <img src="../images/icon/serwis_ikona.png" height="40" width="45"/>
+                                <p>100 serwisów montażu</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
-</header>
+
 <script type="text/javascript">
     $(function(){
 

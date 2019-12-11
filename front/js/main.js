@@ -3,21 +3,34 @@ $(document).ready(function () {
    $("#sticker").sticky({topSpacing:0});
 });
 
-//Obracające się strzałki w menu:
-$(".animateAngle").click(function() {
-   $( this ).toggleClass( "imageAnimate");
+$(window).on('resize', function () {
+   var win = $(this);
+   if (win.width() < 750){
+      $('header').addClass('desktopHide');
+   }
+   else{
+      $('header').removeClass('desktopHide');
+   }
 });
 
-
 function openPage(pageName,elmnt,color) {
-   var i, tabcontent, tablinks;
+   var i, tabcontent, tablinks, win;
    tabcontent = document.getElementsByClassName("tabContent");
    for (i = 0; i < tabcontent.length; i++) {
       tabcontent[i].style.display = "none";
    }
    tablinks = document.getElementsByClassName("tabLink");
-   for (i = 0; i < tablinks.length; i++) {
-      tablinks[i].style.backgroundColor = "";
+   win = $(this);
+   if(win.width() < 750){
+      for (i = 0; i < tablinks.length; i++) {
+         tablinks[i].style.backgroundColor = "#e2e2e2";
+      }
+   }
+   else
+   {
+      for (i = 0; i < tablinks.length; i++) {
+         tablinks[i].style.backgroundColor = "#e2e2e2";
+      }
    }
    document.getElementById(pageName).style.display = "block";
    elmnt.style.backgroundColor = color;
@@ -100,6 +113,7 @@ function closeAllSelect(elmnt) {
 
 document.addEventListener("click", closeAllSelect);
 
+
 $(document).ready(function () {
    var stickyNavTop = $('.nav').offset().top;
    var stickyNav = function () {
@@ -118,6 +132,15 @@ $(document).ready(function () {
    });
 });
 
+$(window).on('resize', function () {
+   var win = $(this);
+   if (win.width() < 750){
+      $('header').addClass('desktopHide');
+   }
+   else{
+      $('header').removeClass('desktopHide');
+   }
+});
 
 $(document).ready(function () {
    $('#example').barrating({
@@ -179,6 +202,7 @@ $(document).ready(function () {
       dots: true,
       arrows: false,
       autoplay: true,
+      centerMode: true,
    });
 });
 
@@ -219,12 +243,12 @@ $(document).ready(function () {
 //Karuzela porad ekspertów
 $(document).ready(function () {
    $('.expertsMobileCarousel').slick( {
-      slidesToShow: 1,
+      slidesToShow: 2,
       slidesToScroll: 1,
       dots: true,
       arrows: false,
       autoplay: false,
-      infinite: false,
+      infinite: true,
    });
 });
 

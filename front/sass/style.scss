@@ -63,15 +63,6 @@ $michelinButton: #264f9a;
 $hyperlinks: #4b95db;
 $bestseller: #6398d3;
 
-
-header {
-  //border-bottom: 1px solid $opineoCeneo;
-  box-shadow: 0 0 10px 0 $opineoCeneo;
-  margin: 0 auto;
-  background-color: $grey;
-}
-
-
 input:focus,
 select:focus,
 textarea:focus,
@@ -114,6 +105,14 @@ body, html {
   padding-left: 1rem !important;
 }
 
+
+header {
+  //border-bottom: 1px solid $opineoCeneo;
+  box-shadow: 0 0 10px 0 $opineoCeneo;
+  margin: 0 auto;
+  background-color: $grey;
+
+}
 
 .menuTop {
   height: 32px;
@@ -197,25 +196,46 @@ nav {
       min-height: 50px;
 
       ul{
-        font-size: 18px;
-        font-family: $SS-700Bold;
-        margin: 0 auto;
-        padding: 0;
-        list-style: none;
-        //box-shadow: 0 0 10px 0 $opineoCeneo;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        height: 90px;
-        max-width: 1200px;
-        width: 100%;
+        display: none;
+        @media(min-width: 750px){
+          font-size: 11px;
+          font-family: $SS-700Bold;
+          margin: 0 auto;
+          padding: 0;
+          list-style: none;
+          //box-shadow: 0 0 10px 0 $opineoCeneo;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          height: 90px;
+          max-width: 1200px;
+          width: 100%;
+        }
+        @media(min-width: 1000px){
+          font-size: 18px;
+          font-family: $SS-700Bold;
+          margin: 0 auto;
+          padding: 0;
+          list-style: none;
+          //box-shadow: 0 0 10px 0 $opineoCeneo;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          height: 90px;
+          max-width: 1200px;
+          width: 100%;
+        }
       }
     }
 
     #top-nav ul li{
       color: $fontMenu;
-
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
     }
 
     #top-nav ul li a{
@@ -228,7 +248,19 @@ nav {
     #top-nav ul li ul {
       margin-top: 10px;
       display: none;
-
+    }
+    #top-nav ul li a {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+    #top-nav ul li a span {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin-left: 5px;
     }
 
     #top-nav ul li ul li {
@@ -256,9 +288,11 @@ nav {
       position: relative;
       z-index: 9999;
     }
+
     ul.dropdown-menu{
       position: absolute;
       //min-width: 120px;
+      top: 25px;
     }
     ul.dropdown-menu li{
       display: block !important;
@@ -276,6 +310,13 @@ nav {
     ul.dropdown-menu{
       display: none;
     }
+
+    .menuHideDesktop {
+      display: none;
+      @media(min-width: 750px){
+        display: flex;
+      }
+    }
   }
 }
 
@@ -284,10 +325,11 @@ main {
   max-width: 98%;
   align-items: center;
     .carSearchContainer {
-      background-color: $carContainer;
+      background-color: $carInActiveContainer;
       padding-top: 10px !important;
       padding-bottom: 10px !important;
-      @media(min-width: 550px) {
+      @media(min-width: 750px) {
+        background-color: $carContainer;
         background-image: url('../images/michelin_background.png');
         width: 100%;
         background-repeat: no-repeat;
@@ -298,38 +340,72 @@ main {
       }
 
       .carSearchBox {
-        background-color: $carContainer;
+        background-color: $carInActiveContainer;
         display: flex;
         flex-direction: column;
-        border: 1px solid black;
-        border-radius: 10px;
         max-width: 1030px;
         margin: 0 auto;
-        @media(min-width: 550px) {
+        @media(min-width: 750px){
+          background-color: $carContainer;
+          display: flex;
+          flex-direction: column;
+          //border: 1px solid black;
+          border-radius: 10px;
+          max-width: 1030px;
+          margin: 0 auto;
           -webkit-box-shadow: 0 0 10px 0 rgba(141, 141, 141, 1);
           -moz-box-shadow: 0 0 10px 0 rgba(141, 141, 141, 1);
           box-shadow: 0 0 10px 0 rgba(141, 141, 141, 1);
           border: none;
+        }
 
           .top {
-            border-radius: 10px;
-            max-width: 1030px;
-            max-height: 440px;
-            background-color: $carContainer;
+            display: flex;
+            flex-direction: column;
+            background-color: $carInActiveContainer;
 
-            .tabLink {
-              font-family: $SS-700Bold;
-              font-size: 19px;
-              letter-spacing: 0.01rem;
-              cursor: pointer;
-              width: 50%;
-              float: left;
-              padding: 15px;
-              text-align: center;
-              outline: none;
-              border: none;
-              background-color: $carInActiveContainer;
-              color: $blackLikeHell;
+            @media(min-width: 750px){
+              display: flex;
+              border-radius: 10px;
+              max-width: 1030px;
+              max-height: 440px;
+              background-color: $carContainer;
+            }
+            .topRowDirection{
+              display: flex;
+              flex-direction: column;
+              @media(min-width: 750px){
+                display: flex;
+                flex-direction: row;
+              }
+
+              .tabLink {
+                font-family: $SS-700Bold;
+                font-size: 19px;
+                letter-spacing: 0.01rem;
+                cursor: pointer;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                background-color: $carInActiveContainer;
+                color: $blackLikeHell;
+                border: none;
+                padding: 5px;
+                @media(min-width: 750px){
+                  font-family: $SS-700Bold;
+                  font-size: 19px;
+                  letter-spacing: 0.01rem;
+                  cursor: pointer;
+                  width: 50%;
+                  float: left;
+                  padding: 15px;
+                  text-align: center;
+                  outline: none;
+                  border: none;
+                  background-color: $carInActiveContainer;
+                  color: $blackLikeHell;
+                }
+              }
             }
 
             .tabContent {
@@ -346,15 +422,28 @@ main {
                 font-family: $SS-700Bold;
                 font-size: 14px;
                 display: flex;
-                flex-direction: row;
+                flex-direction: column;
                 width: 100%;
+                @media(min-width: 750px){
+                  display: flex;
+                  flex-direction: row;
+                  width: 100%;
+                  font-size: 14px;
+                  font-family: $SS-700Bold;
+                }
 
 
                 .firstBox {
+                  //margin-top: 40px;
+                  //max-width: 515px;
+                  //width: 100%;
+                  //max-height: 365px;
+                  //height: 100%;
+                  //margin: 0 auto;
+                  //display: flex;
+                  //flex-direction: column;
                   max-width: 515px;
                   width: 100%;
-                  max-height: 365px;
-                  height: 100%;
                   margin: 0 auto;
                   display: flex;
                   flex-direction: column;
@@ -365,82 +454,114 @@ main {
 
 
                     .smallSelectBox {
-                      max-width: 445px;
+                      max-width: 365px;
                       width: 100%;
                       max-height: 80px;
                       height: 100%;
-                      margin-top: 45px;
                       display: flex;
                       flex-direction: row;
                       justify-content: space-between;
-                      float: right;
+                      margin: 45px auto 0;
+
+                      @media(min-width: 750px){
+                        max-width: 445px;
+                        width: 100%;
+                        max-height: 80px;
+                        height: 100%;
+                        margin-top: 45px;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        float: right;
+                      }
 
                       .selectLabelBox {
                         position: relative;
-                        width: 135px;
+                        width: 115px;
+                        @media(min-width: 750px){
+                          position: relative;
+                          width: 135px;
+                        }
 
                         .triangle-bottomleft {
-                          margin-left: 85px;
-                          position: relative;
-                          top: 0;
-                          width: 0;
-                          height: 0;
-                          display: flex;
-                          align-items: center;
-                          justify-content: center;
-                          border-style: solid;
-                          border-width: 0 0 45px 50px;
-                          border-color: transparent transparent transparent $white;
-                          transform: skewX(63deg);
-                          -ms-transform: skewX(63deg);
-                          -moz-transform: skewX(63deg);
-                          -webkit-transform: skew(63deg);
+                          @media(min-width: 750px){
+                            margin-left: 85px;
+                            position: relative;
+                            top: 0;
+                            width: 0;
+                            height: 0;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border-style: solid;
+                            border-width: 0 0 45px 50px;
+                            border-color: transparent transparent transparent $white;
+                            transform: skewX(63deg);
+                            -ms-transform: skewX(63deg);
+                            -moz-transform: skewX(63deg);
+                            -webkit-transform: skew(63deg);
+                          }
                         }
 
                         .triangle-bottom {
-                          margin: 0 auto;
-                          position: relative;
-                          top: 0;
-                          width: 0;
-                          height: 0;
-                          border-style: solid;
-                          border-width: 22px 17px 0 17px;
-                          border-color: $white transparent transparent transparent;
+                          @media(min-width: 750px){
+                            margin: 0 auto;
+                            position: relative;
+                            top: 0;
+                            width: 0;
+                            height: 0;
+                            border-style: solid;
+                            border-width: 22px 17px 0 17px;
+                            border-color: $white transparent transparent transparent;
+                          }
                         }
 
                         .triangle-bottomright {
-                          margin-right: 50px;
-                          position: relative;
-                          top: 0;
-                          width: 0;
-                          height: 0;
-                          border-style: solid;
-                          border-width: 45px 0 0 50px;
-                          border-color: $white transparent transparent transparent;
-                          transform: skewX(-63deg);
-                          -ms-transform: skewX(-63deg);
-                          -moz-transform: skewX(-63deg);
-                          -webkit-transform: skewX(-63deg);
+                          @media(min-width: 750px){
+                            margin-right: 50px;
+                            position: relative;
+                            top: 0;
+                            width: 0;
+                            height: 0;
+                            border-style: solid;
+                            border-width: 45px 0 0 50px;
+                            border-color: $white transparent transparent transparent;
+                            transform: skewX(-63deg);
+                            -ms-transform: skewX(-63deg);
+                            -moz-transform: skewX(-63deg);
+                            -webkit-transform: skewX(-63deg);
+                          }
                         }
 
                         .upLabel {
                           display: block;
                           padding-bottom: 6px;
-                          padding-left: 12px;
+                          padding-left: 2px;
                           font-size: 14px;
-                          font-family: $SS-700Bold;
+                          font-family: $SS-500Medium;
                           color: $wyszukiwarkaKolorSSzP;
                           letter-spacing: 0.03rem;
                           position: relative;
                           z-index: 2;
+                          @media(min-width: 750px){
+                            display: block;
+                            padding-bottom: 6px;
+                            padding-left: 12px;
+                            font-size: 14px;
+                            font-family: $SS-700Bold;
+                            color: $wyszukiwarkaKolorSSzP;
+                            letter-spacing: 0.03rem;
+                            position: relative;
+                            z-index: 2;
+                          }
 
                         }
 
                         .smallSelect {
-                          max-height: 50px;
+                          max-height: 40px;
                           height: 100%;
                           width: 100%;
-                          padding-left: 12px;
+                          padding-left: 6px;
                           font-size: 14px;
                           font-family: $SS-700Bold;
                           -moz-appearance: none;
@@ -455,13 +576,36 @@ main {
                           position: relative;
                           z-index: 2;
 
+                          @media(min-width: 750px){
+                            max-height: 50px;
+                            height: 100%;
+                            width: 100%;
+                            padding-left: 12px;
+                            font-size: 14px;
+                            font-family: $SS-700Bold;
+                            -moz-appearance: none;
+                            -webkit-appearance: none;
+                            appearance: none;
+                            background-image: url("../images/icon/angle_down_orange.png");
+                            background-repeat: no-repeat, repeat;
+                            background-position: right .7em top 50%, 0 0;
+                            background-size: .65em auto, 100%;
+                            border: 1px solid $selectBorder;
+                            border-radius: 5px;
+                            position: relative;
+                            z-index: 2;
+                          }
                         }
                       }
                     }
 
                     .tireImageDiv {
-                      float: right;
-                      margin-right: 22px;
+                      display: none;
+                      @media(min-width: 750px){
+                        display: flex;
+                        float: right;
+                        margin-right: 22px;
+                      }
 
                       .tireImage {
                         margin-top: 30px;
@@ -481,8 +625,6 @@ main {
                   display: flex;
                   flex-direction: column;
 
-                  //margin-left: 70px;
-
                   .smallSelectBox {
                     width: 100%;
                     margin-top: 45px;
@@ -494,22 +636,34 @@ main {
                       max-width: 365px;
                       width: 100%;
 
-                      label {
+                      .upLabel {
                         display: block;
                         padding-bottom: 6px;
-                        padding-left: 12px;
+                        padding-left: 2px;
                         font-size: 14px;
-                        font-family: $SS-700Bold;
+                        font-family: $SS-500Medium;
                         color: $wyszukiwarkaKolorSSzP;
                         letter-spacing: 0.03rem;
                         position: relative;
                         z-index: 2;
+                        @media(min-width: 750px){
+                          display: block;
+                          padding-bottom: 6px;
+                          padding-left: 12px;
+                          font-size: 14px;
+                          font-family: $SS-700Bold;
+                          color: $wyszukiwarkaKolorSSzP;
+                          letter-spacing: 0.03rem;
+                          position: relative;
+                          z-index: 2;
+                        }
                       }
 
                       .smallSelectT {
-                        height: 50px;
+                        max-height: 40px;
+                        height: 100%;
                         width: 100%;
-                        padding-left: 12px;
+                        padding-left: 6px;
                         font-size: 14px;
                         font-family: $SS-700Bold;
                         -moz-appearance: none;
@@ -523,16 +677,43 @@ main {
                         border-radius: 5px;
                         position: relative;
                         z-index: 2;
+
+                        @media(min-width: 750px) {
+                          max-height: 50px;
+                          height: 100%;
+                          width: 100%;
+                          padding-left: 12px;
+                          font-size: 14px;
+                          font-family: $SS-700Bold;
+                          -moz-appearance: none;
+                          -webkit-appearance: none;
+                          appearance: none;
+                          background-image: url("../images/icon/angle_down_orange.png");
+                          background-repeat: no-repeat, repeat;
+                          background-position: right .7em top 50%, 0 0;
+                          background-size: .65em auto, 100%;
+                          border: 1px solid $selectBorder;
+                          border-radius: 5px;
+                          position: relative;
+                          z-index: 2;
+                        }
                       }
                     }
                   }
 
                   .buttonBox {
                     width: 100%;
-                    margin-top: 45px;
+                    margin-top: 40px;
                     display: flex;
                     flex-direction: row;
                     justify-content: center;
+                    @media(min-width: 750px){
+                      width: 100%;
+                      margin-top: 45px;
+                      display: flex;
+                      flex-direction: row;
+                      justify-content: center;
+                    }
 
                     .buttonSearchBox {
                       max-width: 365px;
@@ -555,10 +736,17 @@ main {
 
                   .advancedSearch {
                     width: 100%;
-                    margin-top: 40px;
+                    margin-top: 20px;
                     display: flex;
                     flex-direction: row;
                     justify-content: center;
+                    @media(min-width: 750px){
+                      width: 100%;
+                      margin-top: 40px;
+                      display: flex;
+                      flex-direction: row;
+                      justify-content: center;
+                    }
 
                     a {
                       color: $blackLikeHell;
@@ -576,13 +764,12 @@ main {
               }
             }
           }
-        }
       }
     }
 
     .bottomPromoIcons {
       display: none;
-      @media(min-width: 800px) {
+      @media(min-width: 750px) {
         height: 65px;
         background-color: $white;
         border-radius: 0 0 10px 10px;
@@ -1317,6 +1504,7 @@ main {
             font-family: $SS-700Bold;
             color: $blackLikeHell;
             margin: 20px 0;
+            text-align: left;
           }
         }
 
