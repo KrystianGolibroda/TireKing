@@ -1,0 +1,16 @@
+@media only screen and (max-width:767px) {
+
+	/* Navigationbar */
+
+	.navbar-menu { height: auto;z-index: 1; }
+	.menu-listing li { display: block; }
+	.navbar-menu .menu-listing { text-align: center; }
+
+	/* End */
+
+	/* Banner Section */
+
+	.banner-info h1 { font-size: 2rem; }
+
+	/* End */
+}

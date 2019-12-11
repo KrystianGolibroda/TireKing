@@ -502,8 +502,77 @@ nav {
         nav .menuBottom .menuHideDesktop {
           display: flex; } }
 
+.sidepanel {
+  width: 0;
+  position: fixed;
+  height: 375px;
+  bottom: 50px;
+  right: 0;
+  border-radius: 5px;
+  background-color: #363636;
+  overflow-x: hidden;
+  transition: 0.5s ease;
+  padding-top: 16px;
+  z-index: 9999; }
+  .sidepanel a {
+    padding: 8px 32px 8px 32px;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: "SinkinSans-700Bold", sans-serif;
+    color: #ffffff;
+    text-align: left;
+    display: block;
+    transition: 0.3s; }
+    .sidepanel a:hover {
+      color: #ff6300; }
+    .sidepanel a .spanMobileMenu {
+      font-size: 15px;
+      margin: 0;
+      padding: 0; }
+  .sidepanel .closebtn {
+    position: absolute;
+    top: 0;
+    right: -8px;
+    font-size: 30px; }
+  .sidepanel .rowDirectionMobile {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center; }
+
+.mobileBottomMenu {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #ffffff;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  z-index: 9999; }
+  @media (min-width: 750px) {
+    .mobileBottomMenu {
+      display: none; } }
+  .mobileBottomMenu a img {
+    height: 25px;
+    width: 100%; }
+  .mobileBottomMenu a i {
+    font-size: 25px;
+    width: 100%; }
+  .mobileBottomMenu .openbtn {
+    font-size: 25px;
+    cursor: pointer;
+    color: #000000;
+    background-color: #ffffff;
+    border: none; }
+
 main {
-  max-width: 98%;
+  width: 98%;
   align-items: center; }
   main .carSearchContainer {
     background-color: #e2e2e2;
@@ -563,9 +632,13 @@ main {
             display: flex;
             flex-direction: column;
             background-color: #e2e2e2;
-            color: #000000;
+            color: #999999;
             border: none;
             padding: 5px; }
+            main .carSearchContainer .carSearchBox .top .topRowDirection .tabLink:focus {
+              color: #000000; }
+            main .carSearchContainer .carSearchBox .top .topRowDirection .tabLink:active {
+              color: #000000; }
             @media (min-width: 750px) {
               main .carSearchContainer .carSearchBox .top .topRowDirection .tabLink {
                 font-family: "SinkinSans-700Bold", sans-serif;
@@ -579,7 +652,9 @@ main {
                 outline: none;
                 border: none;
                 background-color: #e2e2e2;
-                color: #000000; } }
+                color: #000000; }
+                main .carSearchContainer .carSearchBox .top .topRowDirection .tabLink:focus {
+                  background-color: #f8f8f8; } }
         main .carSearchContainer .carSearchBox .top .tabContent {
           box-sizing: border-box;
           display: flex;

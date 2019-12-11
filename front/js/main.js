@@ -23,13 +23,13 @@ function openPage(pageName,elmnt,color) {
    win = $(this);
    if(win.width() < 750){
       for (i = 0; i < tablinks.length; i++) {
-         tablinks[i].style.backgroundColor = "#e2e2e2";
+         tablinks[i].style.backgroundColor = "";
       }
    }
    else
    {
       for (i = 0; i < tablinks.length; i++) {
-         tablinks[i].style.backgroundColor = "#e2e2e2";
+         tablinks[i].style.backgroundColor = "";
       }
    }
    document.getElementById(pageName).style.display = "block";
@@ -293,3 +293,18 @@ $(function(){
    });
 });
 
+$(document).ready(function () {
+   mobiscroll.nav('#demo-icon', {
+      theme: 'material',
+      themeVariant: 'light',
+      type: 'hamburger'
+   });
+});
+
+function openNav() {
+   document.getElementById("mySidepanel").style.width = "330px";
+}
+
+function closeNav() {
+   document.getElementById("mySidepanel").style.width = "0";
+}
