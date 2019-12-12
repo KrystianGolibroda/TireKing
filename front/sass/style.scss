@@ -137,9 +137,16 @@ header {
       justify-content: space-between;
       align-items: center;
       margin-right: 35px;
-
+      white-space: nowrap;
       &:last-child {
         margin-right: 0;
+      }
+
+      .mobileMenuHide{
+        display: none;
+        @media(min-width: 750px){
+          display: flex;
+        }
       }
 
       a {
@@ -149,6 +156,13 @@ header {
         &:hover {
           text-decoration: underline;
           color: $fontMenu;
+        }
+
+        .menuInfoBoldText {
+          font-weight: bold;
+          @media(min-width: 750px){
+            font-weight: inherit;
+          }
         }
       }
     }
@@ -167,9 +181,24 @@ header {
       justify-content: space-between;
       align-items: center;
       margin-left: 35px;
+      white-space: nowrap;
 
       &:first-child {
         margin-left: 0;
+      }
+
+      .mobileMenuHide{
+        display: none;
+        @media(min-width: 750px){
+          display: flex;
+        }
+      }
+
+      .desktopMenuHide{
+        display: flex;
+        @media(min-width: 750px){
+          display: none;
+        }
       }
 
       a {
@@ -188,13 +217,40 @@ header {
 nav {
   background-color: $white;
 
+  .tireKingMobileLogo{
+    a{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      padding: 20px 0;
+      background-color: $white;
+      width: 100%;
+      height: auto;
+      @media(min-width: 750px){
+        display: none;
+      }
+
+      img{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        max-width: 220px;
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+
   .menuBottom {
     display: block;
     width: 100%;
     margin: 0 auto;
 
     #top-nav{
-      min-height: 50px;
+      //min-height: 50px;
 
       ul{
         display: none;
@@ -509,7 +565,7 @@ nav {
 }
 
 main {
-  width: 98%;
+  width: 100%;
   align-items: center;
     .carSearchContainer {
       background-color: $carInActiveContainer;
@@ -608,10 +664,18 @@ main {
               box-sizing: border-box;
               display: flex;
               align-items: baseline;
-              height: 385px;
+              height: 355px;
               max-width: 1030px;
-              //height: 100%;
               width: 100%;
+              @media(min-width: 750px){
+                box-sizing: border-box;
+                display: flex;
+                align-items: baseline;
+                height: 385px;
+                max-width: 1030px;
+                //height: 100%;
+                width: 100%;
+              }
 
 
               .selectContainer {
@@ -945,10 +1009,16 @@ main {
                     }
 
                     a {
+                      font-size: 18px;
                       color: $blackLikeHell;
-                      font-size: 14px;
                       font-family: $SS-700Bold;
                       text-decoration: none;
+                      @media(min-width: 750px){
+                        color: $blackLikeHell;
+                        font-size: 14px;
+                        font-family: $SS-700Bold;
+                        text-decoration: none;
+                      }
 
                       &:hover {
                         text-decoration: underline;
@@ -994,6 +1064,17 @@ main {
       }
     }
 
+  .banerMichelinMobile{
+
+    a{
+      display: flex;
+      height: auto;
+      width: 100%;
+      @media(min-width: 750px){
+        display: none;
+      }
+    }
+  }
 
     .opinions {
       width: 100%;

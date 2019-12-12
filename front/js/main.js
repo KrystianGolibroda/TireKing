@@ -219,7 +219,7 @@ $(document).ready(function () {
       useCSS: true,
       responsive: [
          {
-            breakpoint: 1024,
+            breakpoint: 1050,
             settings: {
                slidesToShow: 2,
                slidesToScroll: 1,
@@ -228,10 +228,10 @@ $(document).ready(function () {
             }
          },
          {
-            breakpoint: 600,
+            breakpoint: 750,
             settings: {
                slidesToShow: 2,
-               slidesToScroll: 1,
+               slidesToScroll: 2,
                infinite: true,
                dots: true,
             }
