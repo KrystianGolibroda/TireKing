@@ -181,19 +181,6 @@ $(document).ready(function(){
    });
 });
 
-$(document).ready(function () {
-   $('.slickMobileFirms').slick({
-      autoplay: true,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      autoplaySpeed: 5000,
-      dots: false,
-      arrows: false,
-      infinite: true,
-      cssEase: 'linear',
-   });
-});
-
 //Karuzela opinii
 $(document).ready(function () {
    $('.opinionsContainerMobile').slick({
@@ -202,7 +189,10 @@ $(document).ready(function () {
       dots: true,
       arrows: false,
       autoplay: true,
+      infinite: true,
       centerMode: true,
+      cssEase: 'linear',
+      centerPadding: '40px',
    });
 });
 
@@ -352,4 +342,11 @@ function toggleOnClass(event) {
 // close hamburger menu after click a
 $( '.menu li a' ).on("click", function(){
    $('#hamburger-menu').click();
+});
+
+$.each( $('*'), function() {
+   if( $(this).width() > $('body').width()) {
+      console.log("Wide Element: ", $(this), "Width: ",
+          $(this).width());
+   }
 });

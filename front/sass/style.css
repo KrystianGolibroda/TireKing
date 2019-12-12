@@ -431,7 +431,7 @@ nav {
   background-color: #ffffff; }
   nav .tireKingMobileLogo a {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
@@ -551,7 +551,7 @@ nav {
   position: fixed;
   bottom: 50px;
   right: 0;
-  border-radius: 10px;
+  border-radius: 10px 10px 0 10px;
   background-color: #363636;
   overflow-x: hidden;
   transition: 0.5s ease;
@@ -690,6 +690,7 @@ main {
         background-color: #f8f8f8;
         background-image: url("../images/michelin_background.png");
         width: 100%;
+        height: auto;
         background-repeat: no-repeat;
         background-size: cover;
         padding-top: 50px !important;
