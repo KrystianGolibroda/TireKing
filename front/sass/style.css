@@ -375,15 +375,26 @@ header {
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
-      margin-right: 35px; }
+      margin-right: 35px;
+      white-space: nowrap; }
       .menuTop .topLeft .menuParagraphLeft:last-child {
         margin-right: 0; }
+      .menuTop .topLeft .menuParagraphLeft .mobileMenuHide {
+        display: none; }
+        @media (min-width: 750px) {
+          .menuTop .topLeft .menuParagraphLeft .mobileMenuHide {
+            display: flex; } }
       .menuTop .topLeft .menuParagraphLeft a {
         text-decoration: none;
         color: #221d24; }
         .menuTop .topLeft .menuParagraphLeft a:hover {
           text-decoration: underline;
           color: #221d24; }
+        .menuTop .topLeft .menuParagraphLeft a .menuInfoBoldText {
+          font-weight: bold; }
+          @media (min-width: 750px) {
+            .menuTop .topLeft .menuParagraphLeft a .menuInfoBoldText {
+              font-weight: inherit; } }
   .menuTop .topRight {
     display: flex;
     flex-direction: row;
@@ -395,9 +406,20 @@ header {
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
-      margin-left: 35px; }
+      margin-left: 35px;
+      white-space: nowrap; }
       .menuTop .topRight .menuParagraphRight:first-child {
         margin-left: 0; }
+      .menuTop .topRight .menuParagraphRight .mobileMenuHide {
+        display: none; }
+        @media (min-width: 750px) {
+          .menuTop .topRight .menuParagraphRight .mobileMenuHide {
+            display: flex; } }
+      .menuTop .topRight .menuParagraphRight .desktopMenuHide {
+        display: flex; }
+        @media (min-width: 750px) {
+          .menuTop .topRight .menuParagraphRight .desktopMenuHide {
+            display: none; } }
       .menuTop .topRight .menuParagraphRight a {
         text-decoration: none;
         color: #221d24; }
@@ -407,6 +429,27 @@ header {
 
 nav {
   background-color: #ffffff; }
+  nav .tireKingMobileLogo a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 20px 0;
+    background-color: #ffffff;
+    width: 100%;
+    height: auto; }
+    @media (min-width: 750px) {
+      nav .tireKingMobileLogo a {
+        display: none; } }
+    nav .tireKingMobileLogo a img {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      max-width: 220px;
+      width: 100%;
+      height: auto; }
   nav .menuBottom {
     display: block;
     width: 100%;
@@ -414,38 +457,36 @@ nav {
     /* Dropdown */
     /* Sub Dropdown */
     /* Display none by Default */ }
-    nav .menuBottom #top-nav {
-      min-height: 50px; }
-      nav .menuBottom #top-nav ul {
-        display: none; }
-        @media (min-width: 750px) {
-          nav .menuBottom #top-nav ul {
-            font-size: 11px;
-            font-family: "SinkinSans-700Bold", sans-serif;
-            margin: 0 auto;
-            padding: 0;
-            list-style: none;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
-            height: 90px;
-            max-width: 1200px;
-            width: 100%; } }
-        @media (min-width: 1000px) {
-          nav .menuBottom #top-nav ul {
-            font-size: 18px;
-            font-family: "SinkinSans-700Bold", sans-serif;
-            margin: 0 auto;
-            padding: 0;
-            list-style: none;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
-            height: 90px;
-            max-width: 1200px;
-            width: 100%; } }
+    nav .menuBottom #top-nav ul {
+      display: none; }
+      @media (min-width: 750px) {
+        nav .menuBottom #top-nav ul {
+          font-size: 11px;
+          font-family: "SinkinSans-700Bold", sans-serif;
+          margin: 0 auto;
+          padding: 0;
+          list-style: none;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          height: 90px;
+          max-width: 1200px;
+          width: 100%; } }
+      @media (min-width: 1000px) {
+        nav .menuBottom #top-nav ul {
+          font-size: 18px;
+          font-family: "SinkinSans-700Bold", sans-serif;
+          margin: 0 auto;
+          padding: 0;
+          list-style: none;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          height: 90px;
+          max-width: 1200px;
+          width: 100%; } }
     nav .menuBottom #top-nav ul li {
       color: #221d24;
       display: flex;
@@ -638,7 +679,7 @@ nav {
     transform: rotate(-135deg); }
 
 main {
-  width: 98%;
+  width: 100%;
   align-items: center; }
   main .carSearchContainer {
     background-color: #e2e2e2;
@@ -725,9 +766,17 @@ main {
           box-sizing: border-box;
           display: flex;
           align-items: baseline;
-          height: 385px;
+          height: 355px;
           max-width: 1030px;
           width: 100%; }
+          @media (min-width: 750px) {
+            main .carSearchContainer .carSearchBox .top .tabContent {
+              box-sizing: border-box;
+              display: flex;
+              align-items: baseline;
+              height: 385px;
+              max-width: 1030px;
+              width: 100%; } }
           main .carSearchContainer .carSearchBox .top .tabContent .selectContainer {
             font-family: "SinkinSans-700Bold", sans-serif;
             font-size: 14px;
@@ -1002,10 +1051,16 @@ main {
                     flex-direction: row;
                     justify-content: center; } }
                 main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .secondBox .advancedSearch a {
+                  font-size: 18px;
                   color: #000000;
-                  font-size: 14px;
                   font-family: "SinkinSans-700Bold", sans-serif;
                   text-decoration: none; }
+                  @media (min-width: 750px) {
+                    main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .secondBox .advancedSearch a {
+                      color: #000000;
+                      font-size: 14px;
+                      font-family: "SinkinSans-700Bold", sans-serif;
+                      text-decoration: none; } }
                   main .carSearchContainer .carSearchBox .top .tabContent .selectContainer .secondBox .advancedSearch a:hover {
                     text-decoration: underline;
                     text-decoration-color: #ff6300; }
@@ -1032,6 +1087,13 @@ main {
             justify-content: center; }
             main .bottomPromoIcons .promoContainer .boxPromo p {
               margin-left: 10px; } }
+  main .banerMichelinMobile a {
+    display: flex;
+    height: auto;
+    width: 100%; }
+    @media (min-width: 750px) {
+      main .banerMichelinMobile a {
+        display: none; } }
   main .opinions {
     width: 100%; }
     main .opinions .opinionsText {
