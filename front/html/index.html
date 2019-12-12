@@ -162,24 +162,31 @@
                 <a href=""><img src="../images/icon/Moje Konto.png"/></a>
                 <a href=""><img src="../images/icon/Lupa.png"/></a>
                 <a href=""><img src="../images/koszyk.png"/></a>
+<!--                <a id="nav-icon1" onclick="openNav()">-->
+<!--                    <span></span>-->
+<!--                    <span></span>-->
+<!--                    <span></span>-->
+<!--                </a>-->
                 <button class="openbtn" onclick="openNav()"><i class="fa fa-bars"></i></button>
             </div>
             <div id="mySidepanel" class="sidepanel">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-                <a href="#">Menu</a>
-                <a href="#" class="rowDirectionMobile">Opony <span class="spanMobileMenu">></span></a>
-                <a href="#" class="rowDirectionMobile">Felgi <span class="spanMobileMenu">></span></a>
-                <a href="#">Porównywarka produktów</a>
-                <a href="#">Porady ekspertów</a>
-                <a href="#">Opinie klientów</a>
-                <a href="#">Konkursy i promocje</a>
-                <a href="#">Pomoc</a>
-                <a href="#">Kontakt</a>
+                <div class="sidepanelFix">
+                    <a href="javascript:void(0)" class="closebtn orangeButtonsMobile" onclick="closeNav()">×</a>
+                    <a href="#" class="orangeButtonsMobile">Menu</a>
+                    <a href="#" class="rowDirectionMobile">Opony <span class="spanMobileMenu">></span></a>
+                    <a href="#" class="rowDirectionMobile">Felgi <span class="spanMobileMenu">></span></a>
+                    <a href="#">Porównywarka produktów</a>
+                    <a href="#">Porady ekspertów</a>
+                    <a href="#">Opinie klientów</a>
+                    <a href="#">Konkursy i promocje</a>
+                    <a href="#">Pomoc</a>
+                    <a href="#">Kontakt</a>
+                </div>
             </div>
         </div>
     </div>
 </div>
-<main>
+<main id="shadow">
     <!-- Wyszukiwarka -->
     <div class="carSearchContainer container-fluid">
         <div class="wrap">

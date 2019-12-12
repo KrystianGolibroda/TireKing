@@ -301,10 +301,55 @@ $(document).ready(function () {
    });
 });
 
+
+
 function openNav() {
-   document.getElementById("mySidepanel").style.width = "330px";
+   document.getElementById("mySidepanel").style.width = "345px";
+   document.getElementById("shadow").style.opacity = "0.3";
 }
 
 function closeNav() {
    document.getElementById("mySidepanel").style.width = "0";
+   document.getElementById("shadow").style.opacity = "1";
 }
+
+function toggleMenu(){
+  var element = document.getElementById("mySidepanel");
+  element.classList.toggle("mySidepanelWidth");
+};
+
+$(document).ready(function () {
+   $('.nav-menu').click(function () {
+      $('span').toggleClass('nav-active');
+   });
+});
+
+$(document).ready(function(){
+   $('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').click(function(){
+      $(this).toggleClass('open');
+   });
+});
+
+
+//Hamburger Menu
+
+var button = document.getElementById('hamburger-menu'),
+    span = button.getElementsByTagName('span')[0];
+
+button.onclick =  function() {
+   span.classList.toggle('hamburger-menu-button-close');
+};
+
+$('#hamburger-menu').on('click', toggleOnClass);
+
+function toggleOnClass(event) {
+   var toggleElementId = '#' + $(this).data('toggle'),
+       element = $(toggleElementId);
+
+   element.toggleClass('on');
+}
+
+// close hamburger menu after click a
+$( '.menu li a' ).on("click", function(){
+   $('#hamburger-menu').click();
+});

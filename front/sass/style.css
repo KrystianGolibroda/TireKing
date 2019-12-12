@@ -502,44 +502,59 @@ nav {
         nav .menuBottom .menuHideDesktop {
           display: flex; } }
 
+.mySidepanelWidth {
+  display: block; }
+
 .sidepanel {
   width: 0;
   position: fixed;
-  height: 375px;
   bottom: 50px;
   right: 0;
-  border-radius: 5px;
+  border-radius: 10px;
   background-color: #363636;
   overflow-x: hidden;
   transition: 0.5s ease;
-  padding-top: 16px;
-  z-index: 9999; }
-  .sidepanel a {
-    padding: 8px 32px 8px 32px;
-    text-decoration: none;
-    font-size: 15px;
-    font-family: "SinkinSans-700Bold", sans-serif;
-    color: #ffffff;
-    text-align: left;
-    display: block;
-    transition: 0.3s; }
-    .sidepanel a:hover {
-      color: #ff6300; }
-    .sidepanel a .spanMobileMenu {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  z-index: 9999;
+  overflow-y: hidden; }
+  .sidepanel .sidepanelFix {
+    width: 85%;
+    margin: 0 auto; }
+    .sidepanel .sidepanelFix a {
+      padding: 10px 0;
+      text-decoration: none;
       font-size: 15px;
-      margin: 0;
-      padding: 0; }
-  .sidepanel .closebtn {
-    position: absolute;
-    top: 0;
-    right: -8px;
-    font-size: 30px; }
-  .sidepanel .rowDirectionMobile {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-content: center;
-    align-items: center; }
+      font-family: "SinkinSans-700Bold", sans-serif;
+      color: #ffffff;
+      text-align: left;
+      display: block;
+      transition: 0.2s;
+      border-bottom: 2px solid #545454;
+      letter-spacing: 0.05rem; }
+      .sidepanel .sidepanelFix a:first-child {
+        border-bottom: none; }
+      .sidepanel .sidepanelFix a:last-child {
+        border-bottom: none; }
+      .sidepanel .sidepanelFix a:hover {
+        color: #ff6300; }
+      .sidepanel .sidepanelFix a .spanMobileMenu {
+        font-size: 15px;
+        margin: 0;
+        padding: 0; }
+    .sidepanel .sidepanelFix .orangeButtonsMobile {
+      color: #ff6300; }
+    .sidepanel .sidepanelFix .closebtn {
+      position: absolute;
+      top: -2px;
+      right: 20px;
+      font-size: 30px; }
+    .sidepanel .sidepanelFix .rowDirectionMobile {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-content: center;
+      align-items: center; }
 
 .mobileBottomMenu {
   position: fixed;
@@ -570,6 +585,57 @@ nav {
     color: #000000;
     background-color: #ffffff;
     border: none; }
+  .mobileBottomMenu #nav-icon1 {
+    width: 30px;
+    height: 45px;
+    position: relative;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer; }
+    .mobileBottomMenu #nav-icon1 span {
+      display: block;
+      position: absolute;
+      height: 4px;
+      width: 30px;
+      background: #000000;
+      border-radius: 9px;
+      opacity: 1;
+      left: 0;
+      -webkit-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+      -webkit-transition: .25s ease-in-out;
+      -moz-transition: .25s ease-in-out;
+      -o-transition: .25s ease-in-out;
+      transition: .25s ease-in-out; }
+      .mobileBottomMenu #nav-icon1 span:nth-child(1) {
+        top: 10px; }
+      .mobileBottomMenu #nav-icon1 span:nth-child(2) {
+        top: 18px; }
+      .mobileBottomMenu #nav-icon1 span:nth-child(3) {
+        top: 26px; }
+  .mobileBottomMenu #nav-icon1.open span:nth-child(1) {
+    top: 18px;
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    transform: rotate(135deg); }
+  .mobileBottomMenu #nav-icon1.open span:nth-child(2) {
+    opacity: 0;
+    left: -60px; }
+  .mobileBottomMenu #nav-icon1.open span:nth-child(3) {
+    top: 18px;
+    -webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    transform: rotate(-135deg); }
 
 main {
   width: 98%;
